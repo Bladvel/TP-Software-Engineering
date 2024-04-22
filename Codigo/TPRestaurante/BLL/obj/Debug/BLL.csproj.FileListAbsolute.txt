@@ -1,0 +1,15 @@
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\BLL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\BLL.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\Abstracciones.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\Services.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\Abstracciones.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\DAL.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\bin\Debug\Services.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\obj\Debug\BLL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\BLL\obj\Debug\BLL.pdb

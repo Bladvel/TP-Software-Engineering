@@ -1,0 +1,11 @@
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.DAL.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.DAL.pdb
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.BE.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.Servicios.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.BE.pdb
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\bin\Debug\TCTD2020.ArquitecturaCapasV1.Servicios.pdb
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\obj\Debug\TCTD2020.ArquitecturaCapasV1.DAL.csprojAssemblyReference.cache
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\obj\Debug\TCTD2020.ArquitecturaCapasV1.DAL.csproj.CoreCompileInputs.cache
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\obj\Debug\TCTD2020.ArquitecturaCapasV1.DAL.csproj.CopyComplete
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\obj\Debug\TCTD2020.ArquitecturaCapasV1.DAL.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1\TCTD2020.ArquitecturaCapasV1.DAL\obj\Debug\TCTD2020.ArquitecturaCapasV1.DAL.pdb

@@ -1,0 +1,17 @@
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\UI.exe.config
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\UI.exe
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\UI.pdb
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\BLL.dll
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\BLL.pdb
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\bin\Debug\DAL.pdb
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.Form1.resources
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.exe
+C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\ABM capas\UI\obj\Debug\UI.pdb

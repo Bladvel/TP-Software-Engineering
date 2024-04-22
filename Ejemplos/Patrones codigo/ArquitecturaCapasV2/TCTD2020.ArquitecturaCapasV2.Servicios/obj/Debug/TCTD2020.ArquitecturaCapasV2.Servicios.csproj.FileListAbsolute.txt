@@ -1,0 +1,9 @@
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\obj\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.csprojAssemblyReference.cache
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\obj\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.csproj.CoreCompileInputs.cache
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\bin\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\bin\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.pdb
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\bin\Debug\TCTD2020.ArquitecturaCapasV2.Interfaces.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\bin\Debug\TCTD2020.ArquitecturaCapasV2.Interfaces.pdb
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\obj\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.csproj.CopyComplete
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\obj\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.dll
+D:\Dropbox\UAI\TC-TD\TC\Compartido TC1\Ejemplos.GIT\ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2\TCTD2020.ArquitecturaCapasV2.Servicios\obj\Debug\TCTD2020.ArquitecturaCapasV2.Servicios.pdb

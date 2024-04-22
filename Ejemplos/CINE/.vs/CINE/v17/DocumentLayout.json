@@ -1,0 +1,298 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\3- 2do cuatrimestre 2023\\desarrollo y arquitectura de software\\ejercicio para practicar parcial 2\\cine\\dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mp_pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mp_pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mp_funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mp_funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mp_entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mp_entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mp_asiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mp_asiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D21F594-79E0-42A0-9DB5-07A13BAF65D3}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\bll\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D21F594-79E0-42A0-9DB5-07A13BAF65D3}|BLL\\BLL.csproj|solutionrelative:bll\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF855F08-4C7A-41BE-8141-9F6D2F6B6C03}|UI_CINE\\UI_CINE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\ui_cine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF855F08-4C7A-41BE-8141-9F6D2F6B6C03}|UI_CINE\\UI_CINE.csproj|solutionrelative:ui_cine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF855F08-4C7A-41BE-8141-9F6D2F6B6C03}|UI_CINE\\UI_CINE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\ui_cine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AF855F08-4C7A-41BE-8141-9F6D2F6B6C03}|UI_CINE\\UI_CINE.csproj|solutionrelative:ui_cine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\be\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|solutionrelative:be\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\mp_sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\mp_sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\dal\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{7BAD279D-81B8-4C10-9FF8-C7A7A301DC19}|DAL\\DAL.csproj|solutionrelative:dal\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\be\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|solutionrelative:be\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\be\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|solutionrelative:be\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\be\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|solutionrelative:be\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D21F594-79E0-42A0-9DB5-07A13BAF65D3}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\bll\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D21F594-79E0-42A0-9DB5-07A13BAF65D3}|BLL\\BLL.csproj|solutionrelative:bll\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\be\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{B0B8F20C-8172-41C0-ACDF-266F4AB31F02}|BE\\BE.csproj|solutionrelative:be\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 204,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MP_SALA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_SALA.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_SALA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_SALA.cs",
+              "RelativeToolTip": "DAL\\MP_SALA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T05:19:34.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MP_FUNCION.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_FUNCION.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_FUNCION.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_FUNCION.cs",
+              "RelativeToolTip": "DAL\\MP_FUNCION.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T05:19:27.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MP_ENTRADA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_ENTRADA.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_ENTRADA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_ENTRADA.cs",
+              "RelativeToolTip": "DAL\\MP_ENTRADA.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T05:19:22.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MP_ASIENTO.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_ASIENTO.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_ASIENTO.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_ASIENTO.cs",
+              "RelativeToolTip": "DAL\\MP_ASIENTO.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T05:19:11.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\UI_CINE\\Form1.cs",
+              "RelativeDocumentMoniker": "UI_CINE\\Form1.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\UI_CINE\\Form1.cs",
+              "RelativeToolTip": "UI_CINE\\Form1.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAASwBYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-11-22T05:15:55.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PELICULA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BLL\\PELICULA.cs",
+              "RelativeDocumentMoniker": "BLL\\PELICULA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BLL\\PELICULA.cs*",
+              "RelativeToolTip": "BLL\\PELICULA.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T05:12:00.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MP_PELICULA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_PELICULA.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_PELICULA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MP_PELICULA.cs",
+              "RelativeToolTip": "DAL\\MP_PELICULA.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAA2wEEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T04:20:12.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "DAL\\ClassDiagram1.cd",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\ClassDiagram1.cd",
+              "RelativeToolTip": "DAL\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2023-11-22T04:17:04.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ENTRADA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\ENTRADA.cs",
+              "RelativeDocumentMoniker": "BE\\ENTRADA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\ENTRADA.cs",
+              "RelativeToolTip": "BE\\ENTRADA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T04:13:49.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SALA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BLL\\SALA.cs",
+              "RelativeDocumentMoniker": "BLL\\SALA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BLL\\SALA.cs",
+              "RelativeToolTip": "BLL\\SALA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T04:06:06.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SALA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\SALA.cs",
+              "RelativeDocumentMoniker": "BE\\SALA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\SALA.cs",
+              "RelativeToolTip": "BE\\SALA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T04:00:18.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "BE\\ClassDiagram1.cd",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\ClassDiagram1.cd",
+              "RelativeToolTip": "BE\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2023-11-22T03:48:04.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PELICULA.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\PELICULA.cs",
+              "RelativeDocumentMoniker": "BE\\PELICULA.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\PELICULA.cs",
+              "RelativeToolTip": "BE\\PELICULA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T03:47:30.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MAPPER.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MAPPER.cs",
+              "RelativeDocumentMoniker": "DAL\\MAPPER.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\MAPPER.cs",
+              "RelativeToolTip": "DAL\\MAPPER.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA9wBMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T03:17:09.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ACCESO.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\ACCESO.cs",
+              "RelativeDocumentMoniker": "DAL\\ACCESO.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\DAL\\ACCESO.cs",
+              "RelativeToolTip": "DAL\\ACCESO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAE4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T02:02:34.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FUNCION.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\FUNCION.cs",
+              "RelativeDocumentMoniker": "BE\\FUNCION.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\BE\\FUNCION.cs",
+              "RelativeToolTip": "BE\\FUNCION.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-22T02:02:22.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\UI_CINE\\Form1.cs",
+              "RelativeDocumentMoniker": "UI_CINE\\Form1.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\3- 2do Cuatrimestre 2023\\Desarrollo y arquitectura de software\\Ejercicio para practicar parcial 2\\CINE\\UI_CINE\\Form1.cs [Design]",
+              "RelativeToolTip": "UI_CINE\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-11-22T02:01:52.892Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

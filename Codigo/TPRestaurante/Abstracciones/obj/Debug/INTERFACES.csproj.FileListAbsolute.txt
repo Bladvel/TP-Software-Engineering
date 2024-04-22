@@ -1,0 +1,6 @@
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\bin\Debug\Abstracciones.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\bin\Debug\Abstracciones.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\obj\Debug\INTERFACES.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\obj\Debug\INTERFACES.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\obj\Debug\Abstracciones.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Abstracciones\obj\Debug\Abstracciones.pdb

@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL
+{
+    public abstract class Mapper<T>
+    {
+        internal Access access = new Access();
+        public abstract T GetByUsername(string username);
+        public abstract T Convert(DataRow dr);
+        public abstract List<T> GetAll();
+        public abstract int Insert(T entity);
+        public abstract int Update(T entity);
+        public abstract int Delete(T entity);
+
+    }
+}

@@ -1,0 +1,13 @@
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\DAL.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\Services.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\Abstracciones.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\Services.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\bin\Debug\Abstracciones.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\obj\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\DAL\obj\Debug\DAL.pdb

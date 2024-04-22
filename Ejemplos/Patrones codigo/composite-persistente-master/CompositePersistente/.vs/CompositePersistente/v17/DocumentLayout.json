@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\composite-persistente-master\\CompositePersistente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\composite-persistente-master\\compositepersistente\\compositepersistente\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.csproj|solutionrelative:compositepersistente\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6D1AA0-5B91-4AD9-9FD2-E13E13649B71}|CompositePersistente.UI\\CompositePersistente.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\composite-persistente-master\\compositepersistente\\compositepersistente.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6D1AA0-5B91-4AD9-9FD2-E13E13649B71}|CompositePersistente.UI\\CompositePersistente.UI.csproj|solutionrelative:compositepersistente.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\composite-persistente-master\\CompositePersistente\\CompositePersistente.UI\\Program.cs",
+              "RelativeDocumentMoniker": "CompositePersistente.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\composite-persistente-master\\CompositePersistente\\CompositePersistente.UI\\Program.cs",
+              "RelativeToolTip": "CompositePersistente.UI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:55:02.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\composite-persistente-master\\CompositePersistente\\CompositePersistente\\Repository.cs",
+              "RelativeDocumentMoniker": "CompositePersistente\\Repository.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\composite-persistente-master\\CompositePersistente\\CompositePersistente\\Repository.cs",
+              "RelativeToolTip": "CompositePersistente\\Repository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:54:52.807Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
