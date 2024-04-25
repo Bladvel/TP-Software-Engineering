@@ -27,5 +27,6 @@ namespace Services
             return _user != null;
         }
 
+        private Session() { }
     }
 }
