@@ -35,7 +35,7 @@ namespace BLL
                 var user = ObtenerUsuario(pUser.Username);
                 if ((user!=null))
                 {
-                    if (CryptoManager.Hash(pUser.Password).Equals(user.Password))
+                    if (CryptoManager.Compare(pUser.Password, user.Password))
                     {
                         SessionManager.Instance.Login(user);
                         return "Usuario valido";
@@ -44,6 +44,18 @@ namespace BLL
             }
 
             return "Fallo el inicio";
+        }
+
+        public string Logout()
+        {
+            if(!SessionManager.Instance.IsLoggedIn())
+            {
+                throw new Exception("No hay sesion iniciada");
+            }
+            else
+                SessionManager.Instance.Logout();
+
+            return "Sesion terminada";
         }
     }
 }

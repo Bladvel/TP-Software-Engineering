@@ -1,0 +1,10 @@
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\bin\Debug\TestEncriptador.exe.config
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\bin\Debug\TestEncriptador.exe
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\bin\Debug\TestEncriptador.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.Form1.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.Properties.Resources.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.csproj.GenerateResource.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.exe
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\PruebasDeCodigo\TestEncriptador\TestEncriptador\obj\Debug\TestEncriptador.pdb

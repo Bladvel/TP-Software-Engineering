@@ -40,5 +40,10 @@ namespace TPRestaurante
                 toolStripStatusLabel1.Text = "Sesion no iniciada";
             }
         }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

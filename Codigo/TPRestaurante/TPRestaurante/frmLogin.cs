@@ -37,12 +37,18 @@ namespace TPRestaurante
         private void btnCrear_Click(object sender, EventArgs e)
         {
             Usuario user = new Usuario();
-            user.Username = txtUsername.Text;
+            //user.Username = txtUsername.Text;
+            user.Username = CryptoManager.Encrypt(txtUsername.Text);
             user.Password = CryptoManager.Hash(txtPassword.Text);
 
             bool ok = bllUsuario.AgregarUsuario(user);
 
             MessageBox.Show(ok.ToString());
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

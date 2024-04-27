@@ -11,7 +11,7 @@ namespace DAL
     {
         internal Access access = new Access();
         public abstract T GetByUsername(string username);
-        public abstract T Convert(DataRow dr);
+        public abstract T Transform(DataRow dr);
         public abstract List<T> GetAll();
         public abstract int Insert(T entity);
         public abstract int Update(T entity);

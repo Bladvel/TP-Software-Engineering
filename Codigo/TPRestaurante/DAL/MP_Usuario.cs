@@ -1,4 +1,5 @@
 ﻿using BE;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,11 +12,11 @@ namespace DAL
 {
     public class MP_Usuario : Mapper<Usuario>
     {
-        public override Usuario Convert(DataRow dr)
+        public override Usuario Transform(DataRow dr)
         {
             Usuario user = new BE.Usuario();
             user.Id = Guid.Parse( dr["ID"].ToString());
-            user.Username = dr["USERNAME"].ToString();
+            user.Username = CryptoManager.Decrypt( dr["USERNAME"].ToString());
             user.Password = dr["PASSWORD"].ToString();
 
             return user;
@@ -35,7 +36,7 @@ namespace DAL
             access.Close();
             foreach (DataRow dr in dt.Rows)
             {
-                users.Add(Convert(dr));
+                users.Add(Transform(dr));
             }
             return users;
         }
