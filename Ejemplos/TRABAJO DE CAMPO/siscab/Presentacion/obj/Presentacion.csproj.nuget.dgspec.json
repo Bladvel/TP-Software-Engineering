@@ -1,0 +1,210 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
+        "projectName": "BE",
+        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              },
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              },
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+        "projectName": "SistemaSISCAB",
+        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+        "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows10.0.17763.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows10.0.17763": {
+            "targetAlias": "net6.0-windows10.0.17763.0",
+            "projectReferences": {
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              },
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj"
+              },
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-windows10.0.17763": {
+          "targetAlias": "net6.0-windows10.0.17763.0",
+          "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PdfiumViewer": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
+            "PdfiumViewer.Native.x86.no_v8-no_xfa": {
+              "target": "Package",
+              "version": "[2018.4.8.256, )"
+            },
+            "PdfiumViewer.Native.x86_64.no_v8-no_xfa": {
+              "target": "Package",
+              "version": "[2018.4.8.256, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            },
+            "WinForms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.9.2, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.17763.31, 10.0.17763.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
+        "projectName": "Servicios",
+        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
