@@ -8,6 +8,6 @@ namespace Abstracciones
 {
     public interface IEntity
     {
-        Guid Id { get; }
+        Guid ID { get; }
     }
 }

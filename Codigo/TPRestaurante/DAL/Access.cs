@@ -37,10 +37,25 @@ namespace DAL
             return param;
         }
 
+        public SqlParameter CreateParameter(string name, Guid value)
+        {
+            SqlParameter param = new SqlParameter(name, value);
+            param.DbType = DbType.Guid;
+
+            return param;
+        }
+
         public SqlParameter CreateParameter(string name, int value)
         {
             SqlParameter param = new SqlParameter(name,value);
             param.DbType = DbType.Int32;
+            return param;
+        }
+
+        public SqlParameter CreateParameter(string name, bool value)
+        {
+            SqlParameter param = new SqlParameter(name, value);
+            param.DbType = DbType.Boolean;
             return param;
         }
 

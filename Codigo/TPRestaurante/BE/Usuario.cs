@@ -10,22 +10,77 @@ namespace BE
 {
     public class Usuario : IUser, IEntity
     {
-		private string _user;
+		private string user;
 
 		public string Username
 		{
-			get { return _user; }
-			set { _user = value; }
+			get { return user; }
+			set { user = value; }
 		}
 
-		private string _pass;
+		private string pass;
 
 		public string Password
 		{
-			get { return _pass; }
-			set { _pass = value; }
+			get { return pass; }
+			set { pass = value; }
 		}
 
-        public Guid Id { get; set; }
+        public Guid ID { get; set; }
+
+		private string dni;
+
+		public string DNI
+		{
+			get { return dni; }
+			set { dni = value; }
+		}
+
+		private string nombre;
+
+		public string Nombre
+		{
+			get { return nombre; }
+			set { nombre = value; }
+		}
+
+		private string apellido;
+
+		public string Apellido
+		{
+			get { return apellido; }
+			set { apellido = value; }
+		}
+
+		private string email;
+
+		public string Email
+		{
+			get { return email; }
+			set { email = value; }
+		}
+
+		private bool activo;
+
+		public bool Activo //borrado logico
+		{
+			get { return activo; }
+			set { activo = value; }
+		}
+
+		private bool bloqueo;
+
+		public bool Bloqueo
+		{
+			get { return bloqueo; }
+			set { bloqueo = value; }
+		}
+
+		private int _attempts = 0;
+        public int Attempts 
+		{ 
+			get => _attempts; 
+			set => _attempts=value; 
+		}
     }
 }

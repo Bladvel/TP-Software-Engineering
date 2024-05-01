@@ -16,14 +16,10 @@ namespace TPRestaurante
         public frmMDI()
         {
             InitializeComponent();
+            bllUsuario = new BLL.Usuario();
         }
 
-        private void iniciarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmLogin formLogin = new frmLogin();
-            formLogin.MdiParent = this;
-            formLogin.Show();
-        }
+        BLL.Usuario bllUsuario;
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
@@ -32,6 +28,13 @@ namespace TPRestaurante
 
         public void ValidarForm()
         {
+            itemCerrarSesión.Enabled = SessionManager.Instance.IsLoggedIn();
+            //menuAdmin.Enabled = SessionManager.Instance.IsLoggedIn();
+            
+            
+            itemIniciarSesión.Enabled= !SessionManager.Instance.IsLoggedIn();
+
+
             if(SessionManager.Instance.IsLoggedIn())
             {
                 toolStripStatusLabel1.Text = SessionManager.Instance.User.Username;
@@ -41,9 +44,28 @@ namespace TPRestaurante
             }
         }
 
-        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        private void itemCerrarSesion_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("¿Está seguro?", "Confirme", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                bllUsuario.Logout();
+                ValidarForm();
+            }
+        }
 
+
+        private void itemIniciarSesion_Click(object sender, EventArgs e)
+        {
+            frmLogin formLogin = new frmLogin();
+            formLogin.MdiParent = this;
+            formLogin.Show();
+        }
+
+        private void itemGestorUsuarios_Click(object sender, EventArgs e)
+        {
+            frmManageUsers formUsers = new frmManageUsers();
+            formUsers.MdiParent = this;
+            formUsers.Show();
         }
     }
 }

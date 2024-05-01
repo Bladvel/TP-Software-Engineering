@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|solutionrelative:tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|solutionrelative:tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\arquitecturacapasv2\\tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\arquitecturacapasv2\\tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67DAEB88-02B3-4FE8-9773-4DF00F649365}|TCTD2020.ArquitecturaCapasV2.BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\arquitecturacapasv2\\tctd2020.arquitecturacapasv2.bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DAEB88-02B3-4FE8-9773-4DF00F649365}|TCTD2020.ArquitecturaCapasV2.BLL\\BLL.csproj|solutionrelative:tctd2020.arquitecturacapasv2.bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DAEB88-02B3-4FE8-9773-4DF00F649365}|TCTD2020.ArquitecturaCapasV2.BLL\\TCTD2020.ArquitecturaCapasV2.BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DAEB88-02B3-4FE8-9773-4DF00F649365}|TCTD2020.ArquitecturaCapasV2.BLL\\TCTD2020.ArquitecturaCapasV2.BLL.csproj|solutionrelative:tctd2020.arquitecturacapasv2.bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\arquitecturacapasv2\\tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|solutionrelative:tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patrones codigo\\arquitecturacapasv2\\tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\UI.csproj|solutionrelative:tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32E5C74E-AAA6-4645-B3D9-CE8F8B779DD6}|TCTD2020.ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -55,14 +71,6 @@
       "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\tctd2020.arquitecturacapasv2.servicios\\encriptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FFBD89D-43C3-428D-B770-5A0531BAC1EE}|TCTD2020.ArquitecturaCapasV2.Servicios\\TCTD2020.ArquitecturaCapasV2.Servicios.csproj|solutionrelative:tctd2020.arquitecturacapasv2.servicios\\encriptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -74,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,45 +94,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "LoginException.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
+              "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
+              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T23:16:01.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginResult.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
+              "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
+              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T23:15:20.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UsuarioBLL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
               "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T21:46:41.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs [Design]",
-              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs [Design]",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs [Design]*",
+              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T21:46:31.646Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frmLogin.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
-              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAlwBsAAAAMAAAA",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs*",
+              "RelativeToolTip": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs*",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T19:52:24.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2\\frmLogin.cs",
@@ -135,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "frmMdiPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmMdiPrincipal.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2\\frmMdiPrincipal.cs",
@@ -147,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "frmMdiPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2\\frmMdiPrincipal.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2\\frmMdiPrincipal.cs",
@@ -158,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "AbstractDAL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.DAL\\AbstractDAL.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.DAL\\AbstractDAL.cs",
@@ -170,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UsuarioDAL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.DAL\\UsuarioDAL.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.DAL\\UsuarioDAL.cs",
@@ -182,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Interfaceas\\IUsuario.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Interfaceas\\IUsuario.cs",
@@ -194,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ICrud.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Interfaceas\\ICrud.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Interfaceas\\ICrud.cs",
@@ -206,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "AbstractBLL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.BLL\\AbstractBLL.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.BLL\\AbstractBLL.cs",
@@ -218,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "UsuarioBLL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.BLL\\UsuarioBLL.cs",
@@ -230,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Sesion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\Sesion.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\Sesion.cs",
@@ -242,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "LoginException.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginException.cs",
@@ -254,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "LoginResult.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\LoginResult.cs",
@@ -266,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Encriptador.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\Patrones codigo\\ArquitecturaCapasV2\\TCTD2020.ArquitecturaCapasV2.Servicios\\Encriptador.cs",
               "RelativeDocumentMoniker": "TCTD2020.ArquitecturaCapasV2.Servicios\\Encriptador.cs",

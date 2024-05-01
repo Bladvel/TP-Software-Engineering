@@ -10,5 +10,7 @@ namespace Interfaces
     {
         string Username { get; set; }
         string Password { get; set; }
+
+        int Attempts { get; set; }
     }
 }

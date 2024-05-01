@@ -25,13 +25,39 @@ namespace TPRestaurante
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             Usuario user = new Usuario();
-            user.Username = txtUsername.Text;
-            user.Password = txtPassword.Text;
-            string result = bllUsuario.Login(user);
-            MessageBox.Show(result);
-            frmMDI parent = (frmMDI)this.MdiParent;
-            parent.ValidarForm();
-            this.Close();
+            try
+            {
+                
+                user.Username = txtUsername.Text;
+                user.Password = txtPassword.Text;
+                var result = bllUsuario.Login(user);
+                frmMDI parent = (frmMDI)this.MdiParent;
+                parent.ValidarForm();
+                this.Close();
+            }
+            catch (LoginException ex)
+            {
+                switch (ex.Result)
+                {
+                    case LoginResult.InvalidUsername:
+                        MessageBox.Show("Usuario incorrecto");
+                        break;
+                    case LoginResult.InvalidPassword:
+                        Usuario userAttempts = bllUsuario.ObtenerUsuario(user.Username);
+                        MessageBox.Show($"Password Incorrecto\nTe quedan {3 - userAttempts.Attempts} intento/s");
+                        break;
+                    case LoginResult.BlockedUser:
+                        MessageBox.Show("Limite de intentos superados. Ha sido Bloqueado\nContacte a un administrador");
+                        break;
+                    case LoginResult.AlreadyBlockedUser:
+                        MessageBox.Show("Usuario bloqueado");
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+           
         }
 
         private void btnCrear_Click(object sender, EventArgs e)

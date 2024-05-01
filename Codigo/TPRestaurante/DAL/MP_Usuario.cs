@@ -15,9 +15,16 @@ namespace DAL
         public override Usuario Transform(DataRow dr)
         {
             Usuario user = new BE.Usuario();
-            user.Id = Guid.Parse( dr["ID"].ToString());
-            user.Username = CryptoManager.Decrypt( dr["USERNAME"].ToString());
+            user.ID = Guid.Parse( dr["ID"].ToString());
+            user.Username = dr["USERNAME"].ToString();
             user.Password = dr["PASSWORD"].ToString();
+            user.DNI = CryptoManager.Decrypt(dr["DNI"].ToString());
+            user.Nombre = dr["NOMBRE"].ToString();
+            user.Apellido = dr["APELLIDO"].ToString();
+            user.Email = dr["EMAIL"].ToString();
+            user.Activo = bool.Parse(dr["ACTIVO"].ToString());
+            user.Bloqueo = bool.Parse(dr["BLOQUEO"].ToString());
+            user.Attempts = int.Parse(dr["INTENTOS"].ToString());
 
             return user;
         }
@@ -52,6 +59,10 @@ namespace DAL
             {
                 access.CreateParameter("@username", entity.Username),
                 access.CreateParameter("@password", entity.Password),
+                access.CreateParameter("@dni", entity.DNI),
+                access.CreateParameter("@nom", entity.Nombre),
+                access.CreateParameter("@ape", entity.Apellido),
+                access.CreateParameter("@email", entity.Email),
             };
 
             access.Open();
@@ -63,7 +74,38 @@ namespace DAL
 
         public override int Update(Usuario entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@id", entity.ID),
+                access.CreateParameter("@username", entity.Username),
+                access.CreateParameter("@dni", entity.DNI),
+                access.CreateParameter("@nom", entity.Nombre),
+                access.CreateParameter("@ape", entity.Apellido),
+                access.CreateParameter("@email", entity.Email),
+                access.CreateParameter("@intentos", entity.Attempts)
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ACTUALIZAR_USUARIO", parameters);
+            access.Close();
+
+            return filasAfectadas;
+        }
+
+        public int ChangeBlockage(Usuario entity)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@id", entity.ID),
+                access.CreateParameter("@bloqueo", entity.Bloqueo),
+                access.CreateParameter("@intentos", entity.Attempts),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("CAMBIAR_BLOQUEO", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
     }
 }
