@@ -41,7 +41,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(167, 219);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(132, 42);
-            this.btnEntrar.TabIndex = 0;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -51,7 +51,7 @@
             this.txtUsername.Location = new System.Drawing.Point(188, 108);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(161, 20);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 

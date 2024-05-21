@@ -26,10 +26,33 @@ namespace TPRestaurante
             ValidarForm();
         }
 
+        private void CerrarChildForms()
+        {
+            foreach (Form childForm in this.MdiChildren)
+            {
+                childForm.Close();
+            }
+        }
+
+        private void AbrirChildForm(Form childForm)
+        {
+            CerrarChildForms();
+            childForm.MdiParent = this;
+            childForm.WindowState = FormWindowState.Maximized; 
+            childForm.Show();
+        }
+
+
         public void ValidarForm()
         {
-            itemCerrarSesión.Enabled = SessionManager.Instance.IsLoggedIn();
-            //menuAdmin.Enabled = SessionManager.Instance.IsLoggedIn();
+            itemCerrarSesión.Visible = SessionManager.Instance.IsLoggedIn();
+            itemCambiarContraseña.Visible = SessionManager.Instance.IsLoggedIn();
+            itemCambiarIdioma.Visible = SessionManager.Instance.IsLoggedIn();
+
+            menuAdmin.Visible = SessionManager.Instance.IsLoggedIn();
+            menuPedidos.Visible = SessionManager.Instance.IsLoggedIn();
+            menuCatalogos.Visible = SessionManager.Instance.IsLoggedIn();
+            menuReportes.Visible = SessionManager.Instance.IsLoggedIn();
             
             
             itemIniciarSesión.Enabled= !SessionManager.Instance.IsLoggedIn();
@@ -57,15 +80,45 @@ namespace TPRestaurante
         private void itemIniciarSesion_Click(object sender, EventArgs e)
         {
             frmLogin formLogin = new frmLogin();
-            formLogin.MdiParent = this;
-            formLogin.Show();
+            AbrirChildForm(formLogin);
+
         }
 
         private void itemGestorUsuarios_Click(object sender, EventArgs e)
         {
             frmManageUsers formUsers = new frmManageUsers();
-            formUsers.MdiParent = this;
-            formUsers.Show();
+            AbrirChildForm(formUsers);
+
+        }
+
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCreateOrder formCreateOrder = new frmCreateOrder();
+            AbrirChildForm(formCreateOrder);
+        }
+
+        private void ingredientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerificarPedido verificarPedido = new frmVerificarPedido();
+            AbrirChildForm(verificarPedido);
+        }
+
+        private void cobrarPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCobrarPedido formCobrarPedido = new frmCobrarPedido();
+            AbrirChildForm(formCobrarPedido);
+        }
+
+        private void generarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGenerarComanda generarComanda = new frmGenerarComanda();
+            AbrirChildForm(generarComanda);
+        }
+
+        private void abiertosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPedidosEnCurso pedidosEnCurso = new frmPedidosEnCurso();
+            AbrirChildForm(pedidosEnCurso);
         }
     }
 }

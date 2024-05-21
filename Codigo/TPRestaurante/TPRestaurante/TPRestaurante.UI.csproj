@@ -52,6 +52,42 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCobrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobrarPedido.Designer.cs">
+      <DependentUpon>frmCobrarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarComanda.Designer.cs">
+      <DependentUpon>frmGenerarComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidosEnCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidosEnCurso.Designer.cs">
+      <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerificarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerificarPedido.Designer.cs">
+      <DependentUpon>frmVerificarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User controls\UcButtonSecondary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User controls\UcButtonSecondary.Designer.cs">
+      <DependentUpon>UcButtonSecondary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateOrder.Designer.cs">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManageUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +108,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User controls\UcButtonPrimary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User controls\UcButtonPrimary.Designer.cs">
+      <DependentUpon>UcButtonPrimary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCobrarPedido.resx">
+      <DependentUpon>frmCobrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateOrder.resx">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarComanda.resx">
+      <DependentUpon>frmGenerarComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosEnCurso.resx">
+      <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificarPedido.resx">
+      <DependentUpon>frmVerificarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManageUsers.resx">
       <DependentUpon>frmManageUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +147,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User controls\UcButtonSecondary.resx">
+      <DependentUpon>UcButtonSecondary.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,5 +181,6 @@
       <Name>SERVICIOS</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

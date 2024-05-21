@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class Usuario : IUser, IEntity
-    {
+	public class Usuario : IUser, IEntity
+	{
 		private string user;
 
 		public string Username
@@ -26,7 +26,7 @@ namespace BE
 			set { pass = value; }
 		}
 
-        public Guid ID { get; set; }
+		public Guid ID { get; set; }
 
 		private string dni;
 
@@ -77,10 +77,10 @@ namespace BE
 		}
 
 		private int _attempts = 0;
-        public int Attempts 
+		public int Attempts 
 		{ 
 			get => _attempts; 
 			set => _attempts=value; 
 		}
-    }
+	}
 }
