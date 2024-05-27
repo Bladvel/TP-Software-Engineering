@@ -52,6 +52,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarPassword.Designer.cs">
+      <DependentUpon>frmCambiarPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCobrarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="User controls\UcButtonPrimary.Designer.cs">
       <DependentUpon>UcButtonPrimary.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCambiarPassword.resx">
+      <DependentUpon>frmCambiarPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCobrarPedido.resx">
       <DependentUpon>frmCobrarPedido.cs</DependentUpon>
     </EmbeddedResource>

@@ -41,6 +41,7 @@
             this.menuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCrearPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidos = new System.Windows.Forms.ToolStripMenuItem();
+            this.registradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidosEnCurso = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidosCerrados = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCobrarPedido = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,6 +105,7 @@
             this.itemCambiarContraseña.Name = "itemCambiarContraseña";
             this.itemCambiarContraseña.Size = new System.Drawing.Size(180, 22);
             this.itemCambiarContraseña.Text = "Cambiar contraseña";
+            this.itemCambiarContraseña.Click += new System.EventHandler(this.itemCambiarContraseña_Click);
             // 
             // itemCambiarIdioma
             // 
@@ -154,36 +156,44 @@
             // itemCrearPedido
             // 
             this.itemCrearPedido.Name = "itemCrearPedido";
-            this.itemCrearPedido.Size = new System.Drawing.Size(180, 22);
+            this.itemCrearPedido.Size = new System.Drawing.Size(150, 22);
             this.itemCrearPedido.Text = "Crear";
             this.itemCrearPedido.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // itemVerPedidos
             // 
             this.itemVerPedidos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registradosToolStripMenuItem,
             this.itemVerPedidosEnCurso,
             this.itemVerPedidosCerrados});
             this.itemVerPedidos.Name = "itemVerPedidos";
-            this.itemVerPedidos.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidos.Size = new System.Drawing.Size(150, 22);
             this.itemVerPedidos.Text = "Ver pedidos";
+            // 
+            // registradosToolStripMenuItem
+            // 
+            this.registradosToolStripMenuItem.Name = "registradosToolStripMenuItem";
+            this.registradosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.registradosToolStripMenuItem.Text = "Registrados";
+            this.registradosToolStripMenuItem.Click += new System.EventHandler(this.registradosToolStripMenuItem_Click);
             // 
             // itemVerPedidosEnCurso
             // 
             this.itemVerPedidosEnCurso.Name = "itemVerPedidosEnCurso";
-            this.itemVerPedidosEnCurso.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosEnCurso.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosEnCurso.Text = "En curso";
             this.itemVerPedidosEnCurso.Click += new System.EventHandler(this.abiertosToolStripMenuItem_Click);
             // 
             // itemVerPedidosCerrados
             // 
             this.itemVerPedidosCerrados.Name = "itemVerPedidosCerrados";
-            this.itemVerPedidosCerrados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosCerrados.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosCerrados.Text = "Cerrados";
             // 
             // itemCobrarPedido
             // 
             this.itemCobrarPedido.Name = "itemCobrarPedido";
-            this.itemCobrarPedido.Size = new System.Drawing.Size(180, 22);
+            this.itemCobrarPedido.Size = new System.Drawing.Size(150, 22);
             this.itemCobrarPedido.Text = "Cobrar pedido";
             this.itemCobrarPedido.Click += new System.EventHandler(this.cobrarPedidoToolStripMenuItem_Click);
             // 
@@ -193,20 +203,20 @@
             this.itemGenerarComandas,
             this.itemVerComandas});
             this.itemComandas.Name = "itemComandas";
-            this.itemComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemComandas.Size = new System.Drawing.Size(150, 22);
             this.itemComandas.Text = "Comandas";
             // 
             // itemGenerarComandas
             // 
             this.itemGenerarComandas.Name = "itemGenerarComandas";
-            this.itemGenerarComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemGenerarComandas.Size = new System.Drawing.Size(115, 22);
             this.itemGenerarComandas.Text = "Generar";
             this.itemGenerarComandas.Click += new System.EventHandler(this.generarToolStripMenuItem_Click);
             // 
             // itemVerComandas
             // 
             this.itemVerComandas.Name = "itemVerComandas";
-            this.itemVerComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemVerComandas.Size = new System.Drawing.Size(115, 22);
             this.itemVerComandas.Text = "Ver";
             // 
             // menuCatalogos
@@ -221,13 +231,14 @@
             // itemProductos
             // 
             this.itemProductos.Name = "itemProductos";
-            this.itemProductos.Size = new System.Drawing.Size(180, 22);
+            this.itemProductos.Size = new System.Drawing.Size(139, 22);
             this.itemProductos.Text = "Productos";
+            this.itemProductos.Click += new System.EventHandler(this.itemProductos_Click);
             // 
             // itemIngredientes
             // 
             this.itemIngredientes.Name = "itemIngredientes";
-            this.itemIngredientes.Size = new System.Drawing.Size(180, 22);
+            this.itemIngredientes.Size = new System.Drawing.Size(139, 22);
             this.itemIngredientes.Text = "Ingredientes";
             this.itemIngredientes.Click += new System.EventHandler(this.ingredientesToolStripMenuItem_Click);
             // 
@@ -309,6 +320,7 @@
         private System.Windows.Forms.ToolStripMenuItem itemGestorIdiomas;
         private System.Windows.Forms.ToolStripMenuItem menuReportes;
         private System.Windows.Forms.ToolStripMenuItem menuAyuda;
+        private System.Windows.Forms.ToolStripMenuItem registradosToolStripMenuItem;
     }
 }
 

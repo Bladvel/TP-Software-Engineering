@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {}
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
         "projectName": "BE",
-        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
+        "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,22 +19,22 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
               },
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
               }
             }
           }
@@ -44,19 +44,19 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\DAL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
               },
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
         "projectName": "SistemaSISCAB",
-        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+        "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
         "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\obj\\",
+        "outputPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -95,14 +95,14 @@
           "net6.0-windows10.0.17763": {
             "targetAlias": "net6.0-windows10.0.17763.0",
             "projectReferences": {
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
               },
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
               }
             }
           }
@@ -187,16 +187,16 @@
         }
       }
     },
-    "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+    "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
         "projectName": "Servicios",
-        "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
+        "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
-                "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+              "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+                "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
               }
             }
           }

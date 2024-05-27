@@ -1,5 +1,6 @@
 ﻿using BE;
 using DAL;
+using Interfaces;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -9,35 +10,35 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class Usuario
+    public class User
     {
-        MP_Usuario mp;
-        public Usuario()
+        MP_User mp;
+        public User()
         {
-            mp = new MP_Usuario();
+            mp = new MP_User();
         }
 
-        public bool AgregarUsuario(BE.Usuario usuario)
+        public bool AgregarUsuario(BE.User user)
         {
-            int filasAfectadas = mp.Insert(usuario);
+            int filasAfectadas = mp.Insert(user);
             return filasAfectadas > 0;
         }
 
-        public BE.Usuario ObtenerUsuario(string pUsername)
+        public BE.User ObtenerUsuario(string pUsername)
         {
-            BE.Usuario user = mp.GetAll().Where(u => u.Username.Equals(pUsername)).FirstOrDefault();
+            BE.User user = mp.GetAll().Where(u => u.Username.Equals(pUsername)).FirstOrDefault();
             return user;
         }
 
-        public List<BE.Usuario> ListarUsuarios() {
-            List<BE.Usuario> usuarios = new List<BE.Usuario>();
+        public List<BE.User> ListarUsuarios() {
+            List<BE.User> usuarios = new List<BE.User>();
 
             usuarios = mp.GetAll();
             return usuarios;
             
         }
 
-        public LoginResult Login (BE.Usuario pUser)
+        public LoginResult Login (BE.User pUser)
         {
             if (SessionManager.Instance.IsLoggedIn())
             {
@@ -61,6 +62,7 @@ namespace BLL
             }
             if (CryptoManager.Compare(pUser.Password, user.Password))
             {
+                AsignPermissions(user);
                 SessionManager.Instance.Login(user);
                 user.Attempts = 0;
                 user.DNI = CryptoManager.Encrypt(user.DNI); //Debo encriptar de nuevo el dni para no sobreescribirlo
@@ -94,10 +96,32 @@ namespace BLL
             return "Sesion terminada";
         }
 
-        public void DesbloquearUsuario(BE.Usuario user)
+        public void DesbloquearUsuario(BE.User user)
         {
             user.Bloqueo = false;
             mp.ChangeBlockage(user);
+        }
+
+        public void AsignPermissions(BE.User user)
+        {
+            mp.AsignPermissions(user);
+        }
+
+
+        public bool VerificarUsuario(BE.User user, string password)
+        {
+            return CryptoManager.Compare(password, user.Password);
+
+
+        }
+
+        public int CambiarPassword(BE.User user, string password)
+        {
+
+            var nuevaPassword = CryptoManager.Hash(password);
+            user.Password = nuevaPassword;
+
+            return mp.ChangePassword(user);
         }
     }
 }

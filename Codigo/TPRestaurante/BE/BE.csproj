@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Usuario.cs" />
+    <Compile Include="Composite\Component.cs" />
+    <Compile Include="Composite\Group.cs" />
+    <Compile Include="Composite\Permission.cs" />
+    <Compile Include="Composite\PermissionType.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,5 +54,6 @@
       <Name>INTERFACES</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

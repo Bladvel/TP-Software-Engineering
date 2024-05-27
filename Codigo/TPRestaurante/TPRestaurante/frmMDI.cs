@@ -16,10 +16,10 @@ namespace TPRestaurante
         public frmMDI()
         {
             InitializeComponent();
-            bllUsuario = new BLL.Usuario();
+            bllUser = new BLL.User();
         }
 
-        BLL.Usuario bllUsuario;
+        BLL.User bllUser;
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
@@ -38,7 +38,9 @@ namespace TPRestaurante
         {
             CerrarChildForms();
             childForm.MdiParent = this;
-            childForm.WindowState = FormWindowState.Maximized; 
+            childForm.StartPosition = FormStartPosition.CenterParent;
+            childForm.WindowState = FormWindowState.Maximized;
+            
             childForm.Show();
         }
 
@@ -71,8 +73,9 @@ namespace TPRestaurante
         {
             if (MessageBox.Show("¿Está seguro?", "Confirme", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                bllUsuario.Logout();
+                bllUser.Logout();
                 ValidarForm();
+                CerrarChildForms();
             }
         }
 
@@ -99,8 +102,7 @@ namespace TPRestaurante
 
         private void ingredientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmVerificarPedido verificarPedido = new frmVerificarPedido();
-            AbrirChildForm(verificarPedido);
+
         }
 
         private void cobrarPedidoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -119,6 +121,23 @@ namespace TPRestaurante
         {
             frmPedidosEnCurso pedidosEnCurso = new frmPedidosEnCurso();
             AbrirChildForm(pedidosEnCurso);
+        }
+
+        private void itemProductos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerificarPedido verificarPedido = new frmVerificarPedido();
+            AbrirChildForm(verificarPedido);
+        }
+
+        private void itemCambiarContraseña_Click(object sender, EventArgs e)
+        {
+            frmCambiarPassword cambiarPassword = new frmCambiarPassword();
+            AbrirChildForm(cambiarPassword);
         }
     }
 }

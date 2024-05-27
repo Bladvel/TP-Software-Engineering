@@ -101,6 +101,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnEntrar);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);

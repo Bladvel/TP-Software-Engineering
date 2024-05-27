@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class MP_Usuario : Mapper<Usuario>
+    public class MP_User : Mapper<User>
     {
-        public override Usuario Transform(DataRow dr)
+        public override User Transform(DataRow dr)
         {
-            Usuario user = new BE.Usuario();
+            User user = new BE.User();
             user.ID = Guid.Parse( dr["ID"].ToString());
             user.Username = dr["USERNAME"].ToString();
             user.Password = dr["PASSWORD"].ToString();
@@ -29,14 +29,14 @@ namespace DAL
             return user;
         }
 
-        public override int Delete(Usuario entity)
+        public override int Delete(User entity)
         {
             throw new NotImplementedException();
         }
 
-        public override List<Usuario> GetAll()
+        public override List<User> GetAll()
         {
-            List<Usuario> users = new List<Usuario>();
+            List<User> users = new List<User>();
 
             access.Open();
             DataTable dt = access.Read("LISTAR_USUARIO");
@@ -48,12 +48,12 @@ namespace DAL
             return users;
         }
 
-        public override Usuario GetByUsername(string username)
+        public override User GetById(object id)
         {
             throw new NotImplementedException();
         }
 
-        public override int Insert(Usuario entity)
+        public override int Insert(User entity)
         {
             List<SqlParameter> parameters = new List<SqlParameter>
             {
@@ -72,7 +72,7 @@ namespace DAL
             return filasAfectadas;
         }
 
-        public override int Update(Usuario entity)
+        public override int Update(User entity)
         {
             List<SqlParameter> parameters = new List<SqlParameter>
             {
@@ -92,7 +92,7 @@ namespace DAL
             return filasAfectadas;
         }
 
-        public int ChangeBlockage(Usuario entity)
+        public int ChangeBlockage(User entity)
         {
             List<SqlParameter> parameters = new List<SqlParameter>
             {
@@ -106,6 +106,46 @@ namespace DAL
             access.Close();
 
             return filasAfectadas;
+        }
+
+        MP_Permission mpPermission = new MP_Permission();
+
+        public void AsignPermissions(User entity)
+        {
+
+            List<Component> permissionsList = mpPermission.GetAll();
+
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@id", entity.ID)
+            };
+            access.Open();
+            DataTable dt = access.Read("LISTAR_USUARIO_PERMISO", parameters);
+            access.Close();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                entity.Permissions.Add((from component in permissionsList 
+                                            where component.ID.Equals(int.Parse(row["ID_PERMISO"].ToString())) 
+                                            select component).FirstOrDefault());
+            }
+
+        }
+
+        public int ChangePassword(User entity)
+        {
+            List<SqlParameter> parameterList = new List<SqlParameter>()
+            {
+                access.CreateParameter("@id", entity.ID),
+                access.CreateParameter("@pass", entity.Password)
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("MODIFICAR_PASSWORD", parameterList);
+            access.Close();
+
+            return filasAfectadas;
+
         }
     }
 }

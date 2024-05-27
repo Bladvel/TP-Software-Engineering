@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-	public class Usuario : IUser, IEntity
+	public class User : IUser, IEntity
 	{
 		private string user;
 
@@ -52,6 +52,14 @@ namespace BE
 			set { apellido = value; }
 		}
 
+		public string NombreCompleto
+		{
+			get
+			{
+				return $"{Nombre} {Apellido}";
+			}
+		}
+
 		private string email;
 
 		public string Email
@@ -82,5 +90,10 @@ namespace BE
 			get => _attempts; 
 			set => _attempts=value; 
 		}
+
+		private List<Component> permissions = new List<Component>();
+
+		public List<Component> Permissions => permissions;
+
 	}
 }

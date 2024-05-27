@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KT/rjtv03fGUT53i7ifzOQ54dZ1BOXIFg2ZpTfVIXOby9QjLa5vikg4vnIkibGhIyrK4bHEfPfeQKmSPvAhFFA==",
+  "dgSpecHash": "hpIYh2LCBhyetpqfwcAvianAgixGxGk7Xd4d/zicvddDQbjngEH+mH1kMAYfKvo/v1i42BMivo1NQUibEIOUBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+  "projectFilePath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dan\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\Dan\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512",
@@ -23,6 +23,36 @@
     "C:\\Users\\Dan\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.31\\microsoft.windows.sdk.net.ref.10.0.17763.31.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8xfc-gm6g-vgpv",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m44j-cfrm-g8qc",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-v435-xc8x-wvr9",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

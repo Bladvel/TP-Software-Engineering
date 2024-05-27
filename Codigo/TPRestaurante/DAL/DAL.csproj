@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="Access.cs" />
     <Compile Include="Mapper.cs" />
-    <Compile Include="MP_Usuario.cs" />
+    <Compile Include="MP_Permission.cs" />
+    <Compile Include="MP_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

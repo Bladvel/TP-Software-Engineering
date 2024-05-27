@@ -10,7 +10,7 @@ namespace DAL
     public abstract class Mapper<T>
     {
         internal Access access = new Access();
-        public abstract T GetByUsername(string username);
+        public abstract T GetById(object id);
         public abstract T Transform(DataRow dr);
         public abstract List<T> GetAll();
         public abstract int Insert(T entity);

@@ -59,7 +59,7 @@ namespace DAL
             return param;
         }
 
-        public SqlCommand CreateCommand(string sql, List<SqlParameter> parameters = null) 
+        private SqlCommand CreateCommand(string sql, List<SqlParameter> parameters = null) 
         {
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.StoredProcedure;

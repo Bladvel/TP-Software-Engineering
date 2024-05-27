@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstracciones
 {
+
     public interface IEntity
     {
         Guid ID { get; }

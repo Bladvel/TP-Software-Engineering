@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CLASES
 {
-public    class PERMISO
+public class PERMISO
     {
         private int id;
 

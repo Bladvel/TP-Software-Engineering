@@ -14,60 +14,76 @@ namespace TPRestaurante
 {
     public partial class frmLogin : Form
     {
-        BLL.Usuario bllUsuario;
+        BLL.User bllUser;
         public frmLogin()
         {
             InitializeComponent();
-            bllUsuario = new BLL.Usuario();
+            bllUser = new BLL.User();
 
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Usuario user = new Usuario();
+            User user = new User();
             try
             {
-                
-                user.Username = txtUsername.Text;
-                user.Password = txtPassword.Text;
-                var result = bllUsuario.Login(user);
-                frmMDI parent = (frmMDI)this.MdiParent;
-                parent.ValidarForm();
-                this.Close();
+                if (!string.IsNullOrWhiteSpace(txtUsername.Text) && !string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    user.Username = txtUsername.Text;
+                    user.Password = txtPassword.Text;
+                    var result = bllUser.Login(user);
+                    frmMDI parent = (frmMDI)this.MdiParent;
+                    parent.ValidarForm();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor complete los campos");
+                    VaciarTextBoxs();
+                }
+
             }
             catch (LoginException ex)
             {
                 switch (ex.Result)
                 {
                     case LoginResult.InvalidUsername:
-                        MessageBox.Show("Usuario incorrecto");
+                        MessageBox.Show("User incorrecto");
                         break;
                     case LoginResult.InvalidPassword:
-                        Usuario userAttempts = bllUsuario.ObtenerUsuario(user.Username);
+                        User userAttempts = bllUser.ObtenerUsuario(user.Username);
                         MessageBox.Show($"Password Incorrecto\nTe quedan {3 - userAttempts.Attempts} intento/s");
                         break;
                     case LoginResult.BlockedUser:
                         MessageBox.Show("Limite de intentos superados. Ha sido Bloqueado\nContacte a un administrador");
                         break;
                     case LoginResult.AlreadyBlockedUser:
-                        MessageBox.Show("Usuario bloqueado");
+                        MessageBox.Show("User bloqueado");
                         break;
                     default:
                         break;
                 }
+
+                VaciarTextBoxs();
             }
 
            
         }
 
+        public void VaciarTextBoxs()
+        {
+            txtUsername.Text = string.Empty;
+            txtPassword.Text = string.Empty;
+        }
+
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            Usuario user = new Usuario();
+            User user = new User();
             //user.Username = txtUsername.Text;
             user.Username = CryptoManager.Encrypt(txtUsername.Text);
             user.Password = CryptoManager.Hash(txtPassword.Text);
 
-            bool ok = bllUsuario.AgregarUsuario(user);
+            bool ok = bllUser.AgregarUsuario(user);
 
             MessageBox.Show(ok.ToString());
         }

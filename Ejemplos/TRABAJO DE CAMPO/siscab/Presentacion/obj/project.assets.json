@@ -787,11 +787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
       "projectName": "SistemaSISCAB",
-      "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
+      "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
       "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Presentacion\\obj\\",
+      "outputPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -813,14 +813,14 @@
         "net6.0-windows10.0.17763": {
           "targetAlias": "net6.0-windows10.0.17763.0",
           "projectReferences": {
-            "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
-              "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
+            "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\BE.csproj"
             },
-            "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj"
+            "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
-              "projectPath": "C:\\Users\\Dan\\Downloads\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
+            "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj": {
+              "projectPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Servicios.csproj"
             }
           }
         }
@@ -906,6 +906,36 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8xfc-gm6g-vgpv",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m44j-cfrm-g8qc",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle' 1.8.9 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-v435-xc8x-wvr9",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows10.0.17763"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

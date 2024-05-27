@@ -18,14 +18,14 @@ namespace TPRestaurante
         {
             InitializeComponent();
             modo = new BLL.ModoDelGestor();
-            bllUsuario = new BLL.Usuario();
+            bllUser = new BLL.User();
         }
 
         //ModoAgregar = 1,
         //ModoModificar = 2,
         //ModoEliminar = 3,
         //ModoDesbloquear = 4,
-        BLL.Usuario bllUsuario;
+        BLL.User bllUser;
         BLL.ModoDelGestor modo;
 
         void CambiarModo(BLL.ModoDelGestor pModo)
@@ -41,6 +41,7 @@ namespace TPRestaurante
                     btnDesbloquear.Enabled = true;
                     btnCancelar.Enabled = false;
                     btnSalir.Enabled = false;
+                    HabilitarTextboxs(true);
                     break;
                 case BLL.ModoDelGestor.ModoAgregar:
                     lblModo.Text = "Modo agregar";
@@ -51,6 +52,7 @@ namespace TPRestaurante
                     btnAplicar.Enabled = true;
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
+                    HabilitarTextboxs(true);
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
                     lblModo.Text = "Modo modificar";
@@ -61,6 +63,7 @@ namespace TPRestaurante
                     btnAplicar.Enabled = true;
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
+                    HabilitarTextboxs(true);
                     break;
                 case BLL.ModoDelGestor.ModoEliminar:
                     lblModo.Text = "Modo eliminar";
@@ -71,6 +74,7 @@ namespace TPRestaurante
                     btnAplicar.Enabled = true;
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
+                    HabilitarTextboxs(false);
                     break ;
                 case BLL.ModoDelGestor.ModoDesbloquear:
                     lblModo.Text = "Modo desbloquear";
@@ -81,6 +85,7 @@ namespace TPRestaurante
                     btnAplicar.Enabled = true;
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
+                    HabilitarTextboxs(false);
                     break ;
             }
         }
@@ -92,6 +97,7 @@ namespace TPRestaurante
             CambiarModo(modo);
             grdUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grdUsuarios.EditMode = DataGridViewEditMode.EditProgrammatically;
+            grdUsuarios.RowHeadersVisible = false;
             ActualizarGrilla();
         }
 
@@ -109,25 +115,25 @@ namespace TPRestaurante
                 case BLL.ModoDelGestor.ModoConsulta:
                     break;
                 case BLL.ModoDelGestor.ModoAgregar:
-                    Usuario usuario = new Usuario();
-                    usuario.Username = txtUsername.Text;
-                    usuario.Nombre = txtNombre.Text;
-                    usuario.Apellido = txtApellido.Text;
-                    usuario.DNI = CryptoManager.Encrypt(txtDNI.Text);
-                    usuario.Email = txtEmail.Text;
-                    usuario.Password = CryptoManager.Hash(txtDNI.Text+txtApellido.Text);//Cuando creo aca genero automaticamente una clave
-                    bllUsuario.AgregarUsuario(usuario);
+                    User user = new User();
+                    user.Username = txtUsername.Text;
+                    user.Nombre = txtNombre.Text;
+                    user.Apellido = txtApellido.Text;
+                    user.DNI = CryptoManager.Encrypt(txtDNI.Text);
+                    user.Email = txtEmail.Text;
+                    user.Password = CryptoManager.Hash(txtDNI.Text+txtApellido.Text);//Cuando creo aca genero automaticamente una clave
+                    bllUser.AgregarUsuario(user);
                     ActualizarGrilla();
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
                     break;
                 case BLL.ModoDelGestor.ModoDesbloquear:
-                    var user = grdUsuarios.CurrentRow.DataBoundItem as Usuario;
-                    if (user != null)
+                    var pUser = grdUsuarios.CurrentRow.DataBoundItem as User;
+                    if (pUser != null)
                     {
-                        user.Bloqueo = false;
-                        user.Attempts = 0;
-                        bllUsuario.DesbloquearUsuario(user);
+                        pUser.Bloqueo = false;
+                        pUser.Attempts = 0;
+                        bllUser.DesbloquearUsuario(pUser);
                         ActualizarGrilla();
                     }
                     else
@@ -141,8 +147,53 @@ namespace TPRestaurante
 
         public void ActualizarGrilla()
         {
+            grdUsuarios.AutoGenerateColumns = false;
             grdUsuarios.DataSource = null;
-            grdUsuarios.DataSource = bllUsuario.ListarUsuarios();
+            grdUsuarios.DataSource = bllUser.ListarUsuarios();
+
+            
+
+            DataGridViewTextBoxColumn dniColumn = new DataGridViewTextBoxColumn();
+            dniColumn.HeaderText = "DNI";
+            dniColumn.DataPropertyName = "DNI";
+            dniColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(dniColumn);
+            
+            DataGridViewTextBoxColumn nombreCompletoColumn = new DataGridViewTextBoxColumn();
+            nombreCompletoColumn.HeaderText = "Nombre completo";
+            nombreCompletoColumn.DataPropertyName = "NombreCompleto";
+            nombreCompletoColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(nombreCompletoColumn);
+
+            DataGridViewTextBoxColumn emailColumn = new DataGridViewTextBoxColumn();
+            emailColumn.HeaderText = "Email";
+            emailColumn.DataPropertyName = "Email";
+            emailColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(emailColumn);
+
+            DataGridViewTextBoxColumn userColumn = new DataGridViewTextBoxColumn();
+            userColumn.HeaderText = "Username";
+            userColumn.DataPropertyName = "Username";
+            userColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(userColumn);
+
+            DataGridViewTextBoxColumn bloqueadoColumn = new DataGridViewTextBoxColumn();
+            bloqueadoColumn.HeaderText = "¿Bloqueado?";
+            bloqueadoColumn.DataPropertyName = "Bloqueo";
+            bloqueadoColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(bloqueadoColumn);
+
+
+
+
+            DataGridViewTextBoxColumn activoColumn = new DataGridViewTextBoxColumn();
+            activoColumn.HeaderText = "¿Usuario Activo?";
+            activoColumn.DataPropertyName = "Activo";
+            activoColumn.ReadOnly = true;
+            grdUsuarios.Columns.Add(activoColumn);
+
+
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -155,12 +206,17 @@ namespace TPRestaurante
         {
             modo = BLL.ModoDelGestor.ModoDesbloquear;
             CambiarModo(modo);
-            txtApellido.Enabled = false;
-            txtEmail.Enabled = false;
-            txtNombre.Enabled = false;
-            txtUsername.Enabled = false;
-            txtDNI.Enabled = false;
+            HabilitarTextboxs(false);
             
+        }
+
+        private void HabilitarTextboxs( bool habilitar)
+        {
+            txtApellido.Enabled = habilitar;
+            txtEmail.Enabled = habilitar;
+            txtNombre.Enabled = habilitar;
+            txtUsername.Enabled = habilitar;
+            txtDNI.Enabled = habilitar;
         }
     }
 }
