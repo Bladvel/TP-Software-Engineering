@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE.Composite
+namespace Interfaces
 {
-    public enum PermissionType
+    public enum ComponentType
     {
         P = 0,
         G = 1

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
-using BE.Composite;
+using Interfaces;
 
 namespace DAL
 {
@@ -19,14 +19,18 @@ namespace DAL
         public override Component Transform(DataRow dr)
         {
             Component component;
-            PermissionType type = (PermissionType)Enum.Parse(typeof(PermissionType), dr["TIPO"].ToString());
+            ComponentType type = (ComponentType)Enum.Parse(typeof(ComponentType), dr["TIPO"].ToString());
 
-            if (type == PermissionType.P)
+            if (type == ComponentType.P)
                 component = new Permission();
             else
                 component = new Group();
 
-            component.Name = dr["NOMBRE"].ToString(); ;
+            component.Name = dr["NOMBRE"].ToString();
+            if (!string.IsNullOrEmpty(component.Name))
+            {
+                component.PermissionType = (PermissionType)Enum.Parse(typeof(PermissionType), component.Name);
+            }
             component.Type = type;
             component.ID = int.Parse(dr["ID"].ToString());
 

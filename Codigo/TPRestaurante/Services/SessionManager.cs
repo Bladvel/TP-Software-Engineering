@@ -48,5 +48,30 @@ namespace Services
         }
 
 
+        public bool IsInRole(IComponent c, PermissionType permissionType)
+        {
+            if (c.PermissionType.Equals(permissionType))
+                return true;
+
+
+            foreach (var child in c.Children)
+            {
+                if (IsInRole(child, permissionType))
+                    return true;
+            }
+
+            return false;
+        }
+
+        public bool IsInRole(PermissionType permissionType)
+        {
+            foreach (var userPermission in User.Permissions)
+            {
+                if (IsInRole(userPermission, permissionType))
+                    return true;
+            }
+
+            return false;
+        }
     }
 }

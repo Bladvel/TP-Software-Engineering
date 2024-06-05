@@ -37,7 +37,7 @@ namespace TPRestaurante
             if (!string.IsNullOrWhiteSpace(txtContraseñaVieja.Text))
             {
                 var user = SessionManager.Instance.User as BE.User;
-                if (bllUser.VerificarUsuario(user, txtContraseñaVieja.Text))
+                if (bllUser.VerifyUser(user, txtContraseñaVieja.Text))
                 {
                     HabilitarControles(true);
 
@@ -67,7 +67,7 @@ namespace TPRestaurante
                 if (password1.Equals(password2))
                 {
                     var user = SessionManager.Instance.User as BE.User;
-                    resultado = bllUser.CambiarPassword(user, password1);
+                    resultado = bllUser.ChangePassword(user, password1);
                 }
                 else
                 {

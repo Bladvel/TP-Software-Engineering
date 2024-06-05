@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|solutionrelative:observer1.ui\\iobserverusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patr-n-observer-c-shar-master\\observer1.ui\\observer1.ui\\isujetoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patr-n-observer-c-shar-master\\Observer1.UI\\observer1.ui\\isujetoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|solutionrelative:observer1.ui\\isujetoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patr-n-observer-c-shar-master\\observer1.ui\\observer1.ui\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|solutionrelative:observer1.ui\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patr-n-observer-c-shar-master\\observer1.ui\\observer1.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAE448B5-B8E2-4FA5-A7A8-385A452C35AE}|Observer1.UI\\Observer1.UI.csproj|solutionrelative:observer1.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +35,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patr-n-observer-c-shar-master\\Observer1.UI\\Observer1.UI\\Form1.cs",
+              "RelativeDocumentMoniker": "Observer1.UI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patr-n-observer-c-shar-master\\Observer1.UI\\Observer1.UI\\Form1.cs [Design]",
+              "RelativeToolTip": "Observer1.UI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:08:15.876Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patr-n-observer-c-shar-master\\Observer1.UI\\Observer1.UI\\Producto.cs",
+              "RelativeDocumentMoniker": "Observer1.UI\\Producto.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patr-n-observer-c-shar-master\\Observer1.UI\\Observer1.UI\\Producto.cs",
+              "RelativeToolTip": "Observer1.UI\\Producto.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:06:44.315Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

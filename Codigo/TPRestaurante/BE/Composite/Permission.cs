@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
     public class Permission: Component
     {
-        public override IList<Component> Children
+        public override IList<IComponent> Children
         {
-            get => new List<Component>();
+            get => new List<IComponent>();
         }
-        public override void AddChild(Component c)
+        public override void AddChild(IComponent c)
         {
            
         }

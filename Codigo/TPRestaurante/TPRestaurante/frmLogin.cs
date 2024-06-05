@@ -51,7 +51,7 @@ namespace TPRestaurante
                         MessageBox.Show("User incorrecto");
                         break;
                     case LoginResult.InvalidPassword:
-                        User userAttempts = bllUser.ObtenerUsuario(user.Username);
+                        User userAttempts = bllUser.GetUser(user.Username);
                         MessageBox.Show($"Password Incorrecto\nTe quedan {3 - userAttempts.Attempts} intento/s");
                         break;
                     case LoginResult.BlockedUser:
@@ -83,7 +83,7 @@ namespace TPRestaurante
             user.Username = CryptoManager.Encrypt(txtUsername.Text);
             user.Password = CryptoManager.Hash(txtPassword.Text);
 
-            bool ok = bllUser.AgregarUsuario(user);
+            bool ok = bllUser.AddUser(user);
 
             MessageBox.Show(ok.ToString());
         }

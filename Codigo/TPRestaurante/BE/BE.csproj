@@ -44,7 +44,6 @@
     <Compile Include="Composite\Component.cs" />
     <Compile Include="Composite\Group.cs" />
     <Compile Include="Composite\Permission.cs" />
-    <Compile Include="Composite\PermissionType.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BE.Composite;
+using Interfaces;
 
 namespace BE
 {
-    public abstract class Component
+    public abstract class Component : IComponent
     {
         public int ID { get; set; }
         public string Name { get; set; }
 
-        public PermissionType Type { get; set; }
+        public ComponentType Type { get; set; }
 
-        public abstract IList<Component> Children { get; }
+        public PermissionType PermissionType { get; set; }
 
-        public abstract void AddChild(Component c);
+        public abstract IList<IComponent> Children { get; }
+
+        public abstract void AddChild(IComponent c);
 
         public abstract void EmptyChildren();
 

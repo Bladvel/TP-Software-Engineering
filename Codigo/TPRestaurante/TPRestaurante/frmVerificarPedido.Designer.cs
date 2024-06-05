@@ -97,7 +97,7 @@
             this.ucButtonPrimary1.Name = "ucButtonPrimary1";
             this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
             this.ucButtonPrimary1.TabIndex = 4;
-            this.ucButtonPrimary1.Text = "Notificar";
+            this.ucButtonPrimary1.Text = "Verificar";
             this.ucButtonPrimary1.UseVisualStyleBackColor = false;
             // 
             // ucButtonSecondary1

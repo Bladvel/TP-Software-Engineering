@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|solutionrelative:aterrizar\\negocio\\crucero.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\negocio\\cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\negocio\\cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|solutionrelative:aterrizar\\negocio\\cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\datos\\gestorclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\datos\\gestorclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|solutionrelative:aterrizar\\datos\\gestorclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\frmaterrizar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patron-observer-2-master\\patron-observer-2-master\\aterrizar\\frmaterrizar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{F6B0559D-9638-4546-958A-0781C6611EBD}|Aterrizar\\Aterrizar.vbproj|solutionrelative:aterrizar\\frmaterrizar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Aterrizar\\Negocio\\Cliente.vb",
               "ViewState": "AQIAAAoAAAAAAAAAAAA4wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-10T20:03:18.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T20:03:18.36Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "Aterrizar\\Datos\\GestorClientes.vb",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-10T20:02:39.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T20:02:39.678Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\patron-observer-2-master\\patron-observer-2-master\\Aterrizar\\frmAterrizar.vb [Design]",
               "RelativeToolTip": "Aterrizar\\frmAterrizar.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-10T20:02:11.296Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-10T20:02:11.296Z"
             }
           ]
         }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Interfaces;
 
 namespace TPRestaurante
 {
@@ -47,26 +48,38 @@ namespace TPRestaurante
 
         public void ValidarForm()
         {
-            itemCerrarSesión.Visible = SessionManager.Instance.IsLoggedIn();
-            itemCambiarContraseña.Visible = SessionManager.Instance.IsLoggedIn();
-            itemCambiarIdioma.Visible = SessionManager.Instance.IsLoggedIn();
-
-            menuAdmin.Visible = SessionManager.Instance.IsLoggedIn();
-            menuPedidos.Visible = SessionManager.Instance.IsLoggedIn();
-            menuCatalogos.Visible = SessionManager.Instance.IsLoggedIn();
-            menuReportes.Visible = SessionManager.Instance.IsLoggedIn();
-            
-            
-            itemIniciarSesión.Enabled= !SessionManager.Instance.IsLoggedIn();
-
-
-            if(SessionManager.Instance.IsLoggedIn())
+            if (SessionManager.Instance.IsLoggedIn())
             {
+                itemCerrarSesión.Visible = true;
+                itemCambiarContraseña.Visible = true;
+                itemCambiarIdioma.Visible = true;
+                itemIniciarSesión.Enabled = false;
                 toolStripStatusLabel1.Text = SessionManager.Instance.User.Username;
-            }else
-            {
-                toolStripStatusLabel1.Text = "Sesion no iniciada";
+
+                menuAdmin.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarAdmin);
+                //Agregar itemMenu permission
+
+                menuPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarPedido);
+                //Agregar itemMenu permission
+
+                menuCatalogos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
+                //Agregar itemMenu permission
+
             }
+            else
+            {
+                itemCerrarSesión.Visible = false;
+                itemCambiarContraseña.Visible = false;
+                itemCambiarIdioma.Visible = false;
+                itemIniciarSesión.Enabled = true;
+                toolStripStatusLabel1.Text = "Sesion no iniciada";
+
+                menuAdmin.Visible = false;
+                menuPedidos.Visible = false;
+                menuCatalogos.Visible = false;
+            }
+
+
         }
 
         private void itemCerrarSesion_Click(object sender, EventArgs e)
@@ -138,6 +151,11 @@ namespace TPRestaurante
         {
             frmCambiarPassword cambiarPassword = new frmCambiarPassword();
             AbrirChildForm(cambiarPassword);
+        }
+
+        private void menuReportes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

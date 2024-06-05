@@ -48,6 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Abstracciones\INTERFACES.csproj">
+      <Project>{ed2e7aa0-c620-4509-ba4e-6c16a249d22e}</Project>
+      <Name>INTERFACES</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BE\BE.csproj">
       <Project>{7ff519cf-c4eb-4675-93f0-a0f45f21607a}</Project>
       <Name>BE</Name>

@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
     public class Group: Component
     {
-        private IList<Component> children = new List<Component>();
+        private IList<IComponent> children = new List<IComponent>();
 
-        public override IList<Component> Children => children.ToArray();
+        public override IList<IComponent> Children => children.ToArray();
 
-        public override void AddChild(Component c)
+        public override void AddChild(IComponent c)
         {
             children.Add(c);
         }

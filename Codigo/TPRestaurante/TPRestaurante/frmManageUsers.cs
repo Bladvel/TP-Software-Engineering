@@ -122,7 +122,7 @@ namespace TPRestaurante
                     user.DNI = CryptoManager.Encrypt(txtDNI.Text);
                     user.Email = txtEmail.Text;
                     user.Password = CryptoManager.Hash(txtDNI.Text+txtApellido.Text);//Cuando creo aca genero automaticamente una clave
-                    bllUser.AgregarUsuario(user);
+                    bllUser.AddUser(user);
                     ActualizarGrilla();
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
@@ -133,7 +133,7 @@ namespace TPRestaurante
                     {
                         pUser.Bloqueo = false;
                         pUser.Attempts = 0;
-                        bllUser.DesbloquearUsuario(pUser);
+                        bllUser.UnblockUser(pUser);
                         ActualizarGrilla();
                     }
                     else
@@ -149,7 +149,7 @@ namespace TPRestaurante
         {
             grdUsuarios.AutoGenerateColumns = false;
             grdUsuarios.DataSource = null;
-            grdUsuarios.DataSource = bllUser.ListarUsuarios();
+            grdUsuarios.DataSource = bllUser.ListUsers();
 
             
 

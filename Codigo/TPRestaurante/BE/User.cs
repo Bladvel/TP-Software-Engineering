@@ -1,5 +1,4 @@
-﻿using Abstracciones;
-using Interfaces;
+﻿using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -91,9 +90,9 @@ namespace BE
 			set => _attempts=value; 
 		}
 
-		private List<Component> permissions = new List<Component>();
+		private List<IComponent> permissions = new List<IComponent>();
 
-		public List<Component> Permissions => permissions;
+		public List<IComponent> Permissions => permissions;
 
 	}
 }

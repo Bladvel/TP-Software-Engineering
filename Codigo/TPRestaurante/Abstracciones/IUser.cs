@@ -12,5 +12,7 @@ namespace Interfaces
         string Password { get; set; }
 
         int Attempts { get; set; }
+
+        List<IComponent> Permissions { get; }
     }
 }

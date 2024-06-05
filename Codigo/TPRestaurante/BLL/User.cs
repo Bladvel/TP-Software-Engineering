@@ -18,19 +18,19 @@ namespace BLL
             mp = new MP_User();
         }
 
-        public bool AgregarUsuario(BE.User user)
+        public bool AddUser(BE.User user)
         {
             int filasAfectadas = mp.Insert(user);
             return filasAfectadas > 0;
         }
 
-        public BE.User ObtenerUsuario(string pUsername)
+        public BE.User GetUser(string pUsername)
         {
             BE.User user = mp.GetAll().Where(u => u.Username.Equals(pUsername)).FirstOrDefault();
             return user;
         }
 
-        public List<BE.User> ListarUsuarios() {
+        public List<BE.User> ListUsers() {
             List<BE.User> usuarios = new List<BE.User>();
 
             usuarios = mp.GetAll();
@@ -47,7 +47,7 @@ namespace BLL
 
 
 
-            var user = ObtenerUsuario(pUser.Username);
+            var user = GetUser(pUser.Username);
             if ((user == null))
             {
 
@@ -96,7 +96,7 @@ namespace BLL
             return "Sesion terminada";
         }
 
-        public void DesbloquearUsuario(BE.User user)
+        public void UnblockUser(BE.User user)
         {
             user.Bloqueo = false;
             mp.ChangeBlockage(user);
@@ -108,14 +108,14 @@ namespace BLL
         }
 
 
-        public bool VerificarUsuario(BE.User user, string password)
+        public bool VerifyUser(BE.User user, string password)
         {
             return CryptoManager.Compare(password, user.Password);
 
 
         }
 
-        public int CambiarPassword(BE.User user, string password)
+        public int ChangePassword(BE.User user, string password)
         {
 
             var nuevaPassword = CryptoManager.Hash(password);
