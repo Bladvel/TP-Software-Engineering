@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Interfaces;
+using Services;
 
 namespace TPRestaurante
 {
@@ -20,6 +22,11 @@ namespace TPRestaurante
         private void ucButtonSecondary1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmPedidosEnCurso_Load(object sender, EventArgs e)
+        {
+            btnNotificarPedidoListo.Visible = SessionManager.Instance.IsInRole(PermissionType.NotificarPedidoListo);
         }
     }
 }

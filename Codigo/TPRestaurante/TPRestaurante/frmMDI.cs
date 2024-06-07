@@ -57,13 +57,20 @@ namespace TPRestaurante
                 toolStripStatusLabel1.Text = SessionManager.Instance.User.Username;
 
                 menuAdmin.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarAdmin);
-                //Agregar itemMenu permission
+                itemGestorUsuarios.Visible = SessionManager.Instance.IsInRole(PermissionType.GestorUsuario);
+                itemGestorPerfiles.Visible = SessionManager.Instance.IsInRole(PermissionType.GestorPerfil);
+                itemGestorIdiomas.Visible = SessionManager.Instance.IsInRole(PermissionType.GestorIdioma);
 
                 menuPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarPedido);
-                //Agregar itemMenu permission
+                itemCrearPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CrearPedido);
+                itemVerPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidos);
+                itemCobrarPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CobrarPedido);
+                itemGenerarComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GenerarComanda);
+                itemVerComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.VerComanda);
 
                 menuCatalogos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
-                //Agregar itemMenu permission
+                itemProductos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerProductos);
+                itemIngredientes.Visible = SessionManager.Instance.IsInRole(PermissionType.VerIngredientes);
 
             }
             else
@@ -153,9 +160,11 @@ namespace TPRestaurante
             AbrirChildForm(cambiarPassword);
         }
 
-        private void menuReportes_Click(object sender, EventArgs e)
-        {
 
+        private void asignacionDePerfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPerfiles perfiles = new frmPerfiles();
+            AbrirChildForm(perfiles);
         }
     }
 }

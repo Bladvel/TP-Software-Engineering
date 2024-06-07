@@ -124,6 +124,7 @@ namespace TPRestaurante
                     user.Password = CryptoManager.Hash(txtDNI.Text+txtApellido.Text);//Cuando creo aca genero automaticamente una clave
                     bllUser.AddUser(user);
                     ActualizarGrilla();
+                    ResetTextFields();
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
                     break;
@@ -195,6 +196,18 @@ namespace TPRestaurante
 
 
         }
+
+        private void ResetTextFields()
+        {
+            txtUsername.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtDNI.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            chkActivo.Checked = false;
+            chkBloqueado.Checked = false;
+        }
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {

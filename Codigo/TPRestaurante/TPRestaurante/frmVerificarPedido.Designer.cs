@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnVerificarPedido = new TPRestaurante.UcButtonPrimary(this.components);
             this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,19 +86,19 @@
             this.listBox2.Size = new System.Drawing.Size(353, 95);
             this.listBox2.TabIndex = 3;
             // 
-            // ucButtonPrimary1
+            // btnVerificarPedido
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(497, 293);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonPrimary1.TabIndex = 4;
-            this.ucButtonPrimary1.Text = "Verificar";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
+            this.btnVerificarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnVerificarPedido.FlatAppearance.BorderSize = 0;
+            this.btnVerificarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerificarPedido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnVerificarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnVerificarPedido.Location = new System.Drawing.Point(497, 293);
+            this.btnVerificarPedido.Name = "btnVerificarPedido";
+            this.btnVerificarPedido.Size = new System.Drawing.Size(132, 39);
+            this.btnVerificarPedido.TabIndex = 4;
+            this.btnVerificarPedido.Text = "Verificar";
+            this.btnVerificarPedido.UseVisualStyleBackColor = false;
             // 
             // ucButtonSecondary1
             // 
@@ -130,7 +130,7 @@
             this.ClientSize = new System.Drawing.Size(800, 357);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButtonPrimary1);
+            this.Controls.Add(this.btnVerificarPedido);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
@@ -138,6 +138,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmVerificarPedido";
             this.Text = "frmVerificarPedido";
+            this.Load += new System.EventHandler(this.frmVerificarPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,7 +151,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
-        private UcButtonPrimary ucButtonPrimary1;
+        private UcButtonPrimary btnVerificarPedido;
         private UcButtonSecondary ucButtonSecondary1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

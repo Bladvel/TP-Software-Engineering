@@ -92,7 +92,24 @@ namespace DAL
             return filasAfectadas;
 
         }
-        
+
+        public int WriteScalar(string sql, List<SqlParameter> parameters = null)
+        {
+            int id;
+            var cmd = CreateCommand(sql, parameters);
+            try
+            {
+                id = (int)cmd.ExecuteScalar();
+            }
+            catch
+            {
+                id = -1;
+            }
+            return id;
+        }
+
+
+
         public DataTable Read(string sql, List<SqlParameter> parameters = null)
         {
             DataTable dt = new DataTable();

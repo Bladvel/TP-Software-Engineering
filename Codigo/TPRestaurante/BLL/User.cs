@@ -123,5 +123,10 @@ namespace BLL
 
             return mp.ChangePassword(user);
         }
+
+        public void UpdatePermissions(BE.User user)
+        {
+            mp.UpdatePermissions(user);
+        }
     }
 }

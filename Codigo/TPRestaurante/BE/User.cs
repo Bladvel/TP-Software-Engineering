@@ -94,5 +94,9 @@ namespace BE
 
 		public List<IComponent> Permissions => permissions;
 
+		public override string ToString()
+		{
+			return Nombre;
+		}
 	}
 }

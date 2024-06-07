@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,11 +85,72 @@ namespace DAL
 
             return components;
         }
-
+        
         public override int Insert(Component entity)
         {
-            throw new NotImplementedException();
+            int id;
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@nom", entity.Name),
+                access.CreateParameter("@type", entity.Type.ToString()),
+            };
+
+            access.Open();
+            id = access.WriteScalar("INSERTAR_PERMISO", parameters);
+            access.Close();
+
+            return id;
+
         }
+
+        public void InsertGroup(Group group)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@id", group.ID)
+            };
+            access.Open();
+            int filasAfectadas = access.Write("ELIMINAR_GRUPO", parameters);
+            if (filasAfectadas!= -1)
+            {
+                List<SqlParameter> parameters2;
+                foreach (var groupChild in group.Children)
+                {
+                    parameters2 = new List<SqlParameter>()
+                    {
+                        access.CreateParameter("@id_padre", group.ID),
+                        access.CreateParameter("@id_hijo", groupChild.ID)
+                    };
+
+                    access.Write("INSERTAR_GRUPO", parameters2);
+
+
+                }
+            }
+
+            access.Close();
+            
+        }
+
+
+        public void UniversalInsert(Component entity)
+        {
+            int lastID = Insert(entity);
+            List<Component> components;
+            Group group;
+
+            if (entity.Type.Equals(ComponentType.G))
+            {
+                components = GetAll();
+                group = components.FirstOrDefault(c => c.ID.Equals(lastID)) as Group;
+                InsertGroup(group);
+            }
+
+        }
+
+
+
+
 
         public override int Update(Component entity)
         {

@@ -147,5 +147,35 @@ namespace DAL
             return filasAfectadas;
 
         }
+
+        public void UpdatePermissions(User entity)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@id", entity.ID)
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ELIMINAR_USUARIO_PERMISO", parameters);
+            
+            if (filasAfectadas!=-1)
+            {
+                List<SqlParameter> parameters2;
+                foreach (var entityPermission in entity.Permissions)
+                {
+                    parameters2 = new List<SqlParameter>()
+                    {
+                        access.CreateParameter("@id_usuario", entity.ID),
+                        access.CreateParameter("@id_permiso", entityPermission.ID)
+                    };
+
+                    access.Write("INSERTAR_USUARIO_PERMISO", parameters2);
+
+
+                }
+            }
+            access.Close();
+
+        }
     }
 }

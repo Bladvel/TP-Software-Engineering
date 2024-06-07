@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnNotificarPedidoListo = new TPRestaurante.UcButtonPrimary(this.components);
             this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
             this.SuspendLayout();
             // 
@@ -73,19 +73,19 @@
             this.textBox1.Size = new System.Drawing.Size(270, 227);
             this.textBox1.TabIndex = 9;
             // 
-            // ucButtonPrimary1
+            // btnNotificarPedidoListo
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(327, 318);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonPrimary1.TabIndex = 10;
-            this.ucButtonPrimary1.Text = "Pasar a listo";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
+            this.btnNotificarPedidoListo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnNotificarPedidoListo.FlatAppearance.BorderSize = 0;
+            this.btnNotificarPedidoListo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificarPedidoListo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnNotificarPedidoListo.ForeColor = System.Drawing.Color.White;
+            this.btnNotificarPedidoListo.Location = new System.Drawing.Point(327, 318);
+            this.btnNotificarPedidoListo.Name = "btnNotificarPedidoListo";
+            this.btnNotificarPedidoListo.Size = new System.Drawing.Size(132, 39);
+            this.btnNotificarPedidoListo.TabIndex = 10;
+            this.btnNotificarPedidoListo.Text = "Pasar a listo";
+            this.btnNotificarPedidoListo.UseVisualStyleBackColor = false;
             // 
             // ucButtonSecondary1
             // 
@@ -108,13 +108,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 386);
             this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButtonPrimary1);
+            this.Controls.Add(this.btnNotificarPedidoListo);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstPedidosPorCobrar);
             this.Controls.Add(this.label1);
             this.Name = "frmPedidosEnCurso";
             this.Text = "frmPedidosEnCurso";
+            this.Load += new System.EventHandler(this.frmPedidosEnCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +127,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private UcButtonPrimary ucButtonPrimary1;
+        private UcButtonPrimary btnNotificarPedidoListo;
         private UcButtonSecondary ucButtonSecondary1;
     }
 }

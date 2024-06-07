@@ -76,6 +76,12 @@
     <Compile Include="frmPedidosEnCurso.Designer.cs">
       <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfiles.Designer.cs">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVerificarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPedidosEnCurso.resx">
       <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfiles.resx">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVerificarPedido.resx">
       <DependentUpon>frmVerificarPedido.cs</DependentUpon>
