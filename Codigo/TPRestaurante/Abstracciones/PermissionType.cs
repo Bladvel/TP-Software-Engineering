@@ -8,12 +8,10 @@ namespace Interfaces
 {
     public enum PermissionType
     {
+        Default,
         CrearPedido,
         VerPedidos,
         CobrarPedido,
-        Cajero,
-        JefeDeCocina,
-        Admin,
         VerProductos,
         VerIngredientes,
         NotificarPedidoListo,

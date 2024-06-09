@@ -136,5 +136,15 @@ namespace TPRestaurante
                 MessageBox.Show("Error al modificar usuario");
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

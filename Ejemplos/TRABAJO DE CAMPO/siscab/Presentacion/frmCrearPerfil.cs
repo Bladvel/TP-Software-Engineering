@@ -133,6 +133,9 @@ namespace Presentacion
 
             treeConfigurarFamilia.ExpandAll();
         }
+
+
+
         void MostrarEnTreeView(TreeNode tn, Componente c)
         {
             TreeNode n = new TreeNode(c.Nombre);
@@ -216,6 +219,11 @@ namespace Presentacion
 
                 MessageBox.Show("Error al guardar la familia");
             }
+        }
+
+        private void cboPatentes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

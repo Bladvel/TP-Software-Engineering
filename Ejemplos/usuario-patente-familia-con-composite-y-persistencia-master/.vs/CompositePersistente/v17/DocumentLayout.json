@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|solutionrelative:compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|solutionrelative:compositepersistente.dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente\\permisosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.BLL.csproj|solutionrelative:compositepersistente\\permisosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.dal\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|solutionrelative:compositepersistente.dal\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|solutionrelative:compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|solutionrelative:compositepersistente.dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|solutionrelative:compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\simuladordesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\simuladordesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\patente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\patente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.dal\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00854BAF-916A-4EF1-8CA5-3611B5E75425}|CompositePersistente.DAL\\CompositePersistente.DAL.csproj|solutionrelative:compositepersistente.dal\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente\\usuariosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,32 +59,12 @@
       "RelativeMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|solutionrelative:compositepersistente.ui.forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\simuladordesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\simuladordesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente\\bllsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B272467-65E0-44E2-A2C8-EE5EFA9836AE}|CompositePersistente\\CompositePersistente.BLL.csproj|solutionrelative:compositepersistente\\bllsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7576513B-1370-4DE9-8F80-3102F2AA5DDE}|CompositePersistente.UI.Forms\\CompositePersistente.UI.Forms.csproj|solutionrelative:compositepersistente.ui.forms\\frmpatentesfamilias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\compositepersistente.be\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1A921-6077-4089-A9D4-08793087641E}|CompositePersistente.BE\\CompositePersistente.BE.csproj|solutionrelative:compositepersistente.be\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,17 +74,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PermisosRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\PermisosRepository.cs",
               "RelativeDocumentMoniker": "CompositePersistente.DAL\\PermisosRepository.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\PermisosRepository.cs",
               "RelativeToolTip": "CompositePersistente.DAL\\PermisosRepository.cs",
-              "ViewState": "AQIAACsBAAAAAAAAAAD4vywBAAAOAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAnwMgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T20:08:15.864Z",
               "IsPinned": true,
@@ -94,7 +98,7 @@
               "RelativeDocumentMoniker": "CompositePersistente\\PermisosBLL.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente\\PermisosBLL.cs",
               "RelativeToolTip": "CompositePersistente\\PermisosBLL.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAwEoAAAAZAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAA6wEQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T20:07:59.638Z",
               "IsPinned": true,
@@ -103,26 +107,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuariosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\UsuariosRepository.cs",
-              "RelativeDocumentMoniker": "CompositePersistente.DAL\\UsuariosRepository.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\UsuariosRepository.cs",
-              "RelativeToolTip": "CompositePersistente.DAL\\UsuariosRepository.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAjwE0AAAAAAAAA",
+              "Title": "frmPatentesFamilias.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
+              "RelativeDocumentMoniker": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
+              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAASwE4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T01:16:35.255Z",
+              "WhenOpened": "2024-05-11T21:35:11.817Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "frmPatentesFamilias.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
               "RelativeDocumentMoniker": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs [Design]*",
-              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs [Design]*",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs [Design]",
+              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T23:00:16.923Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
@@ -135,7 +141,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Patente.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\Patente.cs",
+              "RelativeDocumentMoniker": "CompositePersistente.BE\\Patente.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\Patente.cs",
+              "RelativeToolTip": "CompositePersistente.BE\\Patente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T23:52:27.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuariosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\UsuariosRepository.cs",
+              "RelativeDocumentMoniker": "CompositePersistente.DAL\\UsuariosRepository.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.DAL\\UsuariosRepository.cs",
+              "RelativeToolTip": "CompositePersistente.DAL\\UsuariosRepository.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAjwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T01:16:35.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UsuariosBLL.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente\\UsuariosBLL.cs",
               "RelativeDocumentMoniker": "CompositePersistente\\UsuariosBLL.cs",
@@ -148,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "SimuladorDeSesion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\SimuladorDeSesion.cs",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\SimuladorDeSesion.cs",
@@ -156,11 +188,12 @@
               "RelativeToolTip": "CompositePersistente.BE\\SimuladorDeSesion.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T01:43:31.195Z"
+              "WhenOpened": "2024-06-05T01:43:31.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Componente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\Componente.cs",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\Componente.cs",
@@ -168,34 +201,37 @@
               "RelativeToolTip": "CompositePersistente.BE\\Componente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T01:45:12.314Z"
+              "WhenOpened": "2024-06-05T01:45:12.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs",
               "RelativeDocumentMoniker": "CompositePersistente.UI.Forms\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs [Design]*",
-              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs [Design]*",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs [Design]",
+              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T00:42:36.651Z"
+              "WhenOpened": "2024-05-12T00:42:36.651Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs",
               "RelativeDocumentMoniker": "CompositePersistente.UI.Forms\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs*",
-              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs*",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs",
+              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAcwEwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T00:42:14.999Z"
+              "WhenOpened": "2024-05-12T00:42:14.999Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\Usuario.cs",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\Usuario.cs",
@@ -208,31 +244,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\ClassDiagram1.cd",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\ClassDiagram1.cd",
               "RelativeToolTip": "CompositePersistente.BE\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-05-13T21:32:36.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmPatentesFamilias.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
-              "RelativeDocumentMoniker": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmPatentesFamilias.cs*",
-              "RelativeToolTip": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs*",
-              "ViewState": "AQIAACUAAAAAAAAAAAAqwHwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T21:35:11.817Z",
+              "WhenOpened": "2024-05-13T21:32:36.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "TipoPermiso.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\TipoPermiso.cs",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\TipoPermiso.cs",
@@ -240,11 +264,12 @@
               "RelativeToolTip": "CompositePersistente.BE\\TipoPermiso.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:09:09.684Z"
+              "WhenOpened": "2024-05-11T20:09:09.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "BLLSesion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente\\BLLSesion.cs",
               "RelativeDocumentMoniker": "CompositePersistente\\BLLSesion.cs",
@@ -252,11 +277,12 @@
               "RelativeToolTip": "CompositePersistente\\BLLSesion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADgvxAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:21:09.481Z"
+              "WhenOpened": "2024-05-12T18:21:09.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Familia.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\Familia.cs",
               "RelativeDocumentMoniker": "CompositePersistente.BE\\Familia.cs",
@@ -264,7 +290,8 @@
               "RelativeToolTip": "CompositePersistente.BE\\Familia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:07:37.128Z"
+              "WhenOpened": "2024-05-11T20:07:37.128Z",
+              "EditorCaption": ""
             }
           ]
         }

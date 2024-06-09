@@ -166,5 +166,11 @@ namespace TPRestaurante
             frmPerfiles perfiles = new frmPerfiles();
             AbrirChildForm(perfiles);
         }
+
+        private void permisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGestionarPermisos permisos = new frmGestionarPermisos();
+            AbrirChildForm(permisos);
+        }
     }
 }

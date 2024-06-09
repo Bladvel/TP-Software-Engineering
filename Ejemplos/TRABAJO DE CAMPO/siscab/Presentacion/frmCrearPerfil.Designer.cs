@@ -28,277 +28,277 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gb_patente = new System.Windows.Forms.GroupBox();
-            this.btn_guardarP = new System.Windows.Forms.Button();
-            this.gb_nueva = new System.Windows.Forms.GroupBox();
-            this.txt_NombrePatente = new System.Windows.Forms.TextBox();
-            this.lbl_nombre = new System.Windows.Forms.Label();
-            this.cboPermisos = new System.Windows.Forms.ComboBox();
-            this.lbl_permiso = new System.Windows.Forms.Label();
-            this.btn_agregar = new System.Windows.Forms.Button();
-            this.cboPatentes = new System.Windows.Forms.ComboBox();
-            this.lbl_todasP = new System.Windows.Forms.Label();
-            this.gb_familia = new System.Windows.Forms.GroupBox();
-            this.gb_nuevaF = new System.Windows.Forms.GroupBox();
-            this.btn_guardarF = new System.Windows.Forms.Button();
-            this.txt_NombreFamilia = new System.Windows.Forms.TextBox();
-            this.lbl_nombreF = new System.Windows.Forms.Label();
-            this.btn_AgregarFamilia = new System.Windows.Forms.Button();
-            this.btn_configurar = new System.Windows.Forms.Button();
-            this.cboFamilias = new System.Windows.Forms.ComboBox();
-            this.lbl_todasF = new System.Windows.Forms.Label();
-            this.gb_configurar = new System.Windows.Forms.GroupBox();
-            this.btn_guardarFamiliaGral = new System.Windows.Forms.Button();
-            this.treeConfigurarFamilia = new System.Windows.Forms.TreeView();
-            this.gb_patente.SuspendLayout();
-            this.gb_nueva.SuspendLayout();
-            this.gb_familia.SuspendLayout();
-            this.gb_nuevaF.SuspendLayout();
-            this.gb_configurar.SuspendLayout();
-            this.SuspendLayout();
+            gb_patente = new GroupBox();
+            btn_guardarP = new Button();
+            gb_nueva = new GroupBox();
+            txt_NombrePatente = new TextBox();
+            lbl_nombre = new Label();
+            cboPermisos = new ComboBox();
+            lbl_permiso = new Label();
+            btn_agregar = new Button();
+            cboPatentes = new ComboBox();
+            lbl_todasP = new Label();
+            gb_familia = new GroupBox();
+            gb_nuevaF = new GroupBox();
+            btn_guardarF = new Button();
+            txt_NombreFamilia = new TextBox();
+            lbl_nombreF = new Label();
+            btn_AgregarFamilia = new Button();
+            btn_configurar = new Button();
+            cboFamilias = new ComboBox();
+            lbl_todasF = new Label();
+            gb_configurar = new GroupBox();
+            btn_guardarFamiliaGral = new Button();
+            treeConfigurarFamilia = new TreeView();
+            gb_patente.SuspendLayout();
+            gb_nueva.SuspendLayout();
+            gb_familia.SuspendLayout();
+            gb_nuevaF.SuspendLayout();
+            gb_configurar.SuspendLayout();
+            SuspendLayout();
             // 
             // gb_patente
             // 
-            this.gb_patente.Controls.Add(this.btn_guardarP);
-            this.gb_patente.Controls.Add(this.gb_nueva);
-            this.gb_patente.Controls.Add(this.btn_agregar);
-            this.gb_patente.Controls.Add(this.cboPatentes);
-            this.gb_patente.Controls.Add(this.lbl_todasP);
-            this.gb_patente.Location = new System.Drawing.Point(12, 12);
-            this.gb_patente.Name = "gb_patente";
-            this.gb_patente.Size = new System.Drawing.Size(237, 298);
-            this.gb_patente.TabIndex = 0;
-            this.gb_patente.TabStop = false;
-            this.gb_patente.Text = "Patente";
+            gb_patente.Controls.Add(btn_guardarP);
+            gb_patente.Controls.Add(gb_nueva);
+            gb_patente.Controls.Add(btn_agregar);
+            gb_patente.Controls.Add(cboPatentes);
+            gb_patente.Controls.Add(lbl_todasP);
+            gb_patente.Location = new Point(12, 12);
+            gb_patente.Name = "gb_patente";
+            gb_patente.Size = new Size(237, 298);
+            gb_patente.TabIndex = 0;
+            gb_patente.TabStop = false;
+            gb_patente.Text = "Patente";
             // 
             // btn_guardarP
             // 
-            this.btn_guardarP.Location = new System.Drawing.Point(42, 258);
-            this.btn_guardarP.Name = "btn_guardarP";
-            this.btn_guardarP.Size = new System.Drawing.Size(75, 23);
-            this.btn_guardarP.TabIndex = 4;
-            this.btn_guardarP.Text = "Guardar";
-            this.btn_guardarP.UseVisualStyleBackColor = true;
-            this.btn_guardarP.Click += new System.EventHandler(this.btn_guardarP_Click);
+            btn_guardarP.Location = new Point(42, 258);
+            btn_guardarP.Name = "btn_guardarP";
+            btn_guardarP.Size = new Size(75, 23);
+            btn_guardarP.TabIndex = 4;
+            btn_guardarP.Text = "Guardar";
+            btn_guardarP.UseVisualStyleBackColor = true;
+            btn_guardarP.Click += btn_guardarP_Click;
             // 
             // gb_nueva
             // 
-            this.gb_nueva.Controls.Add(this.txt_NombrePatente);
-            this.gb_nueva.Controls.Add(this.lbl_nombre);
-            this.gb_nueva.Controls.Add(this.cboPermisos);
-            this.gb_nueva.Controls.Add(this.lbl_permiso);
-            this.gb_nueva.Location = new System.Drawing.Point(22, 122);
-            this.gb_nueva.Name = "gb_nueva";
-            this.gb_nueva.Size = new System.Drawing.Size(203, 170);
-            this.gb_nueva.TabIndex = 3;
-            this.gb_nueva.TabStop = false;
-            this.gb_nueva.Text = "Nueva patente";
+            gb_nueva.Controls.Add(txt_NombrePatente);
+            gb_nueva.Controls.Add(lbl_nombre);
+            gb_nueva.Controls.Add(cboPermisos);
+            gb_nueva.Controls.Add(lbl_permiso);
+            gb_nueva.Location = new Point(22, 122);
+            gb_nueva.Name = "gb_nueva";
+            gb_nueva.Size = new Size(203, 170);
+            gb_nueva.TabIndex = 3;
+            gb_nueva.TabStop = false;
+            gb_nueva.Text = "Nueva patente";
             // 
             // txt_NombrePatente
             // 
-            this.txt_NombrePatente.Location = new System.Drawing.Point(21, 102);
-            this.txt_NombrePatente.Name = "txt_NombrePatente";
-            this.txt_NombrePatente.Size = new System.Drawing.Size(142, 23);
-            this.txt_NombrePatente.TabIndex = 3;
+            txt_NombrePatente.Location = new Point(21, 102);
+            txt_NombrePatente.Name = "txt_NombrePatente";
+            txt_NombrePatente.Size = new Size(142, 23);
+            txt_NombrePatente.TabIndex = 3;
             // 
             // lbl_nombre
             // 
-            this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Location = new System.Drawing.Point(17, 80);
-            this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(51, 15);
-            this.lbl_nombre.TabIndex = 2;
-            this.lbl_nombre.Text = "Nombre";
+            lbl_nombre.AutoSize = true;
+            lbl_nombre.Location = new Point(17, 80);
+            lbl_nombre.Name = "lbl_nombre";
+            lbl_nombre.Size = new Size(51, 15);
+            lbl_nombre.TabIndex = 2;
+            lbl_nombre.Text = "Nombre";
             // 
             // cboPermisos
             // 
-            this.cboPermisos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPermisos.FormattingEnabled = true;
-            this.cboPermisos.Location = new System.Drawing.Point(16, 47);
-            this.cboPermisos.Name = "cboPermisos";
-            this.cboPermisos.Size = new System.Drawing.Size(147, 23);
-            this.cboPermisos.TabIndex = 1;
+            cboPermisos.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPermisos.FormattingEnabled = true;
+            cboPermisos.Location = new Point(16, 47);
+            cboPermisos.Name = "cboPermisos";
+            cboPermisos.Size = new Size(147, 23);
+            cboPermisos.TabIndex = 1;
             // 
             // lbl_permiso
             // 
-            this.lbl_permiso.AutoSize = true;
-            this.lbl_permiso.Location = new System.Drawing.Point(9, 24);
-            this.lbl_permiso.Name = "lbl_permiso";
-            this.lbl_permiso.Size = new System.Drawing.Size(50, 15);
-            this.lbl_permiso.TabIndex = 0;
-            this.lbl_permiso.Text = "Permiso";
+            lbl_permiso.AutoSize = true;
+            lbl_permiso.Location = new Point(9, 24);
+            lbl_permiso.Name = "lbl_permiso";
+            lbl_permiso.Size = new Size(50, 15);
+            lbl_permiso.TabIndex = 0;
+            lbl_permiso.Text = "Permiso";
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(15, 75);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(100, 23);
-            this.btn_agregar.TabIndex = 2;
-            this.btn_agregar.Text = "Agregar >>";
-            this.btn_agregar.UseVisualStyleBackColor = true;
-            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
+            btn_agregar.Location = new Point(15, 75);
+            btn_agregar.Name = "btn_agregar";
+            btn_agregar.Size = new Size(100, 23);
+            btn_agregar.TabIndex = 2;
+            btn_agregar.Text = "Agregar >>";
+            btn_agregar.UseVisualStyleBackColor = true;
+            btn_agregar.Click += btn_agregar_Click;
             // 
             // cboPatentes
             // 
-            this.cboPatentes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPatentes.FormattingEnabled = true;
-            this.cboPatentes.Location = new System.Drawing.Point(14, 43);
-            this.cboPatentes.Name = "cboPatentes";
-            this.cboPatentes.Size = new System.Drawing.Size(171, 23);
-            this.cboPatentes.TabIndex = 1;
+            cboPatentes.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPatentes.FormattingEnabled = true;
+            cboPatentes.Location = new Point(14, 43);
+            cboPatentes.Name = "cboPatentes";
+            cboPatentes.Size = new Size(171, 23);
+            cboPatentes.TabIndex = 1;
+            cboPatentes.SelectedIndexChanged += cboPatentes_SelectedIndexChanged;
             // 
             // lbl_todasP
             // 
-            this.lbl_todasP.AutoSize = true;
-            this.lbl_todasP.Location = new System.Drawing.Point(13, 22);
-            this.lbl_todasP.Name = "lbl_todasP";
-            this.lbl_todasP.Size = new System.Drawing.Size(102, 15);
-            this.lbl_todasP.TabIndex = 0;
-            this.lbl_todasP.Text = "Todas las patentes";
+            lbl_todasP.AutoSize = true;
+            lbl_todasP.Location = new Point(13, 22);
+            lbl_todasP.Name = "lbl_todasP";
+            lbl_todasP.Size = new Size(102, 15);
+            lbl_todasP.TabIndex = 0;
+            lbl_todasP.Text = "Todas las patentes";
             // 
             // gb_familia
             // 
-            this.gb_familia.Controls.Add(this.gb_nuevaF);
-            this.gb_familia.Controls.Add(this.btn_AgregarFamilia);
-            this.gb_familia.Controls.Add(this.btn_configurar);
-            this.gb_familia.Controls.Add(this.cboFamilias);
-            this.gb_familia.Controls.Add(this.lbl_todasF);
-            this.gb_familia.Location = new System.Drawing.Point(264, 12);
-            this.gb_familia.Name = "gb_familia";
-            this.gb_familia.Size = new System.Drawing.Size(249, 298);
-            this.gb_familia.TabIndex = 1;
-            this.gb_familia.TabStop = false;
-            this.gb_familia.Text = "Familia";
+            gb_familia.Controls.Add(gb_nuevaF);
+            gb_familia.Controls.Add(btn_AgregarFamilia);
+            gb_familia.Controls.Add(btn_configurar);
+            gb_familia.Controls.Add(cboFamilias);
+            gb_familia.Controls.Add(lbl_todasF);
+            gb_familia.Location = new Point(264, 12);
+            gb_familia.Name = "gb_familia";
+            gb_familia.Size = new Size(249, 298);
+            gb_familia.TabIndex = 1;
+            gb_familia.TabStop = false;
+            gb_familia.Text = "Familia";
             // 
             // gb_nuevaF
             // 
-            this.gb_nuevaF.Controls.Add(this.btn_guardarF);
-            this.gb_nuevaF.Controls.Add(this.txt_NombreFamilia);
-            this.gb_nuevaF.Controls.Add(this.lbl_nombreF);
-            this.gb_nuevaF.Location = new System.Drawing.Point(21, 122);
-            this.gb_nuevaF.Name = "gb_nuevaF";
-            this.gb_nuevaF.Size = new System.Drawing.Size(222, 110);
-            this.gb_nuevaF.TabIndex = 6;
-            this.gb_nuevaF.TabStop = false;
-            this.gb_nuevaF.Text = "Nueva";
+            gb_nuevaF.Controls.Add(btn_guardarF);
+            gb_nuevaF.Controls.Add(txt_NombreFamilia);
+            gb_nuevaF.Controls.Add(lbl_nombreF);
+            gb_nuevaF.Location = new Point(21, 122);
+            gb_nuevaF.Name = "gb_nuevaF";
+            gb_nuevaF.Size = new Size(222, 110);
+            gb_nuevaF.TabIndex = 6;
+            gb_nuevaF.TabStop = false;
+            gb_nuevaF.Text = "Nueva";
             // 
             // btn_guardarF
             // 
-            this.btn_guardarF.Location = new System.Drawing.Point(15, 83);
-            this.btn_guardarF.Name = "btn_guardarF";
-            this.btn_guardarF.Size = new System.Drawing.Size(71, 23);
-            this.btn_guardarF.TabIndex = 2;
-            this.btn_guardarF.Text = "Guardar";
-            this.btn_guardarF.UseVisualStyleBackColor = true;
-            this.btn_guardarF.Click += new System.EventHandler(this.btn_guardarF_Click);
+            btn_guardarF.Location = new Point(15, 83);
+            btn_guardarF.Name = "btn_guardarF";
+            btn_guardarF.Size = new Size(71, 23);
+            btn_guardarF.TabIndex = 2;
+            btn_guardarF.Text = "Guardar";
+            btn_guardarF.UseVisualStyleBackColor = true;
+            btn_guardarF.Click += btn_guardarF_Click;
             // 
             // txt_NombreFamilia
             // 
-            this.txt_NombreFamilia.Location = new System.Drawing.Point(14, 49);
-            this.txt_NombreFamilia.Name = "txt_NombreFamilia";
-            this.txt_NombreFamilia.Size = new System.Drawing.Size(190, 23);
-            this.txt_NombreFamilia.TabIndex = 1;
+            txt_NombreFamilia.Location = new Point(14, 49);
+            txt_NombreFamilia.Name = "txt_NombreFamilia";
+            txt_NombreFamilia.Size = new Size(190, 23);
+            txt_NombreFamilia.TabIndex = 1;
             // 
             // lbl_nombreF
             // 
-            this.lbl_nombreF.AutoSize = true;
-            this.lbl_nombreF.Location = new System.Drawing.Point(10, 25);
-            this.lbl_nombreF.Name = "lbl_nombreF";
-            this.lbl_nombreF.Size = new System.Drawing.Size(51, 15);
-            this.lbl_nombreF.TabIndex = 0;
-            this.lbl_nombreF.Text = "Nombre";
+            lbl_nombreF.AutoSize = true;
+            lbl_nombreF.Location = new Point(10, 25);
+            lbl_nombreF.Name = "lbl_nombreF";
+            lbl_nombreF.Size = new Size(51, 15);
+            lbl_nombreF.TabIndex = 0;
+            lbl_nombreF.Text = "Nombre";
             // 
             // btn_AgregarFamilia
             // 
-            this.btn_AgregarFamilia.Location = new System.Drawing.Point(100, 72);
-            this.btn_AgregarFamilia.Name = "btn_AgregarFamilia";
-            this.btn_AgregarFamilia.Size = new System.Drawing.Size(77, 23);
-            this.btn_AgregarFamilia.TabIndex = 5;
-            this.btn_AgregarFamilia.Text = "Agregar >>";
-            this.btn_AgregarFamilia.UseVisualStyleBackColor = true;
-            this.btn_AgregarFamilia.Click += new System.EventHandler(this.btn_AgregarFamilia_Click);
+            btn_AgregarFamilia.Location = new Point(100, 72);
+            btn_AgregarFamilia.Name = "btn_AgregarFamilia";
+            btn_AgregarFamilia.Size = new Size(77, 23);
+            btn_AgregarFamilia.TabIndex = 5;
+            btn_AgregarFamilia.Text = "Agregar >>";
+            btn_AgregarFamilia.UseVisualStyleBackColor = true;
+            btn_AgregarFamilia.Click += btn_AgregarFamilia_Click;
             // 
             // btn_configurar
             // 
-            this.btn_configurar.Location = new System.Drawing.Point(9, 72);
-            this.btn_configurar.Name = "btn_configurar";
-            this.btn_configurar.Size = new System.Drawing.Size(81, 23);
-            this.btn_configurar.TabIndex = 3;
-            this.btn_configurar.Text = "Configurar";
-            this.btn_configurar.UseVisualStyleBackColor = true;
-            this.btn_configurar.Click += new System.EventHandler(this.btn_configurar_Click);
+            btn_configurar.Location = new Point(9, 72);
+            btn_configurar.Name = "btn_configurar";
+            btn_configurar.Size = new Size(81, 23);
+            btn_configurar.TabIndex = 3;
+            btn_configurar.Text = "Configurar";
+            btn_configurar.UseVisualStyleBackColor = true;
+            btn_configurar.Click += btn_configurar_Click;
             // 
             // cboFamilias
             // 
-            this.cboFamilias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFamilias.FormattingEnabled = true;
-            this.cboFamilias.Location = new System.Drawing.Point(6, 43);
-            this.cboFamilias.Name = "cboFamilias";
-            this.cboFamilias.Size = new System.Drawing.Size(171, 23);
-            this.cboFamilias.TabIndex = 2;
+            cboFamilias.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFamilias.FormattingEnabled = true;
+            cboFamilias.Location = new Point(6, 43);
+            cboFamilias.Name = "cboFamilias";
+            cboFamilias.Size = new Size(171, 23);
+            cboFamilias.TabIndex = 2;
             // 
             // lbl_todasF
             // 
-            this.lbl_todasF.AutoSize = true;
-            this.lbl_todasF.Location = new System.Drawing.Point(9, 20);
-            this.lbl_todasF.Name = "lbl_todasF";
-            this.lbl_todasF.Size = new System.Drawing.Size(98, 15);
-            this.lbl_todasF.TabIndex = 0;
-            this.lbl_todasF.Text = "Todas las familias";
+            lbl_todasF.AutoSize = true;
+            lbl_todasF.Location = new Point(9, 20);
+            lbl_todasF.Name = "lbl_todasF";
+            lbl_todasF.Size = new Size(98, 15);
+            lbl_todasF.TabIndex = 0;
+            lbl_todasF.Text = "Todas las familias";
             // 
             // gb_configurar
             // 
-            this.gb_configurar.Controls.Add(this.btn_guardarFamiliaGral);
-            this.gb_configurar.Controls.Add(this.treeConfigurarFamilia);
-            this.gb_configurar.Location = new System.Drawing.Point(528, 12);
-            this.gb_configurar.Name = "gb_configurar";
-            this.gb_configurar.Size = new System.Drawing.Size(260, 298);
-            this.gb_configurar.TabIndex = 2;
-            this.gb_configurar.TabStop = false;
-            this.gb_configurar.Text = "Configurar Familia";
+            gb_configurar.Controls.Add(btn_guardarFamiliaGral);
+            gb_configurar.Controls.Add(treeConfigurarFamilia);
+            gb_configurar.Location = new Point(528, 12);
+            gb_configurar.Name = "gb_configurar";
+            gb_configurar.Size = new Size(260, 298);
+            gb_configurar.TabIndex = 2;
+            gb_configurar.TabStop = false;
+            gb_configurar.Text = "Configurar Familia";
             // 
             // btn_guardarFamiliaGral
             // 
-            this.btn_guardarFamiliaGral.Location = new System.Drawing.Point(143, 266);
-            this.btn_guardarFamiliaGral.Name = "btn_guardarFamiliaGral";
-            this.btn_guardarFamiliaGral.Size = new System.Drawing.Size(111, 23);
-            this.btn_guardarFamiliaGral.TabIndex = 1;
-            this.btn_guardarFamiliaGral.Text = "Guardar";
-            this.btn_guardarFamiliaGral.UseVisualStyleBackColor = true;
-            this.btn_guardarFamiliaGral.Click += new System.EventHandler(this.btn_guardarFamiliaGral_Click);
+            btn_guardarFamiliaGral.Location = new Point(143, 266);
+            btn_guardarFamiliaGral.Name = "btn_guardarFamiliaGral";
+            btn_guardarFamiliaGral.Size = new Size(111, 23);
+            btn_guardarFamiliaGral.TabIndex = 1;
+            btn_guardarFamiliaGral.Text = "Guardar";
+            btn_guardarFamiliaGral.UseVisualStyleBackColor = true;
+            btn_guardarFamiliaGral.Click += btn_guardarFamiliaGral_Click;
             // 
             // treeConfigurarFamilia
             // 
-            this.treeConfigurarFamilia.Location = new System.Drawing.Point(13, 27);
-            this.treeConfigurarFamilia.Name = "treeConfigurarFamilia";
-            this.treeConfigurarFamilia.Size = new System.Drawing.Size(241, 225);
-            this.treeConfigurarFamilia.TabIndex = 0;
+            treeConfigurarFamilia.Location = new Point(13, 27);
+            treeConfigurarFamilia.Name = "treeConfigurarFamilia";
+            treeConfigurarFamilia.Size = new Size(241, 225);
+            treeConfigurarFamilia.TabIndex = 0;
             // 
             // frmCrearPerfil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 322);
-            this.Controls.Add(this.gb_configurar);
-            this.Controls.Add(this.gb_familia);
-            this.Controls.Add(this.gb_patente);
-            this.MaximumSize = new System.Drawing.Size(816, 361);
-            this.MinimumSize = new System.Drawing.Size(816, 361);
-            this.Name = "frmCrearPerfil";
-            this.Text = "frmCrearPerfil";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCrearModificarPerfil_FormClosing);
-            this.Load += new System.EventHandler(this.frmCrearModificarPerfil_Load);
-            this.gb_patente.ResumeLayout(false);
-            this.gb_patente.PerformLayout();
-            this.gb_nueva.ResumeLayout(false);
-            this.gb_nueva.PerformLayout();
-            this.gb_familia.ResumeLayout(false);
-            this.gb_familia.PerformLayout();
-            this.gb_nuevaF.ResumeLayout(false);
-            this.gb_nuevaF.PerformLayout();
-            this.gb_configurar.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 322);
+            Controls.Add(gb_configurar);
+            Controls.Add(gb_familia);
+            Controls.Add(gb_patente);
+            MaximumSize = new Size(816, 361);
+            MinimumSize = new Size(816, 361);
+            Name = "frmCrearPerfil";
+            Text = "frmCrearPerfil";
+            FormClosing += frmCrearModificarPerfil_FormClosing;
+            Load += frmCrearModificarPerfil_Load;
+            gb_patente.ResumeLayout(false);
+            gb_patente.PerformLayout();
+            gb_nueva.ResumeLayout(false);
+            gb_nueva.PerformLayout();
+            gb_familia.ResumeLayout(false);
+            gb_familia.PerformLayout();
+            gb_nuevaF.ResumeLayout(false);
+            gb_nuevaF.PerformLayout();
+            gb_configurar.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

@@ -37,6 +37,8 @@
             this.menuAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.itemGestorUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.itemGestorPerfiles = new System.Windows.Forms.ToolStripMenuItem();
+            this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionDePerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemGestorIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCrearPedido = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,8 +56,6 @@
             this.menuAyuda = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignacionDePerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             this.menuAyuda});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -138,6 +138,20 @@
             this.itemGestorPerfiles.Name = "itemGestorPerfiles";
             this.itemGestorPerfiles.Size = new System.Drawing.Size(180, 22);
             this.itemGestorPerfiles.Text = "Gestion de perfiles";
+            // 
+            // permisosToolStripMenuItem
+            // 
+            this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
+            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.permisosToolStripMenuItem.Text = "Gestionar permisos";
+            this.permisosToolStripMenuItem.Click += new System.EventHandler(this.permisosToolStripMenuItem_Click);
+            // 
+            // asignacionDePerfilToolStripMenuItem
+            // 
+            this.asignacionDePerfilToolStripMenuItem.Name = "asignacionDePerfilToolStripMenuItem";
+            this.asignacionDePerfilToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.asignacionDePerfilToolStripMenuItem.Text = "Asignacion de perfiles";
+            this.asignacionDePerfilToolStripMenuItem.Click += new System.EventHandler(this.asignacionDePerfilToolStripMenuItem_Click);
             // 
             // itemGestorIdiomas
             // 
@@ -256,9 +270,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 499);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(856, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -268,24 +282,11 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(102, 17);
             this.toolStripStatusLabel1.Text = "Sesion no iniciada";
             // 
-            // permisosToolStripMenuItem
-            // 
-            this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
-            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.permisosToolStripMenuItem.Text = "Gestionar permisos";
-            // 
-            // asignacionDePerfilToolStripMenuItem
-            // 
-            this.asignacionDePerfilToolStripMenuItem.Name = "asignacionDePerfilToolStripMenuItem";
-            this.asignacionDePerfilToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.asignacionDePerfilToolStripMenuItem.Text = "Asignacion de perfiles";
-            this.asignacionDePerfilToolStripMenuItem.Click += new System.EventHandler(this.asignacionDePerfilToolStripMenuItem_Click);
-            // 
             // frmMDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(856, 521);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

@@ -26,9 +26,9 @@ namespace DAL
         {
             cn = new SqlConnection();
             //cn.ConnectionString = "data source=(local); integrated security=true; initial catalog= SISCAB";
-            //cn.ConnectionString = "data source=DESKTOP-I7LNRPI; integrated security=SSPI; initial catalog= SISCAB";
+            cn.ConnectionString = "data source=DESKTOP-DAN; integrated security=SSPI; initial catalog= SISCAB";
             //cn.ConnectionString = "data source=DESKTOP-I7LNRPI; integrated security=true; initial catalog= SISCAB";
-            cn.ConnectionString = ObtenerString();
+            //cn.ConnectionString = ObtenerString();
             cn.Open ();
         }
 

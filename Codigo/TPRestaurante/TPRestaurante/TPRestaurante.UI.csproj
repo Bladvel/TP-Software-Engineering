@@ -70,6 +70,12 @@
     <Compile Include="frmGenerarComanda.Designer.cs">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGestionarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionarPermisos.Designer.cs">
+      <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidosEnCurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerarComanda.resx">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionarPermisos.resx">
+      <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPedidosEnCurso.resx">
       <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>

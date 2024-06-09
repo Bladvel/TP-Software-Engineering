@@ -20,15 +20,17 @@ namespace DAL
         public override Component Transform(DataRow dr)
         {
             Component component;
+
             ComponentType type = (ComponentType)Enum.Parse(typeof(ComponentType), dr["TIPO"].ToString());
 
             if (type == ComponentType.P)
                 component = new Permission();
+
             else
                 component = new Group();
 
             component.Name = dr["NOMBRE"].ToString();
-            if (!string.IsNullOrEmpty(component.Name))
+            if (!string.IsNullOrEmpty(component.Name) && component is Permission)
             {
                 component.PermissionType = (PermissionType)Enum.Parse(typeof(PermissionType), component.Name);
             }
@@ -38,6 +40,26 @@ namespace DAL
             return component;
         }
 
+        //public override Component Transform(DataRow dr)
+        //{
+        //    Component component;
+        //    ComponentType type = (ComponentType)Enum.Parse(typeof(ComponentType), dr["TIPO"].ToString());
+
+        //    if (type == ComponentType.P)
+        //        component = new Permission();
+        //    else
+        //        component = new Group();
+
+        //    component.Name = dr["NOMBRE"].ToString();
+        //    if (!string.IsNullOrEmpty(component.Name))
+        //    {
+        //        component.PermissionType = (PermissionType)Enum.Parse(typeof(PermissionType), component.Name);
+        //    }
+        //    component.Type = type;
+        //    component.ID = int.Parse(dr["ID"].ToString());
+
+        //    return component;
+        //}
 
         public List<Component> GetAllWithoutComposite()
         {
@@ -52,6 +74,33 @@ namespace DAL
 
             return components;
         }
+
+
+        public List<Component> GetAllPermissions()
+        {
+            List<Component> permissions = new List<Component>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_SOLO_PERMISO");
+            access.Close();
+            foreach (DataRow row in dt.Rows)
+            {
+                permissions.Add(Transform(row));
+            }
+            return permissions;
+        }
+
+
+        public List<Component> GetAllGroups()
+        {
+            
+            List<Component> allComponents = GetAll();
+            List<Component> groups = (from g in allComponents
+                                    where g.Type.Equals(ComponentType.G)
+                                    select g).ToList();
+
+            return groups;
+        }
+
 
         public override List<Component> GetAll()
         {
@@ -160,6 +209,11 @@ namespace DAL
         public override int Delete(Component entity)
         {
             throw new NotImplementedException();
+        }
+
+        public Array GetAtomicPermissions()
+        {
+            return Enum.GetValues(typeof(PermissionType));
         }
     }
 }

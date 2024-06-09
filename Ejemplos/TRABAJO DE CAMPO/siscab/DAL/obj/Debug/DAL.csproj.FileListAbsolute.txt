@@ -36,3 +36,22 @@ C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.csproj.CoreComp
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.dll
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\x64\pdfium.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\DAL.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\itextsharp.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\Servicios.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\Servicios.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\itextsharp.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\DAL\obj\Debug\DAL.pdb

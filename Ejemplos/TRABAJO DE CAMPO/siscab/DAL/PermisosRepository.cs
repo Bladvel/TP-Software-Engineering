@@ -21,7 +21,7 @@ namespace DAL
         {
             var cs = new SqlConnectionStringBuilder();
             cs.IntegratedSecurity = true;
-            cs.DataSource = "DESKTOP-I7LNRPI";
+            cs.DataSource = "DESKTOP-DAN";
             //cs.DataSource = "(local)";
             cs.InitialCatalog = "SISCAB";
             return cs.ConnectionString;
@@ -189,7 +189,7 @@ namespace DAL
 
             var cs = new SqlConnectionStringBuilder();
             cs.IntegratedSecurity = true;
-            cs.DataSource = "DESKTOP-I7LNRPI";
+            cs.DataSource = "DESKTOP-DAN";
             //cs.DataSource = "(local)";
             cs.InitialCatalog = "SISCAB";
             var cnn = new SqlConnection(cs.ConnectionString);
@@ -352,7 +352,7 @@ namespace DAL
             }
         }
 
-
+        
 
 
 
