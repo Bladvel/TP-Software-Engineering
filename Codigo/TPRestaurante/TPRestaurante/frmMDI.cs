@@ -65,6 +65,7 @@ namespace TPRestaurante
                 itemCrearPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CrearPedido);
                 itemVerPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidos);
                 itemCobrarPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CobrarPedido);
+                itemComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarComanda);
                 itemGenerarComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GenerarComanda);
                 itemVerComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.VerComanda);
 

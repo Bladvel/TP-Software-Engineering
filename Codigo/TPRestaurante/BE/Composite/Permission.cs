@@ -22,5 +22,18 @@ namespace BE
         {
             
         }
+
+        public override object Clone()
+        {
+            Permission clone = new Permission()
+            {
+                ID = this.ID,
+                Name = this.Name,
+                Type = this.Type,
+                PermissionType = this.PermissionType
+            };
+
+            return clone;
+        }
     }
 }

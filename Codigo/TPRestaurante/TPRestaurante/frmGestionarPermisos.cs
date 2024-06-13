@@ -27,7 +27,6 @@ namespace TPRestaurante
 
         private void frmGestionarPermisos_Load(object sender, EventArgs e)
         {
-            cmbPermisoAtomico.DataSource = bllPermission.GetAtomicPermissions();
             FillPermissions();
         }
 
@@ -39,19 +38,16 @@ namespace TPRestaurante
 
         private void btnConfigurar_Click(object sender, EventArgs e)
         {
-            selected = (Group)cmbGrupo.SelectedItem;
-            Group tempGroup = new Group();
-            tempGroup.ID = selected.ID;
-            tempGroup.Name = selected.Name;
-            tempGroup.Type = selected.Type;
-            tempGroup.PermissionType = selected.PermissionType;
+            var tempGroup = (Group)cmbGrupo.SelectedItem;
+            
             
 
 
             //Preguntar si necesito clonar esto
 
-            if (selected != null)
+            if (tempGroup != null)
             {
+                selected = (Group)tempGroup.Clone();
                 MostrarPermisos(selected);
             }
             else
@@ -117,14 +113,78 @@ namespace TPRestaurante
 
         }
 
+
+
         private void btnAgregarGrupo_Click(object sender, EventArgs e)
         {
-
+            if (selected == null)
+            {
+                MessageBox.Show("Por favor selecciona un grupo al cual agregar primero");
+            }
+            else
+            {
+                var group = (Group)cmbGrupo.SelectedItem;
+                if (group == null)
+                {
+                    MessageBox.Show("Por favor selecciona un permiso");
+                }
+                else
+                {
+                    if (!bllPermission.CanAddComponent(selected, group))
+                    {
+                        MessageBox.Show("Ya existe este grupo en el grupo u ocurre referencia circular");
+                    }
+                    else
+                    {
+                        selected.AddChild(group);
+                        MostrarPermisos(selected);
+                    }
+                }
+            }
         }
 
         private void btnAgregarPermiso_Click(object sender, EventArgs e)
         {
-
+            if (selected == null)
+            {
+                MessageBox.Show("Por favor selecciona un grupo al cual agregar primero");
+            }
+            else
+            {
+                var permission = (Permission)cmbPermisos.SelectedItem;
+                if (permission == null)
+                {
+                    MessageBox.Show("Por favor selecciona un permiso");
+                }
+                else
+                {
+                    if (bllPermission.Exist(selected, permission.ID))
+                    {
+                        MessageBox.Show("Ya existe este permiso en el grupo");
+                    }
+                    else
+                    {
+                        selected.AddChild(permission);
+                        MostrarPermisos(selected);
+                    }
+                }
+            }
         }
+
+        private void btnGuardarConfig_Click(object sender, EventArgs e)
+        {
+            if (selected == null)
+            {
+                MessageBox.Show("Selecciona un grupo a configurar primero");
+            }
+            else
+            {
+                bllPermission.SaveGroup(selected);
+                FillPermissions();
+                MessageBox.Show("Se guardaron los cambios correctamente");
+            }
+        }
+
+
     }
 }

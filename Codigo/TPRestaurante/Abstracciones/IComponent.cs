@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 
 namespace Interfaces
 {
-    public interface IComponent
+    public interface IComponent: ICloneable
     {
         int ID { get; set; }
         string Name { get; set; }

@@ -24,10 +24,16 @@ namespace BLL
             return list;
         }
 
-        public void UniversalSave(BE.Component component)
+        public void UniversalInsert(BE.Component component)
         {
             mpPermission.UniversalInsert(component);
         }
+
+        public void SaveGroup(Group group)
+        {
+            mpPermission.InsertGroup(group);
+        }
+
 
         public bool Exist(IComponent component, int id)
         {
@@ -46,9 +52,22 @@ namespace BLL
 
             return false;
 
+        }
 
+        public bool CanAddComponent(IComponent parent, IComponent componentToAdd)
+        {
+            // Verifica que no estás añadiendo el componente a sí mismo
+            if (Exist(parent,componentToAdd.ID) || Exist(componentToAdd, parent.ID))
+            {
+                return false;
+            }
+
+            return true;
 
         }
+
+
+
 
         //Obtiene los permisos "atomicos" (que uso en el enum)
         public Array GetAtomicPermissions()

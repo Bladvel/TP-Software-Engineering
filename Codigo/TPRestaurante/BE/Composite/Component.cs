@@ -26,5 +26,8 @@ namespace BE
         {
             return Name;
         }
+
+        public abstract object Clone();
+
     }
 }

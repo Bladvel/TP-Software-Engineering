@@ -101,8 +101,7 @@
               "ViewState": "AQIAADMAAAAAAAAAAAA6wEQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T20:07:59.638Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "ViewState": "AQIAAD8AAAAAAAAAAAASwE4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T21:35:11.817Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "CompositePersistente.UI.Forms\\frmPatentesFamilias.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T23:00:16.923Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -149,8 +146,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\Patente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T23:52:27.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T23:52:27.694Z"
             },
             {
               "$type": "Document",
@@ -162,8 +158,7 @@
               "RelativeToolTip": "CompositePersistente.DAL\\UsuariosRepository.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAjwE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T01:16:35.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T01:16:35.255Z"
             },
             {
               "$type": "Document",
@@ -175,8 +170,7 @@
               "RelativeToolTip": "CompositePersistente\\UsuariosBLL.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAQwBoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T22:15:27.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T22:15:27.663Z"
             },
             {
               "$type": "Document",
@@ -188,8 +182,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\SimuladorDeSesion.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T01:43:31.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T01:43:31.195Z"
             },
             {
               "$type": "Document",
@@ -201,8 +194,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\Componente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T01:45:12.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T01:45:12.314Z"
             },
             {
               "$type": "Document",
@@ -213,8 +205,7 @@
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.UI.Forms\\frmMain.cs [Design]",
               "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T00:42:36.651Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-12T00:42:36.651Z"
             },
             {
               "$type": "Document",
@@ -226,8 +217,7 @@
               "RelativeToolTip": "CompositePersistente.UI.Forms\\frmMain.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAcwEwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T00:42:14.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T00:42:14.999Z"
             },
             {
               "$type": "Document",
@@ -239,8 +229,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:09:13.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T20:09:13.349Z"
             },
             {
               "$type": "Document",
@@ -251,8 +240,7 @@
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\usuario-patente-familia-con-composite-y-persistencia-master\\CompositePersistente.BE\\ClassDiagram1.cd",
               "RelativeToolTip": "CompositePersistente.BE\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-05-13T21:32:36.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T21:32:36.351Z"
             },
             {
               "$type": "Document",
@@ -264,8 +252,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\TipoPermiso.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:09:09.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T20:09:09.684Z"
             },
             {
               "$type": "Document",
@@ -277,8 +264,7 @@
               "RelativeToolTip": "CompositePersistente\\BLLSesion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADgvxAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:21:09.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:21:09.481Z"
             },
             {
               "$type": "Document",
@@ -290,8 +276,7 @@
               "RelativeToolTip": "CompositePersistente.BE\\Familia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:07:37.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T20:07:37.128Z"
             }
           ]
         }

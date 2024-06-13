@@ -38,21 +38,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbGrupo = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cmbPermisoAtomico = new System.Windows.Forms.ComboBox();
-            this.btnGuardarPermiso = new System.Windows.Forms.Button();
-            this.txtPermiso = new System.Windows.Forms.TextBox();
             this.btnAgregarPermiso = new System.Windows.Forms.Button();
             this.cmbPermisos = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
             this.btnGuardarConfig = new TPRestaurante.UcButtonPrimary(this.components);
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,53 +133,15 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.btnAgregarPermiso);
             this.groupBox2.Controls.Add(this.cmbPermisos);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(94, 223);
+            this.groupBox2.Location = new System.Drawing.Point(94, 268);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(265, 225);
+            this.groupBox2.Size = new System.Drawing.Size(265, 125);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Permisos";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.cmbPermisoAtomico);
-            this.groupBox4.Controls.Add(this.btnGuardarPermiso);
-            this.groupBox4.Controls.Add(this.txtPermiso);
-            this.groupBox4.Location = new System.Drawing.Point(18, 114);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(201, 101);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Crear nuevo permiso";
-            // 
-            // cmbPermisoAtomico
-            // 
-            this.cmbPermisoAtomico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPermisoAtomico.FormattingEnabled = true;
-            this.cmbPermisoAtomico.Location = new System.Drawing.Point(7, 19);
-            this.cmbPermisoAtomico.Name = "cmbPermisoAtomico";
-            this.cmbPermisoAtomico.Size = new System.Drawing.Size(160, 21);
-            this.cmbPermisoAtomico.TabIndex = 2;
-            // 
-            // btnGuardarPermiso
-            // 
-            this.btnGuardarPermiso.Location = new System.Drawing.Point(7, 72);
-            this.btnGuardarPermiso.Name = "btnGuardarPermiso";
-            this.btnGuardarPermiso.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardarPermiso.TabIndex = 1;
-            this.btnGuardarPermiso.Text = "Guardar";
-            this.btnGuardarPermiso.UseVisualStyleBackColor = true;
-            // 
-            // txtPermiso
-            // 
-            this.txtPermiso.Location = new System.Drawing.Point(7, 46);
-            this.txtPermiso.Name = "txtPermiso";
-            this.txtPermiso.Size = new System.Drawing.Size(161, 20);
-            this.txtPermiso.TabIndex = 0;
             // 
             // btnAgregarPermiso
             // 
@@ -226,6 +183,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Configurar Grupo";
             // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(6, 19);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(336, 352);
+            this.treeView1.TabIndex = 4;
+            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
@@ -253,13 +217,7 @@
             this.btnGuardarConfig.TabIndex = 5;
             this.btnGuardarConfig.Text = "Guardar";
             this.btnGuardarConfig.UseVisualStyleBackColor = false;
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(6, 19);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(336, 352);
-            this.treeView1.TabIndex = 4;
+            this.btnGuardarConfig.Click += new System.EventHandler(this.btnGuardarConfig_Click);
             // 
             // frmGestionarPermisos
             // 
@@ -278,8 +236,6 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -295,9 +251,6 @@
         private System.Windows.Forms.Button btnConfigurar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbGrupo;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnGuardarPermiso;
-        private System.Windows.Forms.TextBox txtPermiso;
         private System.Windows.Forms.Button btnAgregarPermiso;
         private System.Windows.Forms.ComboBox cmbPermisos;
         private System.Windows.Forms.Label label2;
@@ -305,6 +258,5 @@
         private UcButtonSecondary btnCancelar;
         private UcButtonPrimary btnGuardarConfig;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.ComboBox cmbPermisoAtomico;
     }
 }

@@ -23,7 +23,8 @@ namespace Interfaces
         GestorIdioma,
         GestionarAdmin,
         GestionarCatalogos,
-        GestionarPedido
+        GestionarPedido,
+        GestionarComanda,
 
     }
 }

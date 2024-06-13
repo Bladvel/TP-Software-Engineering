@@ -22,5 +22,24 @@ namespace BE
         {
             children.Clear();
         }
+
+        public override object Clone()
+        {
+            Group clone = new Group()
+            {
+                ID = this.ID,
+                Name = this.Name,
+                Type = this.Type,
+                PermissionType = this.PermissionType
+            };
+
+            foreach (var child in this.Children)
+            {
+                clone.AddChild((Component)child.Clone());
+            }
+
+            return clone;
+
+        }
     }
 }
