@@ -59,6 +59,23 @@ namespace DAL
             return param;
         }
 
+        public SqlParameter CreateParameter(string name, float value)
+        {
+            SqlParameter param = new SqlParameter(name, value);
+            param.DbType = DbType.Decimal;
+            return param;
+        }
+
+        public SqlParameter CreateParameter(string name, DateTime value)
+        {
+            SqlParameter parameter = new SqlParameter(name, value);
+            parameter.DbType = DbType.DateTime;
+            return parameter;
+
+        }
+
+
+
         private SqlCommand CreateCommand(string sql, List<SqlParameter> parameters = null) 
         {
             SqlCommand cmd = new SqlCommand(sql, conn);
@@ -99,7 +116,7 @@ namespace DAL
             var cmd = CreateCommand(sql, parameters);
             try
             {
-                id = (int)cmd.ExecuteScalar();
+                id  = int.Parse(cmd.ExecuteScalar().ToString());
             }
             catch
             {
@@ -121,6 +138,7 @@ namespace DAL
             }
             return dt;
         }
+
 
 
     }

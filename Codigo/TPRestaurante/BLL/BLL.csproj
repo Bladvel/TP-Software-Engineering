@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ControllerCajero.cs" />
     <Compile Include="ModoDelGestor.cs" />
+    <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
+    <Compile Include="CatalogoProductos.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

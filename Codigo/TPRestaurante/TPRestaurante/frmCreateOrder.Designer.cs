@@ -35,23 +35,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ucButton2 = new TPRestaurante.UcButtonPrimary(this.components);
-            this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
-            this.lstProductosAgregados = new System.Windows.Forms.ListBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lstCatalogoProductos = new System.Windows.Forms.ListBox();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.ucButtonSecondary2 = new TPRestaurante.UcButtonSecondary(this.components);
+            this.lstCatalogoProductos = new System.Windows.Forms.DataGridView();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lstProductosAgregados = new System.Windows.Forms.ListBox();
+            this.btnQuitar = new TPRestaurante.UcButtonSecondary(this.components);
+            this.btnAgregar = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
+            this.btnCrear = new TPRestaurante.UcButtonPrimary(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,10 +72,10 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtTelefono);
+            this.groupBox1.Controls.Add(this.txtDNI);
+            this.groupBox1.Controls.Add(this.txtApellido);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(41, 70);
             this.groupBox1.Name = "groupBox1";
@@ -122,80 +124,33 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
-            // textBox4
+            // txtTelefono
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 23);
-            this.textBox4.TabIndex = 0;
+            this.txtTelefono.Location = new System.Drawing.Point(154, 112);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(154, 23);
+            this.txtTelefono.TabIndex = 0;
             // 
-            // textBox3
+            // txtDNI
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 23);
-            this.textBox3.TabIndex = 0;
+            this.txtDNI.Location = new System.Drawing.Point(154, 86);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(154, 23);
+            this.txtDNI.TabIndex = 0;
             // 
-            // textBox2
+            // txtApellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 23);
-            this.textBox2.TabIndex = 0;
+            this.txtApellido.Location = new System.Drawing.Point(154, 60);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(154, 23);
+            this.txtApellido.TabIndex = 0;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 23);
-            this.textBox1.TabIndex = 0;
-            // 
-            // ucButton2
-            // 
-            this.ucButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButton2.FlatAppearance.BorderSize = 0;
-            this.ucButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButton2.ForeColor = System.Drawing.Color.White;
-            this.ucButton2.Location = new System.Drawing.Point(518, 399);
-            this.ucButton2.Name = "ucButton2";
-            this.ucButton2.Size = new System.Drawing.Size(132, 39);
-            this.ucButton2.TabIndex = 5;
-            this.ucButton2.Text = "Crear";
-            this.ucButton2.UseVisualStyleBackColor = false;
-            // 
-            // ucButtonSecondary1
-            // 
-            this.ucButtonSecondary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.ucButtonSecondary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonSecondary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonSecondary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary1.Location = new System.Drawing.Point(656, 399);
-            this.ucButtonSecondary1.Name = "ucButtonSecondary1";
-            this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonSecondary1.TabIndex = 6;
-            this.ucButtonSecondary1.Text = "Cancelar";
-            this.ucButtonSecondary1.UseVisualStyleBackColor = false;
-            this.ucButtonSecondary1.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
-            // 
-            // lstProductosAgregados
-            // 
-            this.lstProductosAgregados.FormattingEnabled = true;
-            this.lstProductosAgregados.ItemHeight = 16;
-            this.lstProductosAgregados.Location = new System.Drawing.Point(30, 48);
-            this.lstProductosAgregados.Name = "lstProductosAgregados";
-            this.lstProductosAgregados.Size = new System.Drawing.Size(277, 212);
-            this.lstProductosAgregados.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(185, 16);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Cliente: $NombreDelCliente";
+            this.txtNombre.Location = new System.Drawing.Point(154, 34);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(154, 23);
+            this.txtNombre.TabIndex = 0;
             // 
             // label7
             // 
@@ -209,8 +164,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.ucButtonPrimary1);
+            this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.lstCatalogoProductos);
+            this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(41, 245);
             this.groupBox2.Name = "groupBox2";
@@ -219,75 +175,133 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos";
             // 
-            // lstCatalogoProductos
-            // 
-            this.lstCatalogoProductos.FormattingEnabled = true;
-            this.lstCatalogoProductos.ItemHeight = 16;
-            this.lstCatalogoProductos.Location = new System.Drawing.Point(7, 35);
-            this.lstCatalogoProductos.Name = "lstCatalogoProductos";
-            this.lstCatalogoProductos.Size = new System.Drawing.Size(223, 132);
-            this.lstCatalogoProductos.TabIndex = 0;
-            // 
-            // ucButtonPrimary1
-            // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(236, 35);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(75, 23);
-            this.ucButtonPrimary1.TabIndex = 1;
-            this.ucButtonPrimary1.Text = "Agregar";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.ucButtonSecondary2);
             this.groupBox3.Controls.Add(this.lstProductosAgregados);
-            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.btnQuitar);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(445, 70);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(328, 312);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "Datos del Pedido";
             // 
-            // ucButtonSecondary2
+            // lstCatalogoProductos
             // 
-            this.ucButtonSecondary2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.ucButtonSecondary2.FlatAppearance.BorderSize = 0;
-            this.ucButtonSecondary2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonSecondary2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.ucButtonSecondary2.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary2.Location = new System.Drawing.Point(232, 266);
-            this.ucButtonSecondary2.Name = "ucButtonSecondary2";
-            this.ucButtonSecondary2.Size = new System.Drawing.Size(75, 23);
-            this.ucButtonSecondary2.TabIndex = 9;
-            this.ucButtonSecondary2.Text = "Quitar";
-            this.ucButtonSecondary2.UseVisualStyleBackColor = false;
+            this.lstCatalogoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lstCatalogoProductos.Location = new System.Drawing.Point(6, 24);
+            this.lstCatalogoProductos.Name = "lstCatalogoProductos";
+            this.lstCatalogoProductos.Size = new System.Drawing.Size(223, 150);
+            this.lstCatalogoProductos.TabIndex = 2;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(235, 24);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(73, 23);
+            this.numericUpDown1.TabIndex = 3;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lstProductosAgregados
+            // 
+            this.lstProductosAgregados.FormattingEnabled = true;
+            this.lstProductosAgregados.ItemHeight = 16;
+            this.lstProductosAgregados.Location = new System.Drawing.Point(7, 23);
+            this.lstProductosAgregados.Name = "lstProductosAgregados";
+            this.lstProductosAgregados.Size = new System.Drawing.Size(300, 228);
+            this.lstProductosAgregados.TabIndex = 10;
+            // 
+            // btnQuitar
+            // 
+            this.btnQuitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnQuitar.FlatAppearance.BorderSize = 0;
+            this.btnQuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnQuitar.ForeColor = System.Drawing.Color.White;
+            this.btnQuitar.Location = new System.Drawing.Point(232, 266);
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.Size = new System.Drawing.Size(75, 23);
+            this.btnQuitar.TabIndex = 9;
+            this.btnQuitar.Text = "Quitar";
+            this.btnQuitar.UseVisualStyleBackColor = false;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(235, 64);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(656, 399);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(132, 39);
+            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
+            // 
+            // btnCrear
+            // 
+            this.btnCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnCrear.FlatAppearance.BorderSize = 0;
+            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCrear.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.Location = new System.Drawing.Point(518, 399);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(132, 39);
+            this.btnCrear.TabIndex = 5;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // frmCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 449);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButton2);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Name = "frmCreateOrder";
             this.Text = "Crear Pedido";
+            this.Load += new System.EventHandler(this.frmCreateOrder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,19 +315,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private UcButtonPrimary ucButton2;
-        private UcButtonSecondary ucButtonSecondary1;
-        private System.Windows.Forms.ListBox lstProductosAgregados;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private UcButtonPrimary btnCrear;
+        private UcButtonSecondary btnCancelar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private UcButtonPrimary ucButtonPrimary1;
-        private System.Windows.Forms.ListBox lstCatalogoProductos;
+        private UcButtonPrimary btnAgregar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private UcButtonSecondary ucButtonSecondary2;
+        private UcButtonSecondary btnQuitar;
+        private System.Windows.Forms.DataGridView lstCatalogoProductos;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ListBox lstProductosAgregados;
     }
 }

@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Access.cs" />
     <Compile Include="Mapper.cs" />
+    <Compile Include="MP_Cliente.cs" />
+    <Compile Include="MP_Pedido.cs" />
     <Compile Include="MP_Permission.cs" />
+    <Compile Include="MP_Producto.cs" />
     <Compile Include="MP_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllpermisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\dal\\mp_dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\mp_dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -195,7 +195,7 @@
               "RelativeDocumentMoniker": "Presentacion\\frmCrearPerfil.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearPerfil.cs",
               "RelativeToolTip": "Presentacion\\frmCrearPerfil.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAMwNMAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANMAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T02:05:50.406Z",
               "IsPinned": true,
@@ -219,8 +219,7 @@
               "RelativeToolTip": "DAL\\mp_DVH.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T02:32:40.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T02:32:40.427Z"
             },
             {
               "$type": "Document",
@@ -268,8 +267,7 @@
               "RelativeToolTip": "BLL\\BLLPermisos.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAewBQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:16:55.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T18:16:55.796Z"
             },
             {
               "$type": "Document",
