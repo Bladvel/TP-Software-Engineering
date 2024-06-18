@@ -13,17 +13,22 @@ namespace DAL
     {
         public override Cliente GetById(object id)
         {
-            throw new NotImplementedException();
+            int ID = int.Parse(id.ToString());
+            return GetAll().FirstOrDefault(c => c.ID.Equals(ID));
         }
 
         public override Cliente Transform(DataRow dr)
         {
+
             string nombre = dr["NOMBRE"].ToString();
             string apellido = dr["APELLIDO"].ToString();
             int dni = int.Parse(dr["DNI"].ToString());
             string tel = dr["TELEFONO"].ToString();
 
-            return new Cliente(nombre, apellido, dni, tel);
+            Cliente cliente = new Cliente(nombre, apellido, dni, tel);
+            cliente.ID = int.Parse(dr["ID"].ToString());
+
+            return cliente;
 
         }
 

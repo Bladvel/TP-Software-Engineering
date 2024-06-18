@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
+using Interfaces;
 
 namespace DAL
 {
@@ -18,16 +19,37 @@ namespace DAL
 
         public override Pedido Transform(DataRow dr)
         {
-            throw new NotImplementedException();
+            Pedido pedido = new Pedido();
+            pedido.NroPedido = int.Parse(dr["NRO_PEDIDO"].ToString());
+            pedido.Estado = (OrderType)Enum.Parse(typeof(OrderType), dr["ESTADO"].ToString());
+            pedido.Fecha = DateTime.Parse(dr["FECHA"].ToString());
+
+            pedido.Cliente = mpCliente.GetById(dr["ID_CLIENTE"].ToString());
+
+            pedido.Productos = GetItemByOrder(pedido.NroPedido);
+
+            return pedido;
         }
 
         public override List<Pedido> GetAll()
         {
-            throw new NotImplementedException();
+            List<Pedido> pedidos = new List<Pedido>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PEDIDO");
+            access.Close();
+
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                pedidos.Add(Transform(dr));
+            }
+
+
+            return pedidos;
         }
 
         MP_Cliente mpCliente = new MP_Cliente();
-
+        MP_Producto mpProducto = new MP_Producto();
 
 
         public override int Insert(Pedido entity)
@@ -79,6 +101,32 @@ namespace DAL
 
         }
 
+        public List<ItemProducto> GetItemByOrder(int nroPedido)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@nro", nroPedido),
+            };
+
+            access.Open();
+            DataTable dt = access.Read("LISTAR_ITEM_POR_ORDEN", parameters);
+            access.Close();
+
+            List<ItemProducto> items = new List<ItemProducto>();
+            
+            foreach (DataRow dr in dt.Rows)
+            {
+                int cantidad = int.Parse(dr["CANTIDAD"].ToString());
+                float precio = float.Parse(dr["PRECIO_COMPRA"].ToString());
+                Producto producto = mpProducto.GetById(dr["COD_PRODUCTO"].ToString());
+                ItemProducto item = new ItemProducto(cantidad,precio,producto);
+
+                items.Add(item);
+            }
+
+            return items;
+
+        }
 
 
 
@@ -90,6 +138,28 @@ namespace DAL
         public override int Delete(Pedido entity)
         {
             throw new NotImplementedException();
+        }
+
+        public List<Pedido> GetOrderByState(OrderType estado)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@est", estado.ToString()),
+            };
+
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PEDIDO_POR_ESTADO", parameters);
+            access.Close();
+
+
+            List<Pedido> pedidos = new List<Pedido>();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                pedidos.Add(Transform(dr));
+            }
+
+            return pedidos;
         }
     }
 }

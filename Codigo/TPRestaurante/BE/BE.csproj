@@ -45,6 +45,7 @@
     <Compile Include="Composite\Component.cs" />
     <Compile Include="Composite\Group.cs" />
     <Compile Include="Composite\Permission.cs" />
+    <Compile Include="Ingrediente.cs" />
     <Compile Include="ItemProducto.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Producto.cs" />

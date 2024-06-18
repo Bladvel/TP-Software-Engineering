@@ -40,6 +40,15 @@ namespace BLL
            return mp.Insert(pedido);
         }
 
+        public List<BE.Pedido> Listar()
+        {
+            return mp.GetAll();
+        }
+
+        public List<BE.Pedido> ListarPorEstado(OrderType estado)
+        {
+            return mp.GetOrderByState(estado);
+        }
 
     }
 }

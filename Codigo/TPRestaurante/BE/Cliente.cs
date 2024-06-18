@@ -80,5 +80,9 @@ namespace BE
             DNI = dni;
         }
 
+        public override string ToString()
+        {
+            return Nombre + " " + Apellido;
+        }
     }
 }

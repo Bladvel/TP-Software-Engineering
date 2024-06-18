@@ -72,7 +72,38 @@ namespace TPRestaurante
                 float precioCompra = productoSeleccionado.PrecioActual;
 
                 ItemProducto itemProducto = new ItemProducto(cantidad, precioCompra, productoSeleccionado);
-                lstProductosAgregados.Items.Add(itemProducto);
+
+
+                List<ItemProducto> productos = lstProductosAgregados.Items.Cast<ItemProducto>().ToList();
+                bool productoEncontrado = false;
+
+                if (lstProductosAgregados.Items.Count > 0)
+                {
+                   
+
+                    foreach (ItemProducto item in productos)
+                    {
+                        if (item.Producto.CodProducto == itemProducto.Producto.CodProducto)
+                        {
+                            
+                            item.Cantidad += cantidad;
+                            productoEncontrado = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!productoEncontrado)
+                {
+                    
+                    lstProductosAgregados.Items.Add(itemProducto);
+                }
+                else
+                {
+                    
+                    lstProductosAgregados.Items.Clear();
+                    lstProductosAgregados.Items.AddRange(productos.ToArray());
+                }
             }
             else
             {

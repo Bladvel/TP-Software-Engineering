@@ -12,8 +12,11 @@ namespace DAL
     {
         public override Producto GetById(object id)
         {
-            throw new NotImplementedException();
+            int codigo = int.Parse(id.ToString());
+            return GetAll().FirstOrDefault(c => c.CodProducto.Equals(codigo));
         }
+
+        MP_Ingrediente mpIngrediente = new MP_Ingrediente();
 
         public override Producto Transform(DataRow dr)
         {
@@ -23,6 +26,10 @@ namespace DAL
             producto.Descripcion = dr["DESCRIPCION"].ToString();
             producto.CantStock = int.Parse(dr["CANTIDAD"].ToString());
             producto.PrecioActual = float.Parse(dr["PRECIO_ACTUAL"].ToString());
+
+            producto.Ingredientes = mpIngrediente.GetIngredientsByProduct(producto.CodProducto);
+
+
 
             return producto;
 
