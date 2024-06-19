@@ -13,7 +13,8 @@ namespace DAL
     {
         public override Ingrediente GetById(object id)
         {
-            throw new NotImplementedException();
+            int codigo = int.Parse(id.ToString());
+            return GetAll().FirstOrDefault(i => i.CodIngrediente.Equals(codigo));
         }
 
         public override Ingrediente Transform(DataRow dr)
@@ -31,7 +32,7 @@ namespace DAL
         {
             List<Ingrediente> ingredientes = new List<Ingrediente>();
             access.Open();
-            DataTable dt = access.Read("LISTAR_INGREDIENTES");
+            DataTable dt = access.Read("LISTAR_INGREDIENTE");
             access.Close();
 
             foreach (DataRow dr in dt.Rows)
@@ -79,7 +80,17 @@ namespace DAL
 
         public override int Update(Ingrediente entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@cod", entity.CodIngrediente),
+                access.CreateParameter("@cant", entity.Cantidad),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ACTUALIZAR_STOCK_INGREDIENTE", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
 
         public override int Delete(Ingrediente entity)

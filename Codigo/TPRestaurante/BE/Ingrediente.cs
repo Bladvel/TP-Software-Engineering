@@ -39,6 +39,9 @@ namespace BE
             Cantidad = cantidad;
         }
 
-
+        public Ingrediente()
+        {
+            
+        }
     }
 }

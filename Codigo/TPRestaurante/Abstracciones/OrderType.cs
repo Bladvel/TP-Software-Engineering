@@ -9,7 +9,7 @@ namespace Interfaces
     public enum OrderType
     {
         Creado,
-        Verificado,
+        Aceptado,
         Rechazado,
         EnPreparacion,
         Listo,

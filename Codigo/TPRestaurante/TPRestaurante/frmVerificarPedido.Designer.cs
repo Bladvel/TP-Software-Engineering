@@ -32,16 +32,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lstIngredientesDisponibles = new System.Windows.Forms.ListBox();
-            this.lstIngredientesFaltantes = new System.Windows.Forms.ListBox();
             this.grdPedidos = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.grdProductosPedido = new System.Windows.Forms.DataGridView();
             this.btnRechazarPedido = new TPRestaurante.UcButtonPrimary(this.components);
             this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
             this.btnVerificarPedido = new TPRestaurante.UcButtonPrimary(this.components);
+            this.grdIngredientesDisponibles = new System.Windows.Forms.DataGridView();
+            this.grdIngredientesFaltantes = new System.Windows.Forms.DataGridView();
+            this.btnAceptarPedido = new TPRestaurante.UcButtonPrimary(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductosPedido)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngredientesDisponibles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngredientesFaltantes)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -74,22 +77,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Ingredientes faltantes";
             // 
-            // lstIngredientesDisponibles
-            // 
-            this.lstIngredientesDisponibles.FormattingEnabled = true;
-            this.lstIngredientesDisponibles.Location = new System.Drawing.Point(421, 47);
-            this.lstIngredientesDisponibles.Name = "lstIngredientesDisponibles";
-            this.lstIngredientesDisponibles.Size = new System.Drawing.Size(353, 95);
-            this.lstIngredientesDisponibles.TabIndex = 3;
-            // 
-            // lstIngredientesFaltantes
-            // 
-            this.lstIngredientesFaltantes.FormattingEnabled = true;
-            this.lstIngredientesFaltantes.Location = new System.Drawing.Point(421, 187);
-            this.lstIngredientesFaltantes.Name = "lstIngredientesFaltantes";
-            this.lstIngredientesFaltantes.Size = new System.Drawing.Size(353, 95);
-            this.lstIngredientesFaltantes.TabIndex = 3;
-            // 
             // grdPedidos
             // 
             this.grdPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -105,9 +92,9 @@
             this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(25, 168);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
+            this.label5.Size = new System.Drawing.Size(115, 16);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Productos";
+            this.label5.Text = "ItemProductos";
             // 
             // grdProductosPedido
             // 
@@ -130,6 +117,7 @@
             this.btnRechazarPedido.TabIndex = 7;
             this.btnRechazarPedido.Text = "Rechazar";
             this.btnRechazarPedido.UseVisualStyleBackColor = false;
+            this.btnRechazarPedido.Click += new System.EventHandler(this.btnRechazarPedido_Click);
             // 
             // btnCancelar
             // 
@@ -138,7 +126,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(642, 354);
+            this.btnCancelar.Location = new System.Drawing.Point(642, 371);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 5;
@@ -153,25 +141,58 @@
             this.btnVerificarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerificarPedido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnVerificarPedido.ForeColor = System.Drawing.Color.White;
-            this.btnVerificarPedido.Location = new System.Drawing.Point(504, 288);
+            this.btnVerificarPedido.Location = new System.Drawing.Point(227, 288);
             this.btnVerificarPedido.Name = "btnVerificarPedido";
             this.btnVerificarPedido.Size = new System.Drawing.Size(132, 39);
             this.btnVerificarPedido.TabIndex = 4;
             this.btnVerificarPedido.Text = "Verificar";
             this.btnVerificarPedido.UseVisualStyleBackColor = false;
+            this.btnVerificarPedido.Click += new System.EventHandler(this.btnVerificarPedido_Click);
+            // 
+            // grdIngredientesDisponibles
+            // 
+            this.grdIngredientesDisponibles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdIngredientesDisponibles.Location = new System.Drawing.Point(421, 47);
+            this.grdIngredientesDisponibles.Name = "grdIngredientesDisponibles";
+            this.grdIngredientesDisponibles.Size = new System.Drawing.Size(353, 95);
+            this.grdIngredientesDisponibles.TabIndex = 8;
+            // 
+            // grdIngredientesFaltantes
+            // 
+            this.grdIngredientesFaltantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdIngredientesFaltantes.Location = new System.Drawing.Point(421, 188);
+            this.grdIngredientesFaltantes.Name = "grdIngredientesFaltantes";
+            this.grdIngredientesFaltantes.Size = new System.Drawing.Size(353, 94);
+            this.grdIngredientesFaltantes.TabIndex = 9;
+            // 
+            // btnAceptarPedido
+            // 
+            this.btnAceptarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnAceptarPedido.FlatAppearance.BorderSize = 0;
+            this.btnAceptarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptarPedido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAceptarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnAceptarPedido.Location = new System.Drawing.Point(504, 288);
+            this.btnAceptarPedido.Name = "btnAceptarPedido";
+            this.btnAceptarPedido.Size = new System.Drawing.Size(132, 39);
+            this.btnAceptarPedido.TabIndex = 10;
+            this.btnAceptarPedido.Text = "Aceptar";
+            this.btnAceptarPedido.UseVisualStyleBackColor = false;
+            this.btnAceptarPedido.Click += new System.EventHandler(this.btnAceptarPedido_Click);
             // 
             // frmVerificarPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 405);
+            this.ClientSize = new System.Drawing.Size(807, 434);
+            this.Controls.Add(this.btnAceptarPedido);
+            this.Controls.Add(this.grdIngredientesFaltantes);
+            this.Controls.Add(this.grdIngredientesDisponibles);
             this.Controls.Add(this.btnRechazarPedido);
             this.Controls.Add(this.grdProductosPedido);
             this.Controls.Add(this.grdPedidos);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnVerificarPedido);
-            this.Controls.Add(this.lstIngredientesFaltantes);
-            this.Controls.Add(this.lstIngredientesDisponibles);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -181,6 +202,8 @@
             this.Load += new System.EventHandler(this.frmVerificarPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductosPedido)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngredientesDisponibles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngredientesFaltantes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,13 +213,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox lstIngredientesDisponibles;
-        private System.Windows.Forms.ListBox lstIngredientesFaltantes;
         private UcButtonPrimary btnVerificarPedido;
         private UcButtonSecondary btnCancelar;
         private System.Windows.Forms.DataGridView grdPedidos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView grdProductosPedido;
         private UcButtonPrimary btnRechazarPedido;
+        private System.Windows.Forms.DataGridView grdIngredientesDisponibles;
+        private System.Windows.Forms.DataGridView grdIngredientesFaltantes;
+        private UcButtonPrimary btnAceptarPedido;
     }
 }

@@ -24,7 +24,6 @@ namespace DAL
             producto.CodProducto = int.Parse(dr["COD_PRODUCTO"].ToString());
             producto.Nombre = dr["NOMBRE"].ToString();
             producto.Descripcion = dr["DESCRIPCION"].ToString();
-            producto.CantStock = int.Parse(dr["CANTIDAD"].ToString());
             producto.PrecioActual = float.Parse(dr["PRECIO_ACTUAL"].ToString());
 
             producto.Ingredientes = mpIngrediente.GetIngredientsByProduct(producto.CodProducto);

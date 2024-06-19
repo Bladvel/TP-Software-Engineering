@@ -15,6 +15,7 @@ namespace BLL
         public void CambiarEstado(BE.Pedido pedido, OrderType estado)
         {
             pedido.Estado = estado;
+            mp.Update(pedido);
         }
 
         public float CalcularSubtotal(BE.Pedido pedido)

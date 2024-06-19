@@ -132,7 +132,18 @@ namespace DAL
 
         public override int Update(Pedido entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@nro", entity.NroPedido),
+                access.CreateParameter("@est", entity.Estado.ToString()),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ACTUALIZAR_PEDIDO", parameters);
+            access.Close();
+
+            return filasAfectadas;
+
         }
 
         public override int Delete(Pedido entity)

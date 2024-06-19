@@ -32,12 +32,6 @@ namespace BE
             set=> nombre=value;
         }
 
-        private int cant;
-        public int CantStock 
-        { 
-            get=>cant;
-            set => cant = value;
-        }
 
         private float precio;
 

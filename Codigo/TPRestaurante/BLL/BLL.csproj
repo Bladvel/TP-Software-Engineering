@@ -44,6 +44,7 @@
     <Compile Include="CatalogoIngredientes.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="ControllerCajero.cs" />
+    <Compile Include="ControllerJefeDeCocina.cs" />
     <Compile Include="ModoDelGestor.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
