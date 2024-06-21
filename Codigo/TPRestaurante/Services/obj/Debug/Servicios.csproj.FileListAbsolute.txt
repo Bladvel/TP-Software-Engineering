@@ -1,9 +1,9 @@
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Services.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Services.pdb
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Abstracciones.dll
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Abstracciones.pdb
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\obj\Debug\SERVICIOS.csproj.AssemblyReference.cache
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\obj\Debug\SERVICIOS.csproj.CoreCompileInputs.cache
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\obj\Debug\SERVICIOS.csproj.Up2Date
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\obj\Debug\Services.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\obj\Debug\Services.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Abstracciones.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\Services\bin\Debug\Abstracciones.pdb

@@ -51,5 +51,10 @@ namespace BLL
             return mp.GetOrderByState(estado);
         }
 
+        public List<BE.Pedido> ListarPorPago(PaymentState estado)
+        {
+            return mp.GetOrderByPaymentState(estado);
+        }
+
     }
 }

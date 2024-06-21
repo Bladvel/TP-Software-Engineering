@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.lstPedidosPorCobrar = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.cmbMetodo = new System.Windows.Forms.ComboBox();
+            this.groupEfectivo = new System.Windows.Forms.GroupBox();
+            this.lblCambio = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupTarjeta = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,11 +47,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
+            this.grdPedidosPorCobrar = new System.Windows.Forms.DataGridView();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.btnCobrar = new TPRestaurante.UcButtonPrimary(this.components);
+            this.groupEfectivo.SuspendLayout();
+            this.groupTarjeta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPedidosPorCobrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,23 +65,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Seleccionar pedido";
             // 
-            // lstPedidosPorCobrar
-            // 
-            this.lstPedidosPorCobrar.FormattingEnabled = true;
-            this.lstPedidosPorCobrar.Location = new System.Drawing.Point(15, 52);
-            this.lstPedidosPorCobrar.Name = "lstPedidosPorCobrar";
-            this.lstPedidosPorCobrar.Size = new System.Drawing.Size(236, 95);
-            this.lstPedidosPorCobrar.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(311, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 16);
+            this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Total: $TOTAL";
+            this.label2.Text = "Total: ";
             // 
             // label3
             // 
@@ -90,35 +84,37 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Seleccione metodo de pago";
             // 
-            // comboBox1
+            // cmbMetodo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMetodo.FormattingEnabled = true;
+            this.cmbMetodo.Location = new System.Drawing.Point(15, 175);
+            this.cmbMetodo.Name = "cmbMetodo";
+            this.cmbMetodo.Size = new System.Drawing.Size(137, 21);
+            this.cmbMetodo.TabIndex = 4;
+            this.cmbMetodo.SelectedIndexChanged += new System.EventHandler(this.cmbMetodo_SelectedIndexChanged);
             // 
-            // groupBox1
+            // groupEfectivo
             // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(314, 213);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 196);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Efectivo";
+            this.groupEfectivo.Controls.Add(this.lblCambio);
+            this.groupEfectivo.Controls.Add(this.label5);
+            this.groupEfectivo.Controls.Add(this.label4);
+            this.groupEfectivo.Controls.Add(this.textBox1);
+            this.groupEfectivo.Location = new System.Drawing.Point(314, 213);
+            this.groupEfectivo.Name = "groupEfectivo";
+            this.groupEfectivo.Size = new System.Drawing.Size(200, 196);
+            this.groupEfectivo.TabIndex = 5;
+            this.groupEfectivo.TabStop = false;
+            this.groupEfectivo.Text = "Efectivo";
             // 
-            // label6
+            // lblCambio
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(81, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "$Cambio";
+            this.lblCambio.AutoSize = true;
+            this.lblCambio.Location = new System.Drawing.Point(81, 89);
+            this.lblCambio.Name = "lblCambio";
+            this.lblCambio.Size = new System.Drawing.Size(19, 13);
+            this.lblCambio.TabIndex = 2;
+            this.lblCambio.Text = "$0";
             // 
             // label5
             // 
@@ -145,22 +141,31 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // groupBox2
+            // groupTarjeta
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Location = new System.Drawing.Point(15, 213);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(249, 196);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tarjeta";
+            this.groupTarjeta.Controls.Add(this.label10);
+            this.groupTarjeta.Controls.Add(this.label9);
+            this.groupTarjeta.Controls.Add(this.label8);
+            this.groupTarjeta.Controls.Add(this.label7);
+            this.groupTarjeta.Controls.Add(this.textBox5);
+            this.groupTarjeta.Controls.Add(this.textBox4);
+            this.groupTarjeta.Controls.Add(this.dateTimePicker1);
+            this.groupTarjeta.Controls.Add(this.textBox3);
+            this.groupTarjeta.Location = new System.Drawing.Point(15, 213);
+            this.groupTarjeta.Name = "groupTarjeta";
+            this.groupTarjeta.Size = new System.Drawing.Size(249, 196);
+            this.groupTarjeta.TabIndex = 5;
+            this.groupTarjeta.TabStop = false;
+            this.groupTarjeta.Text = "Tarjeta";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 133);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 13);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Titular";
             // 
             // label9
             // 
@@ -217,28 +222,24 @@
             this.textBox3.Size = new System.Drawing.Size(156, 20);
             this.textBox3.TabIndex = 0;
             // 
-            // label10
+            // grdPedidosPorCobrar
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 133);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 13);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Titular";
+            this.grdPedidosPorCobrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdPedidosPorCobrar.Location = new System.Drawing.Point(15, 36);
+            this.grdPedidosPorCobrar.Name = "grdPedidosPorCobrar";
+            this.grdPedidosPorCobrar.Size = new System.Drawing.Size(249, 119);
+            this.grdPedidosPorCobrar.TabIndex = 8;
+            this.grdPedidosPorCobrar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPedidosPorCobrar_CellClick);
             // 
-            // ucButtonPrimary1
+            // lblTotal
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(240, 455);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonPrimary1.TabIndex = 6;
-            this.ucButtonPrimary1.Text = "Cobrar";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(368, 52);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(23, 16);
+            this.lblTotal.TabIndex = 9;
+            this.lblTotal.Text = "$0";
             // 
             // ucButtonSecondary1
             // 
@@ -255,26 +256,46 @@
             this.ucButtonSecondary1.UseVisualStyleBackColor = false;
             this.ucButtonSecondary1.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
             // 
+            // btnCobrar
+            // 
+            this.btnCobrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnCobrar.FlatAppearance.BorderSize = 0;
+            this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCobrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCobrar.ForeColor = System.Drawing.Color.White;
+            this.btnCobrar.Location = new System.Drawing.Point(240, 455);
+            this.btnCobrar.Name = "btnCobrar";
+            this.btnCobrar.Size = new System.Drawing.Size(132, 39);
+            this.btnCobrar.TabIndex = 6;
+            this.btnCobrar.Text = "Cobrar";
+            this.btnCobrar.UseVisualStyleBackColor = false;
+            this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
+            // 
             // frmCobrarPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(528, 506);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.grdPedidosPorCobrar);
             this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButtonPrimary1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnCobrar);
+            this.Controls.Add(this.groupTarjeta);
+            this.Controls.Add(this.groupEfectivo);
+            this.Controls.Add(this.cmbMetodo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lstPedidosPorCobrar);
             this.Controls.Add(this.label1);
             this.Name = "frmCobrarPedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmCobrarPedido";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Load += new System.EventHandler(this.frmCobrarPedido_Load);
+            this.groupEfectivo.ResumeLayout(false);
+            this.groupEfectivo.PerformLayout();
+            this.groupTarjeta.ResumeLayout(false);
+            this.groupTarjeta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPedidosPorCobrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,15 +304,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lstPedidosPorCobrar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cmbMetodo;
+        private System.Windows.Forms.GroupBox groupEfectivo;
+        private System.Windows.Forms.GroupBox groupTarjeta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCambio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -301,7 +321,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label10;
-        private UcButtonPrimary ucButtonPrimary1;
+        private UcButtonPrimary btnCobrar;
         private UcButtonSecondary ucButtonSecondary1;
+        private System.Windows.Forms.DataGridView grdPedidosPorCobrar;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

@@ -66,6 +66,14 @@ namespace DAL
             return param;
         }
 
+        public SqlParameter CreateParameter(string name, long value)
+        {
+            SqlParameter param = new SqlParameter(name, value);
+            param.DbType = DbType.Int64;
+            return param;
+        }
+
+
         public SqlParameter CreateParameter(string name, DateTime value)
         {
             SqlParameter parameter = new SqlParameter(name, value);

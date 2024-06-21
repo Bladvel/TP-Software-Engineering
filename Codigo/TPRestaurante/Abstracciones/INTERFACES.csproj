@@ -7,7 +7,7 @@
     <ProjectGuid>{ED2E7AA0-C620-4509-BA4E-6C16A249D22E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Abstracciones</RootNamespace>
+    <RootNamespace>Interfaces</RootNamespace>
     <AssemblyName>Abstracciones</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,11 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MetodoDePago.cs" />
     <Compile Include="OrderType.cs" />
     <Compile Include="ComponentType.cs" />
     <Compile Include="IComponent.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IUser.cs" />
+    <Compile Include="PaymentMethodType.cs" />
+    <Compile Include="PaymentState.cs" />
     <Compile Include="PermissionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

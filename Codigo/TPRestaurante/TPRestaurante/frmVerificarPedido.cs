@@ -192,7 +192,21 @@ namespace TPRestaurante
 
         private void btnRechazarPedido_Click(object sender, EventArgs e)
         {
-            //TODO Agregar logica aqui
+            if (pedidoSeleccionado != null)
+            {
+                controllerJefeDeCocina.AceptarPedido(pedidoSeleccionado);
+                btnAceptarPedido.Enabled = false;
+                btnRechazarPedido.Enabled = false;
+                btnVerificarPedido.Enabled = false;
+                MessageBox.Show("Pedido Rechazado con éxito");
+
+                grdPedidos.DataSource = null;
+                grdPedidos.DataSource = bllPedido.ListarPorEstado(OrderType.Creado);
+            }
+            else
+            {
+                MessageBox.Show("Selecciona un pedido primero");
+            }
         }
     }
 }

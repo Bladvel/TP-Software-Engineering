@@ -62,19 +62,27 @@ namespace BE
             set=>cliente=value;
         }
 
-        public static Pedido Create(List<ItemProducto> productos, Cliente cliente)
+
+
+        private PaymentState estadoPago;
+
+        public PaymentState EstadoPago
         {
-            return new Pedido
-            {
-                Productos = productos, 
-                Cliente = cliente, 
-                Fecha = DateTime.Now, 
-                Estado = OrderType.Creado
-            };
+            get => estadoPago;
+            set=> estadoPago=value;
         }
 
 
 
+
+
     }
+
+
+
+
+
+
+    
 
 }

@@ -14,7 +14,8 @@ namespace DAL
     {
         public override Pedido GetById(object id)
         {
-            throw new NotImplementedException();
+            int ID = int.Parse(id.ToString());
+            return GetAll().FirstOrDefault(p => p.NroPedido.Equals(ID));
         }
 
         public override Pedido Transform(DataRow dr)
@@ -27,7 +28,11 @@ namespace DAL
             pedido.Cliente = mpCliente.GetById(dr["ID_CLIENTE"].ToString());
 
             pedido.Productos = GetItemByOrder(pedido.NroPedido);
+            pedido.EstadoPago = (PaymentState)Enum.Parse(typeof(PaymentState), dr["ESTADO_PAGO"].ToString());
 
+
+
+            
             return pedido;
         }
 
@@ -172,5 +177,29 @@ namespace DAL
 
             return pedidos;
         }
+
+        public List<Pedido> GetOrderByPaymentState(PaymentState estado)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@est", estado.ToString()),
+            };
+
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PEDIDO_POR_PAGADO", parameters);
+            access.Close();
+
+
+            List<Pedido> pedidos = new List<Pedido>();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                pedidos.Add(Transform(dr));
+            }
+
+            return pedidos;
+        }
+
+
     }
 }

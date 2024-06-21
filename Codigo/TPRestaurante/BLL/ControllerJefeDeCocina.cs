@@ -89,5 +89,10 @@ namespace BLL
             bllPedido.CambiarEstado(pedido, OrderType.Aceptado);
             
         }
+
+        public void RechazarPedido(BE.Pedido pedido)
+        {
+            bllPedido.CambiarEstado(pedido, OrderType.Rechazado);
+        }
     }
 }
