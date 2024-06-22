@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public enum PaymentState
+    public enum AvailabilityType
     {
-        NoPagado = 0,
-        Pagado = 1,
+        NoDisponible = 1,
+        Disponible = 0,
+
     }
 }

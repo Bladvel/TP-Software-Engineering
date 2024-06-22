@@ -94,5 +94,26 @@ namespace BLL
         {
             bllPedido.CambiarEstado(pedido, OrderType.Rechazado);
         }
+
+        private BLL.User bllUser = new BLL.User();
+
+        private Comanda bllComanda = new Comanda();
+        public bool GenerarComanda(BE.Pedido pedidoSeleccionado, BE.User cocineroSeleccionado, string instrucciones)
+        {
+            BE.Comanda nuevaComanda = new BE.Comanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
+
+            if (bllComanda.Insertar(nuevaComanda) > 0)
+            {
+
+                bllUser.UpdateAvailability(cocineroSeleccionado, AvailabilityType.NoDisponible);
+                return true;
+            }
+
+
+
+
+            return false;
+
+        }
     }
 }

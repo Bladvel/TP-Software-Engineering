@@ -8,12 +8,12 @@ namespace Interfaces
 {
     public enum OrderType
     {
-        Creado,
-        Aceptado,
-        Rechazado,
-        EnPreparacion,
-        Listo,
-        Entregado
+        Creado = 0,
+        Aceptado = 1,
+        Rechazado = 2,
+        EnPreparacion = 3,
+        Listo = 4,
+        Entregado = 5
 
     }
 }

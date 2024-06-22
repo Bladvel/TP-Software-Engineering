@@ -39,7 +39,6 @@ namespace DAL
             tarjeta.id = int.Parse(dr["ID"].ToString());
             tarjeta.NumeroTarjeta = int.Parse(dr["NUMERO"].ToString());
             tarjeta.FechaVencimiento = DateTime.Parse(dr["VENCIMIENTO"].ToString());
-            tarjeta.Banco = dr["BANCO"].ToString();
             tarjeta.Cvv = int.Parse(dr["CVV"].ToString());
             tarjeta.Titular = dr["TITULAR"].ToString();
 
@@ -58,7 +57,6 @@ namespace DAL
                 access.CreateParameter("@MetodoDePagoId", entity.id),
                 access.CreateParameter("@Numero", entity.NumeroTarjeta),
                 access.CreateParameter("@Vencimiento", entity.FechaVencimiento),
-                access.CreateParameter("@Banco", entity.Banco),
                 access.CreateParameter("@Cvv", entity.Cvv),
                 access.CreateParameter("@Titular", entity.Titular),
 

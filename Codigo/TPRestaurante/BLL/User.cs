@@ -38,6 +38,17 @@ namespace BLL
             
         }
 
+        public List<BE.User> ListAvailableChefs()
+        {
+            List<BE.User> cocineros = new List<BE.User>();
+
+            cocineros = mp.GetAllChefs();
+            return cocineros;
+
+        }
+
+
+
         public LoginResult Login (BE.User pUser)
         {
             if (SessionManager.Instance.IsLoggedIn())
@@ -127,6 +138,12 @@ namespace BLL
         public void UpdatePermissions(BE.User user)
         {
             mp.UpdatePermissions(user);
+        }
+
+        public void UpdateAvailability(BE.User cocineroSeleccionado, AvailabilityType disponibilidad)
+        {
+            cocineroSeleccionado.Availability = disponibilidad;
+            mp.UpdateAvailability(cocineroSeleccionado);
         }
     }
 }

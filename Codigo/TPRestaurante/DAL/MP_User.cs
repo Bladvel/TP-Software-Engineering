@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace DAL
 {
@@ -25,7 +26,7 @@ namespace DAL
             user.Activo = bool.Parse(dr["ACTIVO"].ToString());
             user.Bloqueo = bool.Parse(dr["BLOQUEO"].ToString());
             user.Attempts = int.Parse(dr["INTENTOS"].ToString());
-
+            user.Availability = (AvailabilityType)Enum.Parse(typeof(AvailabilityType), dr["DISPONIBILIDAD"].ToString());
             return user;
         }
 
@@ -47,6 +48,21 @@ namespace DAL
             }
             return users;
         }
+
+        public List<User> GetAllChefs()
+        {
+            List<User> users = new List<User>();
+
+            access.Open();
+            DataTable dt = access.Read("LISTAR_COCINERO_DISPONIBLE");
+            access.Close();
+            foreach (DataRow dr in dt.Rows)
+            {
+                users.Add(Transform(dr));
+            }
+            return users;
+        }
+
 
         public override User GetById(object id)
         {
@@ -176,6 +192,23 @@ namespace DAL
             }
             access.Close();
 
+        }
+
+
+        //TODO implementar actualizacion de disponibilidad por usuario
+        public int UpdateAvailability(User entity)
+        {
+            List<SqlParameter> parameterList = new List<SqlParameter>()
+            {
+                access.CreateParameter("@id", entity.ID),
+                access.CreateParameter("@Disponibilidad", entity.Availability.ToString())
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ACTUALIZAR_DISPONIBILIDAD_USUARIO", parameterList);
+            access.Close();
+
+            return filasAfectadas;
         }
     }
 }

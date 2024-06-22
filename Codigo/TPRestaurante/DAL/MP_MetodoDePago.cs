@@ -58,7 +58,6 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        //TODO Manejar la insercion completa del pago (incluye metodo de pago y su clase derivada)
         public override int Insert(MetodoDePago entity)
         {
             List<SqlParameter> parameters = new List<SqlParameter>()
@@ -67,19 +66,20 @@ namespace DAL
             };
 
             access.Open();
-            int metodoDePagoId = access.WriteScalar("INSERTAR_METODO_DE_PAGO", parameters);
+            entity.id = access.WriteScalar("INSERTAR_METODO_DE_PAGO", parameters);
             access.Close();
 
+            
 
 
-            if (metodoDePagoId > 0)
+            if (entity.id > 0)
             {
-                if (entity is PagoTarjeta tarjeta)
+                if (entity is PagoTarjeta)
                 {
 
                     mpPagoTarjeta.Insert((PagoTarjeta)entity);
 
-                }else if (entity is PagoEfectivo efectivo)
+                }else if (entity is PagoEfectivo)
                 {
 
 
@@ -88,7 +88,7 @@ namespace DAL
                 }
 
             }
-            return metodoDePagoId;
+            return entity.id;
 
         }
 

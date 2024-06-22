@@ -15,8 +15,6 @@ namespace BE
         private DateTime vencimiento;
         public DateTime FechaVencimiento { get=> vencimiento; set=> vencimiento=value; }
 
-        private string banco;
-        public string Banco { get=>banco; set=>banco=value; }
 
         private int clave;
         public int Cvv { get=>clave; set=>clave=value; }

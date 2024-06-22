@@ -77,7 +77,7 @@ namespace TPRestaurante
                 string metodoSeleccionado = cmbMetodo.SelectedItem.ToString();
                 if (metodoSeleccionado == "Tarjeta")
                 {
-                    // Mostrar opciones de tarjeta y ocultar opciones de efectivo
+
                     groupTarjeta.Visible = true;
                     groupEfectivo.Visible = false;
                 }
@@ -89,8 +89,80 @@ namespace TPRestaurante
             }
         }
 
+        BLL.ControllerCajero bllCajero = new BLL.ControllerCajero();
+
+
         private void btnCobrar_Click(object sender, EventArgs e)
         {
+            if (grdPedidosPorCobrar.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un pedido.");
+                return;
+            }
+
+            Pedido pedidoSeleccionado = grdPedidosPorCobrar.CurrentRow.DataBoundItem as Pedido;
+            if (pedidoSeleccionado == null)
+            {
+                MessageBox.Show("Seleccione un pedido válido.");
+                return;
+            }
+
+            if (cmbMetodo.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un método de pago.");
+                return;
+            }
+
+            string metodoPagoSeleccionado = cmbMetodo.SelectedItem.ToString();
+            MetodoDePago metodoDePago = null;
+
+            if (metodoPagoSeleccionado == "Tarjeta")
+            {
+
+                if (string.IsNullOrWhiteSpace(txtNumero.Text) ||
+                    dateTimePicker1.Value == null ||
+                    string.IsNullOrWhiteSpace(txtCvv.Text) ||
+                    string.IsNullOrWhiteSpace(txtTitular.Text))
+                {
+                    MessageBox.Show("Complete todos los campos de la tarjeta.");
+                    return;
+                }
+
+                metodoDePago = new PagoTarjeta
+                {
+                    tipo = PaymentMethodType.Tarjeta,
+                    NumeroTarjeta = long.Parse(txtNumero.Text),
+                    FechaVencimiento = dateTimePicker1.Value,
+                    Cvv = int.Parse(txtCvv.Text),
+                    Titular = txtTitular.Text
+                };
+            }
+            else if (metodoPagoSeleccionado == "Efectivo")
+            {
+                // Validar campo de efectivo
+                if (string.IsNullOrWhiteSpace(txtMonto.Text))
+                {
+                    MessageBox.Show("Ingrese el monto en efectivo.");
+                    return;
+                }
+
+                metodoDePago = new PagoEfectivo
+                {
+                    tipo = PaymentMethodType.Efectivo,
+                    Monto = float.Parse(txtMonto.Text)
+                };
+            }
+
+            if (bllCajero.RealizarCobro(metodoDePago, pedidoSeleccionado) > 0)
+            {
+                MessageBox.Show("Pago registrado exitosamente.");
+                grdPedidosPorCobrar.DataSource = null;
+                grdPedidosPorCobrar.DataSource = bllPedido.ListarPorPago(PaymentState.NoPagado);
+            }
+            else
+            {
+                MessageBox.Show("Error al registrar el pago.");
+            }
 
         }
     }

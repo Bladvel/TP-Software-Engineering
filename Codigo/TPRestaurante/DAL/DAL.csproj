@@ -44,6 +44,7 @@
     <Compile Include="Access.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="MP_Cliente.cs" />
+    <Compile Include="MP_Comanda.cs" />
     <Compile Include="MP_Ingrediente.cs" />
     <Compile Include="MP_MetodoDePago.cs" />
     <Compile Include="MP_Pago.cs" />

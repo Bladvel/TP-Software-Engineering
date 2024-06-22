@@ -10,6 +10,7 @@ namespace BLL
     public class ControllerCajero
     {
         Pedido bllPedido = new Pedido();
+        Pago bllPago = new Pago();
         public bool RegistrarPedido(List<BE.ItemProducto> productos, BE.Cliente cliente)
         {
             BE.Pedido pedido  = new BE.Pedido();
@@ -24,6 +25,27 @@ namespace BLL
                 return true;
             }
             return false;
+        }
+
+        public int RealizarCobro(MetodoDePago metodoDePago, BE.Pedido pedidoSeleccionado)
+        {
+
+            float total = bllPedido.CalcularSubtotal(pedidoSeleccionado);
+
+
+            BE.Pago nuevoPago = new BE.Pago(total, metodoDePago, pedidoSeleccionado)
+            {
+                Fecha = DateTime.Now,
+            };
+            int idPago = -1;
+            if (bllPago.ProcesarPago(nuevoPago))
+            {
+               idPago= bllPago.Insertar(nuevoPago);
+
+               bllPedido.CambiarEstado(pedidoSeleccionado,PaymentState.Pagado);
+            }
+
+            return idPago;
         }
     }
 }

@@ -34,19 +34,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cmbMetodo = new System.Windows.Forms.ComboBox();
             this.groupEfectivo = new System.Windows.Forms.GroupBox();
-            this.lblCambio = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
             this.groupTarjeta = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTitular = new System.Windows.Forms.TextBox();
+            this.txtCvv = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.grdPedidosPorCobrar = new System.Windows.Forms.DataGridView();
             this.lblTotal = new System.Windows.Forms.Label();
             this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
@@ -69,7 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(311, 52);
+            this.label2.Location = new System.Drawing.Point(732, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 2;
@@ -78,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 158);
+            this.label3.Location = new System.Drawing.Point(365, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 3;
@@ -88,7 +86,7 @@
             // 
             this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMetodo.FormattingEnabled = true;
-            this.cmbMetodo.Location = new System.Drawing.Point(15, 175);
+            this.cmbMetodo.Location = new System.Drawing.Point(368, 36);
             this.cmbMetodo.Name = "cmbMetodo";
             this.cmbMetodo.Size = new System.Drawing.Size(137, 21);
             this.cmbMetodo.TabIndex = 4;
@@ -96,34 +94,14 @@
             // 
             // groupEfectivo
             // 
-            this.groupEfectivo.Controls.Add(this.lblCambio);
-            this.groupEfectivo.Controls.Add(this.label5);
             this.groupEfectivo.Controls.Add(this.label4);
-            this.groupEfectivo.Controls.Add(this.textBox1);
-            this.groupEfectivo.Location = new System.Drawing.Point(314, 213);
+            this.groupEfectivo.Controls.Add(this.txtMonto);
+            this.groupEfectivo.Location = new System.Drawing.Point(623, 100);
             this.groupEfectivo.Name = "groupEfectivo";
             this.groupEfectivo.Size = new System.Drawing.Size(200, 196);
             this.groupEfectivo.TabIndex = 5;
             this.groupEfectivo.TabStop = false;
             this.groupEfectivo.Text = "Efectivo";
-            // 
-            // lblCambio
-            // 
-            this.lblCambio.AutoSize = true;
-            this.lblCambio.Location = new System.Drawing.Point(81, 89);
-            this.lblCambio.Name = "lblCambio";
-            this.lblCambio.Size = new System.Drawing.Size(19, 13);
-            this.lblCambio.TabIndex = 2;
-            this.lblCambio.Text = "$0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Cambio:";
             // 
             // label4
             // 
@@ -134,12 +112,12 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Monto:";
             // 
-            // textBox1
+            // txtMonto
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtMonto.Location = new System.Drawing.Point(81, 50);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(100, 20);
+            this.txtMonto.TabIndex = 0;
             // 
             // groupTarjeta
             // 
@@ -147,11 +125,11 @@
             this.groupTarjeta.Controls.Add(this.label9);
             this.groupTarjeta.Controls.Add(this.label8);
             this.groupTarjeta.Controls.Add(this.label7);
-            this.groupTarjeta.Controls.Add(this.textBox5);
-            this.groupTarjeta.Controls.Add(this.textBox4);
+            this.groupTarjeta.Controls.Add(this.txtTitular);
+            this.groupTarjeta.Controls.Add(this.txtCvv);
             this.groupTarjeta.Controls.Add(this.dateTimePicker1);
-            this.groupTarjeta.Controls.Add(this.textBox3);
-            this.groupTarjeta.Location = new System.Drawing.Point(15, 213);
+            this.groupTarjeta.Controls.Add(this.txtNumero);
+            this.groupTarjeta.Location = new System.Drawing.Point(368, 100);
             this.groupTarjeta.Name = "groupTarjeta";
             this.groupTarjeta.Size = new System.Drawing.Size(249, 196);
             this.groupTarjeta.TabIndex = 5;
@@ -194,19 +172,19 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Numero";
             // 
-            // textBox5
+            // txtTitular
             // 
-            this.textBox5.Location = new System.Drawing.Point(74, 133);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 20);
-            this.textBox5.TabIndex = 3;
+            this.txtTitular.Location = new System.Drawing.Point(74, 133);
+            this.txtTitular.Name = "txtTitular";
+            this.txtTitular.Size = new System.Drawing.Size(156, 20);
+            this.txtTitular.TabIndex = 3;
             // 
-            // textBox4
+            // txtCvv
             // 
-            this.textBox4.Location = new System.Drawing.Point(74, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 20);
-            this.textBox4.TabIndex = 2;
+            this.txtCvv.Location = new System.Drawing.Point(74, 100);
+            this.txtCvv.Name = "txtCvv";
+            this.txtCvv.Size = new System.Drawing.Size(56, 20);
+            this.txtCvv.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -215,19 +193,19 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(156, 20);
             this.dateTimePicker1.TabIndex = 1;
             // 
-            // textBox3
+            // txtNumero
             // 
-            this.textBox3.Location = new System.Drawing.Point(74, 34);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 20);
-            this.textBox3.TabIndex = 0;
+            this.txtNumero.Location = new System.Drawing.Point(74, 34);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(156, 20);
+            this.txtNumero.TabIndex = 0;
             // 
             // grdPedidosPorCobrar
             // 
             this.grdPedidosPorCobrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdPedidosPorCobrar.Location = new System.Drawing.Point(15, 36);
             this.grdPedidosPorCobrar.Name = "grdPedidosPorCobrar";
-            this.grdPedidosPorCobrar.Size = new System.Drawing.Size(249, 119);
+            this.grdPedidosPorCobrar.Size = new System.Drawing.Size(338, 260);
             this.grdPedidosPorCobrar.TabIndex = 8;
             this.grdPedidosPorCobrar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPedidosPorCobrar_CellClick);
             // 
@@ -235,7 +213,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(368, 52);
+            this.lblTotal.Location = new System.Drawing.Point(791, 36);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(23, 16);
             this.lblTotal.TabIndex = 9;
@@ -248,7 +226,7 @@
             this.ucButtonSecondary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ucButtonSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.ucButtonSecondary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary1.Location = new System.Drawing.Point(382, 455);
+            this.ucButtonSecondary1.Location = new System.Drawing.Point(691, 328);
             this.ucButtonSecondary1.Name = "ucButtonSecondary1";
             this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
             this.ucButtonSecondary1.TabIndex = 7;
@@ -263,7 +241,7 @@
             this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCobrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnCobrar.ForeColor = System.Drawing.Color.White;
-            this.btnCobrar.Location = new System.Drawing.Point(240, 455);
+            this.btnCobrar.Location = new System.Drawing.Point(549, 328);
             this.btnCobrar.Name = "btnCobrar";
             this.btnCobrar.Size = new System.Drawing.Size(132, 39);
             this.btnCobrar.TabIndex = 6;
@@ -276,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(528, 506);
+            this.ClientSize = new System.Drawing.Size(855, 410);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.grdPedidosPorCobrar);
             this.Controls.Add(this.ucButtonSecondary1);
@@ -310,16 +288,14 @@
         private System.Windows.Forms.GroupBox groupEfectivo;
         private System.Windows.Forms.GroupBox groupTarjeta;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblCambio;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTitular;
+        private System.Windows.Forms.TextBox txtCvv;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label10;
         private UcButtonPrimary btnCobrar;
         private UcButtonSecondary ucButtonSecondary1;

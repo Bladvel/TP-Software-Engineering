@@ -17,6 +17,11 @@ namespace BLL
             pedido.Estado = estado;
             mp.Update(pedido);
         }
+        public void CambiarEstado(BE.Pedido pedido, PaymentState pagado)
+        {
+            pedido.EstadoPago = pagado;
+            mp.Update(pedido);
+        }
 
         public float CalcularSubtotal(BE.Pedido pedido)
         {
@@ -55,6 +60,7 @@ namespace BLL
         {
             return mp.GetOrderByPaymentState(estado);
         }
+
 
     }
 }

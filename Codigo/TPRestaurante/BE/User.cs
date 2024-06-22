@@ -90,6 +90,17 @@ namespace BE
 			set => _attempts=value; 
 		}
 
+
+		private AvailabilityType availability;
+
+		public AvailabilityType Availability
+		{
+			get => availability;
+			set => availability = value;
+		}
+
+
+
 		private List<IComponent> permissions = new List<IComponent>();
 
 		public List<IComponent> Permissions => permissions;

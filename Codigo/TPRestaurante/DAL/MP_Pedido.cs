@@ -141,6 +141,7 @@ namespace DAL
             {
                 access.CreateParameter("@nro", entity.NroPedido),
                 access.CreateParameter("@est", entity.Estado.ToString()),
+                access.CreateParameter("@pag",entity.EstadoPago.ToString()),
             };
 
             access.Open();

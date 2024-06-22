@@ -29,47 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lstPedidosPorCobrar = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInstrucciones = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
-            this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
+            this.grdPedidosAceptados = new System.Windows.Forms.DataGridView();
+            this.grdProductosPorPedido = new System.Windows.Forms.DataGridView();
+            this.grdCocinerosDisponibles = new System.Windows.Forms.DataGridView();
+            this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
+            this.btnGenerarComanda = new TPRestaurante.UcButtonPrimary(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.grdPedidosAceptados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProductosPorPedido)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCocinerosDisponibles)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lstPedidosPorCobrar
-            // 
-            this.lstPedidosPorCobrar.FormattingEnabled = true;
-            this.lstPedidosPorCobrar.Location = new System.Drawing.Point(28, 68);
-            this.lstPedidosPorCobrar.Name = "lstPedidosPorCobrar";
-            this.lstPedidosPorCobrar.Size = new System.Drawing.Size(226, 95);
-            this.lstPedidosPorCobrar.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 36);
+            this.label1.Location = new System.Drawing.Point(48, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Seleccionar pedido";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(321, 68);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(218, 95);
-            this.listBox1.TabIndex = 6;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 36);
+            this.label2.Location = new System.Drawing.Point(408, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 7;
@@ -78,97 +65,120 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 196);
+            this.label3.Location = new System.Drawing.Point(408, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Agregar instrucciones";
             // 
-            // textBox1
+            // txtInstrucciones
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 222);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 95);
-            this.textBox1.TabIndex = 9;
+            this.txtInstrucciones.Location = new System.Drawing.Point(411, 269);
+            this.txtInstrucciones.Multiline = true;
+            this.txtInstrucciones.Name = "txtInstrucciones";
+            this.txtInstrucciones.Size = new System.Drawing.Size(301, 95);
+            this.txtInstrucciones.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(318, 196);
+            this.label4.Location = new System.Drawing.Point(48, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Asignar cocinero";
             // 
-            // listBox2
+            // grdPedidosAceptados
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(321, 222);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(218, 95);
-            this.listBox2.TabIndex = 11;
+            this.grdPedidosAceptados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdPedidosAceptados.Location = new System.Drawing.Point(47, 59);
+            this.grdPedidosAceptados.Name = "grdPedidosAceptados";
+            this.grdPedidosAceptados.Size = new System.Drawing.Size(301, 150);
+            this.grdPedidosAceptados.TabIndex = 14;
+            this.grdPedidosAceptados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPedidosAceptados_CellClick);
             // 
-            // ucButtonPrimary1
+            // grdProductosPorPedido
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(269, 344);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonPrimary1.TabIndex = 12;
-            this.ucButtonPrimary1.Text = "Generar";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
+            this.grdProductosPorPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdProductosPorPedido.Location = new System.Drawing.Point(411, 59);
+            this.grdProductosPorPedido.Name = "grdProductosPorPedido";
+            this.grdProductosPorPedido.Size = new System.Drawing.Size(301, 150);
+            this.grdProductosPorPedido.TabIndex = 14;
             // 
-            // ucButtonSecondary1
+            // grdCocinerosDisponibles
             // 
-            this.ucButtonSecondary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.ucButtonSecondary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonSecondary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonSecondary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary1.Location = new System.Drawing.Point(407, 344);
-            this.ucButtonSecondary1.Name = "ucButtonSecondary1";
-            this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonSecondary1.TabIndex = 13;
-            this.ucButtonSecondary1.Text = "Cancelar";
-            this.ucButtonSecondary1.UseVisualStyleBackColor = false;
+            this.grdCocinerosDisponibles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCocinerosDisponibles.Location = new System.Drawing.Point(47, 269);
+            this.grdCocinerosDisponibles.Name = "grdCocinerosDisponibles";
+            this.grdCocinerosDisponibles.Size = new System.Drawing.Size(301, 150);
+            this.grdCocinerosDisponibles.TabIndex = 14;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(580, 380);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(132, 39);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGenerarComanda
+            // 
+            this.btnGenerarComanda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnGenerarComanda.FlatAppearance.BorderSize = 0;
+            this.btnGenerarComanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarComanda.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGenerarComanda.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarComanda.Location = new System.Drawing.Point(442, 380);
+            this.btnGenerarComanda.Name = "btnGenerarComanda";
+            this.btnGenerarComanda.Size = new System.Drawing.Size(132, 39);
+            this.btnGenerarComanda.TabIndex = 12;
+            this.btnGenerarComanda.Text = "Generar";
+            this.btnGenerarComanda.UseVisualStyleBackColor = false;
+            this.btnGenerarComanda.Click += new System.EventHandler(this.btnGenerarComanda_Click);
             // 
             // frmGenerarComanda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 404);
-            this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButtonPrimary1);
-            this.Controls.Add(this.listBox2);
+            this.ClientSize = new System.Drawing.Size(935, 477);
+            this.Controls.Add(this.grdProductosPorPedido);
+            this.Controls.Add(this.grdCocinerosDisponibles);
+            this.Controls.Add(this.grdPedidosAceptados);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGenerarComanda);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtInstrucciones);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.lstPedidosPorCobrar);
             this.Controls.Add(this.label1);
             this.Name = "frmGenerarComanda";
             this.Text = "frmGenerarComanda";
+            this.Load += new System.EventHandler(this.frmGenerarComanda_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdPedidosAceptados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProductosPorPedido)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCocinerosDisponibles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox lstPedidosPorCobrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInstrucciones;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox2;
-        private UcButtonPrimary ucButtonPrimary1;
-        private UcButtonSecondary ucButtonSecondary1;
+        private UcButtonPrimary btnGenerarComanda;
+        private UcButtonSecondary btnCancelar;
+        private System.Windows.Forms.DataGridView grdPedidosAceptados;
+        private System.Windows.Forms.DataGridView grdProductosPorPedido;
+        private System.Windows.Forms.DataGridView grdCocinerosDisponibles;
     }
 }

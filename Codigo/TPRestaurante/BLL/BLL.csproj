@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CatalogoIngredientes.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Comanda.cs" />
     <Compile Include="ControllerCajero.cs" />
     <Compile Include="ControllerJefeDeCocina.cs" />
     <Compile Include="ModoDelGestor.cs" />
