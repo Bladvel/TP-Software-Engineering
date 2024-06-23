@@ -16,15 +16,39 @@ namespace DAL
             throw new NotImplementedException();
         }
 
+        MP_Pedido mpPedido = new MP_Pedido();
+        MP_User mpUser = new MP_User();
         public override Comanda Transform(DataRow dr)
         {
-            throw new NotImplementedException();
+            Pedido pedido = mpPedido.GetById(int.Parse(dr["ID_PEDIDO"].ToString()));
+            User cocinero = mpUser.GetById(dr["ID_COCINERO"].ToString());
+            string descripcion = dr["DESCRIPCION"].ToString();
+            Comanda comanda = new Comanda(pedido,cocinero, descripcion);
+            comanda.ID = int.Parse(dr["ID"].ToString());
+            return comanda;
+            
         }
 
         public override List<Comanda> GetAll()
         {
             throw new NotImplementedException();
         }
+
+        public List<BE.Comanda> GetAllOnGoing()
+        {
+            List<Comanda> comanda = new List<BE.Comanda>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_COMANDAS_EN_CURSO");
+            access.Close();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                comanda.Add(Transform(row));
+            }
+
+            return comanda;
+        }
+
 
         public override int Insert(Comanda entity)
         {

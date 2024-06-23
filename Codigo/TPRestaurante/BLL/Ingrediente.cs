@@ -8,11 +8,11 @@ using DAL;
 
 namespace BLL
 {
-    public class CatalogoIngredientes
+    public class Ingrediente
     {
         MP_Ingrediente mpIngrediente = new MP_Ingrediente();
 
-        public List<BE.Ingrediente> ListarIngredientes()
+        public List<BE.Ingrediente> Listar()
         {
             return mpIngrediente.GetAll();
         }

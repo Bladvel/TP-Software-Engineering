@@ -25,6 +25,11 @@ namespace Interfaces
         GestionarCatalogos,
         GestionarPedido,
         GestionarComanda,
+        VerPedidosRegistrados,
+        VerPedidosEnCurso,
+        VerPedidosCerrados,
+        VerPedidosVerificados,
+        VerPedidosListos,
 
     }
 }

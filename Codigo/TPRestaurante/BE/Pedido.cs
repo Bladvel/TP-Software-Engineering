@@ -72,10 +72,10 @@ namespace BE
             set=> estadoPago=value;
         }
 
-
-
-
-
+        public override string ToString()
+        {
+            return $"Nro: {NroPedido}";
+        }
     }
 
 

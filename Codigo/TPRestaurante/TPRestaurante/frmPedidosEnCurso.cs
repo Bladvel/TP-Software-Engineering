@@ -17,8 +17,10 @@ namespace TPRestaurante
         public frmPedidosEnCurso()
         {
             InitializeComponent();
+            bllPedido = new BLL.Pedido();
         }
 
+        private BLL.Pedido bllPedido;
         private void ucButtonSecondary1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -26,7 +28,13 @@ namespace TPRestaurante
 
         private void frmPedidosEnCurso_Load(object sender, EventArgs e)
         {
-            btnNotificarPedidoListo.Visible = SessionManager.Instance.IsInRole(PermissionType.NotificarPedidoListo);
+            grdPedidos.RowHeadersVisible = false;
+            grdPedidos.EditMode = DataGridViewEditMode.EditProgrammatically;
+            grdPedidos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+
+            grdPedidos.DataSource = null;
+            grdPedidos.DataSource = bllPedido.ListarPorEstado(OrderType.EnPreparacion);
         }
     }
 }

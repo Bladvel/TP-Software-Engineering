@@ -49,16 +49,6 @@ namespace BE
             set=> ingredientList=value;
         }
 
-        public Producto CrearProducto(float precio, string nombre, string descripcion, List<Ingrediente> ingredientes)
-        {
-            return new Producto
-            {
-                PrecioActual = precio, 
-                Nombre = nombre, 
-                Descripcion = descripcion,
-                Ingredientes = ingredientes,
-            };
-        }
 
         public override string ToString()
         {

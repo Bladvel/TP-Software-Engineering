@@ -76,17 +76,41 @@
     <Compile Include="frmGestionarPermisos.Designer.cs">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPedidosCerrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidosCerrados.Designer.cs">
+      <DependentUpon>frmPedidosCerrados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidosEnCurso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPedidosEnCurso.Designer.cs">
       <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPedidosListos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidosListos.Designer.cs">
+      <DependentUpon>frmPedidosListos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidosVerificados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidosVerificados.Designer.cs">
+      <DependentUpon>frmPedidosVerificados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPerfiles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPerfiles.Designer.cs">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerComandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerComandas.Designer.cs">
+      <DependentUpon>frmVerComandas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVerificarPedido.cs">
       <SubType>Form</SubType>
@@ -147,11 +171,23 @@
     <EmbeddedResource Include="frmGestionarPermisos.resx">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosCerrados.resx">
+      <DependentUpon>frmPedidosCerrados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPedidosEnCurso.resx">
       <DependentUpon>frmPedidosEnCurso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosListos.resx">
+      <DependentUpon>frmPedidosListos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosVerificados.resx">
+      <DependentUpon>frmPedidosVerificados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPerfiles.resx">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerComandas.resx">
+      <DependentUpon>frmVerComandas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVerificarPedido.resx">
       <DependentUpon>frmVerificarPedido.cs</DependentUpon>

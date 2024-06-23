@@ -194,7 +194,7 @@ namespace TPRestaurante
         {
             if (pedidoSeleccionado != null)
             {
-                controllerJefeDeCocina.AceptarPedido(pedidoSeleccionado);
+                controllerJefeDeCocina.RechazarPedido(pedidoSeleccionado);
                 btnAceptarPedido.Enabled = false;
                 btnRechazarPedido.Enabled = false;
                 btnVerificarPedido.Enabled = false;

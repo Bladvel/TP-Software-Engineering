@@ -66,7 +66,8 @@ namespace DAL
 
         public override User GetById(object id)
         {
-            throw new NotImplementedException();
+            Guid pID = Guid.Parse(id.ToString());
+            return GetAll().FirstOrDefault(u => u.ID.Equals(pID));
         }
 
         public override int Insert(User entity)

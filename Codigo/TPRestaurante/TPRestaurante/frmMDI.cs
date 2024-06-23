@@ -63,7 +63,16 @@ namespace TPRestaurante
 
                 menuPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarPedido);
                 itemCrearPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CrearPedido);
+                
                 itemVerPedidos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidos);
+                itemVerPedidosRegistrados.Visible =
+                    SessionManager.Instance.IsInRole(PermissionType.VerPedidosRegistrados);
+                itemVerPedidosEnCurso.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidosEnCurso);
+                itemVerPedidosCerrados.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidosCerrados);
+                itemVerPedidosVerificados.Visible =
+                    SessionManager.Instance.IsInRole(PermissionType.VerPedidosVerificados);
+                itemVerPedidosListos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerPedidosListos);
+                
                 itemCobrarPedido.Visible = SessionManager.Instance.IsInRole(PermissionType.CobrarPedido);
                 itemComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarComanda);
                 itemGenerarComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GenerarComanda);
@@ -78,7 +87,7 @@ namespace TPRestaurante
             {
                 itemCerrarSesión.Visible = false;
                 itemCambiarContraseña.Visible = false;
-                itemCambiarIdioma.Visible = false;
+                itemCambiarIdioma.Visible = true;
                 itemIniciarSesión.Enabled = true;
                 toolStripStatusLabel1.Text = "Sesion no iniciada";
 
@@ -172,6 +181,30 @@ namespace TPRestaurante
         {
             frmGestionarPermisos permisos = new frmGestionarPermisos();
             AbrirChildForm(permisos);
+        }
+
+        private void itemVerComandas_Click(object sender, EventArgs e)
+        {
+            frmVerComandas comandas = new frmVerComandas();
+            AbrirChildForm(comandas);
+        }
+
+        private void itemVerPedidosListos_Click(object sender, EventArgs e)
+        {
+            frmPedidosListos pedidosListos = new frmPedidosListos();
+            AbrirChildForm(pedidosListos);
+        }
+
+        private void itemVerPedidosVerificados_Click(object sender, EventArgs e)
+        {
+            frmPedidosVerificados pedidosVerificados = new frmPedidosVerificados();
+            AbrirChildForm(pedidosVerificados);
+        }
+
+        private void itemVerPedidosCerrados_Click(object sender, EventArgs e)
+        {
+            frmPedidosCerrados pedidosListos = new frmPedidosCerrados();
+            AbrirChildForm(pedidosListos);
         }
     }
 }

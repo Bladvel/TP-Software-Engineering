@@ -41,16 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogoIngredientes.cs" />
+    <Compile Include="Ingrediente.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Comanda.cs" />
     <Compile Include="ControllerCajero.cs" />
+    <Compile Include="ControllerCocinero.cs" />
     <Compile Include="ControllerJefeDeCocina.cs" />
     <Compile Include="ModoDelGestor.cs" />
     <Compile Include="Pago.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
-    <Compile Include="CatalogoProductos.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

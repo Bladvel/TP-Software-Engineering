@@ -161,7 +161,7 @@ namespace TPRestaurante
             }
             else
             {
-                MessageBox.Show("Error al registrar el pago.");
+                MessageBox.Show("Pago rechazado. Error al registrar el pago.");
             }
 
         }

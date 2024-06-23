@@ -43,7 +43,7 @@
             this.menuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCrearPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidos = new System.Windows.Forms.ToolStripMenuItem();
-            this.registradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemVerPedidosRegistrados = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidosEnCurso = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidosCerrados = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCobrarPedido = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +56,8 @@
             this.menuAyuda = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.itemVerPedidosVerificados = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemVerPedidosListos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -126,7 +128,7 @@
             // itemGestorUsuarios
             // 
             this.itemGestorUsuarios.Name = "itemGestorUsuarios";
-            this.itemGestorUsuarios.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorUsuarios.Size = new System.Drawing.Size(180, 22);
             this.itemGestorUsuarios.Text = "Gestion de usuarios";
             this.itemGestorUsuarios.Click += new System.EventHandler(this.itemGestorUsuarios_Click);
             // 
@@ -136,7 +138,7 @@
             this.permisosToolStripMenuItem,
             this.asignacionDePerfilToolStripMenuItem});
             this.itemGestorPerfiles.Name = "itemGestorPerfiles";
-            this.itemGestorPerfiles.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorPerfiles.Size = new System.Drawing.Size(180, 22);
             this.itemGestorPerfiles.Text = "Gestion de perfiles";
             // 
             // permisosToolStripMenuItem
@@ -156,7 +158,7 @@
             // itemGestorIdiomas
             // 
             this.itemGestorIdiomas.Name = "itemGestorIdiomas";
-            this.itemGestorIdiomas.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorIdiomas.Size = new System.Drawing.Size(180, 22);
             this.itemGestorIdiomas.Text = "Gestion de idiomas";
             // 
             // menuPedidos
@@ -180,19 +182,21 @@
             // itemVerPedidos
             // 
             this.itemVerPedidos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registradosToolStripMenuItem,
+            this.itemVerPedidosRegistrados,
+            this.itemVerPedidosVerificados,
             this.itemVerPedidosEnCurso,
+            this.itemVerPedidosListos,
             this.itemVerPedidosCerrados});
             this.itemVerPedidos.Name = "itemVerPedidos";
             this.itemVerPedidos.Size = new System.Drawing.Size(180, 22);
             this.itemVerPedidos.Text = "Ver pedidos";
             // 
-            // registradosToolStripMenuItem
+            // itemVerPedidosRegistrados
             // 
-            this.registradosToolStripMenuItem.Name = "registradosToolStripMenuItem";
-            this.registradosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registradosToolStripMenuItem.Text = "Registrados";
-            this.registradosToolStripMenuItem.Click += new System.EventHandler(this.registradosToolStripMenuItem_Click);
+            this.itemVerPedidosRegistrados.Name = "itemVerPedidosRegistrados";
+            this.itemVerPedidosRegistrados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosRegistrados.Text = "Registrados";
+            this.itemVerPedidosRegistrados.Click += new System.EventHandler(this.registradosToolStripMenuItem_Click);
             // 
             // itemVerPedidosEnCurso
             // 
@@ -206,6 +210,7 @@
             this.itemVerPedidosCerrados.Name = "itemVerPedidosCerrados";
             this.itemVerPedidosCerrados.Size = new System.Drawing.Size(180, 22);
             this.itemVerPedidosCerrados.Text = "Cerrados";
+            this.itemVerPedidosCerrados.Click += new System.EventHandler(this.itemVerPedidosCerrados_Click);
             // 
             // itemCobrarPedido
             // 
@@ -226,15 +231,16 @@
             // itemGenerarComandas
             // 
             this.itemGenerarComandas.Name = "itemGenerarComandas";
-            this.itemGenerarComandas.Size = new System.Drawing.Size(115, 22);
+            this.itemGenerarComandas.Size = new System.Drawing.Size(180, 22);
             this.itemGenerarComandas.Text = "Generar";
             this.itemGenerarComandas.Click += new System.EventHandler(this.generarToolStripMenuItem_Click);
             // 
             // itemVerComandas
             // 
             this.itemVerComandas.Name = "itemVerComandas";
-            this.itemVerComandas.Size = new System.Drawing.Size(115, 22);
+            this.itemVerComandas.Size = new System.Drawing.Size(180, 22);
             this.itemVerComandas.Text = "Ver";
+            this.itemVerComandas.Click += new System.EventHandler(this.itemVerComandas_Click);
             // 
             // menuCatalogos
             // 
@@ -281,6 +287,20 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(102, 17);
             this.toolStripStatusLabel1.Text = "Sesion no iniciada";
+            // 
+            // itemVerPedidosVerificados
+            // 
+            this.itemVerPedidosVerificados.Name = "itemVerPedidosVerificados";
+            this.itemVerPedidosVerificados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosVerificados.Text = "Verificados";
+            this.itemVerPedidosVerificados.Click += new System.EventHandler(this.itemVerPedidosVerificados_Click);
+            // 
+            // itemVerPedidosListos
+            // 
+            this.itemVerPedidosListos.Name = "itemVerPedidosListos";
+            this.itemVerPedidosListos.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosListos.Text = "Listos";
+            this.itemVerPedidosListos.Click += new System.EventHandler(this.itemVerPedidosListos_Click);
             // 
             // frmMDI
             // 
@@ -331,9 +351,11 @@
         private System.Windows.Forms.ToolStripMenuItem itemGestorPerfiles;
         private System.Windows.Forms.ToolStripMenuItem itemGestorIdiomas;
         private System.Windows.Forms.ToolStripMenuItem menuAyuda;
-        private System.Windows.Forms.ToolStripMenuItem registradosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itemVerPedidosRegistrados;
         private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignacionDePerfilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itemVerPedidosVerificados;
+        private System.Windows.Forms.ToolStripMenuItem itemVerPedidosListos;
     }
 }
 

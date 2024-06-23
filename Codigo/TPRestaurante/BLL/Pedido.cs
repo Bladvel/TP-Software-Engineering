@@ -36,20 +36,12 @@ namespace BLL
             return subtotal;
         }
 
-        public void AgregarItem(BE.Pedido pedido, ItemProducto item)
-        {
-            pedido.Productos.Add(item);
-        }
 
         public int RegistrarPedido(BE.Pedido pedido)
         {
            return mp.Insert(pedido);
         }
 
-        public List<BE.Pedido> Listar()
-        {
-            return mp.GetAll();
-        }
 
         public List<BE.Pedido> ListarPorEstado(OrderType estado)
         {

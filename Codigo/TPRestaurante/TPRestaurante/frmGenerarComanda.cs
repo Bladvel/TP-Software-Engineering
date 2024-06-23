@@ -45,9 +45,8 @@ namespace TPRestaurante
             grdPedidosAceptados.EditMode = DataGridViewEditMode.EditProgrammatically;
             grdPedidosAceptados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            grdPedidosAceptados.DataSource = null;
-            grdPedidosAceptados.DataSource = bllPedido.ListarPorEstado(OrderType.Aceptado);
 
+            LlenarGridPedidos();
 
 
             grdCocinerosDisponibles.Enabled = false;
@@ -97,6 +96,12 @@ namespace TPRestaurante
         {
             grdProductosPorPedido.DataSource = null;
             grdProductosPorPedido.DataSource = pedidoSeleccionado.Productos;
+        }
+
+        private void LlenarGridPedidos()
+        {
+            grdPedidosAceptados.DataSource = null;
+            grdPedidosAceptados.DataSource = bllPedido.ListarPorEstado(OrderType.Aceptado);
         }
 
         private void LlenarGridCocineros()
@@ -157,6 +162,9 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Comanda generada exitosamente");
                 LlenarGridCocineros();
+                LlenarGridPedidos();
+                txtInstrucciones.Clear();
+                
             }
             else
             {

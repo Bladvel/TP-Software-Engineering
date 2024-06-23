@@ -47,5 +47,16 @@ namespace BLL
 
             return idPago;
         }
+
+        public bool CerrarPedido(BE.Pedido pedido)
+        {
+            bool resultado = pedido.EstadoPago == PaymentState.Pagado && pedido.Estado == OrderType.Listo;
+            if (resultado)
+            {
+                bllPedido.CambiarEstado(pedido, OrderType.Entregado);
+            }
+
+            return resultado;
+        }
     }
 }

@@ -18,7 +18,7 @@ namespace TPRestaurante
         public frmCreateOrder()
         {
             InitializeComponent();
-            catalogo = new BLL.CatalogoProductos();
+            catalogo = new BLL.Producto();
             controllerCajero = new BLL.ControllerCajero();
             bllPedido = new BLL.Pedido();
         }
@@ -29,7 +29,7 @@ namespace TPRestaurante
         }
 
 
-        private BLL.CatalogoProductos catalogo;
+        private BLL.Producto catalogo;
         private BLL.ControllerCajero controllerCajero;
         private BLL.Pedido bllPedido;
         private void frmCreateOrder_Load(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace TPRestaurante
 
             lstCatalogoProductos.AutoGenerateColumns = false;
             lstCatalogoProductos.DataSource = null;
-            lstCatalogoProductos.DataSource = catalogo.ListarProductos();
+            lstCatalogoProductos.DataSource = catalogo.Listar();
 
 
             DataGridViewTextBoxColumn nameColumn = new DataGridViewTextBoxColumn();

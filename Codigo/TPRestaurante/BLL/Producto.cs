@@ -7,10 +7,10 @@ using DAL;
 
 namespace BLL
 {
-    public class CatalogoProductos
+    public class Producto
     {
         private MP_Producto mp = new MP_Producto();
-        public List<BE.Producto> ListarProductos()
+        public List<BE.Producto> Listar()
         {
             return mp.GetAll();
         }

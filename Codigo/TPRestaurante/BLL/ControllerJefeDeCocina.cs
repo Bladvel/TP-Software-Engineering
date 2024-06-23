@@ -11,22 +11,22 @@ namespace BLL
 {
     public class ControllerJefeDeCocina
     {
-        private CatalogoIngredientes catalogoIngredientes = new CatalogoIngredientes();
+        private Ingrediente ingrediente = new Ingrediente();
 
 
         
-        public (List<Ingrediente> ingredientesDisponibles, List<Ingrediente> ingredientesFaltantes) VerificarDisponibilidad(BE.Pedido pedido)
+        public (List<BE.Ingrediente> ingredientesDisponibles, List<BE.Ingrediente> ingredientesFaltantes) VerificarDisponibilidad(BE.Pedido pedido)
         {
 
             Dictionary<int, int> ingredientesRequeridos = new Dictionary<int, int>();
-            List<Ingrediente> ingredientesDisponibles = new List<Ingrediente>();
-            List<Ingrediente> ingredientesFaltantes = new List<Ingrediente>();
+            List<BE.Ingrediente> ingredientesDisponibles = new List<BE.Ingrediente>();
+            List<BE.Ingrediente> ingredientesFaltantes = new List<BE.Ingrediente>();
 
             
             foreach (ItemProducto item in pedido.Productos)
             {
                 
-                foreach (Ingrediente ingrediente in item.Producto.Ingredientes)
+                foreach (BE.Ingrediente ingrediente in item.Producto.Ingredientes)
                 {
                     
                     if (ingredientesRequeridos.ContainsKey(ingrediente.CodIngrediente))
@@ -48,7 +48,7 @@ namespace BLL
                 int cantidadRequerida = requerido.Value;
 
                 
-                Ingrediente ingredienteDisponible = catalogoIngredientes.ObtenerIngredientePorCodigo(codIngrediente);
+                BE.Ingrediente ingredienteDisponible = ingrediente.ObtenerIngredientePorCodigo(codIngrediente);
 
                 if (ingredienteDisponible != null && ingredienteDisponible.Cantidad >= cantidadRequerida)
                 {
@@ -58,7 +58,7 @@ namespace BLL
                 else
                 {
                    
-                    Ingrediente ingredienteFaltante = new Ingrediente
+                    BE.Ingrediente ingredienteFaltante = new BE.Ingrediente
                     {
                         CodIngrediente = codIngrediente,
                         Nombre = ingredienteDisponible.Nombre,
@@ -81,7 +81,7 @@ namespace BLL
                 foreach (var ingrediente in itemProducto.Producto.Ingredientes)
                 {
 
-                    catalogoIngredientes.ActualizarStock(ingrediente, -itemProducto.Cantidad);
+                    this.ingrediente.ActualizarStock(ingrediente, -itemProducto.Cantidad);
 
                 }
             }
@@ -106,6 +106,7 @@ namespace BLL
             {
 
                 bllUser.UpdateAvailability(cocineroSeleccionado, AvailabilityType.NoDisponible);
+                bllPedido.CambiarEstado(pedidoSeleccionado,OrderType.EnPreparacion);
                 return true;
             }
 
