@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EtiquetaBLL.cs" />
+    <Compile Include="IdiomaBLL.cs" />
     <Compile Include="Ingrediente.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Comanda.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
     <Compile Include="Producto.cs" />
+    <Compile Include="TraduccionBLL.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
