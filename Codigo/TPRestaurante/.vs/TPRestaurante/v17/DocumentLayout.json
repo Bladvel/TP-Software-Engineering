@@ -7,44 +7,16 @@
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\traduccionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\traduccionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\idiomabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\idiomabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\comanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\etiquetabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\etiquetabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "frmMDI.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -72,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "frmMDI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -93,19 +65,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmManageLanguages.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
-              "RelativeDocumentMoniker": "TPRestaurante\\frmManageLanguages.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
-              "RelativeToolTip": "TPRestaurante\\frmManageLanguages.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAQwFcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:52:02.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmManageLanguages.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
@@ -115,96 +74,39 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T04:37:28.677Z",
               "EditorCaption": " [Design]"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "2fd65d77-5cd3-46d6-a819-6175ab51bdfd",
+        "Display": 1,
+        "X": -456,
+        "Y": 256,
+        "Width": 1355,
+        "Height": 733,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MP_Etiqueta.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Etiqueta.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_Etiqueta.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Etiqueta.cs",
-              "RelativeToolTip": "DAL\\MP_Etiqueta.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAywAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "frmManageLanguages.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmManageLanguages.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
+              "RelativeToolTip": "TPRestaurante\\frmManageLanguages.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAEwJgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:27:58.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MP_Idioma.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Idioma.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_Idioma.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Idioma.cs",
-              "RelativeToolTip": "DAL\\MP_Idioma.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAqwDsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:07:21.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MP_Traduccion.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Traduccion.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_Traduccion.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Traduccion.cs",
-              "RelativeToolTip": "DAL\\MP_Traduccion.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAcwCoAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:07:04.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TraduccionBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\TraduccionBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\TraduccionBLL.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\TraduccionBLL.cs",
-              "RelativeToolTip": "BLL\\TraduccionBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:20:42.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IdiomaBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\IdiomaBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\IdiomaBLL.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\IdiomaBLL.cs",
-              "RelativeToolTip": "BLL\\IdiomaBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:33:19.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Comanda.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Comanda.cs",
-              "RelativeDocumentMoniker": "BLL\\Comanda.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Comanda.cs",
-              "RelativeToolTip": "BLL\\Comanda.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIA1wBoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:34:32.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EtiquetaBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\EtiquetaBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\EtiquetaBLL.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\EtiquetaBLL.cs",
-              "RelativeToolTip": "BLL\\EtiquetaBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:27:02.624Z",
+              "WhenOpened": "2024-06-24T04:52:02.502Z",
               "EditorCaption": ""
             }
           ]

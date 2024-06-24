@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Interfaces;
+using Services;
 using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmManageLanguages : Form
+    public partial class frmManageLanguages : Form, IIdiomaObserver
     {
         public frmManageLanguages()
         {
@@ -50,6 +51,9 @@ namespace TPRestaurante
                 grdTraducciones.Rows.Add(etiqueta.Nombre, string.Empty);
             }
 
+
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
 
         }
 
@@ -121,6 +125,33 @@ namespace TPRestaurante
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmManageLanguages_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (btnGuardar.Tag != null && traducciones.ContainsKey(btnGuardar.Tag.ToString()))
+                btnGuardar.Text = traducciones[btnGuardar.Tag.ToString()].Texto;
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+
         }
     }
 }
