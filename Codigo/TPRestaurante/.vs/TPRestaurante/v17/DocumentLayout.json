@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmpedidoslistos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmpedidoslistos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanagelanguages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmcobrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmcobrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "frmMDI.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeToolTip": "TPRestaurante\\frmMDI.cs",
-              "ViewState": "AQIAAAoBAAAAAAAAAAAAAD8BAAAsAAAA",
+              "ViewState": "AQIAAAoBAAAAAAAAAADwvz8BAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T19:49:58.555Z",
               "IsPinned": true,
@@ -44,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmMDI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -53,6 +57,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T19:49:55.401Z",
               "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPedidosListos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmPedidosListos.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmPedidosListos.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmPedidosListos.cs [Design]",
+              "RelativeToolTip": "TPRestaurante\\frmPedidosListos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:36:33.132Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -65,6 +81,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCobrarPedido.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmCobrarPedido.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmCobrarPedido.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmCobrarPedido.cs [Design]",
+              "RelativeToolTip": "TPRestaurante\\frmCobrarPedido.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T16:11:33.283Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmManageLanguages.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
@@ -72,42 +100,7 @@
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs [Design]",
               "RelativeToolTip": "TPRestaurante\\frmManageLanguages.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:37:28.677Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "2fd65d77-5cd3-46d6-a819-6175ab51bdfd",
-        "Display": 1,
-        "X": -456,
-        "Y": 256,
-        "Width": 1355,
-        "Height": 733,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmManageLanguages.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
-              "RelativeDocumentMoniker": "TPRestaurante\\frmManageLanguages.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageLanguages.cs",
-              "RelativeToolTip": "TPRestaurante\\frmManageLanguages.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAEwJgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T04:52:02.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T04:37:28.677Z"
             }
           ]
         }

@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
 using Interfaces;
+using Services;
+using Services.Multiidioma;
 
 
 namespace TPRestaurante
 {
-    public partial class frmCobrarPedido : Form
+    public partial class frmCobrarPedido : Form, IIdiomaObserver
     {
         public frmCobrarPedido()
         {
@@ -43,6 +45,10 @@ namespace TPRestaurante
 
             cmbMetodo.Items.Add(PaymentMethodType.Tarjeta);
             cmbMetodo.Items.Add(PaymentMethodType.Efectivo);
+
+
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
 
         }
 
@@ -163,6 +169,47 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Pago rechazado. Error al registrar el pago.");
             }
+
+        }
+
+        private void frmCobrarPedido_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            if (groupTarjeta.Tag != null && traducciones.ContainsKey(groupTarjeta.Tag.ToString()))
+                groupTarjeta.Text = traducciones[groupTarjeta.Tag.ToString()].Texto;
+            if (groupEfectivo.Tag != null && traducciones.ContainsKey(groupEfectivo.Tag.ToString()))
+                groupEfectivo.Text = traducciones[groupEfectivo.Tag.ToString()].Texto;
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (label3.Tag != null && traducciones.ContainsKey(label3.Tag.ToString()))
+                label3.Text = traducciones[label3.Tag.ToString()].Texto;
+            if (label4.Tag != null && traducciones.ContainsKey(label4.Tag.ToString()))
+                label4.Text = traducciones[label4.Tag.ToString()].Texto;
+            if (label5.Tag != null && traducciones.ContainsKey(label5.Tag.ToString()))
+                label5.Text = traducciones[label5.Tag.ToString()].Texto;
+            if (label6.Tag != null && traducciones.ContainsKey(label6.Tag.ToString()))
+                label6.Text = traducciones[label6.Tag.ToString()].Texto;
+            if (label7.Tag != null && traducciones.ContainsKey(label7.Tag.ToString()))
+                label7.Text = traducciones[label7.Tag.ToString()].Texto;
+            if (label8.Tag != null && traducciones.ContainsKey(label8.Tag.ToString()))
+                label8.Text = traducciones[label8.Tag.ToString()].Texto;
+            if (btnCobrar.Tag != null && traducciones.ContainsKey(btnCobrar.Tag.ToString()))
+                btnCobrar.Text = traducciones[btnCobrar.Tag.ToString()].Texto;
+            if (ucButtonSecondary1.Tag != null && traducciones.ContainsKey(ucButtonSecondary1.Tag.ToString()))
+                ucButtonSecondary1.Text = traducciones[ucButtonSecondary1.Tag.ToString()].Texto;
 
         }
     }

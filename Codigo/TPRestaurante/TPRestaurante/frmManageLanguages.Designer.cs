@@ -54,6 +54,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "addLanguage";
             this.groupBox1.Text = "Cargar idioma";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // grdTraducciones
             // 
