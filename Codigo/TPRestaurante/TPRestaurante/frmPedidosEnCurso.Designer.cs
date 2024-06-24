@@ -43,6 +43,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 16);
             this.label1.TabIndex = 6;
+            this.label1.Tag = "onGoingOrders";
             this.label1.Text = "Pedidos en curso";
             // 
             // ucButtonSecondary1
@@ -56,7 +57,8 @@
             this.ucButtonSecondary1.Name = "ucButtonSecondary1";
             this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
             this.ucButtonSecondary1.TabIndex = 11;
-            this.ucButtonSecondary1.Text = "Cancelar";
+            this.ucButtonSecondary1.Tag = "close";
+            this.ucButtonSecondary1.Text = "Cerrar";
             this.ucButtonSecondary1.UseVisualStyleBackColor = false;
             this.ucButtonSecondary1.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
             // 
@@ -78,6 +80,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmPedidosEnCurso";
             this.Text = "frmPedidosEnCurso";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPedidosEnCurso_FormClosing);
             this.Load += new System.EventHandler(this.frmPedidosEnCurso_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidos)).EndInit();
             this.ResumeLayout(false);

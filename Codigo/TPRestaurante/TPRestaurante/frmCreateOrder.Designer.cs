@@ -39,11 +39,11 @@
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lstCatalogoProductos = new System.Windows.Forms.DataGridView();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lstCatalogoProductos = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lstProductosAgregados = new System.Windows.Forms.ListBox();
             this.btnQuitar = new TPRestaurante.UcButtonSecondary(this.components);
             this.btnAgregar = new TPRestaurante.UcButtonPrimary(this.components);
@@ -51,9 +51,9 @@
             this.btnCrear = new TPRestaurante.UcButtonPrimary(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +64,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 18);
             this.label1.TabIndex = 0;
+            this.label1.Tag = "createOrder";
             this.label1.Text = "Crear pedido";
             // 
             // groupBox1
@@ -82,6 +83,7 @@
             this.groupBox1.Size = new System.Drawing.Size(329, 169);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "clientData";
             this.groupBox1.Text = "Datos del cliente";
             // 
             // label5
@@ -92,6 +94,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 14);
             this.label5.TabIndex = 1;
+            this.label5.Tag = "telephone";
             this.label5.Text = "Telefono";
             // 
             // label4
@@ -102,6 +105,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 14);
             this.label4.TabIndex = 1;
+            this.label4.Tag = "dni";
             this.label4.Text = "DNI";
             // 
             // label3
@@ -112,6 +116,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 14);
             this.label3.TabIndex = 1;
+            this.label3.Tag = "lastname";
             this.label3.Text = "Apellido";
             // 
             // label2
@@ -122,6 +127,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 14);
             this.label2.TabIndex = 1;
+            this.label2.Tag = "name";
             this.label2.Text = "Nombre";
             // 
             // txtTelefono
@@ -152,15 +158,16 @@
             this.txtNombre.Size = new System.Drawing.Size(154, 23);
             this.txtNombre.TabIndex = 0;
             // 
-            // label7
+            // label6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(582, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 18);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Pedido";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(582, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Tag = "order";
+            this.label6.Text = "Pedido";
             // 
             // groupBox2
             // 
@@ -173,27 +180,8 @@
             this.groupBox2.Size = new System.Drawing.Size(329, 180);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Tag = "products";
             this.groupBox2.Text = "Productos";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.lstProductosAgregados);
-            this.groupBox3.Controls.Add(this.btnQuitar);
-            this.groupBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(445, 70);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(328, 312);
-            this.groupBox3.TabIndex = 10;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Datos del Pedido";
-            // 
-            // lstCatalogoProductos
-            // 
-            this.lstCatalogoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lstCatalogoProductos.Location = new System.Drawing.Point(6, 24);
-            this.lstCatalogoProductos.Name = "lstCatalogoProductos";
-            this.lstCatalogoProductos.Size = new System.Drawing.Size(223, 150);
-            this.lstCatalogoProductos.TabIndex = 2;
             // 
             // numericUpDown1
             // 
@@ -211,6 +199,27 @@
             0,
             0,
             0});
+            // 
+            // lstCatalogoProductos
+            // 
+            this.lstCatalogoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lstCatalogoProductos.Location = new System.Drawing.Point(6, 24);
+            this.lstCatalogoProductos.Name = "lstCatalogoProductos";
+            this.lstCatalogoProductos.Size = new System.Drawing.Size(223, 150);
+            this.lstCatalogoProductos.TabIndex = 2;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lstProductosAgregados);
+            this.groupBox3.Controls.Add(this.btnQuitar);
+            this.groupBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(445, 70);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(328, 312);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Tag = "orderData";
+            this.groupBox3.Text = "Datos del Pedido";
             // 
             // lstProductosAgregados
             // 
@@ -232,6 +241,7 @@
             this.btnQuitar.Name = "btnQuitar";
             this.btnQuitar.Size = new System.Drawing.Size(75, 23);
             this.btnQuitar.TabIndex = 9;
+            this.btnQuitar.Tag = "remove";
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseVisualStyleBackColor = false;
             this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
@@ -247,6 +257,7 @@
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Tag = "add";
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -262,6 +273,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.Tag = "cancel";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
@@ -277,6 +289,7 @@
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(132, 39);
             this.btnCrear.TabIndex = 5;
+            this.btnCrear.Tag = "create";
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -291,17 +304,18 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Name = "frmCreateOrder";
             this.Text = "Crear Pedido";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCreateOrder_FormClosing);
             this.Load += new System.EventHandler(this.frmCreateOrder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +335,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private UcButtonPrimary btnCrear;
         private UcButtonSecondary btnCancelar;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private UcButtonPrimary btnAgregar;
         private System.Windows.Forms.GroupBox groupBox3;

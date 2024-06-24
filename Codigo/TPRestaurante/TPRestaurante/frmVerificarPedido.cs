@@ -10,10 +10,11 @@ using System.Windows.Forms;
 using Interfaces;
 using Services;
 using BE;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmVerificarPedido : Form
+    public partial class frmVerificarPedido : Form, IIdiomaObserver
     {
         public frmVerificarPedido()
         {
@@ -64,6 +65,9 @@ namespace TPRestaurante
             grdIngredientesFaltantes.RowHeadersVisible = false;
             grdIngredientesFaltantes.EditMode = DataGridViewEditMode.EditProgrammatically;
             grdIngredientesFaltantes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
 
         }
 
@@ -207,6 +211,43 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Selecciona un pedido primero");
             }
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+            if (groupBox2.Tag != null && traducciones.ContainsKey(groupBox2.Tag.ToString()))
+                groupBox2.Text = traducciones[groupBox2.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (label3.Tag != null && traducciones.ContainsKey(label3.Tag.ToString()))
+                label3.Text = traducciones[label3.Tag.ToString()].Texto;
+            if (label4.Tag != null && traducciones.ContainsKey(label4.Tag.ToString()))
+                label4.Text = traducciones[label4.Tag.ToString()].Texto;
+            if (label5.Tag != null && traducciones.ContainsKey(label5.Tag.ToString()))
+                label5.Text = traducciones[label5.Tag.ToString()].Texto;
+
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+            if (btnVerificarPedido.Tag != null && traducciones.ContainsKey(btnVerificarPedido.Tag.ToString()))
+                btnVerificarPedido.Text = traducciones[btnVerificarPedido.Tag.ToString()].Texto;
+            if (btnAceptarPedido.Tag != null && traducciones.ContainsKey(btnAceptarPedido.Tag.ToString()))
+                btnAceptarPedido.Text = traducciones[btnAceptarPedido.Tag.ToString()].Texto;
+            if (btnRechazarPedido.Tag != null && traducciones.ContainsKey(btnRechazarPedido.Tag.ToString()))
+                btnRechazarPedido.Text = traducciones[btnRechazarPedido.Tag.ToString()].Texto;
+        }
+
+        private void frmVerificarPedido_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

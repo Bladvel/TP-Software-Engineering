@@ -171,22 +171,23 @@
             // cambiarClaveToolStripMenuItem
             // 
             cambiarClaveToolStripMenuItem.Name = "cambiarClaveToolStripMenuItem";
-            cambiarClaveToolStripMenuItem.Size = new Size(159, 22);
+            cambiarClaveToolStripMenuItem.Size = new Size(180, 22);
             cambiarClaveToolStripMenuItem.Text = "Cambiar Clave";
             cambiarClaveToolStripMenuItem.Click += cambiarClaveToolStripMenuItem_Click;
             // 
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(159, 22);
+            logoutToolStripMenuItem.Size = new Size(180, 22);
             logoutToolStripMenuItem.Text = "Logout";
             logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
             // 
             // cambiarIdiomaToolStripMenuItem
             // 
             cambiarIdiomaToolStripMenuItem.Name = "cambiarIdiomaToolStripMenuItem";
-            cambiarIdiomaToolStripMenuItem.Size = new Size(159, 22);
+            cambiarIdiomaToolStripMenuItem.Size = new Size(180, 22);
             cambiarIdiomaToolStripMenuItem.Text = "Cambiar Idioma";
+            cambiarIdiomaToolStripMenuItem.Click += cambiarIdiomaToolStripMenuItem_Click;
             // 
             // reservasToolStripMenuItem
             // 

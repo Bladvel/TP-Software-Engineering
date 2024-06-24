@@ -44,6 +44,11 @@
     <Compile Include="LoginException.cs" />
     <Compile Include="CryptoManager.cs" />
     <Compile Include="LoginResult.cs" />
+    <Compile Include="Multiidioma\Etiqueta.cs" />
+    <Compile Include="Multiidioma\Idioma.cs" />
+    <Compile Include="Multiidioma\IIdiomaObserver.cs" />
+    <Compile Include="Multiidioma\Traduccion.cs" />
+    <Compile Include="Multiidioma\Traductor.cs" />
     <Compile Include="SessionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,5 +58,6 @@
       <Name>INTERFACES</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

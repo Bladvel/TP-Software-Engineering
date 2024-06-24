@@ -3,140 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmcrearidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcrearidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcrearperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmcrearidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcrearidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\bll\\bllpermisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllpermisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\bll\\bllusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\mp_dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\mp_dvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_dvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\dvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\dvv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\permisosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\composite\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\composite\\tipopermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmasignarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmasignarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\composite\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\composite\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\composite\\patente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\composite\\patente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\composite\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\composite\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\singletonsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\dal\\mp_traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\singletonsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\singletonsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\itraduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\itraduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmcheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\iidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\iidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21A11104-557F-4D33-A67B-6C1076BE794A}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\be\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A11104-557F-4D33-A67B-6C1076BE794A}|BE\\BE.csproj|solutionrelative:be\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\idiomaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\idiomaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\bll\\blldvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\blldvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\multiidioma\\traductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\multiidioma\\traductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\bll\\bllclientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllclientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\multiidioma\\traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\multiidioma\\traduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\multiidioma\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\multiidioma\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\bll\\bllsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\multiidioma\\iidiomaobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\multiidioma\\iidiomaobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmasignarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmasignarperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\ietiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\ietiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\mp_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\multiidioma\\idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\multiidioma\\idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\servicios\\entityservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\entityservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\bll\\blltraduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\blltraduccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21A11104-557F-4D33-A67B-6C1076BE794A}|BE\\BE.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\be\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A11104-557F-4D33-A67B-6C1076BE794A}|BE\\BE.csproj|solutionrelative:be\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\bll\\bllidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmmenuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmmenuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmfacturarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmfacturarreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmserializacionfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmserializacionfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmserializacionfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmserializacionfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -149,59 +97,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "mp_usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_usuario.cs",
-              "RelativeDocumentMoniker": "DAL\\mp_usuario.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_usuario.cs",
-              "RelativeToolTip": "DAL\\mp_usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:36:56.742Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PermisosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\PermisosRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\PermisosRepository.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\PermisosRepository.cs",
-              "RelativeToolTip": "DAL\\PermisosRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBAAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:25:50.375Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmCrearPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearPerfil.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmCrearPerfil.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearPerfil.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmCrearPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T02:05:56.105Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCrearPerfil.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearPerfil.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmCrearPerfil.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearPerfil.cs",
-              "RelativeToolTip": "Presentacion\\frmCrearPerfil.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAANMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T02:05:50.406Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -211,359 +106,274 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "mp_DVH.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_DVH.cs",
-              "RelativeDocumentMoniker": "DAL\\mp_DVH.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_DVH.cs",
-              "RelativeToolTip": "DAL\\mp_DVH.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "frmCrearIdioma.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearIdioma.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmCrearIdioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearIdioma.cs",
+              "RelativeToolTip": "Presentacion\\frmCrearIdioma.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA5wDEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T02:32:40.427Z"
+              "WhenOpened": "2024-06-24T00:01:26.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mp_DVV.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_DVV.cs",
-              "RelativeDocumentMoniker": "DAL\\mp_DVV.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_DVV.cs",
-              "RelativeToolTip": "DAL\\mp_DVV.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "frmCrearIdioma.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearIdioma.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmCrearIdioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCrearIdioma.cs [Design]",
+              "RelativeToolTip": "Presentacion\\frmCrearIdioma.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T02:32:33.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DVV.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\DVV.cs",
-              "RelativeDocumentMoniker": "Servicios\\DVV.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\DVV.cs",
-              "RelativeToolTip": "Servicios\\DVV.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T02:32:19.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "app.config",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\app.config",
-              "RelativeDocumentMoniker": "Presentacion\\app.config",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\app.config",
-              "RelativeToolTip": "Presentacion\\app.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-07T18:47:55.425Z"
+              "WhenOpened": "2024-06-24T00:01:24.141Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BLLPermisos.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLPermisos.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLPermisos.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLPermisos.cs",
-              "RelativeToolTip": "BLL\\BLLPermisos.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAewBQAAAAUAAAA",
+              "Title": "BLLUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLUsuario.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLUsuario.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLUsuario.cs",
+              "RelativeToolTip": "BLL\\BLLUsuario.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:16:55.796Z"
+              "WhenOpened": "2024-06-23T19:58:00.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmAsignarPerfil.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmAsignarPerfil.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmAsignarPerfil.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmAsignarPerfil.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmAsignarPerfil.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T02:05:26.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SingletonSesion.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\SingletonSesion.cs",
-              "RelativeDocumentMoniker": "Servicios\\SingletonSesion.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\SingletonSesion.cs",
-              "RelativeToolTip": "Servicios\\SingletonSesion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T23:40:41.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frmMenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
-              "RelativeToolTip": "Presentacion\\frmMenuPrincipal.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAewK0AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:37:58.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 3,
               "Title": "Sesion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Sesion.cs",
               "RelativeDocumentMoniker": "Servicios\\Sesion.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Sesion.cs",
               "RelativeToolTip": "Servicios\\Sesion.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwFcAAAAhAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T21:31:00.576Z"
+              "WhenOpened": "2024-06-23T19:57:01.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mp_traduccion.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_traduccion.cs",
+              "RelativeDocumentMoniker": "DAL\\mp_traduccion.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_traduccion.cs",
+              "RelativeToolTip": "DAL\\mp_traduccion.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:56:04.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Usuario.cs",
+              "RelativeDocumentMoniker": "Servicios\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Usuario.cs",
+              "RelativeToolTip": "Servicios\\Usuario.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:55:44.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SingletonSesion.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\SingletonSesion.cs",
+              "RelativeDocumentMoniker": "Servicios\\SingletonSesion.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\SingletonSesion.cs",
+              "RelativeToolTip": "Servicios\\SingletonSesion.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:55:40.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IdiomaAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IdiomaAppService.cs",
+              "RelativeDocumentMoniker": "Servicios\\IdiomaAppService.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IdiomaAppService.cs",
+              "RelativeToolTip": "Servicios\\IdiomaAppService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:55:30.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITraduccion.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\ITraduccion.cs",
+              "RelativeDocumentMoniker": "Servicios\\ITraduccion.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\ITraduccion.cs",
+              "RelativeToolTip": "Servicios\\ITraduccion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:56:12.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Traductor.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Traductor.cs",
+              "RelativeDocumentMoniker": "Servicios\\Multiidioma\\Traductor.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Traductor.cs",
+              "RelativeToolTip": "Servicios\\Multiidioma\\Traductor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:53.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Traduccion.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Traduccion.cs",
+              "RelativeDocumentMoniker": "Servicios\\Multiidioma\\Traduccion.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Traduccion.cs",
+              "RelativeToolTip": "Servicios\\Multiidioma\\Traduccion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:45.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "TipoPermiso.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\TipoPermiso.cs",
-              "RelativeDocumentMoniker": "Servicios\\Composite\\TipoPermiso.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\TipoPermiso.cs",
-              "RelativeToolTip": "Servicios\\Composite\\TipoPermiso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:24:03.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Componente.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Componente.cs",
-              "RelativeDocumentMoniker": "Servicios\\Composite\\Componente.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Componente.cs",
-              "RelativeToolTip": "Servicios\\Composite\\Componente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:23:33.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Patente.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Patente.cs",
-              "RelativeDocumentMoniker": "Servicios\\Composite\\Patente.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Patente.cs",
-              "RelativeToolTip": "Servicios\\Composite\\Patente.cs",
+              "Title": "IIdioma.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IIdioma.cs",
+              "RelativeDocumentMoniker": "Servicios\\IIdioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IIdioma.cs",
+              "RelativeToolTip": "Servicios\\IIdioma.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:24:19.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Familia.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Familia.cs",
-              "RelativeDocumentMoniker": "Servicios\\Composite\\Familia.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Composite\\Familia.cs",
-              "RelativeToolTip": "Servicios\\Composite\\Familia.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:24:28.203Z"
+              "WhenOpened": "2024-06-23T17:19:17.926Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "IIdiomaObserver.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\IIdiomaObserver.cs",
+              "RelativeDocumentMoniker": "Servicios\\Multiidioma\\IIdiomaObserver.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\IIdiomaObserver.cs",
+              "RelativeToolTip": "Servicios\\Multiidioma\\IIdiomaObserver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:43.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IEtiqueta.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IEtiqueta.cs",
+              "RelativeDocumentMoniker": "Servicios\\IEtiqueta.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\IEtiqueta.cs",
+              "RelativeToolTip": "Servicios\\IEtiqueta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:35.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Idioma.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Idioma.cs",
+              "RelativeDocumentMoniker": "Servicios\\Multiidioma\\Idioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Idioma.cs",
+              "RelativeToolTip": "Servicios\\Multiidioma\\Idioma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:27.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Etiqueta.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Etiqueta.cs",
+              "RelativeDocumentMoniker": "Servicios\\Multiidioma\\Etiqueta.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Multiidioma\\Etiqueta.cs",
+              "RelativeToolTip": "Servicios\\Multiidioma\\Etiqueta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:19:23.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BLLTraduccion.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLTraduccion.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLTraduccion.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLTraduccion.cs",
+              "RelativeToolTip": "BLL\\BLLTraduccion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:18:50.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BLLIdioma.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLIdioma.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLIdioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLIdioma.cs",
+              "RelativeToolTip": "BLL\\BLLIdioma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:18:38.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "mp_idioma.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_idioma.cs",
+              "RelativeDocumentMoniker": "DAL\\mp_idioma.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_idioma.cs",
+              "RelativeToolTip": "DAL\\mp_idioma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:18:09.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
+              "RelativeToolTip": "Presentacion\\frmMenuPrincipal.cs",
+              "ViewState": "AQIAAAIBAAAAAAAAAAAEwB0BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:17:53.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "frmMenuPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs [Design]",
               "RelativeToolTip": "Presentacion\\frmMenuPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:38:47.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BLLDVH.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLDVH.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLDVH.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLDVH.cs",
-              "RelativeToolTip": "BLL\\BLLDVH.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAiwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:19:29.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "frmCheckin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCheckin.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmCheckin.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCheckin.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmCheckin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:20:50.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "frmCheckin.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCheckin.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmCheckin.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmCheckin.cs",
-              "RelativeToolTip": "Presentacion\\frmCheckin.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA8wD4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:21:01.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BLLClienteBitacora.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLClienteBitacora.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLClienteBitacora.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLClienteBitacora.cs",
-              "RelativeToolTip": "BLL\\BLLClienteBitacora.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:19:28.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "frmAsignarPerfil.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmAsignarPerfil.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmAsignarPerfil.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmAsignarPerfil.cs",
-              "RelativeToolTip": "Presentacion\\frmAsignarPerfil.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAApwCoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:17:01.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BLLSesion.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLSesion.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLSesion.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLSesion.cs",
-              "RelativeToolTip": "BLL\\BLLSesion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:17:19.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmLogin.cs",
-              "RelativeToolTip": "Presentacion\\frmLogin.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAmwFsAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T18:17:30.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "mp_cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_cliente.cs",
-              "RelativeDocumentMoniker": "DAL\\mp_cliente.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_cliente.cs",
-              "RelativeToolTip": "DAL\\mp_cliente.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T16:36:19.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\Cliente.cs",
-              "RelativeDocumentMoniker": "BE\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\Cliente.cs",
-              "RelativeToolTip": "BE\\Cliente.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAiwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:22:45.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EntityServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\EntityServicio.cs",
-              "RelativeDocumentMoniker": "Servicios\\EntityServicio.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\EntityServicio.cs",
-              "RelativeToolTip": "Servicios\\EntityServicio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:23:40.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\Entity.cs",
-              "RelativeDocumentMoniker": "BE\\Entity.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BE\\Entity.cs",
-              "RelativeToolTip": "BE\\Entity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:22:33.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Acceso.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\Acceso.cs",
-              "RelativeDocumentMoniker": "DAL\\Acceso.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\Acceso.cs",
-              "RelativeToolTip": "DAL\\Acceso.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBwAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T22:34:43.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "frmMenuPrincipal.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.Designer.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.Designer.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.Designer.cs",
-              "RelativeToolTip": "Presentacion\\frmMenuPrincipal.Designer.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAswH4AAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:38:50.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "frmSerializacionFactura.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmSerializacionFactura.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmSerializacionFactura.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmSerializacionFactura.cs",
-              "RelativeToolTip": "Presentacion\\frmSerializacionFactura.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAewCkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:37:22.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "frmSerializacionFactura.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmSerializacionFactura.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmSerializacionFactura.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmSerializacionFactura.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmSerializacionFactura.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:37:22.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "frmFacturarReserva.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmFacturarReserva.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmFacturarReserva.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmFacturarReserva.cs",
-              "RelativeToolTip": "Presentacion\\frmFacturarReserva.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAnwA4BAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:37:22.211Z"
+              "WhenOpened": "2024-06-23T17:17:42.038Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

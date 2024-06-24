@@ -1,0 +1,16 @@
+EjemploArquitectura.Abstractions/obj/
+EjemploArquitectura.Abstractions/bin/Debug/EjemploArquitectura.Abstractions.pdb
+EjemploArquitectura.ApplicationService/bin/
+EjemploArquitectura.ApplicationService/obj/
+EjemploArquitectura.Domain/bin/
+EjemploArquitectura.Core/obj/
+EjemploArquitectura.Domain/obj/
+EjemploArquitectura.Repository/bin/
+EjemploArquitectura.Repository/obj/
+EjemploArquitectura.Services/bin/
+EjemploArquitectura.Services/obj/
+EjemploArquitectura.SqlServerDataProvider/bin/
+EjemploArquitectura.SqlServerDataProvider/obj/
+EjemploArquitectura.UI/bin/
+EjemploArquitectura.UI/obj/
+.vs/EjemploArquitectura/v16/Server/sqlite3/

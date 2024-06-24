@@ -13,6 +13,8 @@ namespace Interfaces
 
         int Attempts { get; set; }
 
+        IIdioma Idioma { get; set; }
+
         List<IComponent> Permissions { get; }
     }
 }

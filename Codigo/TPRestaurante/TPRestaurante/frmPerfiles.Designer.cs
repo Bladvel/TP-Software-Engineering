@@ -53,6 +53,7 @@
             this.groupBox1.Size = new System.Drawing.Size(203, 327);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "profiles";
             this.groupBox1.Text = "Perfiles";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
@@ -62,6 +63,7 @@
             this.btnAsignarPermiso.Name = "btnAsignarPermiso";
             this.btnAsignarPermiso.Size = new System.Drawing.Size(75, 23);
             this.btnAsignarPermiso.TabIndex = 2;
+            this.btnAsignarPermiso.Tag = "assign";
             this.btnAsignarPermiso.Text = "Asignar";
             this.btnAsignarPermiso.UseVisualStyleBackColor = true;
             this.btnAsignarPermiso.Click += new System.EventHandler(this.btnAsignarPermiso_Click);
@@ -82,6 +84,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 0;
+            this.label2.Tag = "assignPermission";
             this.label2.Text = "Asignar permiso";
             // 
             // cmbUsuarios
@@ -99,9 +102,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Todos los usuarios";
+            this.label1.Tag = "users";
+            this.label1.Text = "Usuarios";
             // 
             // treeView1
             // 
@@ -121,6 +125,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Tag = "cancel";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -136,6 +141,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(132, 39);
             this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.Tag = "save";
             this.btnGuardar.Text = "Guardar cambios";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -151,6 +157,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmPerfiles";
             this.Text = "frmPerfiles";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPerfiles_FormClosing);
             this.Load += new System.EventHandler(this.frmPerfiles_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

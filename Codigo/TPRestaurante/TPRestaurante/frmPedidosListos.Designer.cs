@@ -53,6 +53,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 1;
+            this.label1.Tag = "ordersReady";
             this.label1.Text = "Pedidos listos";
             // 
             // btnCerrarPedido
@@ -66,7 +67,8 @@
             this.btnCerrarPedido.Name = "btnCerrarPedido";
             this.btnCerrarPedido.Size = new System.Drawing.Size(132, 39);
             this.btnCerrarPedido.TabIndex = 2;
-            this.btnCerrarPedido.Text = "CerrarPedido";
+            this.btnCerrarPedido.Tag = "closeOrder";
+            this.btnCerrarPedido.Text = "Cerrar Pedido";
             this.btnCerrarPedido.UseVisualStyleBackColor = false;
             this.btnCerrarPedido.Click += new System.EventHandler(this.btnCerrarPedido_Click);
             // 
@@ -81,6 +83,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Tag = "cancel";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -96,6 +99,7 @@
             this.Controls.Add(this.grdPedidosListos);
             this.Name = "frmPedidosListos";
             this.Text = "frmPedidosListos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPedidosListos_FormClosing);
             this.Load += new System.EventHandler(this.frmPedidosListos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosListos)).EndInit();
             this.ResumeLayout(false);

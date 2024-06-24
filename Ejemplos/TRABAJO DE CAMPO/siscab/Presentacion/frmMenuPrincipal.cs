@@ -264,7 +264,7 @@ namespace Presentacion
             frm.Show();
             frm.BringToFront();
         }
-      
+
         private void manualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAyudaManualUsuario frm = frmAyudaManualUsuario.Ventana_Unica();
@@ -279,6 +279,11 @@ namespace Presentacion
             frm.MdiParent = this;
             frm.Show();
             frm.BringToFront();
+        }
+
+        private void cambiarIdiomaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

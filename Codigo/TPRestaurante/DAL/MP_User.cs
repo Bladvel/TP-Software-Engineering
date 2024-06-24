@@ -13,6 +13,7 @@ namespace DAL
 {
     public class MP_User : Mapper<User>
     {
+        MP_Idioma mpIdioma = new MP_Idioma();
         public override User Transform(DataRow dr)
         {
             User user = new BE.User();
@@ -27,6 +28,7 @@ namespace DAL
             user.Bloqueo = bool.Parse(dr["BLOQUEO"].ToString());
             user.Attempts = int.Parse(dr["INTENTOS"].ToString());
             user.Availability = (AvailabilityType)Enum.Parse(typeof(AvailabilityType), dr["DISPONIBILIDAD"].ToString());
+            user.Idioma = mpIdioma.GetById(dr["ID_IDIOMA"].ToString());
             return user;
         }
 

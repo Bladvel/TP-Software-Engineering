@@ -51,6 +51,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 4;
+            this.label1.Tag = "selectOrder";
             this.label1.Text = "Seleccionar pedido";
             // 
             // label2
@@ -60,6 +61,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 7;
+            this.label2.Tag = "products";
             this.label2.Text = "Productos";
             // 
             // label3
@@ -69,6 +71,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 8;
+            this.label3.Tag = "addInstructions";
             this.label3.Text = "Agregar instrucciones";
             // 
             // txtInstrucciones
@@ -86,6 +89,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
             this.label4.TabIndex = 10;
+            this.label4.Tag = "assignChef";
             this.label4.Text = "Asignar cocinero";
             // 
             // grdPedidosAceptados
@@ -124,6 +128,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Tag = "cancel";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -139,6 +144,7 @@
             this.btnGenerarComanda.Name = "btnGenerarComanda";
             this.btnGenerarComanda.Size = new System.Drawing.Size(132, 39);
             this.btnGenerarComanda.TabIndex = 12;
+            this.btnGenerarComanda.Tag = "generate";
             this.btnGenerarComanda.Text = "Generar";
             this.btnGenerarComanda.UseVisualStyleBackColor = false;
             this.btnGenerarComanda.Click += new System.EventHandler(this.btnGenerarComanda_Click);
@@ -160,6 +166,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmGenerarComanda";
             this.Text = "frmGenerarComanda";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGenerarComanda_FormClosing);
             this.Load += new System.EventHandler(this.frmGenerarComanda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosAceptados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductosPorPedido)).EndInit();

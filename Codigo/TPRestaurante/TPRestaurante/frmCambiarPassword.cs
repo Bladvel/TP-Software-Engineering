@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Interfaces;
 using Services;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmCambiarPassword : Form
+    public partial class frmCambiarPassword : Form, IIdiomaObserver
     {
         public frmCambiarPassword()
         {
@@ -23,6 +25,18 @@ namespace TPRestaurante
         private void frmCambiarPassword_Load(object sender, EventArgs e)
         {
             HabilitarControles(false);
+            SessionManager.SuscribirObservador(this);
+
+
+            if (SessionManager.Instance.IsLoggedIn())
+            {
+                Traducir(SessionManager.Instance.User.Idioma);
+            }
+            else
+            {
+                Traducir();
+            }
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -113,6 +127,35 @@ namespace TPRestaurante
             lblVieja.Visible = !habilitar;
             txtContraseñaVieja.Visible = !habilitar;
             btnIngresarPassword.Visible = !habilitar;
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            //Menu sesion
+            if (lblVieja.Tag != null && traducciones.ContainsKey(lblVieja.Tag.ToString()))
+                lblVieja.Text = traducciones[lblVieja.Tag.ToString()].Texto;
+            if (lblNueva1.Tag != null && traducciones.ContainsKey(lblNueva1.Tag.ToString()))
+                lblNueva1.Text = traducciones[lblNueva1.Tag.ToString()].Texto;
+            if (lblNueva2.Tag != null && traducciones.ContainsKey(lblNueva2.Tag.ToString()))
+                lblNueva2.Text = traducciones[lblNueva2.Tag.ToString()].Texto;
+            if (btnCambiar.Tag != null && traducciones.ContainsKey(btnCambiar.Tag.ToString()))
+                btnCambiar.Text = traducciones[btnCambiar.Tag.ToString()].Texto;
+            if (btnIngresarPassword.Tag != null && traducciones.ContainsKey(btnIngresarPassword.Tag.ToString()))
+                btnIngresarPassword.Text = traducciones[btnIngresarPassword.Tag.ToString()].Texto;
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+        }
+
+        private void frmCambiarPassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

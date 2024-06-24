@@ -9,22 +9,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmMDI : Form
+    public partial class frmMDI : Form, IIdiomaObserver
     {
         public frmMDI()
         {
             InitializeComponent();
             bllUser = new BLL.User();
+            _idiomaActual = Traductor.ObtenerIdiomaDefault();
         }
-
+        private IIdioma _idiomaActual;
         BLL.User bllUser;
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
             ValidarForm();
+            CargarIdiomas();
+            SessionManager.SuscribirObservador(this);
         }
 
         private void CerrarChildForms()
@@ -81,7 +85,7 @@ namespace TPRestaurante
                 menuCatalogos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
                 itemProductos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerProductos);
                 itemIngredientes.Visible = SessionManager.Instance.IsInRole(PermissionType.VerIngredientes);
-
+                Traducir(SessionManager.Instance.User.Idioma);
             }
             else
             {
@@ -94,6 +98,7 @@ namespace TPRestaurante
                 menuAdmin.Visible = false;
                 menuPedidos.Visible = false;
                 menuCatalogos.Visible = false;
+                Traducir();
             }
 
 
@@ -205,6 +210,128 @@ namespace TPRestaurante
         {
             frmPedidosCerrados pedidosListos = new frmPedidosCerrados();
             AbrirChildForm(pedidosListos);
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+            
+            //Menu sesion
+            if (menuSesion.Tag != null && traducciones.ContainsKey(menuSesion.Tag.ToString()))
+                menuSesion.Text = traducciones[menuSesion.Tag.ToString()].Texto;
+            if (itemIniciarSesión.Tag != null && traducciones.ContainsKey(itemIniciarSesión.Tag.ToString()))
+                itemIniciarSesión.Text = traducciones[itemIniciarSesión.Tag.ToString()].Texto;
+            if (itemCerrarSesión.Tag != null && traducciones.ContainsKey(itemCerrarSesión.Tag.ToString()))
+                itemCerrarSesión.Text = traducciones[itemCerrarSesión.Tag.ToString()].Texto;
+            if (itemCambiarIdioma.Tag != null && traducciones.ContainsKey(itemCambiarIdioma.Tag.ToString()))
+                itemCambiarIdioma.Text = traducciones[itemCambiarIdioma.Tag.ToString()].Texto;
+            if (itemCambiarContraseña.Tag != null && traducciones.ContainsKey(itemCambiarContraseña.Tag.ToString()))
+                itemCambiarContraseña.Text = traducciones[itemCambiarContraseña.Tag.ToString()].Texto;
+
+
+            //Menu admin
+            if (menuAdmin.Tag != null && traducciones.ContainsKey(menuAdmin.Tag.ToString()))
+                menuAdmin.Text = traducciones[menuAdmin.Tag.ToString()].Texto;
+            if (itemGestorUsuarios.Tag != null && traducciones.ContainsKey(itemGestorUsuarios.Tag.ToString()))
+                itemGestorUsuarios.Text = traducciones[itemGestorUsuarios.Tag.ToString()].Texto;
+            if (itemGestorPerfiles.Tag != null && traducciones.ContainsKey(itemGestorPerfiles.Tag.ToString()))
+                itemGestorPerfiles.Text = traducciones[itemGestorPerfiles.Tag.ToString()].Texto;
+            if (permisosToolStripMenuItem.Tag != null && traducciones.ContainsKey(permisosToolStripMenuItem.Tag.ToString()))
+                permisosToolStripMenuItem.Text = traducciones[permisosToolStripMenuItem.Tag.ToString()].Texto;
+            if (asignacionDePerfilToolStripMenuItem.Tag != null && traducciones.ContainsKey(asignacionDePerfilToolStripMenuItem.Tag.ToString()))
+                asignacionDePerfilToolStripMenuItem.Text = traducciones[asignacionDePerfilToolStripMenuItem.Tag.ToString()].Texto;
+            if (itemGestorIdiomas.Tag != null && traducciones.ContainsKey(itemGestorIdiomas.Tag.ToString()))
+                itemGestorIdiomas.Text = traducciones[itemGestorIdiomas.Tag.ToString()].Texto;
+
+
+            //Menu pedidos
+            if (menuPedidos.Tag != null && traducciones.ContainsKey(menuPedidos.Tag.ToString()))
+                menuPedidos.Text = traducciones[menuPedidos.Tag.ToString()].Texto;
+            if (itemCrearPedido.Tag != null && traducciones.ContainsKey(itemCrearPedido.Tag.ToString()))
+                itemCrearPedido.Text = traducciones[itemCrearPedido.Tag.ToString()].Texto;
+
+            if (itemVerPedidos.Tag != null && traducciones.ContainsKey(itemVerPedidos.Tag.ToString()))
+                itemVerPedidos.Text = traducciones[itemVerPedidos.Tag.ToString()].Texto;
+            if (itemVerPedidosRegistrados.Tag != null && traducciones.ContainsKey(itemVerPedidosRegistrados.Tag.ToString()))
+                itemVerPedidosRegistrados.Text = traducciones[itemVerPedidosRegistrados.Tag.ToString()].Texto;
+            if (itemVerPedidosVerificados.Tag != null && traducciones.ContainsKey(itemVerPedidosVerificados.Tag.ToString()))
+                itemVerPedidosVerificados.Text = traducciones[itemVerPedidosVerificados.Tag.ToString()].Texto;
+            if (itemVerPedidosEnCurso.Tag != null && traducciones.ContainsKey(itemVerPedidosEnCurso.Tag.ToString()))
+                itemVerPedidosEnCurso.Text = traducciones[itemVerPedidosEnCurso.Tag.ToString()].Texto;
+            if (itemVerPedidosListos.Tag != null && traducciones.ContainsKey(itemVerPedidosListos.Tag.ToString()))
+                itemVerPedidosListos.Text = traducciones[itemVerPedidosListos.Tag.ToString()].Texto;
+            if (itemVerPedidosCerrados.Tag != null && traducciones.ContainsKey(itemVerPedidosCerrados.Tag.ToString()))
+                itemVerPedidosCerrados.Text = traducciones[itemVerPedidosCerrados.Tag.ToString()].Texto;
+
+            if (itemCobrarPedido.Tag != null && traducciones.ContainsKey(itemCobrarPedido.Tag.ToString()))
+                itemCobrarPedido.Text = traducciones[itemCobrarPedido.Tag.ToString()].Texto;
+
+            if (itemComandas.Tag != null && traducciones.ContainsKey(itemComandas.Tag.ToString()))
+                itemComandas.Text = traducciones[itemComandas.Tag.ToString()].Texto;
+            if (itemGenerarComandas.Tag != null && traducciones.ContainsKey(itemGenerarComandas.Tag.ToString()))
+                itemGenerarComandas.Text = traducciones[itemGenerarComandas.Tag.ToString()].Texto;
+            if (itemVerComandas.Tag != null && traducciones.ContainsKey(itemVerComandas.Tag.ToString()))
+                itemVerComandas.Text = traducciones[itemVerComandas.Tag.ToString()].Texto;
+
+
+            //Menu catalogos
+            if (menuCatalogos.Tag != null && traducciones.ContainsKey(menuCatalogos.Tag.ToString()))
+                menuCatalogos.Text = traducciones[menuCatalogos.Tag.ToString()].Texto;
+            if (itemProductos.Tag != null && traducciones.ContainsKey(itemProductos.Tag.ToString()))
+                itemProductos.Text = traducciones[itemProductos.Tag.ToString()].Texto;
+            if (itemIngredientes.Tag != null && traducciones.ContainsKey(itemIngredientes.Tag.ToString()))
+                itemIngredientes.Text = traducciones[itemIngredientes.Tag.ToString()].Texto;
+
+            //Menu ayuda
+            if (menuAyuda.Tag != null && traducciones.ContainsKey(menuAyuda.Tag.ToString()))
+                menuAyuda.Text = traducciones[menuAyuda.Tag.ToString()].Texto;
+
+
+        }
+
+        private void CargarIdiomas()
+        {
+            var idiomas = Traductor.ObtenerIdiomas();
+            foreach (var idioma in idiomas)
+            {
+                var menuItem = new ToolStripMenuItem
+                {
+                    Text = idioma.Nombre,
+                    Tag = idioma // Guarda el objeto idioma en la propiedad Tag para referencia
+                };
+                menuItem.Click += MenuItem_Click;
+                itemCambiarIdioma.DropDownItems.Add(menuItem);
+            }
+        }
+
+        private void MenuItem_Click(object sender, EventArgs e)
+        {
+            var menuItem = sender as ToolStripMenuItem;
+            if (menuItem != null)
+            {
+                var idiomaSeleccionado = menuItem.Tag as IIdioma;
+                if (idiomaSeleccionado != null)
+                {
+                    SessionManager.Instance.CambiarIdioma(idiomaSeleccionado);
+                }
+            }
+        }
+
+
+        private void frmMDI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
+        }
+
+        private void itemGestorIdiomas_Click(object sender, EventArgs e)
+        {
+            frmManageLanguages gestionarIdiomas = new frmManageLanguages();
+            AbrirChildForm(gestionarIdiomas);
         }
     }
 }

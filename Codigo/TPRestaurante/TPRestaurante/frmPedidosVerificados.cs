@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
+using Services;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmPedidosVerificados : Form
+    public partial class frmPedidosVerificados : Form, IIdiomaObserver
     {
         public frmPedidosVerificados()
         {
@@ -38,6 +40,23 @@ namespace TPRestaurante
 
             grdPedidosRechazados.DataSource = null;
             grdPedidosRechazados.DataSource = bllPedido.ListarPorEstado(OrderType.Rechazado);
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
+        }
+
+        private void Traducir(IIdioma idioma)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (btnCerrar.Tag != null && traducciones.ContainsKey(btnCerrar.Tag.ToString()))
+                btnCerrar.Text = traducciones[btnCerrar.Tag.ToString()].Texto;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -48,6 +67,16 @@ namespace TPRestaurante
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void frmPedidosVerificados_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

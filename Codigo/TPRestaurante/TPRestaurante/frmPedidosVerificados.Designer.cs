@@ -32,8 +32,8 @@
             this.grdPedidosAceptados = new System.Windows.Forms.DataGridView();
             this.grdPedidosRechazados = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new TPRestaurante.UcButtonSecondary(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosAceptados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosRechazados)).BeginInit();
@@ -66,18 +66,9 @@
             this.groupBox1.Size = new System.Drawing.Size(743, 323);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "verifiedOrders";
             this.groupBox1.Text = "Pedidos verificados";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Aceptados";
             // 
             // label2
             // 
@@ -87,7 +78,19 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 16);
             this.label2.TabIndex = 1;
+            this.label2.Tag = "declined";
             this.label2.Text = "Rechazados";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Tag = "acepted";
+            this.label1.Text = "Aceptados";
             // 
             // btnCerrar
             // 
@@ -100,6 +103,7 @@
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(132, 39);
             this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.Tag = "close";
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -114,6 +118,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Name = "frmPedidosVerificados";
             this.Text = "frmPedidosVerificados";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPedidosVerificados_FormClosing);
             this.Load += new System.EventHandler(this.frmPedidosVerificados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosAceptados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidosRechazados)).EndInit();

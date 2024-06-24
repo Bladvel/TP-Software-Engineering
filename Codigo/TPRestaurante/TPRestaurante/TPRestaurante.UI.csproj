@@ -76,6 +76,12 @@
     <Compile Include="frmGestionarPermisos.Designer.cs">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManageLanguages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageLanguages.Designer.cs">
+      <DependentUpon>frmManageLanguages.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidosCerrados.cs">
       <SubType>Form</SubType>
     </Compile>

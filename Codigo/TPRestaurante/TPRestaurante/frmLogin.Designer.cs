@@ -31,9 +31,9 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblIniciarSesion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -42,67 +42,72 @@
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(132, 42);
             this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.Tag = "enter";
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(188, 108);
+            this.txtUsername.Location = new System.Drawing.Point(155, 118);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(161, 20);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(188, 164);
+            this.txtPassword.Location = new System.Drawing.Point(155, 174);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(161, 20);
             this.txtPassword.TabIndex = 1;
             // 
-            // label1
+            // lblUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Username";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(155, 102);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(55, 13);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Tag = "username";
+            this.lblUsername.Text = "Username";
             // 
-            // label2
+            // lblPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(155, 158);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.TabIndex = 2;
+            this.lblPassword.Tag = "password";
+            this.lblPassword.Text = "Password";
             // 
-            // label3
+            // lblIniciarSesion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 24);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Iniciar Sesion";
+            this.lblIniciarSesion.AutoSize = true;
+            this.lblIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIniciarSesion.Location = new System.Drawing.Point(165, 59);
+            this.lblIniciarSesion.Name = "lblIniciarSesion";
+            this.lblIniciarSesion.Size = new System.Drawing.Size(136, 24);
+            this.lblIniciarSesion.TabIndex = 3;
+            this.lblIniciarSesion.Tag = "login";
+            this.lblIniciarSesion.Text = "Iniciar Sesion";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 320);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblIniciarSesion);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnEntrar);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,8 +119,8 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblIniciarSesion;
     }
 }

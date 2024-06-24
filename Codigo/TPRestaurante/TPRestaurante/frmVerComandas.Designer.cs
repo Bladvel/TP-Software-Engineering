@@ -32,7 +32,7 @@
             this.grdComandas = new System.Windows.Forms.DataGridView();
             this.grdProductos = new System.Windows.Forms.DataGridView();
             this.btnNotificarPedidoListo = new TPRestaurante.UcButtonPrimary(this.components);
-            this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
+            this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdComandas)).BeginInit();
@@ -67,23 +67,25 @@
             this.btnNotificarPedidoListo.Name = "btnNotificarPedidoListo";
             this.btnNotificarPedidoListo.Size = new System.Drawing.Size(132, 39);
             this.btnNotificarPedidoListo.TabIndex = 2;
+            this.btnNotificarPedidoListo.Tag = "changeToReady";
             this.btnNotificarPedidoListo.Text = "Pasar a listo";
             this.btnNotificarPedidoListo.UseVisualStyleBackColor = false;
             this.btnNotificarPedidoListo.Click += new System.EventHandler(this.btnNotificarPedidoListo_Click);
             // 
-            // ucButtonSecondary1
+            // btnCancelar
             // 
-            this.ucButtonSecondary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.ucButtonSecondary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonSecondary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonSecondary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary1.Location = new System.Drawing.Point(656, 313);
-            this.ucButtonSecondary1.Name = "ucButtonSecondary1";
-            this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonSecondary1.TabIndex = 3;
-            this.ucButtonSecondary1.Text = "Cancelar";
-            this.ucButtonSecondary1.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(656, 313);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(132, 39);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Tag = "cancel";
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -93,6 +95,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 16);
             this.label1.TabIndex = 4;
+            this.label1.Tag = "assignedOrderTicket";
             this.label1.Text = "Comanda asignada";
             // 
             // label2
@@ -103,6 +106,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 4;
+            this.label2.Tag = "products";
             this.label2.Text = "Productos";
             // 
             // frmVerComandas
@@ -112,12 +116,13 @@
             this.ClientSize = new System.Drawing.Size(876, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ucButtonSecondary1);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnNotificarPedidoListo);
             this.Controls.Add(this.grdProductos);
             this.Controls.Add(this.grdComandas);
             this.Name = "frmVerComandas";
             this.Text = "frmVerComandas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVerComandas_FormClosing);
             this.Load += new System.EventHandler(this.frmVerComandas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdComandas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
@@ -131,7 +136,7 @@
         private System.Windows.Forms.DataGridView grdComandas;
         private System.Windows.Forms.DataGridView grdProductos;
         private UcButtonPrimary btnNotificarPedidoListo;
-        private UcButtonSecondary ucButtonSecondary1;
+        private UcButtonSecondary btnCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

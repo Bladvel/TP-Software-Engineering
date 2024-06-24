@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Interfaces;
 using Services;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmLogin : Form
+    public partial class frmLogin : Form, IIdiomaObserver
     {
         BLL.User bllUser;
         public frmLogin()
@@ -90,7 +92,43 @@ namespace TPRestaurante
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            SessionManager.SuscribirObservador(this);
 
+            if (SessionManager.Instance.IsLoggedIn())
+            {
+                Traducir(SessionManager.Instance.User.Idioma);
+            }
+            else
+            {
+                Traducir();
+            }
+
+
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            //Menu sesion
+            if (lblIniciarSesion.Tag != null && traducciones.ContainsKey(lblIniciarSesion.Tag.ToString()))
+                lblIniciarSesion.Text = traducciones[lblIniciarSesion.Tag.ToString()].Texto;
+            if (lblUsername.Tag != null && traducciones.ContainsKey(lblUsername.Tag.ToString()))
+                lblUsername.Text = traducciones[lblUsername.Tag.ToString()].Texto;
+            if (lblPassword.Tag != null && traducciones.ContainsKey(lblPassword.Tag.ToString()))
+                lblPassword.Text = traducciones[lblPassword.Tag.ToString()].Texto;
+            if (btnEntrar.Tag != null && traducciones.ContainsKey(btnEntrar.Tag.ToString()))
+                btnEntrar.Text = traducciones[btnEntrar.Tag.ToString()].Texto;
+        }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

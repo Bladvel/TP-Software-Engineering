@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Interfaces;
+using Services;
+using Services.Multiidioma;
 using Comanda = BE.Comanda;
 using Pedido = BE.Pedido;
 using User = BE.User;
 
 namespace TPRestaurante
 {
-    public partial class frmGenerarComanda : Form
+    public partial class frmGenerarComanda : Form, IIdiomaObserver
     {
         public frmGenerarComanda()
         {
@@ -52,6 +54,9 @@ namespace TPRestaurante
             grdCocinerosDisponibles.Enabled = false;
             btnGenerarComanda.Enabled = false;
             txtInstrucciones.Enabled = false;
+            
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
 
         }
 
@@ -170,6 +175,36 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Error al generar la comanda.");
             }
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma=null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (label3.Tag != null && traducciones.ContainsKey(label3.Tag.ToString()))
+                label3.Text = traducciones[label3.Tag.ToString()].Texto;
+            if (label4.Tag != null && traducciones.ContainsKey(label4.Tag.ToString()))
+                label4.Text = traducciones[label4.Tag.ToString()].Texto;
+
+            if (btnGenerarComanda.Tag != null && traducciones.ContainsKey(btnGenerarComanda.Tag.ToString()))
+                btnGenerarComanda.Text = traducciones[btnGenerarComanda.Tag.ToString()].Texto;
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+        }
+
+        private void frmGenerarComanda_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

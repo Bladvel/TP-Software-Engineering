@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
 using Interfaces;
+using Services;
+using Services.Multiidioma;
 using Component = BE.Component;
 using IComponent = Interfaces.IComponent;
 
 namespace TPRestaurante
 {
-    public partial class frmGestionarPermisos : Form
+    public partial class frmGestionarPermisos : Form, IIdiomaObserver
     {
         public frmGestionarPermisos()
         {
@@ -28,6 +30,8 @@ namespace TPRestaurante
         private void frmGestionarPermisos_Load(object sender, EventArgs e)
         {
             FillPermissions();
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
         }
 
         void FillPermissions()
@@ -186,5 +190,45 @@ namespace TPRestaurante
         }
 
 
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            //Menu sesion
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+            if (groupBox2.Tag != null && traducciones.ContainsKey(groupBox2.Tag.ToString()))
+                groupBox2.Text = traducciones[groupBox2.Tag.ToString()].Texto;
+            if (groupBox3.Tag != null && traducciones.ContainsKey(groupBox3.Tag.ToString()))
+                groupBox3.Text = traducciones[groupBox3.Tag.ToString()].Texto;
+            if (lblGrupos.Tag != null && traducciones.ContainsKey(lblGrupos.Tag.ToString()))
+                lblGrupos.Text = traducciones[lblGrupos.Tag.ToString()].Texto;
+            if (btnConfigurar.Tag != null && traducciones.ContainsKey(btnConfigurar.Tag.ToString()))
+                btnConfigurar.Text = traducciones[btnConfigurar.Tag.ToString()].Texto;
+            if (btnAgregarGrupo.Tag != null && traducciones.ContainsKey(btnAgregarGrupo.Tag.ToString()))
+                btnAgregarGrupo.Text = traducciones[btnAgregarGrupo.Tag.ToString()].Texto;
+            if (btnGuardarGrupo.Tag != null && traducciones.ContainsKey(btnGuardarGrupo.Tag.ToString()))
+                btnGuardarGrupo.Text = traducciones[btnGuardarGrupo.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (btnAgregarPermiso.Tag != null && traducciones.ContainsKey(btnAgregarPermiso.Tag.ToString()))
+                btnAgregarPermiso.Text = traducciones[btnAgregarPermiso.Tag.ToString()].Texto;
+            if (btnGuardarConfig.Tag != null && traducciones.ContainsKey(btnGuardarConfig.Tag.ToString()))
+                btnGuardarConfig.Text = traducciones[btnGuardarConfig.Tag.ToString()].Texto;
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+
+        }
+
+        private void frmGestionarPermisos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
+        }
     }
 }

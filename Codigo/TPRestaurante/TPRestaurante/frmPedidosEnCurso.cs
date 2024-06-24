@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
 using Services;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmPedidosEnCurso : Form
+    public partial class frmPedidosEnCurso : Form, IIdiomaObserver
     {
         public frmPedidosEnCurso()
         {
@@ -35,6 +36,29 @@ namespace TPRestaurante
 
             grdPedidos.DataSource = null;
             grdPedidos.DataSource = bllPedido.ListarPorEstado(OrderType.EnPreparacion);
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
+        }
+
+        private void frmPedidosEnCurso_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (ucButtonSecondary1.Tag != null && traducciones.ContainsKey(ucButtonSecondary1.Tag.ToString()))
+                ucButtonSecondary1.Text = traducciones[ucButtonSecondary1.Tag.ToString()].Texto;
         }
     }
 }

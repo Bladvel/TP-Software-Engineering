@@ -90,6 +90,8 @@ namespace BE
 			set => _attempts=value; 
 		}
 
+		public IIdioma Idioma { get; set; }
+
 
 		private AvailabilityType availability;
 

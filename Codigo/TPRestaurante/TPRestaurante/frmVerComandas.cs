@@ -10,11 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
+using Services.Multiidioma;
 
 
 namespace TPRestaurante
 {
-    public partial class frmVerComandas : Form
+    public partial class frmVerComandas : Form, IIdiomaObserver
     {
         public frmVerComandas()
         {
@@ -39,6 +40,9 @@ namespace TPRestaurante
             grdProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             btnNotificarPedidoListo.Enabled = false;
+
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
 
         }
 
@@ -127,6 +131,33 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Error al obtener la comanda seleccionada.");
             }
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma=null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+
+
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+            if (btnNotificarPedidoListo.Tag != null && traducciones.ContainsKey(btnNotificarPedidoListo.Tag.ToString()))
+                btnNotificarPedidoListo.Text = traducciones[btnNotificarPedidoListo.Tag.ToString()].Texto;
+        }
+
+        private void frmVerComandas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

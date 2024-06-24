@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
-
+using Interfaces;
+using Services;
+using Services.Multiidioma;
 
 
 namespace TPRestaurante
 {
-    public partial class frmCreateOrder : Form
+    public partial class frmCreateOrder : Form, IIdiomaObserver
     {
         public frmCreateOrder()
         {
@@ -56,6 +58,8 @@ namespace TPRestaurante
             priceColumn.ReadOnly = true;
             lstCatalogoProductos.Columns.Add(priceColumn);
 
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
             
         }
 
@@ -164,6 +168,52 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Por favor selecciona un producto a remover");
             }
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            //Menu sesion
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+            if (groupBox2.Tag != null && traducciones.ContainsKey(groupBox2.Tag.ToString()))
+                groupBox2.Text = traducciones[groupBox2.Tag.ToString()].Texto;
+            if (groupBox3.Tag != null && traducciones.ContainsKey(groupBox3.Tag.ToString()))
+                groupBox3.Text = traducciones[groupBox3.Tag.ToString()].Texto;
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (label3.Tag != null && traducciones.ContainsKey(label3.Tag.ToString()))
+                label3.Text = traducciones[label3.Tag.ToString()].Texto;
+            if (label4.Tag != null && traducciones.ContainsKey(label4.Tag.ToString()))
+                label4.Text = traducciones[label4.Tag.ToString()].Texto;
+            if (label5.Tag != null && traducciones.ContainsKey(label5.Tag.ToString()))
+                label5.Text = traducciones[label5.Tag.ToString()].Texto;
+            if (label6.Tag != null && traducciones.ContainsKey(label6.Tag.ToString()))
+                label6.Text = traducciones[label6.Tag.ToString()].Texto;
+
+
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+            if (btnAgregar.Tag != null && traducciones.ContainsKey(btnAgregar.Tag.ToString()))
+                btnAgregar.Text = traducciones[btnAgregar.Tag.ToString()].Texto;
+            if (btnQuitar.Tag != null && traducciones.ContainsKey(btnQuitar.Tag.ToString()))
+                btnQuitar.Text = traducciones[btnQuitar.Tag.ToString()].Texto;
+            if (btnCrear.Tag != null && traducciones.ContainsKey(btnCrear.Tag.ToString()))
+                btnCrear.Text = traducciones[btnCrear.Tag.ToString()].Texto;
+        }
+
+        private void frmCreateOrder_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

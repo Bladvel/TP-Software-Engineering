@@ -59,6 +59,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 2;
+            this.label2.Tag = "orders";
             this.label2.Text = "Pedidos";
             // 
             // label3
@@ -69,6 +70,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 16);
             this.label3.TabIndex = 2;
+            this.label3.Tag = "availableIngredients";
             this.label3.Text = "Ingredientes disponibles";
             // 
             // label4
@@ -79,6 +81,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 16);
             this.label4.TabIndex = 2;
+            this.label4.Tag = "missingIngredients";
             this.label4.Text = "Ingredientes faltantes";
             // 
             // grdPedidos
@@ -98,6 +101,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 16);
             this.label5.TabIndex = 2;
+            this.label5.Tag = "products";
             this.label5.Text = "ItemProductos";
             // 
             // grdProductosPedido
@@ -119,6 +123,7 @@
             this.btnRechazarPedido.Name = "btnRechazarPedido";
             this.btnRechazarPedido.Size = new System.Drawing.Size(132, 39);
             this.btnRechazarPedido.TabIndex = 7;
+            this.btnRechazarPedido.Tag = "decline";
             this.btnRechazarPedido.Text = "Rechazar";
             this.btnRechazarPedido.UseVisualStyleBackColor = false;
             this.btnRechazarPedido.Click += new System.EventHandler(this.btnRechazarPedido_Click);
@@ -134,6 +139,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 39);
             this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Tag = "cancel";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.ucButtonSecondary1_Click);
@@ -149,6 +155,7 @@
             this.btnVerificarPedido.Name = "btnVerificarPedido";
             this.btnVerificarPedido.Size = new System.Drawing.Size(132, 39);
             this.btnVerificarPedido.TabIndex = 4;
+            this.btnVerificarPedido.Tag = "verify";
             this.btnVerificarPedido.Text = "Verificar";
             this.btnVerificarPedido.UseVisualStyleBackColor = false;
             this.btnVerificarPedido.Click += new System.EventHandler(this.btnVerificarPedido_Click);
@@ -180,6 +187,7 @@
             this.btnAceptarPedido.Name = "btnAceptarPedido";
             this.btnAceptarPedido.Size = new System.Drawing.Size(132, 39);
             this.btnAceptarPedido.TabIndex = 10;
+            this.btnAceptarPedido.Tag = "acept";
             this.btnAceptarPedido.Text = "Aceptar";
             this.btnAceptarPedido.UseVisualStyleBackColor = false;
             this.btnAceptarPedido.Click += new System.EventHandler(this.btnAceptarPedido_Click);
@@ -196,6 +204,7 @@
             this.groupBox1.Size = new System.Drawing.Size(349, 353);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "step1";
             this.groupBox1.Text = "Paso 1";
             // 
             // groupBox2
@@ -211,6 +220,7 @@
             this.groupBox2.Size = new System.Drawing.Size(397, 353);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Tag = "step2";
             this.groupBox2.Text = "Paso 2";
             // 
             // frmVerificarPedido
@@ -223,6 +233,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Name = "frmVerificarPedido";
             this.Text = "frmVerificarPedido";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVerificarPedido_FormClosing);
             this.Load += new System.EventHandler(this.frmVerificarPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductosPedido)).EndInit();

@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityType.cs" />
+    <Compile Include="IEtiqueta.cs" />
+    <Compile Include="IIdioma.cs" />
+    <Compile Include="ITraduccion.cs" />
     <Compile Include="MetodoDePago.cs" />
     <Compile Include="OrderType.cs" />
     <Compile Include="ComponentType.cs" />

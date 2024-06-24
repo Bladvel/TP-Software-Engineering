@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
 using BE;
+using Services;
+using Services.Multiidioma;
 
 namespace TPRestaurante
 {
-    public partial class frmPedidosListos : Form
+    public partial class frmPedidosListos : Form, IIdiomaObserver
     {
         public frmPedidosListos()
         {
@@ -40,6 +42,8 @@ namespace TPRestaurante
             grdPedidosListos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             LlenarGrillaPedidos();
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
         }
 
         private void LlenarGrillaPedidos()
@@ -69,6 +73,29 @@ namespace TPRestaurante
                 
 
             }
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (btnCerrarPedido.Tag != null && traducciones.ContainsKey(btnCerrarPedido.Tag.ToString()))
+                btnCerrarPedido.Text = traducciones[btnCerrarPedido.Tag.ToString()].Texto;
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+        }
+
+        private void frmPedidosListos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

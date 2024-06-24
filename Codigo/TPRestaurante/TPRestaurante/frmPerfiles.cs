@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IComponent = Interfaces.IComponent;
 using BE;
+using Interfaces;
+using Services;
+using Services.Multiidioma;
 using Component = BE.Component;
 
 namespace TPRestaurante
 {
-    public partial class frmPerfiles : Form
+    public partial class frmPerfiles : Form, IIdiomaObserver
     {
 
         private User selectedUser;
@@ -33,6 +36,9 @@ namespace TPRestaurante
             bllPermission = new BLL.Permission();
             cmbUsuarios.DataSource = bllUser.ListUsers();
             cmbPermisos.DataSource = bllPermission.ListComponents();
+
+            SessionManager.SuscribirObservador(this);
+            Traducir(SessionManager.Instance.User.Idioma);
         }
 
         void LlenarTreeView(TreeNode padre, IComponent component)
@@ -145,6 +151,38 @@ namespace TPRestaurante
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        public void UpdateLanguage(IIdioma idioma)
+        {
+            Traducir(idioma);
+        }
+
+        private void Traducir(IIdioma idioma = null)
+        {
+            var traducciones = Traductor.ObtenerTraducciones(idioma);
+
+            //Menu sesion
+            if (groupBox1.Tag != null && traducciones.ContainsKey(groupBox1.Tag.ToString()))
+                groupBox1.Text = traducciones[groupBox1.Tag.ToString()].Texto;
+
+            if (label1.Tag != null && traducciones.ContainsKey(label1.Tag.ToString()))
+                label1.Text = traducciones[label1.Tag.ToString()].Texto;
+            if (label2.Tag != null && traducciones.ContainsKey(label2.Tag.ToString()))
+                label2.Text = traducciones[label2.Tag.ToString()].Texto;
+            if (btnAsignarPermiso.Tag != null && traducciones.ContainsKey(btnAsignarPermiso.Tag.ToString()))
+                btnAsignarPermiso.Text = traducciones[btnAsignarPermiso.Tag.ToString()].Texto;
+            if (btnGuardar.Tag != null && traducciones.ContainsKey(btnGuardar.Tag.ToString()))
+                btnGuardar.Text = traducciones[btnGuardar.Tag.ToString()].Texto;
+
+
+            if (btnCancelar.Tag != null && traducciones.ContainsKey(btnCancelar.Tag.ToString()))
+                btnCancelar.Text = traducciones[btnCancelar.Tag.ToString()].Texto;
+        }
+
+        private void frmPerfiles_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SessionManager.DesuscribirObservador(this);
         }
     }
 }

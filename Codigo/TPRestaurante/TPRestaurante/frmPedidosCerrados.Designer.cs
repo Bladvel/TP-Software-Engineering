@@ -54,6 +54,7 @@
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(132, 39);
             this.btnCerrar.TabIndex = 14;
+            this.btnCerrar.Tag = "close";
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -66,6 +67,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 16);
             this.label1.TabIndex = 13;
+            this.label1.Tag = "closedOrders";
             this.label1.Text = "Pedidos cerrados";
             // 
             // frmPedidosCerrados
@@ -78,6 +80,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmPedidosCerrados";
             this.Text = "frmPedidosCerrados";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPedidosCerrados_FormClosing);
             this.Load += new System.EventHandler(this.frmPedidosCerrados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdPedidos)).EndInit();
             this.ResumeLayout(false);

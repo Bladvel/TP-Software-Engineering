@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaSISCAB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d94b2e35e50a36e95e475d3a56cd56250b2936a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21b4a5ec8b242061118939e4e6aed475c66a67c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaSISCAB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaSISCAB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
