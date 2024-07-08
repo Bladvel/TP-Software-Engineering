@@ -43,7 +43,7 @@ namespace BLL
             return hash;
         }
 
-        //faltaria programar el recalcular digito verificador
+        
 
 
         public string ConcatenarRegistro(Reserva reserva)
