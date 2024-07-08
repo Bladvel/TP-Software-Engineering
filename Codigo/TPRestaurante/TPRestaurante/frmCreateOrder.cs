@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using BE;
 using Interfaces;
 using Services;
-using Services.Multiidioma;
 
 
 namespace TPRestaurante
@@ -108,12 +107,30 @@ namespace TPRestaurante
                     lstProductosAgregados.Items.Clear();
                     lstProductosAgregados.Items.AddRange(productos.ToArray());
                 }
+
+                ActualizarTotal();
             }
             else
             {
                 MessageBox.Show("Por favor selecciona un producto a agregar");
             }
         }
+
+
+        private void ActualizarTotal()
+        {
+            float total = 0;
+
+            foreach (ItemProducto item in lstProductosAgregados.Items)
+            {
+                total += item.Cantidad * item.PrecioCompra;
+            }
+
+            lblTotal.Text = total.ToString("C");
+        }
+
+
+
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
@@ -152,9 +169,6 @@ namespace TPRestaurante
             {
                 MessageBox.Show("Error al crear el pedido");
             }
-
-            
-
 
         }
 

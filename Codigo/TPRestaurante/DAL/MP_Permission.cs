@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
+using BE.Permisos;
 using Interfaces;
 
 namespace DAL
@@ -211,9 +212,6 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public Array GetAtomicPermissions()
-        {
-            return Enum.GetValues(typeof(PermissionType));
-        }
+        
     }
 }

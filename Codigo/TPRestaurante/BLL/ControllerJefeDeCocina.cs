@@ -98,22 +98,22 @@ namespace BLL
         private BLL.User bllUser = new BLL.User();
 
         private Comanda bllComanda = new Comanda();
-        public bool GenerarComanda(BE.Pedido pedidoSeleccionado, BE.User cocineroSeleccionado, string instrucciones)
+        public BE.Comanda GenerarComanda(BE.Pedido pedidoSeleccionado, BE.User cocineroSeleccionado, string instrucciones)
         {
             BE.Comanda nuevaComanda = new BE.Comanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
-
-            if (bllComanda.Insertar(nuevaComanda) > 0)
+            nuevaComanda.ID = bllComanda.Insertar(nuevaComanda);
+            if (nuevaComanda.ID > 0)
             {
 
                 bllUser.UpdateAvailability(cocineroSeleccionado, AvailabilityType.NoDisponible);
                 bllPedido.CambiarEstado(pedidoSeleccionado,OrderType.EnPreparacion);
-                return true;
+                return nuevaComanda;
             }
 
 
 
 
-            return false;
+            return null;
 
         }
     }

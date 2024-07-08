@@ -43,12 +43,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.lstCatalogoProductos = new System.Windows.Forms.DataGridView();
+            this.btnAgregar = new TPRestaurante.UcButtonPrimary(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lstProductosAgregados = new System.Windows.Forms.ListBox();
             this.btnQuitar = new TPRestaurante.UcButtonSecondary(this.components);
-            this.btnAgregar = new TPRestaurante.UcButtonPrimary(this.components);
             this.btnCancelar = new TPRestaurante.UcButtonSecondary(this.components);
             this.btnCrear = new TPRestaurante.UcButtonPrimary(this.components);
+            this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -208,8 +209,25 @@
             this.lstCatalogoProductos.Size = new System.Drawing.Size(223, 150);
             this.lstCatalogoProductos.TabIndex = 2;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(235, 64);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Tag = "add";
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblTotal);
             this.groupBox3.Controls.Add(this.lstProductosAgregados);
             this.groupBox3.Controls.Add(this.btnQuitar);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,22 +264,6 @@
             this.btnQuitar.UseVisualStyleBackColor = false;
             this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(235, 64);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 1;
-            this.btnAgregar.Tag = "add";
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
@@ -294,6 +296,15 @@
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(4, 266);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(23, 16);
+            this.lblTotal.TabIndex = 11;
+            this.lblTotal.Text = "$0";
+            // 
             // frmCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +327,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstCatalogoProductos)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,5 +355,6 @@
         private System.Windows.Forms.DataGridView lstCatalogoProductos;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ListBox lstProductosAgregados;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

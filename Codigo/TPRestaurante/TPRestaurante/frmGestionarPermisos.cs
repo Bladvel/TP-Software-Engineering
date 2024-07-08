@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
+using BE.Permisos;
 using Interfaces;
 using Services;
-using Services.Multiidioma;
-using Component = BE.Component;
+using Component = BE.Permisos.Component;
 using IComponent = Interfaces.IComponent;
 
 namespace TPRestaurante

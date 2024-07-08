@@ -10,10 +10,7 @@ namespace BLL
     public class Comanda
     {
         MP_Comanda mp = new MP_Comanda();
-        public List<BE.Comanda> ListarEnCurso()
-        {
-            return mp.GetAllOnGoing();
-        }
+        
 
         public List<BE.Comanda> ListarEnCursoPorCocinero(BE.User cocinero)
         {

@@ -11,8 +11,7 @@ using IComponent = Interfaces.IComponent;
 using BE;
 using Interfaces;
 using Services;
-using Services.Multiidioma;
-using Component = BE.Component;
+using Component = BE.Permisos.Component;
 
 namespace TPRestaurante
 {

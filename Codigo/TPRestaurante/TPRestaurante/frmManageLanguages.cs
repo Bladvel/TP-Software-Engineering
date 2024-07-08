@@ -111,7 +111,12 @@ namespace TPRestaurante
                 }
                 traduccionBll.GuardarTraducciones(traducciones);
 
-                MessageBox.Show("Idioma y traducciones guardados correctamente. Por favor reiniciar el programa");
+                MessageBox.Show("Idioma y traducciones guardados correctamente.");
+
+                frmMDI parent = (frmMDI)this.MdiParent;
+                parent.CargarIdiomas();
+
+
 
             }
             else

@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Interfaces;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using Services;
-using Services.Multiidioma;
 using Comanda = BE.Comanda;
 using Pedido = BE.Pedido;
 using User = BE.User;
+
 
 namespace TPRestaurante
 {
@@ -160,22 +163,93 @@ namespace TPRestaurante
 
             string instrucciones = txtInstrucciones.Text;
 
-            bool result = bllJefeDeCocina.GenerarComanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
+            Comanda nuevaComanda = bllJefeDeCocina.GenerarComanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
             
 
-            if (result)
+            if (nuevaComanda!=null)
             {
-                MessageBox.Show("Comanda generada exitosamente");
+                
                 LlenarGridCocineros();
                 LlenarGridPedidos();
                 txtInstrucciones.Clear();
-                
+
+
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                    saveFileDialog.Title = "Guardar Comanda como PDF";
+                    saveFileDialog.FileName = $"Comanda_{nuevaComanda.ID}.pdf";
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string path = saveFileDialog.FileName;
+                        // Generar el PDF de la comanda
+                        GenerarPDFComanda(nuevaComanda, path);
+
+                        MessageBox.Show("Comanda generada y exportada como PDF.");
+                    }
+                }
+
+
+
             }
             else
             {
                 MessageBox.Show("Error al generar la comanda.");
             }
         }
+
+
+        public void GenerarPDFComanda(Comanda comanda, string path)
+        {
+            if (string.IsNullOrWhiteSpace(path))
+            {
+                throw new ArgumentException("La ruta del archivo no puede estar vacía", nameof(path));
+            }
+
+            Document document = new Document();
+            
+            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(path, FileMode.Create));
+            document.Open();
+
+            
+            var titleFont = FontFactory.GetFont("Arial", 20, iTextSharp.text.Font.BOLD);
+            Paragraph title = new Paragraph($"Comanda ID: {comanda.ID}\n\n", titleFont)
+            {
+                Alignment = Element.ALIGN_CENTER
+            };
+            document.Add(title);
+
+            
+            var infoFont = FontFactory.GetFont("Arial", 12);
+            document.Add(new Paragraph($"Pedido ID: {comanda.PedidoAsignado.NroPedido}\n", infoFont));
+            document.Add(new Paragraph($"Descripción: {comanda.Descripcion}\n", infoFont));
+            document.Add(new Paragraph($"Cocinero Asignado: {comanda.Cocinero.Nombre} {comanda.Cocinero.Apellido}\n\n", infoFont));
+
+            
+            PdfPTable table = new PdfPTable(2);
+            table.AddCell("Producto");
+            table.AddCell("Cantidad");
+            
+
+            foreach (var item in comanda.PedidoAsignado.Productos)
+            {
+                table.AddCell(item.Producto.Nombre);
+                table.AddCell(item.Cantidad.ToString());
+                
+            }
+
+            document.Add(table);
+            document.Close();
+            writer.Close();
+            
+            
+        }
+
+
+
+
+
 
         public void UpdateLanguage(IIdioma idioma)
         {

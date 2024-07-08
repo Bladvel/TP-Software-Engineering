@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
+using BE.Permisos;
 using DAL;
 using Interfaces;
 
@@ -18,16 +19,12 @@ namespace BLL
             mpPermission = new MP_Permission();
         }
 
-        public List<BE.Component> ListComponents()
+        public List<Component> ListComponents()
         {
-            List<BE.Component> list = mpPermission.GetAll();
+            List<Component> list = mpPermission.GetAll();
             return list;
         }
 
-        public void UniversalInsert(BE.Component component)
-        {
-            mpPermission.UniversalInsert(component);
-        }
 
         public void SaveGroup(Group group)
         {
@@ -69,13 +66,6 @@ namespace BLL
 
 
 
-        //Obtiene los permisos "atomicos" (que uso en el enum)
-        public Array GetAtomicPermissions()
-        {
-            return mpPermission.GetAtomicPermissions();
-        }
-
-
         //Obtiene los permisos de la tabla Permisos sin los grupos
         public List<Component> GetPermissions()
         {
@@ -90,7 +80,7 @@ namespace BLL
 
 
         //Inserta un componente si ya no existe uno con el mismo nombre
-        public int InsertComponent(BE.Component component)
+        public int InsertComponent(Component component)
         {
 
             List<Component> permissionList = mpPermission.GetAllWithoutComposite();
@@ -103,18 +93,7 @@ namespace BLL
             return mpPermission.Insert(component);
         }
 
-        public Group GetGroupByID(int id)
-        {
-            Group g = GetGroups().FirstOrDefault(c => c.ID.Equals(id)) as Group;
-            return g;
-        }
-
-
-
-        public void InsertWholeGroup(Group group)
-        {
-            mpPermission.InsertGroup(group);
-        }
+        
 
     }
 }

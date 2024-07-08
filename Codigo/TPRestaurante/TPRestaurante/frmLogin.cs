@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
 using Services;
-using Services.Multiidioma;
 
 namespace TPRestaurante
 {

@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
-using Services.Multiidioma;
 
 namespace TPRestaurante
 {
@@ -294,8 +293,9 @@ namespace TPRestaurante
 
         }
 
-        private void CargarIdiomas()
+        public void CargarIdiomas()
         {
+            itemCambiarIdioma.DropDownItems.Clear();
             var idiomas = Traductor.ObtenerIdiomas();
             foreach (var idioma in idiomas)
             {
