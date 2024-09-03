@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hpIYh2LCBhyetpqfwcAvianAgixGxGk7Xd4d/zicvddDQbjngEH+mH1kMAYfKvo/v1i42BMivo1NQUibEIOUBA==",
+  "dgSpecHash": "OEUPan+Wncg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\Presentacion.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,7 @@
     "C:\\Users\\Dan\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Dan\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Dan\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.31\\microsoft.windows.sdk.net.ref.10.0.17763.31.nupkg.sha512"
+    "C:\\Users\\Dan\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.34\\microsoft.windows.sdk.net.ref.10.0.17763.34.nupkg.sha512"
   ],
   "logs": [
     {

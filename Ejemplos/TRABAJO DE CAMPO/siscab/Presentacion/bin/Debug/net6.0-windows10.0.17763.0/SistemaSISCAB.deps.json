@@ -19,21 +19,21 @@
           "System.Data.SqlClient": "4.8.6",
           "WinForms.DataVisualization": "1.9.2",
           "iTextSharp": "5.5.13.3",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.17763.31"
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.17763.34"
         },
         "runtime": {
           "SistemaSISCAB.dll": {}
         }
       },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.31": {
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.34": {
         "runtime": {
           "Microsoft.Windows.SDK.NET.dll": {
             "assemblyVersion": "10.0.17763.24",
-            "fileVersion": "10.0.17763.31"
+            "fileVersion": "10.0.17763.34"
           },
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.4.44211"
+            "fileVersion": "2.0.8.46841"
           }
         }
       },
@@ -168,7 +168,10 @@
       },
       "BE/1.0.0": {
         "runtime": {
-          "BE.dll": {}
+          "BE.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "BLL/1.0.0": {
@@ -178,7 +181,10 @@
           "Servicios": "1.0.0"
         },
         "runtime": {
-          "BLL.dll": {}
+          "BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DAL/1.0.0": {
@@ -187,7 +193,10 @@
           "Servicios": "1.0.0"
         },
         "runtime": {
-          "DAL.dll": {}
+          "DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Servicios/1.0.0": {
@@ -195,7 +204,10 @@
           "BE": "1.0.0"
         },
         "runtime": {
-          "Servicios.dll": {}
+          "Servicios.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -206,7 +218,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.31": {
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.34": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""

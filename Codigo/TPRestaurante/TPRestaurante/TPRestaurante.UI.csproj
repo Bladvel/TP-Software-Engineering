@@ -105,6 +105,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBitacoraEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBitacoraEventos.Designer.cs">
+      <DependentUpon>frmBitacoraEventos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCambiarPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     <Compile Include="User controls\UcButtonPrimary.Designer.cs">
       <DependentUpon>UcButtonPrimary.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmBitacoraEventos.resx">
+      <DependentUpon>frmBitacoraEventos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCambiarPassword.resx">
       <DependentUpon>frmCambiarPassword.cs</DependentUpon>
     </EmbeddedResource>

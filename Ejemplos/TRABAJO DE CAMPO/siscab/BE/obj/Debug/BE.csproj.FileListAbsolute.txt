@@ -28,3 +28,18 @@ C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.csproj.CoreCompil
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.csproj.Up2Date
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.dll
 C:\Users\Dan\Downloads\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\x64\pdfium.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\BE.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\itextsharp.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\itextsharp.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.csproj.Up2Date
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\TRABAJO DE CAMPO\siscab\BE\obj\Debug\BE.pdb

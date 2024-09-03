@@ -134,7 +134,7 @@
             // itemGestorUsuarios
             // 
             this.itemGestorUsuarios.Name = "itemGestorUsuarios";
-            this.itemGestorUsuarios.Size = new System.Drawing.Size(180, 22);
+            this.itemGestorUsuarios.Size = new System.Drawing.Size(177, 22);
             this.itemGestorUsuarios.Tag = "userManagement";
             this.itemGestorUsuarios.Text = "Gestion de usuarios";
             this.itemGestorUsuarios.Click += new System.EventHandler(this.itemGestorUsuarios_Click);
@@ -145,7 +145,7 @@
             this.permisosToolStripMenuItem,
             this.asignacionDePerfilToolStripMenuItem});
             this.itemGestorPerfiles.Name = "itemGestorPerfiles";
-            this.itemGestorPerfiles.Size = new System.Drawing.Size(180, 22);
+            this.itemGestorPerfiles.Size = new System.Drawing.Size(177, 22);
             this.itemGestorPerfiles.Tag = "rolesManagement";
             this.itemGestorPerfiles.Text = "Gestion de perfiles";
             // 
@@ -168,7 +168,7 @@
             // itemGestorIdiomas
             // 
             this.itemGestorIdiomas.Name = "itemGestorIdiomas";
-            this.itemGestorIdiomas.Size = new System.Drawing.Size(180, 22);
+            this.itemGestorIdiomas.Size = new System.Drawing.Size(177, 22);
             this.itemGestorIdiomas.Tag = "languageManagement";
             this.itemGestorIdiomas.Text = "Gestion de idiomas";
             this.itemGestorIdiomas.Click += new System.EventHandler(this.itemGestorIdiomas_Click);
@@ -188,7 +188,7 @@
             // itemCrearPedido
             // 
             this.itemCrearPedido.Name = "itemCrearPedido";
-            this.itemCrearPedido.Size = new System.Drawing.Size(180, 22);
+            this.itemCrearPedido.Size = new System.Drawing.Size(150, 22);
             this.itemCrearPedido.Tag = "create";
             this.itemCrearPedido.Text = "Crear";
             this.itemCrearPedido.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
@@ -202,14 +202,14 @@
             this.itemVerPedidosListos,
             this.itemVerPedidosCerrados});
             this.itemVerPedidos.Name = "itemVerPedidos";
-            this.itemVerPedidos.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidos.Size = new System.Drawing.Size(150, 22);
             this.itemVerPedidos.Tag = "seeOrders";
             this.itemVerPedidos.Text = "Ver pedidos";
             // 
             // itemVerPedidosRegistrados
             // 
             this.itemVerPedidosRegistrados.Name = "itemVerPedidosRegistrados";
-            this.itemVerPedidosRegistrados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosRegistrados.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosRegistrados.Tag = "registered";
             this.itemVerPedidosRegistrados.Text = "Registrados";
             this.itemVerPedidosRegistrados.Click += new System.EventHandler(this.registradosToolStripMenuItem_Click);
@@ -217,7 +217,7 @@
             // itemVerPedidosVerificados
             // 
             this.itemVerPedidosVerificados.Name = "itemVerPedidosVerificados";
-            this.itemVerPedidosVerificados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosVerificados.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosVerificados.Tag = "verified";
             this.itemVerPedidosVerificados.Text = "Verificados";
             this.itemVerPedidosVerificados.Click += new System.EventHandler(this.itemVerPedidosVerificados_Click);
@@ -225,7 +225,7 @@
             // itemVerPedidosEnCurso
             // 
             this.itemVerPedidosEnCurso.Name = "itemVerPedidosEnCurso";
-            this.itemVerPedidosEnCurso.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosEnCurso.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosEnCurso.Tag = "onGoing";
             this.itemVerPedidosEnCurso.Text = "En curso";
             this.itemVerPedidosEnCurso.Click += new System.EventHandler(this.abiertosToolStripMenuItem_Click);
@@ -233,7 +233,7 @@
             // itemVerPedidosListos
             // 
             this.itemVerPedidosListos.Name = "itemVerPedidosListos";
-            this.itemVerPedidosListos.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosListos.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosListos.Tag = "ready";
             this.itemVerPedidosListos.Text = "Listos";
             this.itemVerPedidosListos.Click += new System.EventHandler(this.itemVerPedidosListos_Click);
@@ -241,7 +241,7 @@
             // itemVerPedidosCerrados
             // 
             this.itemVerPedidosCerrados.Name = "itemVerPedidosCerrados";
-            this.itemVerPedidosCerrados.Size = new System.Drawing.Size(180, 22);
+            this.itemVerPedidosCerrados.Size = new System.Drawing.Size(135, 22);
             this.itemVerPedidosCerrados.Tag = "closed";
             this.itemVerPedidosCerrados.Text = "Cerrados";
             this.itemVerPedidosCerrados.Click += new System.EventHandler(this.itemVerPedidosCerrados_Click);
@@ -249,7 +249,7 @@
             // itemCobrarPedido
             // 
             this.itemCobrarPedido.Name = "itemCobrarPedido";
-            this.itemCobrarPedido.Size = new System.Drawing.Size(180, 22);
+            this.itemCobrarPedido.Size = new System.Drawing.Size(150, 22);
             this.itemCobrarPedido.Tag = "chargeOrder";
             this.itemCobrarPedido.Text = "Cobrar pedido";
             this.itemCobrarPedido.Click += new System.EventHandler(this.cobrarPedidoToolStripMenuItem_Click);
@@ -260,14 +260,14 @@
             this.itemGenerarComandas,
             this.itemVerComandas});
             this.itemComandas.Name = "itemComandas";
-            this.itemComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemComandas.Size = new System.Drawing.Size(150, 22);
             this.itemComandas.Tag = "orderTicket";
             this.itemComandas.Text = "Comandas";
             // 
             // itemGenerarComandas
             // 
             this.itemGenerarComandas.Name = "itemGenerarComandas";
-            this.itemGenerarComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemGenerarComandas.Size = new System.Drawing.Size(115, 22);
             this.itemGenerarComandas.Tag = "generate";
             this.itemGenerarComandas.Text = "Generar";
             this.itemGenerarComandas.Click += new System.EventHandler(this.generarToolStripMenuItem_Click);
@@ -275,7 +275,7 @@
             // itemVerComandas
             // 
             this.itemVerComandas.Name = "itemVerComandas";
-            this.itemVerComandas.Size = new System.Drawing.Size(180, 22);
+            this.itemVerComandas.Size = new System.Drawing.Size(115, 22);
             this.itemVerComandas.Tag = "see";
             this.itemVerComandas.Text = "Ver";
             this.itemVerComandas.Click += new System.EventHandler(this.itemVerComandas_Click);
@@ -293,7 +293,7 @@
             // itemProductos
             // 
             this.itemProductos.Name = "itemProductos";
-            this.itemProductos.Size = new System.Drawing.Size(180, 22);
+            this.itemProductos.Size = new System.Drawing.Size(139, 22);
             this.itemProductos.Tag = "products";
             this.itemProductos.Text = "Productos";
             this.itemProductos.Click += new System.EventHandler(this.itemProductos_Click);
@@ -301,7 +301,7 @@
             // itemIngredientes
             // 
             this.itemIngredientes.Name = "itemIngredientes";
-            this.itemIngredientes.Size = new System.Drawing.Size(180, 22);
+            this.itemIngredientes.Size = new System.Drawing.Size(139, 22);
             this.itemIngredientes.Tag = "ingredients";
             this.itemIngredientes.Text = "Ingredientes";
             this.itemIngredientes.Click += new System.EventHandler(this.ingredientesToolStripMenuItem_Click);
@@ -341,7 +341,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMDI";
-            this.Text = "FoodSmart";
+            this.Text = "SISFOOD";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMDI_FormClosing);
             this.Load += new System.EventHandler(this.frmMDI_Load);
             this.menuStrip1.ResumeLayout(false);

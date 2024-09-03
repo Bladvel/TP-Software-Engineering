@@ -100,6 +100,7 @@
     <Compile Include="IIdiomaObserver.cs" />
     <Compile Include="ITraduccion.cs" />
     <Compile Include="IMetodoDePago.cs" />
+    <Compile Include="TipoModulo.cs" />
     <Compile Include="OrderType.cs" />
     <Compile Include="ComponentType.cs" />
     <Compile Include="IComponent.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="PaymentState.cs" />
     <Compile Include="PermissionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoOperacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
