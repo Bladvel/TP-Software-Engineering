@@ -96,6 +96,7 @@
   <ItemGroup>
     <Compile Include="Access.cs" />
     <Compile Include="Mapper.cs" />
+    <Compile Include="MP_Bitacora.cs" />
     <Compile Include="MP_Cliente.cs" />
     <Compile Include="MP_Comanda.cs" />
     <Compile Include="MP_Etiqueta.cs" />

@@ -56,5 +56,6 @@ namespace Services
             get { return criticidad; }
             set { criticidad = value; }
         }
+
     }
 }

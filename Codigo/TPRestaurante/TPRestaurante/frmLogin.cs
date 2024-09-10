@@ -16,10 +16,14 @@ namespace TPRestaurante
     public partial class frmLogin : Form, IIdiomaObserver
     {
         BLL.User bllUser;
+        private Bitacora bitacora;
+        private BLL.Bitacora bllBitacora;
         public frmLogin()
         {
             InitializeComponent();
             bllUser = new BLL.User();
+            bitacora = new Bitacora();
+            bllBitacora = new BLL.Bitacora();
 
         }
 
@@ -33,6 +37,12 @@ namespace TPRestaurante
                     user.Username = txtUsername.Text;
                     user.Password = txtPassword.Text;
                     var result = bllUser.Login(user);
+                    if (result == LoginResult.ValidUser)
+                    {
+                        RegistroBitacoraLoginCorrecto(user);
+                    }
+
+
                     frmMDI parent = (frmMDI)this.MdiParent;
                     parent.ValidarForm();
                     this.Close();
@@ -84,11 +94,11 @@ namespace TPRestaurante
 
             if (this.MdiParent != null)
             {
-                // Calcula el centro del contenedor MDI
+                
                 int x = (this.MdiParent.ClientSize.Width - this.Width) / 2;
                 int y = (this.MdiParent.ClientSize.Height - this.Height) / 2;
 
-                // Establece la nueva posición
+                
                 this.Location = new Point(x, y);
             }
 
@@ -103,10 +113,6 @@ namespace TPRestaurante
             {
                 Traducir();
             }
-
-
-
-
 
 
         }
@@ -135,5 +141,27 @@ namespace TPRestaurante
         {
             SessionManager.DesuscribirObservador(this);
         }
+
+        private void RegistroBitacoraLoginCorrecto(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.InicioSesion;
+            bitacora.Operacion = TipoOperacion.Login;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+        //private void RegistroBitacoraLoginIncorrecto(User user)
+        //{
+        //    bitacora.Fecha = DateTime.Now;
+        //    bitacora.Usuario = user;
+        //    bitacora.Modulo = TipoModulo.InicioSesion;
+        //    bitacora.Operacion = TipoOperacion.LoginIncorrecto;
+        //    bitacora.Criticidad = 1; //TEST
+        //    bllBitacora.Insertar(bitacora);
+        //}
+
+
+
     }
 }

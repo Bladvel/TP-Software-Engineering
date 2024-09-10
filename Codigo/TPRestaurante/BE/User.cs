@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-	public class User : IUser, IEntity
+	public class User : IUser
 	{
 		private string user;
 
