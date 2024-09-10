@@ -77,20 +77,22 @@ namespace TPRestaurante
             txtPassword.Text = string.Empty;
         }
 
-        private void btnCrear_Click(object sender, EventArgs e)
-        {
-            User user = new User();
-            //user.Username = txtUsername.Text;
-            user.Username = CryptoManager.Encrypt(txtUsername.Text);
-            user.Password = CryptoManager.Hash(txtPassword.Text);
-
-            bool ok = bllUser.AddUser(user);
-
-            MessageBox.Show(ok.ToString());
-        }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
+
+            if (this.MdiParent != null)
+            {
+                // Calcula el centro del contenedor MDI
+                int x = (this.MdiParent.ClientSize.Width - this.Width) / 2;
+                int y = (this.MdiParent.ClientSize.Height - this.Height) / 2;
+
+                // Establece la nueva posición
+                this.Location = new Point(x, y);
+            }
+
+
             SessionManager.SuscribirObservador(this);
 
             if (SessionManager.Instance.IsLoggedIn())
@@ -101,6 +103,10 @@ namespace TPRestaurante
             {
                 Traducir();
             }
+
+
+
+
 
 
         }

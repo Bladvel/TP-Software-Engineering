@@ -1,5 +1,4 @@
-﻿using BE;
-using Services;
+﻿using Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using User = BE.User;
+using Interfaces;
+using IComponent = Interfaces.IComponent;
+using Component = BE.Permisos.Component;
 
 namespace TPRestaurante
 {
@@ -19,6 +22,7 @@ namespace TPRestaurante
             InitializeComponent();
             modo = new BLL.ModoDelGestor();
             bllUser = new BLL.User();
+            bllPermisos = new BLL.Permission();
         }
 
         //ModoAgregar = 1,
@@ -27,6 +31,7 @@ namespace TPRestaurante
         //ModoDesbloquear = 4,
         BLL.User bllUser;
         BLL.ModoDelGestor modo;
+        BLL.Permission bllPermisos;
 
         void CambiarModo(BLL.ModoDelGestor pModo)
         {
@@ -99,6 +104,8 @@ namespace TPRestaurante
             grdUsuarios.EditMode = DataGridViewEditMode.EditProgrammatically;
             grdUsuarios.RowHeadersVisible = false;
             ActualizarGrilla();
+            cmbRol.DataSource = null;
+            cmbRol.DataSource = bllPermisos.GetGroups();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -115,14 +122,23 @@ namespace TPRestaurante
                 case BLL.ModoDelGestor.ModoConsulta:
                     break;
                 case BLL.ModoDelGestor.ModoAgregar:
-                    User user = new User();
-                    user.Username = txtUsername.Text;
-                    user.Nombre = txtNombre.Text;
-                    user.Apellido = txtApellido.Text;
-                    user.DNI = CryptoManager.Encrypt(txtDNI.Text);
-                    user.Email = txtEmail.Text;
-                    user.Password = CryptoManager.Hash(txtDNI.Text+txtApellido.Text);//Cuando creo aca genero automaticamente una clave
-                    bllUser.AddUser(user);
+                    var permission = (Component)cmbRol.SelectedItem;
+                    if (permission != null)
+                    {
+                        User user = new User();
+                        user.Username = txtUsername.Text;
+                        user.Nombre = txtNombre.Text;
+                        user.Apellido = txtApellido.Text;
+                        user.DNI = CryptoManager.Encrypt(txtDNI.Text);
+                        user.Email = txtEmail.Text;
+                        user.Password = CryptoManager.Hash(txtDNI.Text + txtApellido.Text);//Cuando creo aca genero automaticamente una clave
+                        user.ID= bllUser.AddUser(user);
+                        user.Permissions.Add(permission);
+                        bllUser.UpdatePermissions(user);
+                    }
+                    
+                    
+                    
                     ActualizarGrilla();
                     ResetTextFields();
                     break;

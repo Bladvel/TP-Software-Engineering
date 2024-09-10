@@ -73,6 +73,8 @@ namespace DAL
             return GetAll().FirstOrDefault(u => u.ID.Equals(pID));
         }
 
+
+        [Obsolete]
         public override int Insert(User entity)
         {
             List<SqlParameter> parameters = new List<SqlParameter>
@@ -86,11 +88,31 @@ namespace DAL
             };
 
             access.Open();
-            int filasAfectadas = access.Write("INSERTAR_USUARIO", parameters);
+            int id = access.WriteScalar("INSERTAR_USUARIO", parameters);
             access.Close();
 
-            return filasAfectadas;
+            return id;
         }
+
+        public Guid InsertWithGuid(User entity)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@username", entity.Username),
+                access.CreateParameter("@password", entity.Password),
+                access.CreateParameter("@dni", entity.DNI),
+                access.CreateParameter("@nom", entity.Nombre),
+                access.CreateParameter("@ape", entity.Apellido),
+                access.CreateParameter("@email", entity.Email),
+            };
+
+            access.Open();
+            object id = access.WriteScalarGuid("INSERTAR_USUARIO", parameters);
+            access.Close();
+
+            return (Guid)id;
+        }
+
 
         public override int Update(User entity)
         {

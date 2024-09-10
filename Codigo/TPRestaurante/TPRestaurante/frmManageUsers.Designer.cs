@@ -50,6 +50,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnDesbloquear = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,7 +193,7 @@
             // chkActivo
             // 
             this.chkActivo.AutoSize = true;
-            this.chkActivo.Location = new System.Drawing.Point(123, 412);
+            this.chkActivo.Location = new System.Drawing.Point(126, 443);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(56, 17);
             this.chkActivo.TabIndex = 11;
@@ -201,7 +203,7 @@
             // chkBloqueado
             // 
             this.chkBloqueado.AutoSize = true;
-            this.chkBloqueado.Location = new System.Drawing.Point(210, 412);
+            this.chkBloqueado.Location = new System.Drawing.Point(213, 443);
             this.chkBloqueado.Name = "chkBloqueado";
             this.chkBloqueado.Size = new System.Drawing.Size(77, 17);
             this.chkBloqueado.TabIndex = 12;
@@ -247,11 +249,30 @@
             this.btnDesbloquear.UseVisualStyleBackColor = true;
             this.btnDesbloquear.Click += new System.EventHandler(this.btnDesbloquear_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(51, 404);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Rol";
+            // 
+            // cmbRol
+            // 
+            this.cmbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Location = new System.Drawing.Point(123, 404);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(167, 21);
+            this.cmbRol.TabIndex = 16;
+            // 
             // frmManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(831, 525);
+            this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.btnDesbloquear);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
@@ -263,6 +284,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -307,5 +329,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnDesbloquear;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbRol;
     }
 }

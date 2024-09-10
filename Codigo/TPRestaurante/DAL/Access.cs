@@ -133,6 +133,20 @@ namespace DAL
             return id;
         }
 
+        public Guid WriteScalarGuid(string sql, List<SqlParameter> parameters = null)
+        {
+            object id;
+            var cmd = CreateCommand(sql, parameters);
+            try
+            {
+                id = cmd.ExecuteScalar();
+            }
+            catch
+            {
+                id = -1;
+            }
+            return (Guid)id;
+        }
 
 
         public DataTable Read(string sql, List<SqlParameter> parameters = null)

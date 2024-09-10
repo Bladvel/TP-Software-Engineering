@@ -18,10 +18,10 @@ namespace BLL
             mp = new MP_User();
         }
 
-        public bool AddUser(BE.User user)
+        public Guid AddUser(BE.User user)
         {
-            int filasAfectadas = mp.Insert(user);
-            return filasAfectadas > 0;
+            Guid id = mp.InsertWithGuid(user);
+            return id;
         }
 
         public BE.User GetUser(string pUsername)
