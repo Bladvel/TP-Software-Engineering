@@ -10,6 +10,8 @@ namespace Interfaces
     {
         Login,
         LoginIncorrecto,
+        LoginUsuarioBloqueado,
+        BloqueoDeUsuario,
         Logout,
         Alta,
         Baja,

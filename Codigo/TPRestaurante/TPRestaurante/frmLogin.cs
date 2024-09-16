@@ -63,12 +63,15 @@ namespace TPRestaurante
                         break;
                     case LoginResult.InvalidPassword:
                         User userAttempts = bllUser.GetUser(user.Username);
+                        RegistroBitacoraLoginInorrecto(user);
                         MessageBox.Show($"Password Incorrecto\nTe quedan {3 - userAttempts.Attempts} intento/s");
                         break;
                     case LoginResult.BlockedUser:
+                        RegistroBitacoraBloqueoDeUsuario(user);
                         MessageBox.Show("Limite de intentos superados. Ha sido Bloqueado\nContacte a un administrador");
                         break;
                     case LoginResult.AlreadyBlockedUser:
+                        RegistroBitacoraLoginUsuarioBloqueado(user);
                         MessageBox.Show("User bloqueado");
                         break;
                     default:
@@ -77,6 +80,7 @@ namespace TPRestaurante
 
                 VaciarTextBoxs();
             }
+            
 
            
         }
@@ -151,6 +155,40 @@ namespace TPRestaurante
             bitacora.Criticidad = 1; //TEST
             bllBitacora.Insertar(bitacora);
         }
+
+        private void RegistroBitacoraLoginInorrecto(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.InicioSesion;
+            bitacora.Operacion = TipoOperacion.LoginIncorrecto;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+
+
+        private void RegistroBitacoraLoginUsuarioBloqueado(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.InicioSesion;
+            bitacora.Operacion = TipoOperacion.LoginUsuarioBloqueado;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+
+        private void RegistroBitacoraBloqueoDeUsuario(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.InicioSesion;
+            bitacora.Operacion = TipoOperacion.BloqueoDeUsuario;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+
+
+
         //private void RegistroBitacoraLoginIncorrecto(User user)
         //{
         //    bitacora.Fecha = DateTime.Now;

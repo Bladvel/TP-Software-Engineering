@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
+using BLL;
 
 namespace TPRestaurante
 {
@@ -19,9 +20,13 @@ namespace TPRestaurante
             InitializeComponent();
             bllUser = new BLL.User();
             _idiomaActual = Traductor.ObtenerIdiomaDefault();
+            bitacora = new Services.Bitacora();
+            bllBitacora = new BLL.Bitacora();
         }
         private IIdioma _idiomaActual;
         BLL.User bllUser;
+        Services.Bitacora bitacora;
+        BLL.Bitacora bllBitacora;
 
         private void frmMDI_Load(object sender, EventArgs e)
         {
@@ -107,12 +112,22 @@ namespace TPRestaurante
         {
             if (MessageBox.Show("¿Está seguro?", "Confirme", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                RegistroBitacoraLogout(SessionManager.Instance.User);
                 bllUser.Logout();
                 ValidarForm();
                 CerrarChildForms();
             }
         }
 
+        private void RegistroBitacoraLogout(IUser user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.Sesion;
+            bitacora.Operacion = TipoOperacion.Logout;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
 
         private void itemIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -332,6 +347,12 @@ namespace TPRestaurante
         {
             frmManageLanguages gestionarIdiomas = new frmManageLanguages();
             AbrirChildForm(gestionarIdiomas);
+        }
+
+        private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBitacoraEventos bitacoraEventos = new frmBitacoraEventos();
+            AbrirChildForm(bitacoraEventos);
         }
     }
 }

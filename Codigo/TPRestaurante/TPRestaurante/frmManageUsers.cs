@@ -12,6 +12,7 @@ using User = BE.User;
 using Interfaces;
 using IComponent = Interfaces.IComponent;
 using Component = BE.Permisos.Component;
+using BLL;
 
 namespace TPRestaurante
 {
@@ -23,6 +24,8 @@ namespace TPRestaurante
             modo = new BLL.ModoDelGestor();
             bllUser = new BLL.User();
             bllPermisos = new BLL.Permission();
+            bllBitacora = new BLL.Bitacora();
+            bitacora = new Services.Bitacora();
         }
 
         //ModoAgregar = 1,
@@ -32,6 +35,8 @@ namespace TPRestaurante
         BLL.User bllUser;
         BLL.ModoDelGestor modo;
         BLL.Permission bllPermisos;
+        private Services.Bitacora bitacora;
+        private BLL.Bitacora bllBitacora;
 
         void CambiarModo(BLL.ModoDelGestor pModo)
         {
@@ -151,6 +156,7 @@ namespace TPRestaurante
                         pUser.Bloqueo = false;
                         pUser.Attempts = 0;
                         bllUser.UnblockUser(pUser);
+                        RegistroBitacoraDesbloquearUsuairo(pUser);
                         ActualizarGrilla();
                     }
                     else
@@ -161,6 +167,18 @@ namespace TPRestaurante
                     break;
             }
         }
+
+        private void RegistroBitacoraDesbloquearUsuairo(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = user;
+            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
+            bitacora.Operacion = TipoOperacion.DesbloquearUsuario;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+
+
 
         public void ActualizarGrilla()
         {

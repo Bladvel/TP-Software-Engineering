@@ -34,6 +34,12 @@ namespace Services
             set { usuario = value; }
         }
 
+        public string Username 
+        { 
+            get => usuario.Username; 
+        }
+
+
         private TipoModulo modulo;
         public TipoModulo Modulo 
         { 

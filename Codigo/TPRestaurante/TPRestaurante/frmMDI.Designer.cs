@@ -58,6 +58,9 @@
             this.menuAyuda = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.gestionDeBitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -125,7 +128,8 @@
             this.menuAdmin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemGestorUsuarios,
             this.itemGestorPerfiles,
-            this.itemGestorIdiomas});
+            this.itemGestorIdiomas,
+            this.gestionDeBitacoraToolStripMenuItem});
             this.menuAdmin.Name = "menuAdmin";
             this.menuAdmin.Size = new System.Drawing.Size(55, 20);
             this.menuAdmin.Tag = "admin";
@@ -134,7 +138,7 @@
             // itemGestorUsuarios
             // 
             this.itemGestorUsuarios.Name = "itemGestorUsuarios";
-            this.itemGestorUsuarios.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorUsuarios.Size = new System.Drawing.Size(180, 22);
             this.itemGestorUsuarios.Tag = "userManagement";
             this.itemGestorUsuarios.Text = "Gestion de usuarios";
             this.itemGestorUsuarios.Click += new System.EventHandler(this.itemGestorUsuarios_Click);
@@ -145,7 +149,7 @@
             this.permisosToolStripMenuItem,
             this.asignacionDePerfilToolStripMenuItem});
             this.itemGestorPerfiles.Name = "itemGestorPerfiles";
-            this.itemGestorPerfiles.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorPerfiles.Size = new System.Drawing.Size(180, 22);
             this.itemGestorPerfiles.Tag = "rolesManagement";
             this.itemGestorPerfiles.Text = "Gestion de perfiles";
             // 
@@ -168,7 +172,7 @@
             // itemGestorIdiomas
             // 
             this.itemGestorIdiomas.Name = "itemGestorIdiomas";
-            this.itemGestorIdiomas.Size = new System.Drawing.Size(177, 22);
+            this.itemGestorIdiomas.Size = new System.Drawing.Size(180, 22);
             this.itemGestorIdiomas.Tag = "languageManagement";
             this.itemGestorIdiomas.Text = "Gestion de idiomas";
             this.itemGestorIdiomas.Click += new System.EventHandler(this.itemGestorIdiomas_Click);
@@ -330,6 +334,28 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(102, 17);
             this.toolStripStatusLabel1.Text = "Sesion no iniciada";
             // 
+            // gestionDeBitacoraToolStripMenuItem
+            // 
+            this.gestionDeBitacoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eventosToolStripMenuItem,
+            this.cambiosToolStripMenuItem});
+            this.gestionDeBitacoraToolStripMenuItem.Name = "gestionDeBitacoraToolStripMenuItem";
+            this.gestionDeBitacoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestionDeBitacoraToolStripMenuItem.Text = "Gestion de bitacora";
+            // 
+            // eventosToolStripMenuItem
+            // 
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eventosToolStripMenuItem.Text = "Eventos";
+            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
+            // 
+            // cambiosToolStripMenuItem
+            // 
+            this.cambiosToolStripMenuItem.Name = "cambiosToolStripMenuItem";
+            this.cambiosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cambiosToolStripMenuItem.Text = "Cambios";
+            // 
             // frmMDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +411,9 @@
         private System.Windows.Forms.ToolStripMenuItem asignacionDePerfilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem itemVerPedidosVerificados;
         private System.Windows.Forms.ToolStripMenuItem itemVerPedidosListos;
+        private System.Windows.Forms.ToolStripMenuItem gestionDeBitacoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiosToolStripMenuItem;
     }
 }
 

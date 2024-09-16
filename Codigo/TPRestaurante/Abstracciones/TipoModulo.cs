@@ -9,7 +9,6 @@ namespace Interfaces
     public enum TipoModulo
     {
         InicioSesion,
-        CambioDeContraseña,
         GestorDeUsuarios,
         Perfiles,
         Idiomas,
@@ -23,5 +22,6 @@ namespace Interfaces
         CatalogoIngredientes,
         Reportes,
         Ayuda,
+        Sesion,
     }
 }
