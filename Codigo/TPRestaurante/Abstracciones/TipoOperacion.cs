@@ -8,6 +8,7 @@ namespace Interfaces
 {
     public enum TipoOperacion
     {
+        Todos,
         Login,
         LoginIncorrecto,
         LoginUsuarioBloqueado,
@@ -19,5 +20,14 @@ namespace Interfaces
         Consulta,
         DesbloquearUsuario,
         CambiarContraseña,
+        CrearOrden,
+        VerPedidos,
+        CobrarPedido,
+        VerComanda,
+        GenerarComanda,
+        AceptarPedido,
+        RechazarPedido,
+        CerrarPedidos,
+        NotificarPedidoListo,
     }
 }

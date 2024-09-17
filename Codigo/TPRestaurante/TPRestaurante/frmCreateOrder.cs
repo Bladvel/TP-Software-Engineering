@@ -164,6 +164,7 @@ namespace TPRestaurante
             if (controllerCajero.RegistrarPedido(productos, clienteSeleccionado))
             {
                 MessageBox.Show("Pedido creado correctamente");
+                RegistroBitacoraCrearOrden();
             }
             else
             {
@@ -171,6 +172,24 @@ namespace TPRestaurante
             }
 
         }
+        private void RegistroBitacoraCrearOrden()
+        {
+            var user = SessionManager.Instance.User;
+            var logEntry = new Services.Bitacora
+            {
+                Usuario = user,
+                Fecha = DateTime.Now,
+                Modulo = TipoModulo.CreacionDePedidos,
+                Operacion = TipoOperacion.CrearOrden,
+                Criticidad = 3
+            };
+
+            BLL.Bitacora bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(logEntry);
+        }
+
+
+
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {

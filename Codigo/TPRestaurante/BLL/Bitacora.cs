@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using Interfaces;
 
 namespace BLL
 {
@@ -16,9 +17,9 @@ namespace BLL
             return mpBitacora.GetAll();
         }
 
-        public List<Services.Bitacora> Filtrar(DateTime fi, DateTime ff)
+        public List<Services.Bitacora> Filtrar(DateTime fi, DateTime ff, Guid? guidUser, string modulo, string operacion, int? criticidad )
         {
-            return mpBitacora.Filter(fi, ff);
+            return mpBitacora.Filter(fi, ff, guidUser, modulo, operacion, criticidad);
         }
 
         public int Insertar(Services.Bitacora bitacora)

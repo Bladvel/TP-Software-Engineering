@@ -118,7 +118,7 @@ namespace TPRestaurante
                 CerrarChildForms();
             }
         }
-
+        
         private void RegistroBitacoraLogout(IUser user)
         {
             bitacora.Fecha = DateTime.Now;
@@ -171,7 +171,7 @@ namespace TPRestaurante
             frmPedidosEnCurso pedidosEnCurso = new frmPedidosEnCurso();
             AbrirChildForm(pedidosEnCurso);
         }
-
+        
         private void itemProductos_Click(object sender, EventArgs e)
         {
 

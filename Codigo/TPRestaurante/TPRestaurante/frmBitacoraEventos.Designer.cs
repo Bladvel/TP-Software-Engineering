@@ -32,17 +32,17 @@
             this.dtpInicial = new System.Windows.Forms.DateTimePicker();
             this.dtpFinal = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbModulo = new System.Windows.Forms.ComboBox();
             this.cmbCriticidad = new System.Windows.Forms.ComboBox();
             this.cmbOperacion = new System.Windows.Forms.ComboBox();
             this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grdBitacoraEventos = new System.Windows.Forms.DataGridView();
-            this.cmbModulo = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnConsultar = new TPRestaurante.UcButtonPrimary(this.components);
             this.btnListarTodo = new TPRestaurante.UcButtonPrimary(this.components);
             this.groupBox1.SuspendLayout();
@@ -84,6 +84,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parámetros de busqueda";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(439, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Módulo:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -112,6 +121,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Usuario:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // cmbModulo
+            // 
+            this.cmbModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbModulo.FormattingEnabled = true;
+            this.cmbModulo.Location = new System.Drawing.Point(442, 101);
+            this.cmbModulo.Name = "cmbModulo";
+            this.cmbModulo.Size = new System.Drawing.Size(131, 21);
+            this.cmbModulo.TabIndex = 3;
             // 
             // cmbCriticidad
             // 
@@ -166,24 +184,6 @@
             this.grdBitacoraEventos.Size = new System.Drawing.Size(742, 262);
             this.grdBitacoraEventos.TabIndex = 6;
             // 
-            // cmbModulo
-            // 
-            this.cmbModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbModulo.FormattingEnabled = true;
-            this.cmbModulo.Location = new System.Drawing.Point(442, 101);
-            this.cmbModulo.Name = "cmbModulo";
-            this.cmbModulo.Size = new System.Drawing.Size(131, 21);
-            this.cmbModulo.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(439, 85);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Módulo:";
-            // 
             // btnConsultar
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
@@ -197,6 +197,7 @@
             this.btnConsultar.TabIndex = 6;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnListarTodo
             // 

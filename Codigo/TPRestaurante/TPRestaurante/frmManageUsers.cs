@@ -51,6 +51,7 @@ namespace TPRestaurante
                     btnDesbloquear.Enabled = true;
                     btnCancelar.Enabled = false;
                     btnSalir.Enabled = false;
+                    cmbRol.Enabled = true;
                     HabilitarTextboxs(true);
                     break;
                 case BLL.ModoDelGestor.ModoAgregar:
@@ -62,6 +63,8 @@ namespace TPRestaurante
                     btnAplicar.Enabled = true;
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
+
+                    cmbRol.Enabled = true;
                     HabilitarTextboxs(true);
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
@@ -74,6 +77,7 @@ namespace TPRestaurante
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
                     HabilitarTextboxs(true);
+                    cmbRol.Enabled = false;
                     break;
                 case BLL.ModoDelGestor.ModoEliminar:
                     lblModo.Text = "Modo eliminar";
@@ -85,6 +89,7 @@ namespace TPRestaurante
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
                     HabilitarTextboxs(false);
+                    cmbRol.Enabled = false;
                     break ;
                 case BLL.ModoDelGestor.ModoDesbloquear:
                     lblModo.Text = "Modo desbloquear";
@@ -96,9 +101,14 @@ namespace TPRestaurante
                     btnCancelar.Enabled = true;
                     btnSalir.Enabled = true;
                     HabilitarTextboxs(false);
+
+                    cmbRol.Enabled = false;
                     break ;
             }
         }
+
+
+
 
         private void frmManageUsers_Load(object sender, EventArgs e)
         {
@@ -118,6 +128,17 @@ namespace TPRestaurante
             modo = BLL.ModoDelGestor.ModoAgregar;
             CambiarModo(modo);
             txtUsername.Focus();
+        }
+
+        
+        private void RegistroBitacoraAltaUsuario(User user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = user;
+            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
+            bitacora.Operacion = TipoOperacion.Alta;
+            bitacora.Criticidad = 2;
+            bllBitacora.Insertar(bitacora);
         }
 
         private void btnAplicar_Click(object sender, EventArgs e)
@@ -140,6 +161,7 @@ namespace TPRestaurante
                         user.ID= bllUser.AddUser(user);
                         user.Permissions.Add(permission);
                         bllUser.UpdatePermissions(user);
+                        RegistroBitacoraAltaUsuario(user);
                     }
                     
                     
@@ -148,6 +170,24 @@ namespace TPRestaurante
                     ResetTextFields();
                     break;
                 case BLL.ModoDelGestor.ModoModificar:
+
+                    var selectedUser = grdUsuarios.CurrentRow.DataBoundItem as User;
+                    if (selectedUser != null)
+                    {
+                        selectedUser.Username = txtUsername.Text;
+                        selectedUser.Nombre = txtNombre.Text;
+                        selectedUser.Apellido = txtApellido.Text;
+                        selectedUser.DNI = CryptoManager.Encrypt(txtDNI.Text);
+                        selectedUser.Email = txtEmail.Text;
+                        bllUser.UpdateUser(selectedUser);
+                        ActualizarGrilla();
+                        ResetTextFields();
+                        RegistroBitacoraModificarUsuario();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No hay usuario seleccionado");
+                    }
                     break;
                 case BLL.ModoDelGestor.ModoDesbloquear:
                     var pUser = grdUsuarios.CurrentRow.DataBoundItem as User;
@@ -156,7 +196,7 @@ namespace TPRestaurante
                         pUser.Bloqueo = false;
                         pUser.Attempts = 0;
                         bllUser.UnblockUser(pUser);
-                        RegistroBitacoraDesbloquearUsuairo(pUser);
+                        RegistroBitacoraDesbloquearUsuairo();
                         ActualizarGrilla();
                     }
                     else
@@ -168,13 +208,23 @@ namespace TPRestaurante
             }
         }
 
-        private void RegistroBitacoraDesbloquearUsuairo(User user)
+        private void RegistroBitacoraDesbloquearUsuairo()
         {
             bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = user;
+            bitacora.Usuario = SessionManager.Instance.User;
             bitacora.Modulo = TipoModulo.GestorDeUsuarios;
             bitacora.Operacion = TipoOperacion.DesbloquearUsuario;
             bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
+
+        private void RegistroBitacoraModificarUsuario()
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = SessionManager.Instance.User;
+            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
+            bitacora.Operacion = TipoOperacion.Modificacion;
+            bitacora.Criticidad = 3;
             bllBitacora.Insertar(bitacora);
         }
 
@@ -182,6 +232,7 @@ namespace TPRestaurante
 
         public void ActualizarGrilla()
         {
+            grdUsuarios.Columns.Clear();
             grdUsuarios.AutoGenerateColumns = false;
             grdUsuarios.DataSource = null;
             grdUsuarios.DataSource = bllUser.ListUsers();
@@ -263,7 +314,40 @@ namespace TPRestaurante
             txtEmail.Enabled = habilitar;
             txtNombre.Enabled = habilitar;
             txtUsername.Enabled = habilitar;
-            txtDNI.Enabled = habilitar;
+            if (modo == ModoDelGestor.ModoModificar)
+            {
+                txtDNI.Enabled = !habilitar;
+            }
+            else
+            {
+                txtDNI.Enabled = habilitar;
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            modo = BLL.ModoDelGestor.ModoModificar;
+            CambiarModo(modo);
+            txtUsername.Focus();
+        }
+
+        private void grdUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (modo == ModoDelGestor.ModoModificar)
+            {
+                
+                var selectedUser = grdUsuarios.CurrentRow.DataBoundItem as User;
+                if (selectedUser != null)
+                {
+                    txtUsername.Text = selectedUser.Username;
+                    txtNombre.Text = selectedUser.Nombre;
+                    txtApellido.Text = selectedUser.Apellido;
+                    txtDNI.Text = selectedUser.DNI;
+                    txtEmail.Text = selectedUser.Email;
+                    chkActivo.Checked = selectedUser.Activo;
+                    chkBloqueado.Checked = selectedUser.Bloqueo;
+                }
+            }
         }
     }
 }

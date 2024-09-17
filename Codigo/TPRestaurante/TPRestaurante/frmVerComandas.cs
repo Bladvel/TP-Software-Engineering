@@ -50,8 +50,26 @@ namespace TPRestaurante
         {
             grdComandas.DataSource = null;
             grdComandas.DataSource = bllComanda.ListarEnCursoPorCocinero(SessionManager.Instance.User as User);
+            RegistroBitacoraVistaDeComandas();
 
         }
+
+        
+        private void RegistroBitacoraVistaDeComandas()
+        {
+            var bitacora = new Services.Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VistaDeComandas,
+                Operacion = TipoOperacion.VerComanda,
+                Criticidad = 5
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
 
         private void grdComandas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -103,6 +121,8 @@ namespace TPRestaurante
 
         }
 
+
+
         private BLL.ControllerCocinero bllCocinero;
         private void btnNotificarPedidoListo_Click(object sender, EventArgs e)
         {
@@ -121,7 +141,7 @@ namespace TPRestaurante
                 bllCocinero.RealizarComanda(comandaSeleccionada);
                 
                 MessageBox.Show("El pedido ha sido actualizado a 'Listo' y el cocinero está ahora 'Disponible'.");
-                
+                RegistroBitacoraNotificarPedidoListo();
 
                 LlenarGridComandas();
                 
@@ -131,6 +151,22 @@ namespace TPRestaurante
                 MessageBox.Show("Error al obtener la comanda seleccionada.");
             }
         }
+
+        private void RegistroBitacoraNotificarPedidoListo()
+        {
+            var bitacora = new Services.Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VistaDeComandas,
+                Operacion = TipoOperacion.NotificarPedidoListo,
+                Criticidad = 5
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
 
         public void UpdateLanguage(IIdioma idioma)
         {

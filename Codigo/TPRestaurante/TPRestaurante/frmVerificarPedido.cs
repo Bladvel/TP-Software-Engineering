@@ -51,7 +51,7 @@ namespace TPRestaurante
 
             grdPedidos.DataSource = null;
             grdPedidos.DataSource = bllPedido.ListarPorEstado(OrderType.Creado);
-
+            RegistroBitacoraVerPedidos();
 
             grdProductosPedido.RowHeadersVisible = false;
             grdProductosPedido.EditMode = DataGridViewEditMode.EditProgrammatically;
@@ -68,6 +68,37 @@ namespace TPRestaurante
             SessionManager.SuscribirObservador(this);
             Traducir(SessionManager.Instance.User.Idioma);
 
+        }
+
+        private void RegistroBitacoraVerPedidos()
+        {
+            var bitacora = new Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VistaPedidos,
+                Operacion = TipoOperacion.VerPedidos,
+                Criticidad = 5
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
+
+        private void RegistroBitacoraAceptarPedido()
+        {
+            var bitacora = new Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VerificarPedido,
+                Operacion = TipoOperacion.AceptarPedido,
+                Criticidad = 4
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
         }
 
         private BE.Pedido pedidoSeleccionado;
@@ -179,6 +210,7 @@ namespace TPRestaurante
             if (pedidoSeleccionado != null)
             {
                 controllerJefeDeCocina.AceptarPedido(pedidoSeleccionado);
+                RegistroBitacoraAceptarPedido();
                 btnAceptarPedido.Enabled = false;
                 btnRechazarPedido.Enabled = false;
                 btnVerificarPedido.Enabled = false;
@@ -193,11 +225,28 @@ namespace TPRestaurante
             }
         }
 
+
+        private void RegistroBitacoraRechazarPedido()
+        {
+            var bitacora = new Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VerificarPedido,
+                Operacion = TipoOperacion.RechazarPedido,
+                Criticidad = 4
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
         private void btnRechazarPedido_Click(object sender, EventArgs e)
         {
             if (pedidoSeleccionado != null)
             {
                 controllerJefeDeCocina.RechazarPedido(pedidoSeleccionado);
+                RegistroBitacoraRechazarPedido();
                 btnAceptarPedido.Enabled = false;
                 btnRechazarPedido.Enabled = false;
                 btnVerificarPedido.Enabled = false;

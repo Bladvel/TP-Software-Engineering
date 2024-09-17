@@ -69,6 +69,24 @@ namespace TPRestaurante
             }
         }
 
+
+        private void RegistrarBitacoraCambiarContraseña()
+        {
+            var user = SessionManager.Instance.User;
+            var logEntry = new Services.Bitacora
+            {
+                Usuario = user,
+                Fecha = DateTime.Now,
+                Modulo = TipoModulo.Sesion,
+                Operacion = TipoOperacion.CambiarContraseña,
+                Criticidad = 3
+            };
+
+            BLL.Bitacora bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(logEntry);
+        }
+
+
         private void btnCambiar_Click(object sender, EventArgs e)
         {
             var password1 = txtNuevaContraseña1.Text;
@@ -81,6 +99,7 @@ namespace TPRestaurante
                 {
                     var user = SessionManager.Instance.User as BE.User;
                     resultado = bllUser.ChangePassword(user, password1);
+                    RegistrarBitacoraCambiarContraseña();
                 }
                 else
                 {

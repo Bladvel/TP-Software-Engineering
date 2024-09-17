@@ -62,6 +62,7 @@
             this.grdUsuarios.Name = "grdUsuarios";
             this.grdUsuarios.Size = new System.Drawing.Size(458, 163);
             this.grdUsuarios.TabIndex = 10;
+            this.grdUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdUsuarios_CellClick);
             // 
             // label1
             // 
@@ -90,6 +91,7 @@
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAplicar
             // 

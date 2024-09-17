@@ -145,5 +145,10 @@ namespace BLL
             cocineroSeleccionado.Availability = disponibilidad;
             mp.UpdateAvailability(cocineroSeleccionado);
         }
+
+        public void UpdateUser(BE.User selectedUser)
+        {
+            mp.Update(selectedUser);
+        }
     }
 }

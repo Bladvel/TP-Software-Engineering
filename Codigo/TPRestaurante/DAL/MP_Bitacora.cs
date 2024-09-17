@@ -80,18 +80,31 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public List<Bitacora> Filter(DateTime fi, DateTime ff)
+        public List<Bitacora> Filter(DateTime fi, DateTime ff, Guid? guidUser, string modulo, string operacion, int? criticidad)
         {
             List<Bitacora> bitacora = new List<Bitacora>();
 
-            List<SqlParameter> parameters = new List<SqlParameter>()
+            List<SqlParameter> parametros = new List<SqlParameter>
             {
-                access.CreateParameter("@FechaInicio", fi),
-                access.CreateParameter("@FechaFin", ff)
+                new SqlParameter("@fechaInicio", fi),
+                new SqlParameter("@fechaFin", ff)
             };
 
+            
+            if (guidUser.HasValue)
+                parametros.Add(new SqlParameter("@usuario", guidUser.Value));
+            else
+                parametros.Add(new SqlParameter("@usuario", DBNull.Value));
+
+            if (criticidad.HasValue)
+                parametros.Add(new SqlParameter("@criticidad", criticidad.Value));
+            else
+                parametros.Add(new SqlParameter("@criticidad", DBNull.Value));
+
+            parametros.Add(new SqlParameter("@operacion", operacion ?? (object)DBNull.Value));
+            parametros.Add(new SqlParameter("@modulo", modulo ?? (object)DBNull.Value));
             access.Open();
-            DataTable dt = access.Read("LISTAR_BITACORA_POR_FECHA", parameters);
+            DataTable dt = access.Read("FILTRAR_BITACORA", parametros);
             access.Close();
 
             foreach (DataRow dr in dt.Rows)

@@ -8,13 +8,13 @@ namespace Interfaces
 {
     public enum TipoModulo
     {
+        Todos,
         InicioSesion,
         GestorDeUsuarios,
         Perfiles,
         Idiomas,
         CreacionDePedidos,
-        VistaPedidosEnCurso,
-        VistaPedidosCerrados,
+        VistaPedidos,
         Cobro,
         VistaDeComandas,
         GeneracionDeComandas,
@@ -23,5 +23,7 @@ namespace Interfaces
         Reportes,
         Ayuda,
         Sesion,
+        VerificarPedido,
+        VistaPedidosListos,
     }
 }

@@ -49,7 +49,24 @@ namespace TPRestaurante
         {
             grdPedidosListos.DataSource = null;
             grdPedidosListos.DataSource = bllPedido.ListarPorEstado(OrderType.Listo);
+            RegistroBitacoraVerPedidos();
         }
+
+        private void RegistroBitacoraVerPedidos()
+        {
+            var bitacora = new Services.Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VistaPedidos,
+                Operacion = TipoOperacion.VerPedidos,
+                Criticidad = 5
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
 
         private void btnCerrarPedido_Click(object sender, EventArgs e)
         {
@@ -63,6 +80,7 @@ namespace TPRestaurante
                 if (bllCajero.CerrarPedido(pedidoSeleccionado))
                 {
                     MessageBox.Show("Pedido cerrado exitosamente. Por favor entregar al cliente");
+                    RegistroBitacoraCerrarPedidos();
                     LlenarGrillaPedidos();
                 }
                 else
@@ -73,6 +91,23 @@ namespace TPRestaurante
 
             }
         }
+
+        private void RegistroBitacoraCerrarPedidos()
+        {
+            var bitacora = new Services.Bitacora
+            {
+                Fecha = DateTime.Now,
+                Usuario = SessionManager.Instance.User,
+                Modulo = TipoModulo.VistaPedidosListos,
+                Operacion = TipoOperacion.CerrarPedidos,
+                Criticidad = 3
+            };
+
+            var bllBitacora = new BLL.Bitacora();
+            bllBitacora.Insertar(bitacora);
+        }
+
+
 
         public void UpdateLanguage(IIdioma idioma)
         {
