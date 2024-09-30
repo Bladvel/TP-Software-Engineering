@@ -43,7 +43,7 @@ namespace TPRestaurante
             }
         }
 
-        private void AbrirChildForm(Form childForm)
+        public void AbrirChildForm(Form childForm)
         {
             CerrarChildForms();
             childForm.MdiParent = this;
@@ -86,8 +86,8 @@ namespace TPRestaurante
                 itemGenerarComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.GenerarComanda);
                 itemVerComandas.Visible = SessionManager.Instance.IsInRole(PermissionType.VerComanda);
 
-                menuCatalogos.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
-                itemProductos.Visible = SessionManager.Instance.IsInRole(PermissionType.VerProductos);
+                menuInventario.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
+                
                 itemIngredientes.Visible = SessionManager.Instance.IsInRole(PermissionType.VerIngredientes);
                 Traducir(SessionManager.Instance.User.Idioma);
             }
@@ -101,7 +101,7 @@ namespace TPRestaurante
 
                 menuAdmin.Visible = false;
                 menuPedidos.Visible = false;
-                menuCatalogos.Visible = false;
+                menuInventario.Visible = false;
                 Traducir();
             }
 
@@ -172,10 +172,6 @@ namespace TPRestaurante
             AbrirChildForm(pedidosEnCurso);
         }
         
-        private void itemProductos_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void registradosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -294,10 +290,9 @@ namespace TPRestaurante
 
 
             //Menu catalogos
-            if (menuCatalogos.Tag != null && traducciones.ContainsKey(menuCatalogos.Tag.ToString()))
-                menuCatalogos.Text = traducciones[menuCatalogos.Tag.ToString()].Texto;
-            if (itemProductos.Tag != null && traducciones.ContainsKey(itemProductos.Tag.ToString()))
-                itemProductos.Text = traducciones[itemProductos.Tag.ToString()].Texto;
+            if (menuInventario.Tag != null && traducciones.ContainsKey(menuInventario.Tag.ToString()))
+                menuInventario.Text = traducciones[menuInventario.Tag.ToString()].Texto;
+            
             if (itemIngredientes.Tag != null && traducciones.ContainsKey(itemIngredientes.Tag.ToString()))
                 itemIngredientes.Text = traducciones[itemIngredientes.Tag.ToString()].Texto;
 
@@ -353,6 +348,82 @@ namespace TPRestaurante
         {
             frmBitacoraEventos bitacoraEventos = new frmBitacoraEventos();
             AbrirChildForm(bitacoraEventos);
+        }
+
+        private void gestionDeRespaldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRespaldo respaldo = new frmRespaldo();
+            AbrirChildForm(respaldo);
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaestroClientes clientes = new frmMaestroClientes();
+            AbrirChildForm(clientes);
+        }
+
+        private void verToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerInsumos ingredientes = new frmVerInsumos();
+            AbrirChildForm(ingredientes);
+        }
+
+        private void generarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmGenerarOrdenDeCompra ordenDeCompra = new frmGenerarOrdenDeCompra();
+            AbrirChildForm(ordenDeCompra);
+        }
+
+        private void solicitarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSolicitarCotizacion solicitarCotizacion = new frmSolicitarCotizacion();
+            AbrirChildForm(solicitarCotizacion);
+        }
+
+        private void cargarCotizacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargarCotizacion cargarCotizacion = new frmCargarCotizacion();
+            AbrirChildForm(cargarCotizacion);
+        }
+
+        private void evaluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEvaluarCotizacion evaluarCotizacion = new frmEvaluarCotizacion();
+            AbrirChildForm(evaluarCotizacion);
+        }
+
+
+        
+
+        private void gestionarSolicitudDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmEvaluarSolicitudDeCompra evaluarSolicitudDeCompra = new frmEvaluarSolicitudDeCompra();
+            AbrirChildForm(evaluarSolicitudDeCompra);
+        }
+
+
+        private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecepcionDeInsumos recepcionDeInsumos = new frmRecepcionDeInsumos();
+            AbrirChildForm(recepcionDeInsumos);
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmActualizarInsumos actualizarInsumos = new frmActualizarInsumos();
+            AbrirChildForm(actualizarInsumos);
+        }
+
+        private void generarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmRealizarPago realizarPago = new frmRealizarPago();
+            AbrirChildForm(realizarPago);
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargarFactura cargarFactura = new frmCargarFactura();
+            AbrirChildForm(cargarFactura);
         }
     }
 }

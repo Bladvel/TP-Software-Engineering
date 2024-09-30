@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,5 +44,31 @@ namespace BE
         {
             
         }
+
+
+        private float costoReferencial;
+
+        public float CostoReferencial
+        {
+            get => costoReferencial;
+            set => costoReferencial = value;
+        }
+
+        private int stockMin;
+
+        public int StockMin
+        {
+            get => stockMin;
+            set => stockMin = value;
+        }
+
+        private int stockMax;
+
+        public int StockMax
+        {
+            get => stockMax; 
+            set => stockMax = value;
+        }
+
     }
 }

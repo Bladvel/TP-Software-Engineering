@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityType.cs" />
+    <Compile Include="EstadoCotizacion.cs" />
+    <Compile Include="EstadoFactura.cs" />
+    <Compile Include="EstadoOrdenDeCompra.cs" />
+    <Compile Include="EstadoSolicitudCompra.cs" />
     <Compile Include="IEtiqueta.cs" />
     <Compile Include="IIdioma.cs" />
     <Compile Include="IIdiomaObserver.cs" />
@@ -111,6 +115,7 @@
     <Compile Include="PermissionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoOperacion.cs" />
+    <Compile Include="TipoPago.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

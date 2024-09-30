@@ -29,5 +29,6 @@ namespace Interfaces
         RechazarPedido,
         CerrarPedidos,
         NotificarPedidoListo,
+        GenerarBitacora,
     }
 }

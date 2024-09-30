@@ -25,5 +25,7 @@ namespace Interfaces
         Sesion,
         VerificarPedido,
         VistaPedidosListos,
+        GestorDeBitacora,
+        MaestroClientes,
     }
 }

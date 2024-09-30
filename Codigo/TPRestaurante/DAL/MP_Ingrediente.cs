@@ -20,10 +20,12 @@ namespace DAL
         public override Ingrediente Transform(DataRow dr)
         {
             string nombre = dr["NOMBRE"].ToString();
-            int cantidad = int.Parse(dr["CANTIDAD"].ToString());
+            int cantidad = int.Parse(dr["CANTIDAD_ACTUAL"].ToString());
             Ingrediente ingrediente = new Ingrediente(nombre, cantidad);
             ingrediente.CodIngrediente = int.Parse(dr["COD_INGREDIENTE"].ToString());
-
+            ingrediente.CostoReferencial = float.Parse(dr["COSTO_REFERENCIAL"].ToString());
+            ingrediente.StockMin = int.Parse(dr["STOCK_MINIMO"].ToString());
+            ingrediente.StockMax = int.Parse(dr["STOCK_MAXIMO"].ToString());
             return ingrediente;
 
         }

@@ -27,6 +27,7 @@ namespace DAL
 
             Cliente cliente = new Cliente(nombre, apellido, dni, tel);
             cliente.ID = int.Parse(dr["ID"].ToString());
+            cliente.Activo = bool.Parse(dr["ACTIVO"].ToString());
 
             return cliente;
 
@@ -70,12 +71,35 @@ namespace DAL
 
         public override int Update(Cliente entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@id", entity.ID),
+                access.CreateParameter("@telefono", entity.Telefono),
+                access.CreateParameter("@dni", entity.DNI),
+                access.CreateParameter("@nombre", entity.Nombre),
+                access.CreateParameter("@apellido", entity.Apellido),
+                
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ACTUALIZAR_CLIENTE", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
 
         public override int Delete(Cliente entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@id", entity.ID),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ELIMINAR_CLIENTE", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
     }
 }

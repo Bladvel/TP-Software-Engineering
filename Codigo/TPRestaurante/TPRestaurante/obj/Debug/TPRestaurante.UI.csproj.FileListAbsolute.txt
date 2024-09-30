@@ -152,3 +152,16 @@ C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineerin
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.UI.csproj.CopyComplete
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.exe
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRespaldo.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmMaestroClientes.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmVerInsumos.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmCargarCotizacion.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmGenerarSolicitudDeCompra.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmSolicitarCotizacion.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmEvaluarCotizacion.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmEvaluarSolicitudDeCompra.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmActualizarInsumos.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmGenerarOrdenDeCompra.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRecepcionDeInsumos.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmCargarFactura.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRealizarPago.resources

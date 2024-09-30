@@ -43,8 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grdBitacoraEventos = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnImprimir = new TPRestaurante.UcButtonPrimary(this.components);
             this.btnConsultar = new TPRestaurante.UcButtonPrimary(this.components);
             this.btnListarTodo = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnSalir = new TPRestaurante.UcButtonSecondary(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBitacoraEventos)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +81,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dtpFinal);
             this.groupBox1.Controls.Add(this.dtpInicial);
-            this.groupBox1.Location = new System.Drawing.Point(21, 24);
+            this.groupBox1.Location = new System.Drawing.Point(64, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(589, 145);
             this.groupBox1.TabIndex = 2;
@@ -179,10 +183,43 @@
             // grdBitacoraEventos
             // 
             this.grdBitacoraEventos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBitacoraEventos.Location = new System.Drawing.Point(21, 176);
+            this.grdBitacoraEventos.Location = new System.Drawing.Point(64, 228);
             this.grdBitacoraEventos.Name = "grdBitacoraEventos";
             this.grdBitacoraEventos.Size = new System.Drawing.Size(742, 262);
             this.grdBitacoraEventos.TabIndex = 6;
+            this.grdBitacoraEventos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBitacoraEventos_CellClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(64, 497);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Usuario:";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(116, 497);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuario.TabIndex = 8;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnImprimir.FlatAppearance.BorderSize = 0;
+            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir.ForeColor = System.Drawing.Color.White;
+            this.btnImprimir.Location = new System.Drawing.Point(536, 497);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(132, 39);
+            this.btnImprimir.TabIndex = 9;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnConsultar
             // 
@@ -191,7 +228,7 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(631, 27);
+            this.btnConsultar.Location = new System.Drawing.Point(674, 182);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(132, 39);
             this.btnConsultar.TabIndex = 6;
@@ -206,29 +243,50 @@
             this.btnListarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListarTodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnListarTodo.ForeColor = System.Drawing.Color.White;
-            this.btnListarTodo.Location = new System.Drawing.Point(631, 125);
+            this.btnListarTodo.Location = new System.Drawing.Point(674, 79);
             this.btnListarTodo.Name = "btnListarTodo";
             this.btnListarTodo.Size = new System.Drawing.Size(132, 39);
             this.btnListarTodo.TabIndex = 5;
             this.btnListarTodo.Text = "Mostrar todos";
             this.btnListarTodo.UseVisualStyleBackColor = false;
+            this.btnListarTodo.Click += new System.EventHandler(this.btnListarTodo_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(674, 497);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(132, 39);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmBitacoraEventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(871, 587);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.grdBitacoraEventos);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnListarTodo);
             this.Name = "frmBitacoraEventos";
-            this.Text = "frmBitacoraEventos";
+            this.Text = "Bitacora de eventos";
             this.Load += new System.EventHandler(this.frmBitacoraEventos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBitacoraEventos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -250,5 +308,9 @@
         private System.Windows.Forms.DataGridView grdBitacoraEventos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbModulo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblUsuario;
+        private UcButtonPrimary btnImprimir;
+        private UcButtonSecondary btnSalir;
     }
 }

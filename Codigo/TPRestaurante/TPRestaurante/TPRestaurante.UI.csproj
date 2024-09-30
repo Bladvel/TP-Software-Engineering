@@ -74,6 +74,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -105,6 +106,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmActualizarInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarInsumos.Designer.cs">
+      <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBitacoraEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,17 +130,59 @@
     <Compile Include="frmCobrarPedido.Designer.cs">
       <DependentUpon>frmCobrarPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCargarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarCotizacion.Designer.cs">
+      <DependentUpon>frmCargarCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluarCotizacion.Designer.cs">
+      <DependentUpon>frmEvaluarCotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGenerarComanda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGenerarComanda.Designer.cs">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEvaluarSolicitudDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluarSolicitudDeCompra.Designer.cs">
+      <DependentUpon>frmEvaluarSolicitudDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarOrdenDeCompra.Designer.cs">
+      <DependentUpon>frmGenerarOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarFactura.Designer.cs">
+      <DependentUpon>frmCargarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarSolicitudDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarSolicitudDeCompra.Designer.cs">
+      <DependentUpon>frmGenerarSolicitudDeCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGestionarPermisos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGestionarPermisos.Designer.cs">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaestroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroClientes.Designer.cs">
+      <DependentUpon>frmMaestroClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmManageLanguages.cs">
       <SubType>Form</SubType>
@@ -171,6 +220,30 @@
     <Compile Include="frmPerfiles.Designer.cs">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRealizarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRealizarPago.Designer.cs">
+      <DependentUpon>frmRealizarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepcionDeInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecepcionDeInsumos.Designer.cs">
+      <DependentUpon>frmRecepcionDeInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespaldo.Designer.cs">
+      <DependentUpon>frmRespaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitarCotizacion.Designer.cs">
+      <DependentUpon>frmSolicitarCotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVerComandas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +255,12 @@
     </Compile>
     <Compile Include="frmVerificarPedido.Designer.cs">
       <DependentUpon>frmVerificarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerInsumos.Designer.cs">
+      <DependentUpon>frmVerInsumos.cs</DependentUpon>
     </Compile>
     <Compile Include="User controls\UcButtonSecondary.cs">
       <SubType>Component</SubType>
@@ -221,6 +300,9 @@
     <Compile Include="User controls\UcButtonPrimary.Designer.cs">
       <DependentUpon>UcButtonPrimary.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmActualizarInsumos.resx">
+      <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBitacoraEventos.resx">
       <DependentUpon>frmBitacoraEventos.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,11 +315,32 @@
     <EmbeddedResource Include="frmCreateOrder.resx">
       <DependentUpon>frmCreateOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarCotizacion.resx">
+      <DependentUpon>frmCargarCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluarCotizacion.resx">
+      <DependentUpon>frmEvaluarCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGenerarComanda.resx">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluarSolicitudDeCompra.resx">
+      <DependentUpon>frmEvaluarSolicitudDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarOrdenDeCompra.resx">
+      <DependentUpon>frmGenerarOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarFactura.resx">
+      <DependentUpon>frmCargarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarSolicitudDeCompra.resx">
+      <DependentUpon>frmGenerarSolicitudDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGestionarPermisos.resx">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroClientes.resx">
+      <DependentUpon>frmMaestroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManageLanguages.resx">
       <DependentUpon>frmManageLanguages.cs</DependentUpon>
@@ -257,6 +360,18 @@
     <EmbeddedResource Include="frmPerfiles.resx">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRealizarPago.resx">
+      <DependentUpon>frmRealizarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecepcionDeInsumos.resx">
+      <DependentUpon>frmRecepcionDeInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespaldo.resx">
+      <DependentUpon>frmRespaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitarCotizacion.resx">
+      <DependentUpon>frmSolicitarCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVerComandas.resx">
       <DependentUpon>frmVerComandas.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +387,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVerInsumos.resx">
+      <DependentUpon>frmVerInsumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -280,6 +398,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="User controls\UcButtonSecondary.resx">
       <DependentUpon>UcButtonSecondary.cs</DependentUpon>
@@ -316,6 +435,8 @@
       <Name>SERVICIOS</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

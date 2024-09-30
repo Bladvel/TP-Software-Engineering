@@ -34,7 +34,10 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAplicar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblModo = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnDesbloquear = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,15 +46,11 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
             this.chkActivo = new System.Windows.Forms.CheckBox();
             this.chkBloqueado = new System.Windows.Forms.CheckBox();
-            this.lblModo = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnDesbloquear = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbRol = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,106 +110,7 @@
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 277);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Username";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 302);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "DNI";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 327);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Nombre";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 352);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Apellido";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 377);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Email";
-            // 
-            // txtDNI
-            // 
-            this.txtDNI.Location = new System.Drawing.Point(123, 302);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(167, 20);
-            this.txtDNI.TabIndex = 2;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(123, 327);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(167, 20);
-            this.txtNombre.TabIndex = 3;
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(123, 352);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(167, 20);
-            this.txtApellido.TabIndex = 4;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(123, 377);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(167, 20);
-            this.txtEmail.TabIndex = 5;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(123, 277);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(167, 20);
-            this.txtUsername.TabIndex = 1;
-            // 
-            // chkActivo
-            // 
-            this.chkActivo.AutoSize = true;
-            this.chkActivo.Location = new System.Drawing.Point(126, 443);
-            this.chkActivo.Name = "chkActivo";
-            this.chkActivo.Size = new System.Drawing.Size(56, 17);
-            this.chkActivo.TabIndex = 11;
-            this.chkActivo.Text = "Activo";
-            this.chkActivo.UseVisualStyleBackColor = true;
-            // 
-            // chkBloqueado
-            // 
-            this.chkBloqueado.AutoSize = true;
-            this.chkBloqueado.Location = new System.Drawing.Point(213, 443);
-            this.chkBloqueado.Name = "chkBloqueado";
-            this.chkBloqueado.Size = new System.Drawing.Size(77, 17);
-            this.chkBloqueado.TabIndex = 12;
-            this.chkBloqueado.Text = "Bloqueado";
-            this.chkBloqueado.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblModo
             // 
@@ -251,47 +151,137 @@
             this.btnDesbloquear.UseVisualStyleBackColor = true;
             this.btnDesbloquear.Click += new System.EventHandler(this.btnDesbloquear_Click);
             // 
-            // label7
+            // label3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 404);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Rol";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(52, 281);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "DNI";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 306);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Nombre";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(52, 331);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Apellido";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(52, 356);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Telefono";
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.Location = new System.Drawing.Point(124, 281);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(167, 20);
+            this.txtDNI.TabIndex = 2;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(124, 306);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(167, 20);
+            this.txtNombre.TabIndex = 3;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(124, 331);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(167, 20);
+            this.txtApellido.TabIndex = 4;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(124, 356);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(167, 20);
+            this.txtEmail.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(52, 255);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Username";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(124, 255);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(167, 20);
+            this.txtUsername.TabIndex = 2;
             // 
             // cmbRol
             // 
             this.cmbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRol.FormattingEnabled = true;
-            this.cmbRol.Location = new System.Drawing.Point(123, 404);
+            this.cmbRol.Location = new System.Drawing.Point(124, 383);
             this.cmbRol.Name = "cmbRol";
             this.cmbRol.Size = new System.Drawing.Size(167, 21);
             this.cmbRol.TabIndex = 16;
+            // 
+            // chkActivo
+            // 
+            this.chkActivo.AutoSize = true;
+            this.chkActivo.Location = new System.Drawing.Point(124, 411);
+            this.chkActivo.Name = "chkActivo";
+            this.chkActivo.Size = new System.Drawing.Size(56, 17);
+            this.chkActivo.TabIndex = 17;
+            this.chkActivo.Text = "Activo";
+            this.chkActivo.UseVisualStyleBackColor = true;
+            // 
+            // chkBloqueado
+            // 
+            this.chkBloqueado.AutoSize = true;
+            this.chkBloqueado.Location = new System.Drawing.Point(211, 410);
+            this.chkBloqueado.Name = "chkBloqueado";
+            this.chkBloqueado.Size = new System.Drawing.Size(77, 17);
+            this.chkBloqueado.TabIndex = 17;
+            this.chkBloqueado.Text = "Bloqueado";
+            this.chkBloqueado.UseVisualStyleBackColor = true;
             // 
             // frmManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 525);
+            this.ClientSize = new System.Drawing.Size(763, 456);
+            this.Controls.Add(this.chkBloqueado);
+            this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.btnDesbloquear);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblModo);
-            this.Controls.Add(this.chkBloqueado);
-            this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtDNI);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAplicar);
             this.Controls.Add(this.btnModificar);
@@ -315,7 +305,10 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAplicar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblModo;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnDesbloquear;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -324,14 +317,10 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.CheckBox chkActivo;
         private System.Windows.Forms.CheckBox chkBloqueado;
-        private System.Windows.Forms.Label lblModo;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnDesbloquear;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbRol;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,17 +73,34 @@ namespace BE
             }
         }
 
+
+        private bool activo;
+
+        public bool Activo //borrado logico
+        {
+            get { return activo; }
+            set { activo = value; }
+        }
+
+
         public Cliente(string nombre, string apellido, int dni, string telefono)
         {
             Nombre = nombre;
             Apellido = apellido;
             Telefono = telefono;
             DNI = dni;
+            Activo = true;
         }
 
         public override string ToString()
         {
             return Nombre + " " + Apellido;
         }
+
+        public Cliente()
+        {
+
+        }
+
     }
 }

@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Services;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace TPRestaurante
 {
@@ -18,10 +22,12 @@ namespace TPRestaurante
             InitializeComponent();
             bllBitacora = new BLL.Bitacora();
             bllUser = new BLL.User();
+            bitacoraFiltrada = new List<Bitacora>();
         }
 
         BLL.Bitacora bllBitacora;
         BLL.User bllUser;
+        List<Services.Bitacora> bitacoraFiltrada;
 
 
         private void label3_Click(object sender, EventArgs e)
@@ -33,6 +39,11 @@ namespace TPRestaurante
         {
             RellenarComboBox();
             ActualizarGrilla();
+
+            dtpInicial.Value = DateTime.Today;
+            dtpFinal.Value = DateTime.Today.AddDays(1);
+
+            btnImprimir.Enabled = false;
         }
 
         void RellenarComboBox()
@@ -78,6 +89,12 @@ namespace TPRestaurante
                 grdBitacoraEventos.DataSource = bitacoras;
             }
 
+            grdBitacoraEventos.EditMode = DataGridViewEditMode.EditProgrammatically;
+            grdBitacoraEventos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            grdBitacoraEventos.MultiSelect = false;
+            grdBitacoraEventos.RowHeadersVisible = false;
+
+
             DataGridViewTextBoxColumn fechaColumn = new DataGridViewTextBoxColumn();
             fechaColumn.HeaderText = "FECHA";
             fechaColumn.DataPropertyName = "Fecha";
@@ -119,9 +136,11 @@ namespace TPRestaurante
             DateTime fechaInicio = dtpInicial.Value;
             DateTime fechaFin = dtpFinal.Value;
 
-            if (fechaInicio > fechaFin)
+            if (fechaInicio >= fechaFin)
             {
                 MessageBox.Show("La fecha de inicio no puede ser mayor que la fecha de fin.");
+                dtpInicial.Value = DateTime.Today.AddDays(-1);
+                dtpFinal.Value = DateTime.Today;
                 return;
             }
 
@@ -147,8 +166,117 @@ namespace TPRestaurante
                 modulo = cmbModulo.SelectedItem.ToString();
 
             
-            List<Services.Bitacora> bitacoras = bllBitacora.Filtrar(fechaInicio, fechaFin, idUSer,modulo, operacion, criticidad);
-            ActualizarGrilla(bitacoras);
+            bitacoraFiltrada = bllBitacora.Filtrar(fechaInicio, fechaFin, idUSer,modulo, operacion, criticidad);
+            ActualizarGrilla(bitacoraFiltrada);
+
+            btnImprimir.Enabled = true;
+
+        }
+
+
+        private void grdBitacoraEventos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Services.Bitacora bitacora = (Services.Bitacora)grdBitacoraEventos.CurrentRow.DataBoundItem;
+            BE.User usuario = bitacora.Usuario as BE.User;
+
+
+            lblUsuario.Text = usuario.NombreCompleto;
+            
+        }
+
+        private void btnListarTodo_Click(object sender, EventArgs e)
+        {
+            cmbOperacion.SelectedIndex = 0;
+            cmbUsuarios.SelectedIndex = 0;
+            cmbCriticidad.SelectedIndex = 0;
+            cmbModulo.SelectedIndex = 0;
+            bitacoraFiltrada = bllBitacora.Listar();
+            ActualizarGrilla(bitacoraFiltrada);
+
+            btnImprimir.Enabled = true;
+
+
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Guardar bitácora como PDF";
+                string fecha = dtpFinal.Value.ToShortDateString().Replace('/', '-');
+                saveFileDialog.FileName = $"Bitacora_{fecha}.pdf";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string path = saveFileDialog.FileName;
+                    GenerarPDFbitacora(bitacoraFiltrada, path);
+                    RegistroBitacoraGenerarBitacora();
+                    MessageBox.Show("Comanda generada y exportada como PDF.");
+                }
+            }
+        }
+
+        private void GenerarPDFbitacora(List<Bitacora> bitacoras, string path)
+        {
+            
+            Document document = new Document(PageSize.A4, 10, 10, 10, 10);
+            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(path, FileMode.Create));
+
+            
+            document.Open();
+
+            Paragraph title = new Paragraph("Reporte de Bitácora", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 16, iTextSharp.text.Font.BOLD));
+            title.Alignment = Element.ALIGN_CENTER;
+            document.Add(title);
+
+            
+            document.Add(new Paragraph("\n"));
+
+            
+            PdfPTable table = new PdfPTable(5); // 5 columnas: Fecha, Usuario, Módulo, Operación, Criticidad
+            table.WidthPercentage = 100;
+
+            
+            table.AddCell("Fecha");
+            table.AddCell("Usuario");
+            table.AddCell("Módulo");
+            table.AddCell("Operación");
+            table.AddCell("Criticidad");
+
+            
+            foreach (var bitacora in bitacoras)
+            {
+                table.AddCell(bitacora.Fecha.ToString());
+                table.AddCell(bitacora.Usuario.Username); // Suponiendo que el Usuario tiene una propiedad Username
+                table.AddCell(bitacora.Modulo.ToString());
+                table.AddCell(bitacora.Operacion.ToString());
+                table.AddCell(bitacora.Criticidad.ToString());
+            }
+
+            
+            document.Add(table);
+
+            
+            document.Close();
+            writer.Close();
+        }
+
+
+        private void RegistroBitacoraGenerarBitacora()
+        {
+            Services.Bitacora bitacora = new Services.Bitacora();
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Modulo = TipoModulo.GestorDeBitacora;
+            bitacora.Operacion = TipoOperacion.GenerarBitacora;
+            bitacora.Criticidad = 5;
+            bitacora.Usuario = (BE.User)SessionManager.Instance.User;
+            bllBitacora.Insertar(bitacora);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
