@@ -134,7 +134,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdInsumos);
             this.Name = "frmVerInsumos";
-            this.Text = "frmVerInsumos";
+            this.Text = "Ver insumos";
             this.Load += new System.EventHandler(this.frmVerInsumos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdInsumos)).EndInit();
             this.ResumeLayout(false);

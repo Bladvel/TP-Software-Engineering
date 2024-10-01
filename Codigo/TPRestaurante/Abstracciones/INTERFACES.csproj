@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityType.cs" />
+    <Compile Include="EstadoCargaDeInsumos.cs" />
     <Compile Include="EstadoCotizacion.cs" />
     <Compile Include="EstadoFactura.cs" />
     <Compile Include="EstadoOrdenDeCompra.cs" />
