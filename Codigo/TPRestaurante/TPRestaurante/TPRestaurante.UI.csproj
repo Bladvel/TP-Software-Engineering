@@ -112,6 +112,12 @@
     <Compile Include="frmActualizarInsumos.Designer.cs">
       <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBitacoraDeCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBitacoraDeCambios.Designer.cs">
+      <DependentUpon>frmBitacoraDeCambios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBitacoraEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     </Compile>
     <EmbeddedResource Include="frmActualizarInsumos.resx">
       <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBitacoraDeCambios.resx">
+      <DependentUpon>frmBitacoraDeCambios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBitacoraEventos.resx">
       <DependentUpon>frmBitacoraEventos.cs</DependentUpon>

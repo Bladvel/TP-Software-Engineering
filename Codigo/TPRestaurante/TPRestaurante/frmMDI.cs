@@ -425,5 +425,10 @@ namespace TPRestaurante
             frmCargarFactura cargarFactura = new frmCargarFactura();
             AbrirChildForm(cargarFactura);
         }
+
+        private void cambiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
