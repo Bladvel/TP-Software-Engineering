@@ -380,18 +380,6 @@ namespace TPRestaurante
             AbrirChildForm(solicitarCotizacion);
         }
 
-        private void cargarCotizacionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmCargarCotizacion cargarCotizacion = new frmCargarCotizacion();
-            AbrirChildForm(cargarCotizacion);
-        }
-
-        private void evaluarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmEvaluarCotizacion evaluarCotizacion = new frmEvaluarCotizacion();
-            AbrirChildForm(evaluarCotizacion);
-        }
-
 
         
 
@@ -428,7 +416,8 @@ namespace TPRestaurante
 
         private void cambiosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmBitacoraDeCambios bitacoraDeCambios = new frmBitacoraDeCambios();
+            AbrirChildForm(bitacoraDeCambios);
         }
     }
 }

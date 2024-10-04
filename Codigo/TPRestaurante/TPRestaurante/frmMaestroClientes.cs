@@ -408,6 +408,7 @@ namespace TPRestaurante
                 SerializationManager.SerializarXml(clientes, ruta);
                 
                 MessageBox.Show("Clientes serializados correctamente.","Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                rtbXml.Text = File.ReadAllText(ruta);
             }
         }
 
@@ -451,6 +452,7 @@ namespace TPRestaurante
                 dtClientes = ConvertirClientesADataTable(clientes);
                 AplicarFiltroCheckBoxes(rbActivos.Checked);
                 MessageBox.Show("Clientes deserializados correctamente", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                rtbXml.Text = File.ReadAllText(txtRutaDesserializar.Text);
             }
         }
 
@@ -458,6 +460,7 @@ namespace TPRestaurante
         {
             txtRutaDesserializar.Text = string.Empty;
             txtRutaSerializar.Text = string.Empty;
+            rtbXml.Text = string.Empty;
 
             rbActivos.Checked = true;
             rbTodos.Checked = false;
