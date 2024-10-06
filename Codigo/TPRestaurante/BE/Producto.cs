@@ -49,6 +49,14 @@ namespace BE
             set=> ingredientList=value;
         }
 
+        private bool borrado = false;
+
+        public bool Borrado
+        {
+            get => borrado;
+            set => borrado = value;
+        }
+
 
         public override string ToString()
         {

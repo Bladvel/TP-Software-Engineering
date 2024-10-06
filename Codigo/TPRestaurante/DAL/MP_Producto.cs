@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,7 +58,23 @@ namespace DAL
 
         public override int Update(Producto entity)
         {
-            throw new NotImplementedException();
+            int filasAfectadas = 0;
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@cod", entity.CodProducto),
+                access.CreateParameter("@nombre", entity.Nombre),
+                access.CreateParameter("@descripcion", entity.Descripcion),
+                access.CreateParameter("@precio", entity.PrecioActual),
+                access.CreateParameter("@borrado", entity.Borrado),
+            };
+
+            access.Open();
+            filasAfectadas = access.Write("ACTUALIZAR_PRODUCTO", parameters);
+            access.Close();
+
+            return filasAfectadas;
+
+
         }
 
         public override int Delete(Producto entity)

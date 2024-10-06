@@ -14,5 +14,10 @@ namespace BLL
         {
             return mp.GetAll();
         }
+
+        public int Actualizar(BE.Producto producto)
+        {
+            return mp.Update(producto);
+        }
     }
 }

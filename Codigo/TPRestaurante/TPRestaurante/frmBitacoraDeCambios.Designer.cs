@@ -163,6 +163,7 @@
             this.btnLimpiar.TabIndex = 6;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnSalir
             // 
@@ -191,6 +192,7 @@
             this.btnActivar.TabIndex = 5;
             this.btnActivar.Text = "Activar";
             this.btnActivar.UseVisualStyleBackColor = false;
+            this.btnActivar.Click += new System.EventHandler(this.btnActivar_Click);
             // 
             // btnAplicar
             // 

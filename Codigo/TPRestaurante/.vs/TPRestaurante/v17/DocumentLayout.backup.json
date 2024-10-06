@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_producto_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\bll\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\bll\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\dal\\mp_producto_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_producto_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\dal\\mp_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmbitacoradecambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FF519CF-C4EB-4675-93F0-A0F45F21607A}|BE\\BE.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\be\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF519CF-C4EB-4675-93F0-A0F45F21607A}|BE\\BE.csproj|solutionrelative:be\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmbitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmbitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF519CF-C4EB-4675-93F0-A0F45F21607A}|BE\\BE.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\be\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF519CF-C4EB-4675-93F0-A0F45F21607A}|BE\\BE.csproj|solutionrelative:be\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmbitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmbitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\productobitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\bll\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -50,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "frmMDI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -62,18 +82,17 @@
               "RelativeToolTip": "TPRestaurante\\frmMDI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T19:49:55.401Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "frmBitacoraDeCambios.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraDeCambios.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmBitacoraDeCambios.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraDeCambios.cs",
               "RelativeToolTip": "TPRestaurante\\frmBitacoraDeCambios.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwCYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAADgv2AAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T03:25:28.333Z",
               "IsPinned": true,
@@ -81,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "frmBitacoraDeCambios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraDeCambios.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmBitacoraDeCambios.cs",
@@ -102,72 +121,136 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Producto.cs",
+              "RelativeDocumentMoniker": "BLL\\Producto.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Producto.cs",
+              "RelativeToolTip": "BLL\\Producto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwBMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T22:59:33.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Producto.cs",
+              "RelativeDocumentMoniker": "BE\\Producto.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Producto.cs",
+              "RelativeToolTip": "BE\\Producto.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T22:58:07.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductoBitacora.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\ProductoBitacora.cs",
+              "RelativeDocumentMoniker": "BE\\ProductoBitacora.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\ProductoBitacora.cs",
+              "RelativeToolTip": "BE\\ProductoBitacora.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:11:31.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmBitacoraEventos.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraEventos.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmBitacoraEventos.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraEventos.cs",
+              "RelativeToolTip": "TPRestaurante\\frmBitacoraEventos.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADgv6gAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:10:42.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmBitacoraEventos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraEventos.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmBitacoraEventos.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmBitacoraEventos.cs [Design]",
+              "RelativeToolTip": "TPRestaurante\\frmBitacoraEventos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:10:41.289Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MP_Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Bitacora.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Bitacora.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Bitacora.cs",
               "RelativeToolTip": "DAL\\MP_Bitacora.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAgwGcAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAADgv1IAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:53:56.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MP_Producto_Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Producto_Bitacora.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Producto_Bitacora.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Producto_Bitacora.cs",
               "RelativeToolTip": "DAL\\MP_Producto_Bitacora.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAA2wFcAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAADgv2QAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:21:46.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Bitacora.cs",
               "RelativeDocumentMoniker": "BLL\\Bitacora.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Bitacora.cs",
               "RelativeToolTip": "BLL\\Bitacora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAArwBUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:52:23.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ProductoBitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\ProductoBitacora.cs",
               "RelativeDocumentMoniker": "BLL\\ProductoBitacora.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\ProductoBitacora.cs",
               "RelativeToolTip": "BLL\\ProductoBitacora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:51:51.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MP_Producto.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Producto.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Producto.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Producto.cs",
               "RelativeToolTip": "DAL\\MP_Producto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:35:32.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "frmMaestroClientes.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMaestroClientes.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMaestroClientes.cs",
@@ -175,12 +258,11 @@
               "RelativeToolTip": "TPRestaurante\\frmMaestroClientes.cs",
               "ViewState": "AgIAAKwBAAAAAAAAAAAlwMYBAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T20:04:29.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T20:04:29.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "frmMDI.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -188,8 +270,7 @@
               "RelativeToolTip": "TPRestaurante\\frmMDI.cs",
               "ViewState": "AgIAAHEBAAAAAAAAAAAMwKIBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T20:04:20.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T20:04:20.901Z"
             }
           ]
         }
