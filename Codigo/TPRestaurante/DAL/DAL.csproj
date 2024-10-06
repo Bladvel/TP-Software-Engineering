@@ -110,6 +110,7 @@
     <Compile Include="MP_Pedido.cs" />
     <Compile Include="MP_Permission.cs" />
     <Compile Include="MP_Producto.cs" />
+    <Compile Include="MP_Producto_Bitacora.cs" />
     <Compile Include="MP_Traduccion.cs" />
     <Compile Include="MP_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

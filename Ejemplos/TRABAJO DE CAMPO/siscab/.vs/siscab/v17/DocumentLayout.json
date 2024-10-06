@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\servicios\\clientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9975BFFC-D130-41DB-9758-9363637FCB7F}|Servicios\\Servicios.csproj|solutionrelative:servicios\\clientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\bll\\bllclientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllclientebitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmrespaldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmrespaldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\bll\\bllbackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\bll\\bllbackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B149AE1C-7F9C-405E-A737-89F66577A87D}|BLL\\BLL.csproj|solutionrelative:bll\\bllbackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\dal\\backuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\dal\\backuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F8A9CBE-9D4C-4170-A063-C35C47F9FC10}|DAL\\DAL.csproj|solutionrelative:dal\\backuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\ejemplos\\trabajo de campo\\siscab\\presentacion\\frmrespaldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\presentacion\\frmrespaldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9FBABC10-EDBD-4ACF-AD5B-35E478D4C6B9}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmrespaldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -94,11 +102,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 277,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "EnumModulo.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\EnumModulo.cs",
               "RelativeDocumentMoniker": "Servicios\\EnumModulo.cs",
@@ -111,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "frmMenuPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.cs",
@@ -123,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "frmBitacoraEventos.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmBitacoraEventos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmBitacoraEventos.cs",
@@ -137,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "EnumOperacion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\EnumOperacion.cs",
               "RelativeDocumentMoniker": "Servicios\\EnumOperacion.cs",
@@ -150,28 +158,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BackupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\BackupRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\BackupRepository.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\BackupRepository.cs",
-              "RelativeToolTip": "DAL\\BackupRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA4AAAAUAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ClienteBitacora.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\ClienteBitacora.cs",
+              "RelativeDocumentMoniker": "Servicios\\ClienteBitacora.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\ClienteBitacora.cs",
+              "RelativeToolTip": "Servicios\\ClienteBitacora.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T02:58:49.376Z",
+              "WhenOpened": "2024-10-06T03:26:22.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BLLBackupService.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLBackupService.cs",
-              "RelativeDocumentMoniker": "BLL\\BLLBackupService.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLBackupService.cs",
-              "RelativeToolTip": "BLL\\BLLBackupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Title": "BLLClienteBitacora.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLClienteBitacora.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLClienteBitacora.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLClienteBitacora.cs",
+              "RelativeToolTip": "BLL\\BLLClienteBitacora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T02:58:47.374Z",
+              "WhenOpened": "2024-10-06T03:26:16.103Z",
               "EditorCaption": ""
             },
             {
@@ -184,7 +192,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BackupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\BackupRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\BackupRepository.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\BackupRepository.cs",
+              "RelativeToolTip": "DAL\\BackupRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T02:58:49.376Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BLLBackupService.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLBackupService.cs",
+              "RelativeDocumentMoniker": "BLL\\BLLBackupService.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLBackupService.cs",
+              "RelativeToolTip": "BLL\\BLLBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T02:58:47.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmRespaldos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmRespaldos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmRespaldos.cs",
@@ -196,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmRespaldos.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmRespaldos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmRespaldos.cs",
@@ -209,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmMenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmMenuPrincipal.cs",
@@ -221,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "mp_banco.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_banco.cs",
               "RelativeDocumentMoniker": "DAL\\mp_banco.cs",
@@ -233,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "frmClientes.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmClientes.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmClientes.cs",
@@ -245,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "BLLBitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLBitacora.cs",
               "RelativeDocumentMoniker": "BLL\\BLLBitacora.cs",
@@ -257,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frmLogin.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmLogin.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmLogin.cs",
@@ -270,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "frmBitacoraEventos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmBitacoraEventos.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmBitacoraEventos.cs",
@@ -281,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Bitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\Bitacora.cs",
               "RelativeDocumentMoniker": "Servicios\\Bitacora.cs",
@@ -293,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "mp_bitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_bitacora.cs",
               "RelativeDocumentMoniker": "DAL\\mp_bitacora.cs",
@@ -305,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "frmInconcistenciaBD.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmInconcistenciaBD.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmInconcistenciaBD.cs",
@@ -316,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "BLLDVH.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\BLL\\BLLDVH.cs",
               "RelativeDocumentMoniker": "BLL\\BLLDVH.cs",
@@ -328,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Presentacion\\frmLogin.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmLogin.cs",
@@ -339,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "mp_DVH.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\DAL\\mp_DVH.cs",
               "RelativeDocumentMoniker": "DAL\\mp_DVH.cs",
@@ -351,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "DVH.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Ejemplos\\TRABAJO DE CAMPO\\siscab\\Servicios\\DVH.cs",
               "RelativeDocumentMoniker": "Servicios\\DVH.cs",

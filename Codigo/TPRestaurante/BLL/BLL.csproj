@@ -109,6 +109,7 @@
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
     <Compile Include="Producto.cs" />
+    <Compile Include="ProductoBitacora.cs" />
     <Compile Include="TraduccionBLL.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
