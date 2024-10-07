@@ -57,6 +57,17 @@ namespace BE
             set => borrado = value;
         }
 
+        public Producto(string nombre, string descripcion, float precio)
+        {
+            Nombre = nombre;
+            Descripcion = descripcion;
+            PrecioActual = precio;
+        }
+
+        public Producto()
+        {
+
+        }
 
         public override string ToString()
         {

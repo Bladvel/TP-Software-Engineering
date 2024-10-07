@@ -190,6 +190,12 @@
     <Compile Include="frmMaestroClientes.Designer.cs">
       <DependentUpon>frmMaestroClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMaestroProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroProductos.Designer.cs">
+      <DependentUpon>frmMaestroProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManageLanguages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMaestroClientes.resx">
       <DependentUpon>frmMaestroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroProductos.resx">
+      <DependentUpon>frmMaestroProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManageLanguages.resx">
       <DependentUpon>frmManageLanguages.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace BLL
         }
 
 
-        public int Activar(BE.ProductoBitacora bitacora)
+        public string Activar(BE.ProductoBitacora bitacora)
         {
             BE.Producto producto = new BE.Producto();
             producto.CodProducto = bitacora.CodProducto;
@@ -29,7 +29,7 @@ namespace BLL
             producto.Descripcion = bitacora.Descripcion;
             producto.PrecioActual = bitacora.PrecioActual;
             producto.Borrado = false;
-            return bllProducto.Actualizar(producto);
+            return bllProducto.Modificar(producto);
 
         }
     }

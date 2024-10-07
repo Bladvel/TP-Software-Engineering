@@ -419,5 +419,11 @@ namespace TPRestaurante
             frmBitacoraDeCambios bitacoraDeCambios = new frmBitacoraDeCambios();
             AbrirChildForm(bitacoraDeCambios);
         }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaestroProductos maestroProductos = new frmMaestroProductos();
+            AbrirChildForm(maestroProductos);
+        }
     }
 }

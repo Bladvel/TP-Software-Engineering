@@ -166,3 +166,4 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmCargarFactura.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRealizarPago.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmBitacoraDeCambios.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmMaestroProductos.resources

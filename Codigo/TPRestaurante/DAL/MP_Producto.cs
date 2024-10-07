@@ -26,6 +26,7 @@ namespace DAL
             producto.Nombre = dr["NOMBRE"].ToString();
             producto.Descripcion = dr["DESCRIPCION"].ToString();
             producto.PrecioActual = float.Parse(dr["PRECIO_ACTUAL"].ToString());
+            producto.Borrado = bool.Parse(dr["BORRADO"].ToString());
 
             producto.Ingredientes = mpIngrediente.GetIngredientsByProduct(producto.CodProducto);
 
@@ -53,7 +54,20 @@ namespace DAL
 
         public override int Insert(Producto entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@nombre", entity.Nombre),
+                access.CreateParameter("@descripcion", entity.Descripcion),
+                access.CreateParameter("@precioActual", entity.PrecioActual),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("INSERTAR_PRODUCTO", parameters);
+            access.Close();
+            return filasAfectadas;
+
+
+
         }
 
         public override int Update(Producto entity)
@@ -79,7 +93,16 @@ namespace DAL
 
         public override int Delete(Producto entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                access.CreateParameter("@codigo", entity.CodProducto),
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ELIMINAR_PRODUCTO", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
     }
 }

@@ -27,5 +27,6 @@ namespace Interfaces
         VistaPedidosListos,
         GestorDeBitacora,
         MaestroClientes,
+        MaestroProductos,
     }
 }
