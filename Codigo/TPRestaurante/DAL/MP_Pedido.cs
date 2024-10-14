@@ -53,8 +53,7 @@ namespace DAL
             return pedidos;
         }
 
-        MP_Cliente mpCliente = new MP_Cliente();
-        MP_Producto mpProducto = new MP_Producto();
+        MP_Cliente mpCliente;
 
 
         public override int Insert(Pedido entity)
@@ -78,7 +77,8 @@ namespace DAL
 
                 foreach (var itemProducto in entity.Productos)
                 {
-                    InsertItem(entity, itemProducto);
+                    itemProducto.Pedido = entity;
+                    mpItemProducto.Insert(itemProducto);
                 }
 
 
@@ -88,21 +88,14 @@ namespace DAL
 
         }
 
+        private MP_ItemProducto mpItemProducto;
 
+
+        [Obsolete("Use Insert(Pedido entity) instead")]
         public int InsertItem(Pedido pedido, ItemProducto item)
         {
-            List<SqlParameter> parameters = new List<SqlParameter>()
-            {
-                access.CreateParameter("@cod", item.Producto.CodProducto),
-                access.CreateParameter("@nro", pedido.NroPedido),
-                access.CreateParameter("@cant", item.Cantidad),
-                access.CreateParameter("@pre", item.PrecioCompra)
-            };
-            access.Open();
-            int resultado = access.Write("INSERTAR_ITEM_PRODUCTO", parameters);
-            access.Close();
-
-            return resultado;
+            item.Pedido = pedido;
+            return mpItemProducto.Insert(item);
 
         }
 
@@ -121,10 +114,7 @@ namespace DAL
             
             foreach (DataRow dr in dt.Rows)
             {
-                int cantidad = int.Parse(dr["CANTIDAD"].ToString());
-                float precio = float.Parse(dr["PRECIO_COMPRA"].ToString());
-                Producto producto = mpProducto.GetById(dr["COD_PRODUCTO"].ToString());
-                ItemProducto item = new ItemProducto(cantidad,precio,producto);
+                ItemProducto item = mpItemProducto.Transform(dr);
 
                 items.Add(item);
             }
@@ -202,5 +192,10 @@ namespace DAL
         }
 
 
+        public MP_Pedido(Access access, MP_Cliente mpCliente, MP_ItemProducto mpItem) : base(access)
+        {
+            this.mpCliente = mpCliente;
+            this.mpItemProducto = mpItem;
+        }
     }
 }

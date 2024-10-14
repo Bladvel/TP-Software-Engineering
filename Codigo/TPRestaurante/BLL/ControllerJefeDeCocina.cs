@@ -23,7 +23,7 @@ namespace BLL
             List<BE.Ingrediente> ingredientesFaltantes = new List<BE.Ingrediente>();
 
             
-            foreach (ItemProducto item in pedido.Productos)
+            foreach (BE.ItemProducto item in pedido.Productos)
             {
                 
                 foreach (BE.Ingrediente ingrediente in item.Producto.Ingredientes)

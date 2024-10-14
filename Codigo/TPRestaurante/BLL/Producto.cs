@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class Producto
     {
-        private MP_Producto mp = new MP_Producto();
+        private MP_Producto mp = MpProductoCreator.GetInstance.CreateMapper() as MP_Producto;
         public List<BE.Producto> Listar()
         {
             return mp.GetAll();

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class Comanda
     {
-        MP_Comanda mp = new MP_Comanda();
+        MP_Comanda mp = MpComandaCreator.GetInstance.CreateMapper() as MP_Comanda;
         
 
         public List<BE.Comanda> ListarEnCursoPorCocinero(BE.User cocinero)
@@ -26,6 +27,10 @@ namespace BLL
             return mp.Insert(comanda);
         }
 
+        public string oncatenar(BE.Comanda comanda)
+        {
+            return comanda.ID + comanda.Descripcion + comanda.PedidoAsignado.NroPedido + comanda.Cocinero.ID;
+        }
 
     }
 }

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
@@ -15,7 +16,7 @@ namespace BLL
         MP_User mp;
         public User()
         {
-            mp = new MP_User();
+            mp = MpUserCreator.GetInstance.CreateMapper() as MP_User;
         }
 
         public Guid AddUser(BE.User user)

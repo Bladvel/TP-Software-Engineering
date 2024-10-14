@@ -14,7 +14,7 @@ namespace DAL
 {
     public class MP_User : Mapper<User>
     {
-        MP_Idioma mpIdioma = new MP_Idioma();
+        MP_Idioma mpIdioma;
         public override User Transform(DataRow dr)
         {
             User user = new BE.User();
@@ -150,7 +150,7 @@ namespace DAL
             return filasAfectadas;
         }
 
-        MP_Permission mpPermission = new MP_Permission();
+        MP_Permission mpPermission;
 
         public void AsignPermissions(User entity)
         {
@@ -235,6 +235,12 @@ namespace DAL
             access.Close();
 
             return filasAfectadas;
+        }
+
+        public MP_User(Access access, MP_Idioma mpIdioma, MP_Permission mpPermission) : base(access)
+        {
+            this.mpIdioma = mpIdioma;
+            this.mpPermission = mpPermission;
         }
     }
 }

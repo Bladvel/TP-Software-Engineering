@@ -96,13 +96,35 @@
   <ItemGroup>
     <Compile Include="Access.cs" />
     <Compile Include="BackupRepository.cs" />
+    <Compile Include="FactoryMapper\MpBitacoraCreator.cs" />
+    <Compile Include="FactoryMapper\MpClienteCreator.cs" />
+    <Compile Include="FactoryMapper\MpComandaCreator.cs" />
+    <Compile Include="FactoryMapper\MpDvhCreator.cs" />
+    <Compile Include="FactoryMapper\MpDvvCreator.cs" />
+    <Compile Include="FactoryMapper\MpEtiquetaCreator.cs" />
+    <Compile Include="FactoryMapper\MpIdiomaCreator.cs" />
+    <Compile Include="FactoryMapper\MpIngredienteCreator.cs" />
+    <Compile Include="FactoryMapper\MpItemProductoCreator.cs" />
+    <Compile Include="FactoryMapper\MpMetodoDePagoCreator.cs" />
+    <Compile Include="FactoryMapper\MpPagoCreator.cs" />
+    <Compile Include="FactoryMapper\MpPagoEfectivoCreator.cs" />
+    <Compile Include="FactoryMapper\MpPagoTarjetaCreator.cs" />
+    <Compile Include="FactoryMapper\MpPedidoCreator.cs" />
+    <Compile Include="FactoryMapper\MpPermissionCreator.cs" />
+    <Compile Include="FactoryMapper\MpProductoBitacoraCreator.cs" />
+    <Compile Include="FactoryMapper\MpProductoCreator.cs" />
+    <Compile Include="FactoryMapper\MpTraduccionCreator.cs" />
+    <Compile Include="FactoryMapper\MpUserCreator.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="MP_Bitacora.cs" />
     <Compile Include="MP_Cliente.cs" />
     <Compile Include="MP_Comanda.cs" />
+    <Compile Include="MP_Dvh.cs" />
+    <Compile Include="MP_Dvv.cs" />
     <Compile Include="MP_Etiqueta.cs" />
     <Compile Include="MP_Idioma.cs" />
     <Compile Include="MP_Ingrediente.cs" />
+    <Compile Include="MP_ItemProducto.cs" />
     <Compile Include="MP_MetodoDePago.cs" />
     <Compile Include="MP_Pago.cs" />
     <Compile Include="MP_PagoEfectivo.cs" />
@@ -133,5 +155,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

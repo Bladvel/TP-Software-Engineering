@@ -73,5 +73,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_PagoEfectivo(Access access) : base(access)
+        {
+        }
     }
 }

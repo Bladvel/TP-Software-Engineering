@@ -54,5 +54,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_Traduccion(Access access) : base(access)
+        {
+        }
     }
 }

@@ -96,6 +96,7 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Comanda.cs" />
+    <Compile Include="ItemIngrediente.cs" />
     <Compile Include="MetodoDePago.cs" />
     <Compile Include="Permisos\Component.cs" />
     <Compile Include="Permisos\Group.cs" />
@@ -108,6 +109,7 @@
     <Compile Include="Pedido.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="ProductoBitacora.cs" />
+    <Compile Include="SolicitudDeCompra.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

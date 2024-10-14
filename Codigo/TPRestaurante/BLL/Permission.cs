@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BE;
 using BE.Permisos;
 using DAL;
+using DAL.FactoryMapper;
 using Interfaces;
 
 namespace BLL
@@ -16,7 +17,7 @@ namespace BLL
 
         public Permission()
         {
-            mpPermission = new MP_Permission();
+            mpPermission = MpPermissionCreator.GetInstance.CreateMapper() as MP_Permission;
         }
 
         public List<Component> ListComponents()

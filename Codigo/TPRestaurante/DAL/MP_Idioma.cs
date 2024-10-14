@@ -69,5 +69,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_Idioma(Access access) : base(access)
+        {
+        }
     }
 }

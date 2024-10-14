@@ -80,5 +80,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_PagoTarjeta(Access access) : base(access)
+        {
+        }
     }
 }

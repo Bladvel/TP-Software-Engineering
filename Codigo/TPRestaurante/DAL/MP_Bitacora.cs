@@ -16,7 +16,8 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
-        MP_User mpUser = new MP_User();
+
+        private MP_User mpUser;
         public override Bitacora Transform(DataRow dr)
         {
             Bitacora bitacora = new Bitacora();
@@ -116,5 +117,9 @@ namespace DAL
         }
 
 
+        public MP_Bitacora(Access access, MP_User mpUser) : base(access)
+        {
+            this.mpUser = mpUser;
+        }
     }
 }

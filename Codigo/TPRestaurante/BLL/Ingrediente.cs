@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 using DAL;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class Ingrediente
     {
-        MP_Ingrediente mpIngrediente = new MP_Ingrediente();
+        MP_Ingrediente mpIngrediente = MpIngredienteCreator.GetInstance.CreateMapper() as MP_Ingrediente;
 
         public List<BE.Ingrediente> Listar()
         {
@@ -47,5 +48,29 @@ namespace BLL
 
             mpIngrediente.Update(i);
         }
+
+
+        //A probar
+        public List<BE.Ingrediente> FiltrarFaltantes(List<BE.Ingrediente> ingredientes)
+        {
+            List<BE.Ingrediente> faltantes = new List<BE.Ingrediente>();
+
+            foreach (var ingrediente in ingredientes)
+            {
+                if (ingrediente.Cantidad < ingrediente.StockMin)
+                {
+                    faltantes.Add(ingrediente);
+                }
+            }
+
+            return faltantes;
+        }
+
+        public string Concatenar(BE.Ingrediente ingrediente)
+        {
+            return ingrediente.CodIngrediente + ingrediente.Nombre + ingrediente.Cantidad + ingrediente.CostoReferencial + ingrediente.StockMin + ingrediente.StockMax;
+        }
+
+
     }
 }

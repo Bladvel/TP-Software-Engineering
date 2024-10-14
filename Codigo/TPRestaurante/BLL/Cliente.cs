@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class Cliente
     {
-        MP_Cliente mp = new MP_Cliente();
+        MP_Cliente mp = MpClienteCreator.GetInstance.CreateMapper() as MP_Cliente;
         public void Insertar(BE.Cliente cliente)
         {
             mp.Insert(cliente);
@@ -49,5 +50,12 @@ namespace BLL
 
             return result;
         }
+
+
+        public string Concatenar(BE.Cliente cliente)
+        {
+            return cliente.ID + cliente.Nombre + cliente.Apellido + cliente.DNI + cliente.Telefono + cliente.Activo;
+        }
+
     }
 }

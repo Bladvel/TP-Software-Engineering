@@ -212,6 +212,9 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        
+
+        public MP_Permission(Access access) : base(access)
+        {
+        }
     }
 }

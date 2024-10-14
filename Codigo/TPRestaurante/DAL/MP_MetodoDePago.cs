@@ -12,8 +12,8 @@ namespace DAL
 {
     public class MP_MetodoDePago: Mapper<MetodoDePago>
     {
-        MP_PagoEfectivo mpPagoEfectivo = new MP_PagoEfectivo();
-        MP_PagoTarjeta mpPagoTarjeta = new MP_PagoTarjeta();
+        MP_PagoEfectivo mpPagoEfectivo;
+        MP_PagoTarjeta mpPagoTarjeta;
         public override MetodoDePago GetById(object id)
         {
             int ID = int.Parse(id.ToString());
@@ -100,6 +100,12 @@ namespace DAL
         public override int Delete(MetodoDePago entity)
         {
             throw new NotImplementedException();
+        }
+
+        public MP_MetodoDePago(Access access, MP_PagoEfectivo mpPagoEfectivo, MP_PagoTarjeta mpPagoTarjeta) : base(access)
+        {
+            this.mpPagoEfectivo = mpPagoEfectivo;
+            this.mpPagoTarjeta = mpPagoTarjeta;
         }
     }
 }

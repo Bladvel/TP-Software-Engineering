@@ -99,5 +99,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_Ingrediente(Access access) : base(access)
+        {
+        }
     }
 }

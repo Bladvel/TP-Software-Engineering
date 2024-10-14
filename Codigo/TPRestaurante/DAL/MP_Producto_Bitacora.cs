@@ -16,7 +16,7 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        MP_Producto mpProducto = new MP_Producto();
+        MP_Producto mpProducto;
 
         public override ProductoBitacora Transform(DataRow dr)
         {
@@ -98,6 +98,11 @@ namespace DAL
             }
 
             return productoBitacoras;
+        }
+
+        public MP_Producto_Bitacora(Access access, MP_Producto mpProducto) : base(access)
+        {
+            this.mpProducto = mpProducto;
         }
     }
 }

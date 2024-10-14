@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DAL.FactoryMapper;
 using Interfaces;
 
 namespace BLL
 {
     public class Bitacora
     {
-        MP_Bitacora mpBitacora = new MP_Bitacora();
+        MP_Bitacora mpBitacora = MpBitacoraCreator.GetInstance.CreateMapper() as MP_Bitacora;
 
         public List<Services.Bitacora> Listar()
         {

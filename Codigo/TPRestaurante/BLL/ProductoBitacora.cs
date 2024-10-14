@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class ProductoBitacora
     {
-        DAL.MP_Producto_Bitacora mpProductoBitacora = new DAL.MP_Producto_Bitacora();
+        DAL.MP_Producto_Bitacora mpProductoBitacora = MpProductoBitacoraCreator.GetInstance.CreateMapper() as DAL.MP_Producto_Bitacora;
         Producto bllProducto = new Producto();
         public List<BE.ProductoBitacora> Listar()
         {

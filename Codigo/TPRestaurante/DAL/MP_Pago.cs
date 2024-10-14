@@ -16,8 +16,8 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
-        MP_Pedido mpPedido = new MP_Pedido();
-        MP_MetodoDePago mpMetodo = new MP_MetodoDePago();
+        MP_Pedido mpPedido;
+        MP_MetodoDePago mpMetodo;
         public override Pago Transform(DataRow dr)
         {
             Pedido pedido = mpPedido.GetById(dr["ID_PEDIDO"].ToString());
@@ -89,6 +89,12 @@ namespace DAL
         public override int Delete(Pago entity)
         {
             throw new NotImplementedException();
+        }
+
+        public MP_Pago(Access access, MP_Pedido mpPedido, MP_MetodoDePago mpMetodo) : base(access)
+        {
+            this.mpPedido = mpPedido;
+            this.mpMetodo = mpMetodo;
         }
     }
 }

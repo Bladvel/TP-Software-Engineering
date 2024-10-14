@@ -103,6 +103,8 @@
     <Compile Include="IEtiqueta.cs" />
     <Compile Include="IIdioma.cs" />
     <Compile Include="IIdiomaObserver.cs" />
+    <Compile Include="IMapper.cs" />
+    <Compile Include="IMapperCreator.cs" />
     <Compile Include="ITraduccion.cs" />
     <Compile Include="IMetodoDePago.cs" />
     <Compile Include="TipoModulo.cs" />

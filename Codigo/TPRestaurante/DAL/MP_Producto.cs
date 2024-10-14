@@ -17,7 +17,7 @@ namespace DAL
             return GetAll().FirstOrDefault(c => c.CodProducto.Equals(codigo));
         }
 
-        MP_Ingrediente mpIngrediente = new MP_Ingrediente();
+        MP_Ingrediente mpIngrediente;
 
         public override Producto Transform(DataRow dr)
         {
@@ -103,6 +103,11 @@ namespace DAL
             access.Close();
 
             return filasAfectadas;
+        }
+
+        public MP_Producto(Access access, MP_Ingrediente mpIngrediente) : base(access)
+        {
+            this.mpIngrediente = mpIngrediente;
         }
     }
 }

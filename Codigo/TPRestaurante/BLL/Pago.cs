@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DAL.FactoryMapper;
 
 namespace BLL
 {
     public class Pago
     {
-        MP_Pago mp = new MP_Pago();
+        MP_Pago mp = MpPagoCreator.GetInstance().CreateMapper() as MP_Pago;
 
         public int Insertar(BE.Pago pago)
         {

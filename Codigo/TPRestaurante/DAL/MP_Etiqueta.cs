@@ -55,5 +55,9 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public MP_Etiqueta(Access access) : base(access)
+        {
+        }
     }
 }

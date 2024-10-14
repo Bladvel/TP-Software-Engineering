@@ -101,5 +101,9 @@ namespace DAL
 
             return filasAfectadas;
         }
+
+        public MP_Cliente(Access access) : base(access)
+        {
+        }
     }
 }

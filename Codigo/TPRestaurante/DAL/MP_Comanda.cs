@@ -16,8 +16,8 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        MP_Pedido mpPedido = new MP_Pedido();
-        MP_User mpUser = new MP_User();
+        MP_Pedido mpPedido;
+        MP_User mpUser;
         public override Comanda Transform(DataRow dr)
         {
             Pedido pedido = mpPedido.GetById(int.Parse(dr["ID_PEDIDO"].ToString()));
@@ -75,6 +75,12 @@ namespace DAL
         public override int Delete(Comanda entity)
         {
             throw new NotImplementedException();
+        }
+
+        public MP_Comanda(Access access, MP_Pedido mpPedido, MP_User mpUser) : base(access)
+        {
+            this.mpPedido = mpPedido;
+            this.mpUser = mpUser;
         }
     }
 }

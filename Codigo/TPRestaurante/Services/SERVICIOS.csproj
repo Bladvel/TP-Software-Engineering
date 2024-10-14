@@ -95,6 +95,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bitacora.cs" />
+    <Compile Include="DVH.cs" />
+    <Compile Include="DVV.cs" />
     <Compile Include="LoginException.cs" />
     <Compile Include="CryptoManager.cs" />
     <Compile Include="LoginResult.cs" />

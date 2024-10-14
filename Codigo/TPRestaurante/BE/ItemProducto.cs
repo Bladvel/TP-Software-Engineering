@@ -13,12 +13,17 @@ namespace BE
 
         public Producto Producto { get; set; }
 
+        public Pedido Pedido { get; set; }
 
         public ItemProducto(int cantidad, float precioCompra, Producto producto)
         {
             Cantidad = cantidad;
             PrecioCompra = precioCompra;
             Producto = producto;
+        }
+
+        public ItemProducto()
+        {
         }
 
         public override string ToString()
