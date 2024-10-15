@@ -27,10 +27,16 @@ namespace BLL
             return mp.Insert(comanda);
         }
 
-        public string oncatenar(BE.Comanda comanda)
+        public string Concatenar(BE.Comanda comanda)
         {
             return comanda.ID + comanda.Descripcion + comanda.PedidoAsignado.NroPedido + comanda.Cocinero.ID;
         }
+
+        public List<BE.Comanda> Listar()
+        {
+            return mp.GetAll();
+        }
+
 
     }
 }

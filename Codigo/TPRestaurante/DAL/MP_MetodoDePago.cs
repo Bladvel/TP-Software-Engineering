@@ -55,7 +55,14 @@ namespace DAL
 
         public override List<MetodoDePago> GetAll()
         {
-            throw new NotImplementedException();
+            List<MetodoDePago> metodos = new List<MetodoDePago>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_METODOS_DE_PAGO");
+            access.Close();
+            foreach (DataRow dr in dt.Rows)
+                metodos.Add(Transform(dr));
+
+            return metodos;
         }
 
         public override int Insert(MetodoDePago entity)
@@ -79,7 +86,8 @@ namespace DAL
 
                     mpPagoTarjeta.Insert((PagoTarjeta)entity);
 
-                }else if (entity is PagoEfectivo)
+                }
+                else if (entity is PagoEfectivo)
                 {
 
 

@@ -11,7 +11,7 @@ namespace BLL
 {
     public class ControllerJefeDeCocina
     {
-        private Ingrediente ingrediente = new Ingrediente();
+        private Ingrediente bllIngrediente = new Ingrediente();
 
 
         
@@ -48,7 +48,7 @@ namespace BLL
                 int cantidadRequerida = requerido.Value;
 
                 
-                BE.Ingrediente ingredienteDisponible = ingrediente.ObtenerIngredientePorCodigo(codIngrediente);
+                BE.Ingrediente ingredienteDisponible = bllIngrediente.ObtenerIngredientePorCodigo(codIngrediente);
 
                 if (ingredienteDisponible != null && ingredienteDisponible.Cantidad >= cantidadRequerida)
                 {
@@ -81,7 +81,8 @@ namespace BLL
                 foreach (var ingrediente in itemProducto.Producto.Ingredientes)
                 {
 
-                    this.ingrediente.ActualizarStock(ingrediente, -itemProducto.Cantidad);
+                    this.bllIngrediente.ActualizarStock(ingrediente, -itemProducto.Cantidad);
+                    bllDvh.Recalcular(bllDvh.Listar(), bllIngrediente.Listar(), bllIngrediente.Concatenar,i=> i.CodIngrediente, "INGREDIENTE");
 
                 }
             }
@@ -98,6 +99,7 @@ namespace BLL
         private BLL.User bllUser = new BLL.User();
 
         private Comanda bllComanda = new Comanda();
+        private DVH bllDvh = new DVH();
         public BE.Comanda GenerarComanda(BE.Pedido pedidoSeleccionado, BE.User cocineroSeleccionado, string instrucciones)
         {
             BE.Comanda nuevaComanda = new BE.Comanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
@@ -107,6 +109,10 @@ namespace BLL
 
                 bllUser.UpdateAvailability(cocineroSeleccionado, AvailabilityType.NoDisponible);
                 bllPedido.CambiarEstado(pedidoSeleccionado,OrderType.EnPreparacion);
+
+                bllDvh.Recalcular(bllDvh.Listar(), bllComanda.Listar(), bllComanda.Concatenar, c => c.ID, "COMANDA");
+
+
                 return nuevaComanda;
             }
 

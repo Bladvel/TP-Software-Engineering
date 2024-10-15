@@ -55,5 +55,13 @@ namespace BLL
 
 
         }
+
+        public string Concatenar(BE.Producto producto)
+        {
+            return producto.CodProducto + producto.Nombre + producto.Descripcion + producto.PrecioActual + producto.Borrado;
+        }
+
+
+
     }
 }

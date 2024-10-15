@@ -7,7 +7,7 @@ using Interfaces;
 
 namespace DAL.FactoryMapper
 {
-    internal class MpItemProductoCreator: IMapperCreator
+    public class MpItemProductoCreator: IMapperCreator
     {
         private MpItemProductoCreator() { }
         private static MpItemProductoCreator instance;

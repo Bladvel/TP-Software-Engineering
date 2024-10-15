@@ -52,7 +52,17 @@ namespace DAL
 
         public override List<Pago> GetAll()
         {
-            throw new NotImplementedException();
+            List<Pago> pagos = new List<Pago>();
+
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PAGOS");
+            access.Close();
+            foreach (DataRow dr in dt.Rows)
+            {
+                pagos.Add(Transform(dr));
+            }
+
+            return pagos;
         }
 
 

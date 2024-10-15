@@ -11,9 +11,9 @@ namespace BLL
     public class Cliente
     {
         MP_Cliente mp = MpClienteCreator.GetInstance.CreateMapper() as MP_Cliente;
-        public void Insertar(BE.Cliente cliente)
+        public int Insertar(BE.Cliente cliente)
         {
-            mp.Insert(cliente);
+            return mp.Insert(cliente);
         }
 
         public List<BE.Cliente> Listar()

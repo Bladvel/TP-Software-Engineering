@@ -44,7 +44,16 @@ namespace DAL
 
         public override List<PagoEfectivo> GetAll()
         {
-            throw new NotImplementedException();
+            List<PagoEfectivo> pagos = new List<PagoEfectivo>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PAGOS_EFECTIVO");
+
+            access.Close();
+            foreach (DataRow dr in dt.Rows)
+            {
+                pagos.Add(Transform(dr));
+            }
+            return pagos;
         }
 
         public override int Insert(PagoEfectivo entity)

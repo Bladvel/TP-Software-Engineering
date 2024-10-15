@@ -30,5 +30,10 @@ namespace BE
         {
             return $"{Producto.Nombre} | Precio: ${PrecioCompra} x {Cantidad}u";
         }
+
+        public int Id
+        {
+            get { return int.Parse(Producto.CodProducto +"000"+ Pedido.NroPedido); } //Hardcodeo para que no se repitan los ids
+        }
     }
 }

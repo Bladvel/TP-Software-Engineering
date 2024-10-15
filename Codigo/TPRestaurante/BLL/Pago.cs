@@ -51,5 +51,16 @@ namespace BLL
 
             return false;
         }
+
+        public string Concatenar(BE.Pago pago)
+        {
+            return pago.Id.ToString() + pago.Fecha + pago.Total + pago.Metodo.id + pago.Pedido.NroPedido;
+        }
+
+
+        public List<BE.Pago> Listar()
+        {
+            return mp.GetAll();
+        }
     }
 }

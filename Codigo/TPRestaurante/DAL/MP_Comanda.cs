@@ -31,7 +31,17 @@ namespace DAL
 
         public override List<Comanda> GetAll()
         {
-            throw new NotImplementedException();
+            List<Comanda> comanda = new List<BE.Comanda>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_COMANDAS");
+            access.Close();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                comanda.Add(Transform(row));
+            }
+
+            return comanda;
         }
 
         public List<BE.Comanda> GetAllOnGoing()

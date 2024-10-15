@@ -11,7 +11,9 @@ namespace BLL
     public class ControllerCajero
     {
         Pedido bllPedido = new Pedido();
+        ItemProducto bllItemProducto = new ItemProducto();
         Pago bllPago = new Pago();
+        DVH bllDvh = new DVH();
         public bool RegistrarPedido(List<BE.ItemProducto> productos, BE.Cliente cliente)
         {
             BE.Pedido pedido  = new BE.Pedido();
@@ -23,12 +25,20 @@ namespace BLL
 
             if (bllPedido.RegistrarPedido(pedido) > 0)
             {
+                bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar,p=>p.NroPedido, "PEDIDO");
+                bllDvh.Recalcular(bllDvh.Listar(), bllItemProducto.Listar(), bllItemProducto.Concatenar,p=>p.Id, "ITEM_PRODUCTO");
                 return true;
             }
             return false;
         }
 
-        public int RealizarCobro(MetodoDePago metodoDePago, BE.Pedido pedidoSeleccionado)
+
+
+        MetodoDePago bllMetodoDePago = new MetodoDePago();
+        PagoEfectivo bllPagoEfectivo = new PagoEfectivo();
+        PagoTarjeta bllPagoTarjeta = new PagoTarjeta();
+
+        public int RealizarCobro(BE.MetodoDePago metodoDePago, BE.Pedido pedidoSeleccionado)
         {
 
             float total = bllPedido.CalcularSubtotal(pedidoSeleccionado);
@@ -42,7 +52,11 @@ namespace BLL
             if (bllPago.ProcesarPago(nuevoPago))
             {
                idPago= bllPago.Insertar(nuevoPago);
-
+               bllDvh.Recalcular(bllDvh.Listar(), bllPago.Listar(), bllPago.Concatenar, c => c.Id, "PAGO");
+               bllDvh.Recalcular(bllDvh.Listar(), bllMetodoDePago.Listar(), bllMetodoDePago.Concatenar, c => c.id, "METODO_DE_PAGO");
+               bllDvh.Recalcular(bllDvh.Listar(), bllPagoEfectivo.Listar(), bllPagoEfectivo.Concatenar, c => c.id, "PAGO_EFECTIVO");
+               bllDvh.Recalcular(bllDvh.Listar(), bllPagoTarjeta.Listar(), bllPagoTarjeta.Concatenar, c => c.id, "PAGO_TARJETA");
+               
                bllPedido.CambiarEstado(pedidoSeleccionado,PaymentState.Pagado);
             }
 

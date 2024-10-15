@@ -13,11 +13,13 @@ namespace BLL
     public class Pedido
     {
         MP_Pedido mp = MpPedidoCreator.GetInstance.CreateMapper() as MP_Pedido;
+        //TODO Agregar calculo de DVH a pedido
         public void CambiarEstado(BE.Pedido pedido, OrderType estado)
         {
             pedido.Estado = estado;
             mp.Update(pedido);
         }
+
         public void CambiarEstado(BE.Pedido pedido, PaymentState pagado)
         {
             pedido.EstadoPago = pagado;
@@ -40,7 +42,7 @@ namespace BLL
 
         public int RegistrarPedido(BE.Pedido pedido)
         {
-           return mp.Insert(pedido);
+            return mp.Insert(pedido);
         }
 
 
@@ -54,6 +56,17 @@ namespace BLL
             return mp.GetOrderByPaymentState(estado);
         }
 
+        public string Concatenar(BE.Pedido pedido)
+        {
+            return pedido.NroPedido + pedido.Estado + pedido.Fecha.ToString() + pedido.Cliente.ID + pedido.EstadoPago;
+        }
+
+        public List<BE.Pedido> Listar()
+        {
+            return mp.GetAll();
+
+
+        }
 
     }
 }

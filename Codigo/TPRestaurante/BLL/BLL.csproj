@@ -96,6 +96,7 @@
   <ItemGroup>
     <Compile Include="Backup.cs" />
     <Compile Include="Bitacora.cs" />
+    <Compile Include="DVH.cs" />
     <Compile Include="DVV.cs" />
     <Compile Include="EtiquetaBLL.cs" />
     <Compile Include="IdiomaBLL.cs" />
@@ -106,8 +107,11 @@
     <Compile Include="ControllerCocinero.cs" />
     <Compile Include="ControllerJefeDeCocina.cs" />
     <Compile Include="ItemProducto.cs" />
+    <Compile Include="MetodoDePago.cs" />
     <Compile Include="ModoDelGestor.cs" />
     <Compile Include="Pago.cs" />
+    <Compile Include="PagoEfectivo.cs" />
+    <Compile Include="PagoTarjeta.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
     <Compile Include="Producto.cs" />

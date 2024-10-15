@@ -151,5 +151,12 @@ namespace BLL
         {
             mp.Update(selectedUser);
         }
+
+
+        public string Concatenar(BE.User user)
+        {
+            return user.ID + user.Username + user.Password + user.DNI + user.Nombre + user.Apellido 
+                   + user.Email + user.Activo + user.Bloqueo + user.Attempts + user.Availability + user.Idioma.Id;
+        }
     }
 }
