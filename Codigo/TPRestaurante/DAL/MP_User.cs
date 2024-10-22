@@ -221,7 +221,7 @@ namespace DAL
         }
 
 
-        //TODO implementar actualizacion de disponibilidad por usuario
+        
         public int UpdateAvailability(User entity)
         {
             List<SqlParameter> parameterList = new List<SqlParameter>()

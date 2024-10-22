@@ -50,7 +50,10 @@ namespace DAL
 
         public override MetodoDePago Transform(DataRow dr)
         {
-            throw new NotImplementedException();
+            MetodoDePago metodo = new MetodoDePago();
+            metodo.id = int.Parse(dr["ID"].ToString());
+            metodo.tipo = (PaymentMethodType)Enum.Parse(typeof(PaymentMethodType), dr["TIPO"].ToString());
+            return metodo;
         }
 
         public override List<MetodoDePago> GetAll()

@@ -8,7 +8,9 @@ namespace BE
 {
     public class ItemIngrediente
     {
+        public int ID { get; set; }
         private Ingrediente ingrediente;
+        private SolicitudDeCompra solicitudDeCompra;
         private int cantidadRequerida;
         private float precioCotizacion;
 
@@ -30,6 +32,11 @@ namespace BE
             set => precioCotizacion = value;
         }
 
+        public SolicitudDeCompra SolicitudDeCompra
+        {
+            get => solicitudDeCompra;
+            set => solicitudDeCompra = value;
+        }
 
         public ItemIngrediente(Ingrediente ingrediente, int cantidad)
         {

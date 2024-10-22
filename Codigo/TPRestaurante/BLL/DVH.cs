@@ -26,7 +26,7 @@ namespace BLL
         PagoTarjeta bllPagoTarjeta = new PagoTarjeta();
         Pedido bllPedido = new Pedido();
         Producto bllProducto = new Producto();
-        User bllUser = new User();
+        
 
 
         public List<RegistroInvalido> ValidarDigitoVerificador()
@@ -44,7 +44,7 @@ namespace BLL
             List<BE.PagoTarjeta> pagosTarjeta = bllPagoTarjeta.Listar();
             List<BE.Pedido> pedidos = bllPedido.Listar();
             List<BE.Producto> productos = bllProducto.Listar();
-            List<BE.User> users = bllUser.ListUsers();
+           
 
             // Listado de DVH (Digito Verificador Horizontal)
             List<Services.DVH> dVHs = Listar();
@@ -58,7 +58,7 @@ namespace BLL
                 switch (dvh.Tabla)
                 {
                     case "CLIENTE":
-                        ValidarRegistro(clientes, bllCliente.Concatenar, cliente => cliente.DNI, dvh, ref registroValido, ref estado);
+                        ValidarRegistro(clientes, bllCliente.Concatenar, cliente => cliente.ID, dvh, ref registroValido, ref estado);
                         break;
                     case "COMANDA":
                         ValidarRegistro(comandas, bllComanda.Concatenar, comanda => comanda.ID, dvh, ref registroValido, ref estado);
@@ -66,19 +66,19 @@ namespace BLL
                     case "INGREDIENTE":
                         ValidarRegistro(ingredientes, bllIngrediente.Concatenar, ingrediente => ingrediente.CodIngrediente, dvh, ref registroValido, ref estado);
                         break;
-                    case "ITEMPRODUCTO":
+                    case "ITEM_PRODUCTO":
                         ValidarRegistro(itemProductos, bllItemProducto.Concatenar, itemProducto => itemProducto.Id, dvh, ref registroValido, ref estado);
                         break;
-                    case "METODODEPAGO":
+                    case "METODO_DE_PAGO":
                         ValidarRegistro(metodosDePago, bllMetodoDePago.Concatenar, metodo => metodo.id, dvh, ref registroValido, ref estado);
                         break;
                     case "PAGO":
                         ValidarRegistro(pagos, bllPago.Concatenar, pago => pago.Id, dvh, ref registroValido, ref estado);
                         break;
-                    case "PAGOTARJETA":
+                    case "PAGO_TARJETA":
                         ValidarRegistro(pagosTarjeta, bllPagoTarjeta.Concatenar, pagoTarjeta => pagoTarjeta.id, dvh, ref registroValido, ref estado);
                         break;
-                    case "PAGOEFFECTIVO":
+                    case "PAGO_EFECTIVO":
                         ValidarRegistro(pagosEfectivo, bllPagoEfectivo.Concatenar, pagoEfectivo => pagoEfectivo.id, dvh, ref registroValido, ref estado);
                         break;
                     case "PEDIDO":
@@ -86,9 +86,6 @@ namespace BLL
                         break;
                     case "PRODUCTO":
                         ValidarRegistro(productos, bllProducto.Concatenar, producto => producto.CodProducto, dvh, ref registroValido, ref estado);
-                        break;
-                    case "USER":
-                        ValidarRegistro(users, bllUser.Concatenar, user => user.ID, dvh, ref registroValido, ref estado);
                         break;
                     default:
                         registroValido = false;
@@ -178,6 +175,7 @@ namespace BLL
         }
 
         
+
 
 
         public bool ValidarCantidadRegistros<T>(List<T> entidades, List<Services.DVH> dVHs, string tabla)

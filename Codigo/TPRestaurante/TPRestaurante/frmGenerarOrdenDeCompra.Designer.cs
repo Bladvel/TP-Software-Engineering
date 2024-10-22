@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdSolicitudes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
-            this.ucButtonSecondary1 = new TPRestaurante.UcButtonSecondary(this.components);
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnGenerar = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnSalir = new TPRestaurante.UcButtonSecondary(this.components);
+            this.grdInsumos = new System.Windows.Forms.DataGridView();
+            this.cmbProveedores = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSolicitudes)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdInsumos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grdSolicitudes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(314, 158);
-            this.dataGridView1.TabIndex = 0;
+            this.grdSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdSolicitudes.Location = new System.Drawing.Point(52, 79);
+            this.grdSolicitudes.Name = "grdSolicitudes";
+            this.grdSolicitudes.Size = new System.Drawing.Size(314, 158);
+            this.grdSolicitudes.TabIndex = 0;
             // 
             // label1
             // 
@@ -77,9 +77,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtCondicion);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -90,13 +90,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar informacion";
             // 
-            // textBox2
+            // txtObservaciones
             // 
-            this.textBox2.Location = new System.Drawing.Point(481, 49);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 94);
-            this.textBox2.TabIndex = 2;
+            this.txtObservaciones.Location = new System.Drawing.Point(481, 49);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(177, 94);
+            this.txtObservaciones.TabIndex = 2;
             // 
             // label5
             // 
@@ -107,13 +107,13 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Observaciones:";
             // 
-            // textBox1
+            // txtCondicion
             // 
-            this.textBox1.Location = new System.Drawing.Point(251, 49);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 94);
-            this.textBox1.TabIndex = 2;
+            this.txtCondicion.Location = new System.Drawing.Point(251, 49);
+            this.txtCondicion.Multiline = true;
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(177, 94);
+            this.txtCondicion.TabIndex = 2;
             // 
             // label4
             // 
@@ -140,50 +140,50 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
             // 
-            // ucButtonPrimary1
+            // btnGenerar
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(479, 418);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonPrimary1.TabIndex = 5;
-            this.ucButtonPrimary1.Text = "Generar";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
+            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.ForeColor = System.Drawing.Color.White;
+            this.btnGenerar.Location = new System.Drawing.Point(479, 418);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(132, 39);
+            this.btnGenerar.TabIndex = 5;
+            this.btnGenerar.Text = "Generar";
+            this.btnGenerar.UseVisualStyleBackColor = false;
             // 
-            // ucButtonSecondary1
+            // btnSalir
             // 
-            this.ucButtonSecondary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.ucButtonSecondary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonSecondary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonSecondary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonSecondary1.Location = new System.Drawing.Point(620, 418);
-            this.ucButtonSecondary1.Name = "ucButtonSecondary1";
-            this.ucButtonSecondary1.Size = new System.Drawing.Size(132, 39);
-            this.ucButtonSecondary1.TabIndex = 6;
-            this.ucButtonSecondary1.Text = "Salir";
-            this.ucButtonSecondary1.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(620, 418);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(132, 39);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // grdInsumos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(540, 87);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(212, 150);
-            this.dataGridView2.TabIndex = 7;
+            this.grdInsumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdInsumos.Location = new System.Drawing.Point(540, 87);
+            this.grdInsumos.Name = "grdInsumos";
+            this.grdInsumos.Size = new System.Drawing.Size(212, 150);
+            this.grdInsumos.TabIndex = 7;
             // 
-            // comboBox1
+            // cmbProveedores
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(398, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
+            this.cmbProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProveedores.FormattingEnabled = true;
+            this.cmbProveedores.Location = new System.Drawing.Point(398, 87);
+            this.cmbProveedores.Name = "cmbProveedores";
+            this.cmbProveedores.Size = new System.Drawing.Size(121, 21);
+            this.cmbProveedores.TabIndex = 8;
             // 
             // label6
             // 
@@ -199,22 +199,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 532);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.ucButtonSecondary1);
-            this.Controls.Add(this.ucButtonPrimary1);
+            this.Controls.Add(this.cmbProveedores);
+            this.Controls.Add(this.grdInsumos);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdSolicitudes);
             this.Name = "frmGenerarOrdenDeCompra";
             this.Text = "Emitir orden de compra";
             this.Load += new System.EventHandler(this.frmGenerarOrdenDeCompra_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSolicitudes)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdInsumos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,20 +222,20 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdSolicitudes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private UcButtonPrimary ucButtonPrimary1;
-        private UcButtonSecondary ucButtonSecondary1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private UcButtonPrimary btnGenerar;
+        private UcButtonSecondary btnSalir;
+        private System.Windows.Forms.DataGridView grdInsumos;
+        private System.Windows.Forms.ComboBox cmbProveedores;
         private System.Windows.Forms.Label label6;
     }
 }

@@ -58,6 +58,7 @@ namespace BLL
                bllDvh.Recalcular(bllDvh.Listar(), bllPagoTarjeta.Listar(), bllPagoTarjeta.Concatenar, c => c.id, "PAGO_TARJETA");
                
                bllPedido.CambiarEstado(pedidoSeleccionado,PaymentState.Pagado);
+               bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
             }
 
             return idPago;
@@ -69,6 +70,7 @@ namespace BLL
             if (resultado)
             {
                 bllPedido.CambiarEstado(pedido, OrderType.Entregado);
+                bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
             }
 
             return resultado;

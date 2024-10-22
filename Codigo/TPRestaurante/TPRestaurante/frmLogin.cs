@@ -18,18 +18,23 @@ namespace TPRestaurante
         BLL.User bllUser;
         private Bitacora bitacora;
         private BLL.Bitacora bllBitacora;
+        BLL.DVH bllDVH;
+        private List<RegistroInvalido> registrosInvalidos = new List<RegistroInvalido>();
         public frmLogin()
         {
             InitializeComponent();
             bllUser = new BLL.User();
             bitacora = new Bitacora();
             bllBitacora = new BLL.Bitacora();
+            bllDVH = new BLL.DVH();
+
 
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             User user = new User();
+            CambiarVisibilidad(true);
             try
             {
                 if (!string.IsNullOrWhiteSpace(txtUsername.Text) && !string.IsNullOrWhiteSpace(txtPassword.Text))
@@ -40,12 +45,18 @@ namespace TPRestaurante
                     if (result == LoginResult.ValidUser)
                     {
                         RegistroBitacoraLoginCorrecto(user);
+
+                        //******************* DESCOMENTAR SI SE DESEA HABILITAR EL DV ************************
+                        backgroundWorker1.RunWorkerAsync();
+                        //************************************************************************************
+
                     }
 
+                    //COMENTAR SI SE DESEA HABILITAR EL DV
 
-                    frmMDI parent = (frmMDI)this.MdiParent;
-                    parent.ValidarForm();
-                    this.Close();
+                    //frmMDI parent = (frmMDI)this.MdiParent;
+                    //parent.ValidarForm();
+                    //this.Close();
                 }
                 else
                 {
@@ -91,10 +102,19 @@ namespace TPRestaurante
             txtPassword.Text = string.Empty;
         }
 
+        private void RegistroBitacoraLogout(IUser user)
+        {
+            bitacora.Fecha = DateTime.Now;
+            bitacora.Usuario = bllUser.GetUser(user.Username);
+            bitacora.Modulo = TipoModulo.Sesion;
+            bitacora.Operacion = TipoOperacion.Logout;
+            bitacora.Criticidad = 1; //TEST
+            bllBitacora.Insertar(bitacora);
+        }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            CambiarVisibilidad(false);
 
             if (this.MdiParent != null)
             {
@@ -187,7 +207,57 @@ namespace TPRestaurante
             bllBitacora.Insertar(bitacora);
         }
 
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            registrosInvalidos = bllDVH.ValidarDigitoVerificador();
+        }
 
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            CambiarVisibilidad(false);
+
+            if (registrosInvalidos.Count > 0)
+            {
+
+                if (SessionManager.Instance.IsInRole(PermissionType.GestionarAdmin))
+                {
+                    frmReparacion frmReparacion = new frmReparacion(registrosInvalidos);
+                    frmReparacion.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("El sistema se encuentra en mantenimiento. Por favor contacte a un administrador");
+
+                    RegistroBitacoraLogout(SessionManager.Instance.User);
+                    bllUser.Logout();
+
+
+                    return;
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Bienvenido al sistema!");
+            }
+            frmMDI parent = (frmMDI)this.MdiParent;
+            parent.ValidarForm();
+            this.Close();
+        }
+
+        void CambiarVisibilidad(bool opcion)
+        {
+            txtPassword.Visible = !opcion;
+            txtUsername.Visible = !opcion;
+            lblPassword.Visible = !opcion;
+            lblUsername.Visible = !opcion;
+            btnEntrar.Visible = !opcion;
+            lblIniciarSesion.Visible = !opcion;
+
+            picLoading.Visible = opcion;
+        }
 
         //private void RegistroBitacoraLoginIncorrecto(User user)
         //{

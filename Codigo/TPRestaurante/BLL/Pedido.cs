@@ -13,7 +13,7 @@ namespace BLL
     public class Pedido
     {
         MP_Pedido mp = MpPedidoCreator.GetInstance.CreateMapper() as MP_Pedido;
-        //TODO Agregar calculo de DVH a pedido
+        
         public void CambiarEstado(BE.Pedido pedido, OrderType estado)
         {
             pedido.Estado = estado;

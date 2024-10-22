@@ -24,7 +24,5 @@ namespace TPRestaurante
 
 
 
-        //El nroDeOrden se genera automaticamente y lo guardo en la base de datos como PK, verificando primero que no exista.
-        //Debo colocar en el documento el usuario que lo genero pero no lo asocio en la base de datos (lo puedo ver en la bitacora de eventos)
     }
 }

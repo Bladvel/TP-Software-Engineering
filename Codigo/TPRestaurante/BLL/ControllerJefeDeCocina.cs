@@ -88,12 +88,14 @@ namespace BLL
             }
 
             bllPedido.CambiarEstado(pedido, OrderType.Aceptado);
-            
+            bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
+
         }
 
         public void RechazarPedido(BE.Pedido pedido)
         {
             bllPedido.CambiarEstado(pedido, OrderType.Rechazado);
+            bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
         }
 
         private BLL.User bllUser = new BLL.User();

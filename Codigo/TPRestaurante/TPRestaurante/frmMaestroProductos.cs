@@ -22,12 +22,14 @@ namespace TPRestaurante
             bllProducto = new BLL.Producto();
             bitacora = new Services.Bitacora();
             bllBitacora = new BLL.Bitacora();
+            bllDvh = new BLL.DVH();
         }
 
         BLL.Producto bllProducto;
         BLL.ModoDelGestor modo = BLL.ModoDelGestor.ModoConsulta;
         private Services.Bitacora bitacora;
         private BLL.Bitacora bllBitacora;
+        private BLL.DVH bllDvh;
         DataTable dtProductos;
 
         private void frmMaestroProductos_Load(object sender, EventArgs e)
@@ -256,7 +258,14 @@ namespace TPRestaurante
                     if (!string.IsNullOrWhiteSpace(nombre) && !string.IsNullOrWhiteSpace(descripcion) && float.TryParse(txtPrecio.Text, out float precio))
                     {
                         BE.Producto producto = new Producto(nombre, descripcion, precio);
-                        bllProducto.Insertar(producto);
+                        if (bllProducto.Insertar(producto) != -1)
+                        {
+                            bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
+                        }
+
+
+
+
                         ActualizarGrilla();
                         ResetTextFields();
                         RegistroBitacoraAgregarProducto();
@@ -278,6 +287,8 @@ namespace TPRestaurante
                         selectedProduct.PrecioActual = float.Parse(txtPrecio.Text);
                         selectedProduct.CodProducto = int.Parse(txtCodigo.Text);
                         MessageBox.Show(bllProducto.Modificar(selectedProduct));
+                        bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
+
                         ActualizarGrilla();
                         ResetTextFields();
                         RegistroBitacoraModificarProducto();
@@ -304,6 +315,8 @@ namespace TPRestaurante
                         if (result == DialogResult.Yes)
                         {
                             MessageBox.Show(bllProducto.Eliminar(selectedProduct));
+                            bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
+
                             RegistrarBitacoraEliminarProducto();
                             ActualizarGrilla();
                         }

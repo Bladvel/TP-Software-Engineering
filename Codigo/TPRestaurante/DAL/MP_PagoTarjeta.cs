@@ -37,7 +37,7 @@ namespace DAL
         {
             PagoTarjeta tarjeta = new PagoTarjeta();
             tarjeta.id = int.Parse(dr["ID"].ToString());
-            tarjeta.NumeroTarjeta = int.Parse(dr["NUMERO"].ToString());
+            tarjeta.NumeroTarjeta = long.Parse(dr["NUMERO"].ToString());
             tarjeta.FechaVencimiento = DateTime.Parse(dr["VENCIMIENTO"].ToString());
             tarjeta.Cvv = int.Parse(dr["CVV"].ToString());
             tarjeta.Titular = dr["TITULAR"].ToString();

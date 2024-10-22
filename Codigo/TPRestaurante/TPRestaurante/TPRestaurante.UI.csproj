@@ -136,12 +136,6 @@
     <Compile Include="frmCobrarPedido.Designer.cs">
       <DependentUpon>frmCobrarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCargarCotizacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCargarCotizacion.Designer.cs">
-      <DependentUpon>frmCargarCotizacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmEvaluarCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +238,12 @@
     <Compile Include="frmRecepcionDeInsumos.Designer.cs">
       <DependentUpon>frmRecepcionDeInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReparacion.Designer.cs">
+      <DependentUpon>frmReparacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRespaldo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -330,9 +330,6 @@
     <EmbeddedResource Include="frmCreateOrder.resx">
       <DependentUpon>frmCreateOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCargarCotizacion.resx">
-      <DependentUpon>frmCargarCotizacion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmEvaluarCotizacion.resx">
       <DependentUpon>frmEvaluarCotizacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -383,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecepcionDeInsumos.resx">
       <DependentUpon>frmRecepcionDeInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReparacion.resx">
+      <DependentUpon>frmReparacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRespaldo.resx">
       <DependentUpon>frmRespaldo.cs</DependentUpon>
@@ -455,6 +455,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

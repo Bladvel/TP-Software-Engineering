@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.btnEntrar = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblIniciarSesion = new System.Windows.Forms.Label();
+            this.picLoading = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoading)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -93,11 +97,28 @@
             this.lblIniciarSesion.Tag = "login";
             this.lblIniciarSesion.Text = "Iniciar Sesion";
             // 
+            // picLoading
+            // 
+            this.picLoading.BackColor = System.Drawing.Color.Transparent;
+            this.picLoading.Image = ((System.Drawing.Image)(resources.GetObject("picLoading.Image")));
+            this.picLoading.InitialImage = ((System.Drawing.Image)(resources.GetObject("picLoading.InitialImage")));
+            this.picLoading.Location = new System.Drawing.Point(281, 200);
+            this.picLoading.Name = "picLoading";
+            this.picLoading.Size = new System.Drawing.Size(309, 187);
+            this.picLoading.TabIndex = 4;
+            this.picLoading.TabStop = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 320);
+            this.ClientSize = new System.Drawing.Size(871, 587);
+            this.Controls.Add(this.picLoading);
             this.Controls.Add(this.lblIniciarSesion);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
@@ -110,6 +131,7 @@
             this.Text = "Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picLoading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +145,7 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblIniciarSesion;
+        private System.Windows.Forms.PictureBox picLoading;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

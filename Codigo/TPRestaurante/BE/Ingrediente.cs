@@ -70,5 +70,9 @@ namespace BE
             set => stockMax = value;
         }
 
+        public override string ToString()
+        {
+            return $"{Nombre}";
+        }
     }
 }

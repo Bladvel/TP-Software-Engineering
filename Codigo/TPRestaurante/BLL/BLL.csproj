@@ -106,6 +106,7 @@
     <Compile Include="ControllerCajero.cs" />
     <Compile Include="ControllerCocinero.cs" />
     <Compile Include="ControllerJefeDeCocina.cs" />
+    <Compile Include="ItemIngrediente.cs" />
     <Compile Include="ItemProducto.cs" />
     <Compile Include="MetodoDePago.cs" />
     <Compile Include="ModoDelGestor.cs" />
@@ -116,6 +117,8 @@
     <Compile Include="Permission.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="ProductoBitacora.cs" />
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="SolicitudDeCompra.cs" />
     <Compile Include="TraduccionBLL.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

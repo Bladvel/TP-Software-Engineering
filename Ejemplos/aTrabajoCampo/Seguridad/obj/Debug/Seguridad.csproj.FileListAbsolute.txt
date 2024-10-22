@@ -1,0 +1,11 @@
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\Seguridad.dll
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\Seguridad.pdb
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\CAPA_DATOS.dll
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\CAPA_ENTIDADES.dll
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\CAPA_DATOS.pdb
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\bin\Debug\CAPA_ENTIDADES.pdb
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\obj\Debug\Seguridad.csproj.AssemblyReference.cache
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\obj\Debug\Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\obj\Debug\Seguridad.csproj.CopyComplete
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\obj\Debug\Seguridad.dll
+C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\Seguridad\obj\Debug\Seguridad.pdb

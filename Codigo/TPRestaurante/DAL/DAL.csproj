@@ -104,6 +104,7 @@
     <Compile Include="FactoryMapper\MpEtiquetaCreator.cs" />
     <Compile Include="FactoryMapper\MpIdiomaCreator.cs" />
     <Compile Include="FactoryMapper\MpIngredienteCreator.cs" />
+    <Compile Include="FactoryMapper\MpItemIngredienteCreator.cs" />
     <Compile Include="FactoryMapper\MpItemProductoCreator.cs" />
     <Compile Include="FactoryMapper\MpMetodoDePagoCreator.cs" />
     <Compile Include="FactoryMapper\MpPagoCreator.cs" />
@@ -113,6 +114,8 @@
     <Compile Include="FactoryMapper\MpPermissionCreator.cs" />
     <Compile Include="FactoryMapper\MpProductoBitacoraCreator.cs" />
     <Compile Include="FactoryMapper\MpProductoCreator.cs" />
+    <Compile Include="FactoryMapper\MpProveedorCreator.cs" />
+    <Compile Include="FactoryMapper\MpSolicitudDeCompraCreator.cs" />
     <Compile Include="FactoryMapper\MpTraduccionCreator.cs" />
     <Compile Include="FactoryMapper\MpUserCreator.cs" />
     <Compile Include="Mapper.cs" />
@@ -124,6 +127,7 @@
     <Compile Include="MP_Etiqueta.cs" />
     <Compile Include="MP_Idioma.cs" />
     <Compile Include="MP_Ingrediente.cs" />
+    <Compile Include="MP_ItemIngrediente.cs" />
     <Compile Include="MP_ItemProducto.cs" />
     <Compile Include="MP_MetodoDePago.cs" />
     <Compile Include="MP_Pago.cs" />
@@ -133,6 +137,8 @@
     <Compile Include="MP_Permission.cs" />
     <Compile Include="MP_Producto.cs" />
     <Compile Include="MP_Producto_Bitacora.cs" />
+    <Compile Include="MP_Proveedor.cs" />
+    <Compile Include="MP_SolicitudDeCompra.cs" />
     <Compile Include="MP_Traduccion.cs" />
     <Compile Include="MP_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

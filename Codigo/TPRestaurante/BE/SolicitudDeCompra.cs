@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
@@ -24,23 +25,46 @@ namespace BE
             set => fecha = value;
         }
 
-        private List<Ingrediente> ingredientes;
+        private List<ItemIngrediente> ingredientes;
 
-        public List<Ingrediente> Ingredientes
+        public List<ItemIngrediente> Ingredientes
         {
             get => ingredientes;
             set => ingredientes = value;
         }
 
-        public SolicitudDeCompra(DateTime fecha, List<Ingrediente> ingredientes)
+        private string comentarios;
+
+        public string Comentarios
         {
-            Fecha = fecha;
+            get => comentarios;
+            set => comentarios = value;
+        }
+
+        private EstadoSolicitudCompra estado;
+
+        public EstadoSolicitudCompra Estado
+        {
+            get => estado;
+            set => estado = value;
+        }
+
+        public SolicitudDeCompra(List<ItemIngrediente> ingredientes, string comentarios = "")
+        {
+            Fecha = DateTime.Now;
             Ingredientes = ingredientes;
+            Comentarios = comentarios;
+            Estado = EstadoSolicitudCompra.Pendiente;
         }
 
         public SolicitudDeCompra()
         {
 
+        }
+
+        public override string ToString()
+        {
+            return $"{NroSolicitud}";
         }
     }
 }

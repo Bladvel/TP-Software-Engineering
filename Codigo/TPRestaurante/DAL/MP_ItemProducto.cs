@@ -22,6 +22,7 @@ namespace DAL
         public override ItemProducto Transform(DataRow dr)
         {
             ItemProducto item = new ItemProducto();
+            item.Id = int.Parse(dr["ID"].ToString());
             item.Pedido = new Pedido();
             item.Pedido.NroPedido =int.Parse(dr["NRO_PEDIDO"].ToString());
             item.Producto = mpProducto.GetById(dr["COD_PRODUCTO"].ToString());

@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.grdInsumos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.ucButtonPrimary1 = new TPRestaurante.UcButtonPrimary(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.ucButtonPrimary2 = new TPRestaurante.UcButtonPrimary(this.components);
+            this.lstSolicitud = new System.Windows.Forms.ListBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.btnGenerar = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnVerPendientes = new TPRestaurante.UcButtonPrimary(this.components);
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdInsumos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.grdInsumos.Name = "grdInsumos";
             this.grdInsumos.Size = new System.Drawing.Size(472, 212);
             this.grdInsumos.TabIndex = 0;
+            this.grdInsumos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdInsumos_CellClick);
             // 
             // label1
             // 
@@ -57,80 +59,93 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "LISTA DE INSUMOS";
             // 
-            // ucButtonPrimary1
+            // lstSolicitud
             // 
-            this.ucButtonPrimary1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary1.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary1.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary1.Location = new System.Drawing.Point(266, 262);
-            this.ucButtonPrimary1.Name = "ucButtonPrimary1";
-            this.ucButtonPrimary1.Size = new System.Drawing.Size(218, 39);
-            this.ucButtonPrimary1.TabIndex = 2;
-            this.ucButtonPrimary1.Text = "Ver pendientes por compra";
-            this.ucButtonPrimary1.UseVisualStyleBackColor = false;
-            this.ucButtonPrimary1.Click += new System.EventHandler(this.ucButtonPrimary1_Click);
+            this.lstSolicitud.FormattingEnabled = true;
+            this.lstSolicitud.Location = new System.Drawing.Point(508, 44);
+            this.lstSolicitud.Name = "lstSolicitud";
+            this.lstSolicitud.Size = new System.Drawing.Size(284, 212);
+            this.lstSolicitud.TabIndex = 3;
             // 
-            // listBox1
+            // txtCantidad
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(531, 44);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(243, 212);
-            this.listBox1.TabIndex = 3;
+            this.txtCantidad.Location = new System.Drawing.Point(112, 273);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(35, 20);
+            this.txtCantidad.TabIndex = 4;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
-            // textBox1
+            // lblCantidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 273);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(35, 20);
-            this.textBox1.TabIndex = 4;
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(9, 276);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(97, 13);
+            this.lblCantidad.TabIndex = 5;
+            this.lblCantidad.Text = "Cantidad a agregar";
             // 
-            // label2
+            // btnCargar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 276);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Cantidad a agregar";
+            this.btnCargar.Location = new System.Drawing.Point(153, 271);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(75, 23);
+            this.btnCargar.TabIndex = 6;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
-            // button1
+            // btnGenerar
             // 
-            this.button1.Location = new System.Drawing.Point(153, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cargar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.ForeColor = System.Drawing.Color.White;
+            this.btnGenerar.Location = new System.Drawing.Point(580, 262);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(212, 39);
+            this.btnGenerar.TabIndex = 7;
+            this.btnGenerar.Text = "Generar solicitud de compra";
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.ucButtonPrimary2_Click);
             // 
-            // ucButtonPrimary2
+            // btnVerPendientes
             // 
-            this.ucButtonPrimary2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.ucButtonPrimary2.FlatAppearance.BorderSize = 0;
-            this.ucButtonPrimary2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ucButtonPrimary2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ucButtonPrimary2.ForeColor = System.Drawing.Color.White;
-            this.ucButtonPrimary2.Location = new System.Drawing.Point(543, 262);
-            this.ucButtonPrimary2.Name = "ucButtonPrimary2";
-            this.ucButtonPrimary2.Size = new System.Drawing.Size(218, 39);
-            this.ucButtonPrimary2.TabIndex = 7;
-            this.ucButtonPrimary2.Text = "Generar solicitud de compra";
-            this.ucButtonPrimary2.UseVisualStyleBackColor = false;
-            this.ucButtonPrimary2.Click += new System.EventHandler(this.ucButtonPrimary2_Click);
+            this.btnVerPendientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnVerPendientes.FlatAppearance.BorderSize = 0;
+            this.btnVerPendientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerPendientes.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnVerPendientes.ForeColor = System.Drawing.Color.White;
+            this.btnVerPendientes.Location = new System.Drawing.Point(266, 262);
+            this.btnVerPendientes.Name = "btnVerPendientes";
+            this.btnVerPendientes.Size = new System.Drawing.Size(218, 39);
+            this.btnVerPendientes.TabIndex = 2;
+            this.btnVerPendientes.Text = "Ver pendientes por compra";
+            this.btnVerPendientes.UseVisualStyleBackColor = false;
+            this.btnVerPendientes.Click += new System.EventHandler(this.ucButtonPrimary1_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(508, 271);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(57, 23);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // frmVerInsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 326);
-            this.Controls.Add(this.ucButtonPrimary2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.ucButtonPrimary1);
+            this.Controls.Add(this.btnGenerar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.lstSolicitud);
+            this.Controls.Add(this.btnVerPendientes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdInsumos);
             this.Name = "frmVerInsumos";
@@ -146,11 +161,12 @@
 
         private System.Windows.Forms.DataGridView grdInsumos;
         private System.Windows.Forms.Label label1;
-        private UcButtonPrimary ucButtonPrimary1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private UcButtonPrimary ucButtonPrimary2;
+        private UcButtonPrimary btnVerPendientes;
+        private System.Windows.Forms.ListBox lstSolicitud;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Button btnCargar;
+        private UcButtonPrimary btnGenerar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

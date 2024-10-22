@@ -11,6 +11,7 @@ namespace BLL
     {
         DAL.MP_Producto_Bitacora mpProductoBitacora = MpProductoBitacoraCreator.GetInstance.CreateMapper() as DAL.MP_Producto_Bitacora;
         Producto bllProducto = new Producto();
+        DVH bllDvh = new DVH();
         public List<BE.ProductoBitacora> Listar()
         {
             return mpProductoBitacora.GetAll();
@@ -30,7 +31,10 @@ namespace BLL
             producto.Descripcion = bitacora.Descripcion;
             producto.PrecioActual = bitacora.PrecioActual;
             producto.Borrado = false;
-            return bllProducto.Modificar(producto);
+            string result = bllProducto.Modificar(producto);
+            bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
+
+            return result;
 
         }
     }
