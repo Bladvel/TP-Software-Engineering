@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -28,12 +29,15 @@ namespace DAL
 
         public void RestoreBackup(string ruta)
         {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "DESKTOP-DAN";
-            builder.InitialCatalog = "TpRESTAURANTE";
-            builder.IntegratedSecurity = true;
+            //SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            //builder.DataSource = "DESKTOP-DAN";
+            //builder.InitialCatalog = "TpRESTAURANTE";
+            //builder.IntegratedSecurity = true;
 
-            using (SqlConnection conexion = new SqlConnection(builder.ConnectionString))
+
+            string strConn = ConfigurationManager.ConnectionStrings["Principal"].ConnectionString;
+
+            using (SqlConnection conexion = new SqlConnection(strConn))
             {
                 conexion.Open();
 

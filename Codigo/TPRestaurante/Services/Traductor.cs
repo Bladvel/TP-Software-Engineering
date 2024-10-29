@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -17,13 +18,16 @@ namespace Services
 
         public static IList<IIdioma> ObtenerIdiomas()
         {
-            SqlConnectionStringBuilder cs = new SqlConnectionStringBuilder();
-            cs.InitialCatalog = "TpRESTAURANTE";
-            cs.DataSource = "DESKTOP-DAN";
-            cs.IntegratedSecurity = true;
+            //SqlConnectionStringBuilder cs = new SqlConnectionStringBuilder();
+            //cs.InitialCatalog = "TpRESTAURANTE";
+            //cs.DataSource = "DESKTOP-DAN";
+            //cs.IntegratedSecurity = true;
+
+
+            string strConn = ConfigurationManager.ConnectionStrings["Principal"].ConnectionString;
 
             SqlConnection sql = new SqlConnection();
-            sql.ConnectionString = cs.ConnectionString;
+            sql.ConnectionString = strConn;
             IDataReader reader = null;
             IList<IIdioma> _idiomas = new List<IIdioma>();
             try
@@ -78,13 +82,16 @@ namespace Services
 
 
 
-            SqlConnectionStringBuilder cs = new SqlConnectionStringBuilder();
-            cs.InitialCatalog = "TpRESTAURANTE";
-            cs.DataSource = "DESKTOP-DAN";
-            cs.IntegratedSecurity = true;
+            //SqlConnectionStringBuilder cs = new SqlConnectionStringBuilder();
+            //cs.InitialCatalog = "TpRESTAURANTE";
+            //cs.DataSource = "DESKTOP-DAN";
+            //cs.IntegratedSecurity = true;
+
+            string strConn = ConfigurationManager.ConnectionStrings["Principal"].ConnectionString;
+
 
             SqlConnection sql = new SqlConnection();
-            sql.ConnectionString = cs.ConnectionString;
+            sql.ConnectionString = strConn;
             IDataReader reader = null;
             IDictionary<string, ITraduccion> _traducciones = new Dictionary<string, ITraduccion>();
             try

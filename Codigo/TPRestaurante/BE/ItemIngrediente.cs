@@ -10,7 +10,7 @@ namespace BE
     {
         public int ID { get; set; }
         private Ingrediente ingrediente;
-        private SolicitudDeCompra solicitudDeCompra;
+        private SolicitudDeCotizacion solicitudDeCotizacion;
         private int cantidadRequerida;
         private float precioCotizacion;
 
@@ -32,10 +32,10 @@ namespace BE
             set => precioCotizacion = value;
         }
 
-        public SolicitudDeCompra SolicitudDeCompra
+        public SolicitudDeCotizacion SolicitudDeCotizacion
         {
-            get => solicitudDeCompra;
-            set => solicitudDeCompra = value;
+            get => solicitudDeCotizacion;
+            set => solicitudDeCotizacion = value;
         }
 
         public ItemIngrediente(Ingrediente ingrediente, int cantidad)

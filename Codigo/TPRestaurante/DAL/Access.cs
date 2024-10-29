@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DAL
 {
@@ -14,11 +15,12 @@ namespace DAL
 
         public void Open()
         {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "DESKTOP-DAN";
-            builder.InitialCatalog = "TpRESTAURANTE";
-            builder.IntegratedSecurity = true;
-            conn = new SqlConnection(builder.ConnectionString);
+            string strConn = ConfigurationManager.ConnectionStrings["Principal"].ConnectionString;
+            //SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            //builder.DataSource = "DESKTOP-DAN";
+            //builder.InitialCatalog = "TpRESTAURANTE";
+            //builder.IntegratedSecurity = true;
+            conn = new SqlConnection(strConn);
             conn.Open();
         }
 
@@ -65,6 +67,14 @@ namespace DAL
             param.DbType = DbType.Decimal;
             return param;
         }
+
+        public SqlParameter CreateParameter(string name, double value)
+        {
+            SqlParameter param = new SqlParameter(name, value);
+            param.DbType = DbType.Double;
+            return param;
+        }
+
 
         public SqlParameter CreateParameter(string name, long value)
         {

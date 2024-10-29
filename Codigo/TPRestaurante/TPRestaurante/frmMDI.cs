@@ -424,13 +424,6 @@ namespace TPRestaurante
         }
 
 
-        
-
-        private void gestionarSolicitudDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmEvaluarSolicitudDeCompra evaluarSolicitudDeCompra = new frmEvaluarSolicitudDeCompra();
-            AbrirChildForm(evaluarSolicitudDeCompra);
-        }
 
 
         private void gestionarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -447,13 +440,13 @@ namespace TPRestaurante
 
         private void generarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmRealizarPago realizarPago = new frmRealizarPago();
-            AbrirChildForm(realizarPago);
+            frmRegistrarPago registrarPago = new frmRegistrarPago();
+            AbrirChildForm(registrarPago);
         }
 
         private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCargarFactura cargarFactura = new frmCargarFactura();
+            frmCargarFacturaDirectamente cargarFactura = new frmCargarFacturaDirectamente();
             AbrirChildForm(cargarFactura);
         }
 
@@ -467,6 +460,12 @@ namespace TPRestaurante
         {
             frmMaestroProductos maestroProductos = new frmMaestroProductos();
             AbrirChildForm(maestroProductos);
+        }
+
+        private void gestionarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmEvaluarSolicitudDeCotizacion evaluarSolicitudDeCotizacion = new frmEvaluarSolicitudDeCotizacion();
+            AbrirChildForm(evaluarSolicitudDeCotizacion);
         }
     }
 }

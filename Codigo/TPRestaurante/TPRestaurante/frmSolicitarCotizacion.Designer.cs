@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.grdSolicitudes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbFiltroEstado = new System.Windows.Forms.ComboBox();
             this.lblProveedores = new System.Windows.Forms.Label();
             this.grdProveedores = new System.Windows.Forms.DataGridView();
             this.chkMarcarTodos = new System.Windows.Forms.CheckBox();
@@ -48,9 +46,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(78, 180);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 13);
+            this.label1.Size = new System.Drawing.Size(164, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SOLICITUDES DE COMPRA";
+            this.label1.Text = "SOLICITUDES DE COTIZACION";
             // 
             // grdSolicitudes
             // 
@@ -60,25 +58,6 @@
             this.grdSolicitudes.Size = new System.Drawing.Size(304, 174);
             this.grdSolicitudes.TabIndex = 1;
             this.grdSolicitudes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSolicitudes_CellClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 164);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Estado";
-            // 
-            // cmbFiltroEstado
-            // 
-            this.cmbFiltroEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFiltroEstado.FormattingEnabled = true;
-            this.cmbFiltroEstado.Location = new System.Drawing.Point(283, 180);
-            this.cmbFiltroEstado.Name = "cmbFiltroEstado";
-            this.cmbFiltroEstado.Size = new System.Drawing.Size(102, 21);
-            this.cmbFiltroEstado.TabIndex = 3;
-            this.cmbFiltroEstado.SelectedIndexChanged += new System.EventHandler(this.cmbFiltroEstado_SelectedIndexChanged);
             // 
             // lblProveedores
             // 
@@ -145,7 +124,7 @@
             this.btnSolicitar.Name = "btnSolicitar";
             this.btnSolicitar.Size = new System.Drawing.Size(132, 39);
             this.btnSolicitar.TabIndex = 6;
-            this.btnSolicitar.Text = "Solicitar cotizacion";
+            this.btnSolicitar.Text = "Enviar solicitud";
             this.btnSolicitar.UseVisualStyleBackColor = false;
             this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
             // 
@@ -160,8 +139,6 @@
             this.Controls.Add(this.btnSolicitar);
             this.Controls.Add(this.grdProveedores);
             this.Controls.Add(this.lblProveedores);
-            this.Controls.Add(this.cmbFiltroEstado);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.grdSolicitudes);
             this.Controls.Add(this.label1);
             this.Name = "frmSolicitarCotizacion";
@@ -178,8 +155,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grdSolicitudes;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbFiltroEstado;
         private System.Windows.Forms.Label lblProveedores;
         private System.Windows.Forms.DataGridView grdProveedores;
         private UcButtonPrimary btnSolicitar;

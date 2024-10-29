@@ -17,13 +17,13 @@ namespace TPRestaurante
         public frmSolicitarCotizacion()
         {
             InitializeComponent();
-            bllSolicitudDeCompra = new BLL.SolicitudDeCompra();
+            bllSolicitudDeCotizacion = new BLL.SolicitudDeCotizacion();
             bllProveedor = new BLL.Proveedor();
         }
 
-        private BLL.SolicitudDeCompra bllSolicitudDeCompra;
+        private BLL.SolicitudDeCotizacion bllSolicitudDeCotizacion;
         private BLL.Proveedor bllProveedor;
-        private BE.SolicitudDeCompra solicitudSeleccionada;
+        private BE.SolicitudDeCotizacion solicitudSeleccionada;
 
         private void btnSolicitar_Click(object sender, EventArgs e)
         {
@@ -39,8 +39,8 @@ namespace TPRestaurante
 
                     if (proveedor != null && solicitudSeleccionada != null)
                     {
-                        resultado += bllSolicitudDeCompra.EnviarCorreoSolicitud(solicitudSeleccionada, proveedor) + "\n";
-                        bllSolicitudDeCompra.CambiarEstado(solicitudSeleccionada, EstadoSolicitudCompra.Enviada);
+                        resultado += bllSolicitudDeCotizacion.EnviarCorreoSolicitud(solicitudSeleccionada, proveedor) + "\n";
+                        bllSolicitudDeCotizacion.CambiarEstado(solicitudSeleccionada, EstadoSolicitudCotizacion.Enviada);
 
                        
 
@@ -50,6 +50,7 @@ namespace TPRestaurante
             }
 
             MessageBox.Show(resultado, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ActualizarGrillaSolicitud(EstadoSolicitudCotizacion.EvaluacionAprobada);
         }
 
         private void frmSolicitarCotizacion_Load(object sender, EventArgs e)
@@ -65,10 +66,8 @@ namespace TPRestaurante
 
 
 
-            cmbFiltroEstado.DataSource = Enum.GetValues(typeof(EstadoSolicitudCompra));
-            cmbFiltroEstado.SelectedIndex = -1;
 
-            ActualizarGrillaSolicitud();
+            ActualizarGrillaSolicitud(EstadoSolicitudCotizacion.EvaluacionAprobada);
             List<Proveedor> proveedores = bllProveedor.Listar();
             ActualizarGrillaProveedor(proveedores);
 
@@ -79,14 +78,14 @@ namespace TPRestaurante
         void ActualizarGrillaSolicitud()
         {
             grdSolicitudes.DataSource = null;
-            grdSolicitudes.DataSource = bllSolicitudDeCompra.Listar();
+            grdSolicitudes.DataSource = bllSolicitudDeCotizacion.Listar();
         }
 
 
-        void ActualizarGrillaSolicitud(EstadoSolicitudCompra estado)
+        void ActualizarGrillaSolicitud(EstadoSolicitudCotizacion estado)
         {
             grdSolicitudes.DataSource = null;
-            grdSolicitudes.DataSource = bllSolicitudDeCompra.ListarPorEstado(estado);
+            grdSolicitudes.DataSource = bllSolicitudDeCotizacion.ListarPorEstado(estado);
         }
 
         void ActualizarGrillaProveedor(List<Proveedor> proveedores)
@@ -114,15 +113,6 @@ namespace TPRestaurante
 
         }
 
-        private void cmbFiltroEstado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(cmbFiltroEstado.SelectedItem != null)
-            {
-                EstadoSolicitudCompra estado = (EstadoSolicitudCompra)cmbFiltroEstado.SelectedItem;
-
-                ActualizarGrillaSolicitud(estado);
-            }
-        }
 
         private void grdProveedores_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
@@ -166,13 +156,13 @@ namespace TPRestaurante
         {
             if(grdSolicitudes.CurrentRow != null)
             {
-                solicitudSeleccionada = (SolicitudDeCompra)grdSolicitudes.CurrentRow.DataBoundItem;
+                solicitudSeleccionada = (SolicitudDeCotizacion)grdSolicitudes.CurrentRow.DataBoundItem;
 
                 if (solicitudSeleccionada != null)
                 {
 
                     
-                    if (solicitudSeleccionada.Estado == EstadoSolicitudCompra.EvaluacionAprobada)
+                    if (solicitudSeleccionada.Estado == EstadoSolicitudCotizacion.EvaluacionAprobada)
                     {
                         btnSolicitar.Enabled = true;
                     }

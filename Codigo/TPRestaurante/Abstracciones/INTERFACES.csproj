@@ -95,11 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityType.cs" />
-    <Compile Include="EstadoCargaDeInsumos.cs" />
-    <Compile Include="EstadoCotizacion.cs" />
     <Compile Include="EstadoFactura.cs" />
+    <Compile Include="EstadoNotaEntrega.cs" />
     <Compile Include="EstadoOrdenDeCompra.cs" />
-    <Compile Include="EstadoSolicitudCompra.cs" />
+    <Compile Include="EstadoSolicitudCotizacion.cs" />
     <Compile Include="IEtiqueta.cs" />
     <Compile Include="IIdioma.cs" />
     <Compile Include="IIdiomaObserver.cs" />

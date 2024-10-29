@@ -9,6 +9,7 @@ namespace Interfaces
     public enum EstadoOrdenDeCompra
     {
         Generada,
+        FacturaACargar,
         PendienteDePago,
         Pagada,
     }

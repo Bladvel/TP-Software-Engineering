@@ -66,6 +66,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
@@ -102,20 +103,24 @@
     <Compile Include="FactoryMapper\MpDvhCreator.cs" />
     <Compile Include="FactoryMapper\MpDvvCreator.cs" />
     <Compile Include="FactoryMapper\MpEtiquetaCreator.cs" />
+    <Compile Include="FactoryMapper\MpFacturaCreator.cs" />
     <Compile Include="FactoryMapper\MpIdiomaCreator.cs" />
     <Compile Include="FactoryMapper\MpIngredienteCreator.cs" />
     <Compile Include="FactoryMapper\MpItemIngredienteCreator.cs" />
     <Compile Include="FactoryMapper\MpItemProductoCreator.cs" />
     <Compile Include="FactoryMapper\MpMetodoDePagoCreator.cs" />
+    <Compile Include="FactoryMapper\MpNotaDeEntregaCreator.cs" />
+    <Compile Include="FactoryMapper\MpOrdenDeCompraCreator.cs" />
     <Compile Include="FactoryMapper\MpPagoCreator.cs" />
     <Compile Include="FactoryMapper\MpPagoEfectivoCreator.cs" />
+    <Compile Include="FactoryMapper\MpPagoInsumoCreator.cs" />
     <Compile Include="FactoryMapper\MpPagoTarjetaCreator.cs" />
     <Compile Include="FactoryMapper\MpPedidoCreator.cs" />
     <Compile Include="FactoryMapper\MpPermissionCreator.cs" />
     <Compile Include="FactoryMapper\MpProductoBitacoraCreator.cs" />
     <Compile Include="FactoryMapper\MpProductoCreator.cs" />
     <Compile Include="FactoryMapper\MpProveedorCreator.cs" />
-    <Compile Include="FactoryMapper\MpSolicitudDeCompraCreator.cs" />
+    <Compile Include="FactoryMapper\MpSolicitudDeCotizacionCreator.cs" />
     <Compile Include="FactoryMapper\MpTraduccionCreator.cs" />
     <Compile Include="FactoryMapper\MpUserCreator.cs" />
     <Compile Include="Mapper.cs" />
@@ -125,20 +130,24 @@
     <Compile Include="MP_Dvh.cs" />
     <Compile Include="MP_Dvv.cs" />
     <Compile Include="MP_Etiqueta.cs" />
+    <Compile Include="MP_Factura.cs" />
     <Compile Include="MP_Idioma.cs" />
     <Compile Include="MP_Ingrediente.cs" />
     <Compile Include="MP_ItemIngrediente.cs" />
     <Compile Include="MP_ItemProducto.cs" />
     <Compile Include="MP_MetodoDePago.cs" />
+    <Compile Include="MP_NotaDeEntrega.cs" />
+    <Compile Include="MP_OrdenDeCompra.cs" />
     <Compile Include="MP_Pago.cs" />
     <Compile Include="MP_PagoEfectivo.cs" />
+    <Compile Include="MP_PagoInsumo.cs" />
     <Compile Include="MP_PagoTarjeta.cs" />
     <Compile Include="MP_Pedido.cs" />
     <Compile Include="MP_Permission.cs" />
     <Compile Include="MP_Producto.cs" />
     <Compile Include="MP_Producto_Bitacora.cs" />
     <Compile Include="MP_Proveedor.cs" />
-    <Compile Include="MP_SolicitudDeCompra.cs" />
+    <Compile Include="MP_SolicitudDeCotizacion.cs" />
     <Compile Include="MP_Traduccion.cs" />
     <Compile Include="MP_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

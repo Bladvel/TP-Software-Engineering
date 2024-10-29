@@ -29,8 +29,8 @@ namespace DAL
         {
             ItemIngrediente item = new ItemIngrediente();
             item.ID = int.Parse(dr["ID"].ToString());
-            item.SolicitudDeCompra = new SolicitudDeCompra();
-            item.SolicitudDeCompra.NroSolicitud = int.Parse(dr["NRO_SOLICITUD"].ToString());
+            item.SolicitudDeCotizacion = new SolicitudDeCotizacion();
+            item.SolicitudDeCotizacion.NroSolicitud = int.Parse(dr["NRO_SOLICITUD"].ToString());
             item.Ingrediente = mpIngrediente.GetById(dr["COD_INGREDIENTE"].ToString());
             item.CantidadRequerida = int.Parse(dr["CANTIDAD"].ToString());
             item.PrecioCotizacion = float.Parse(dr["PRECIO_COTIZACION"].ToString());
@@ -77,7 +77,7 @@ namespace DAL
             List<SqlParameter> parameters = new List<SqlParameter>()
             {
                 access.CreateParameter("@codIngrediente", entity.Ingrediente.CodIngrediente),
-                access.CreateParameter("@nroSolicitud", entity.SolicitudDeCompra.NroSolicitud),
+                access.CreateParameter("@nroSolicitud", entity.SolicitudDeCotizacion.NroSolicitud),
                 access.CreateParameter("@cantidad", entity.CantidadRequerida),
                 access.CreateParameter("@precioCotizacion", entity.PrecioCotizacion)
             };

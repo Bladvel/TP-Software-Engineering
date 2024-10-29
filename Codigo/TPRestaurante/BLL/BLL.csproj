@@ -83,6 +83,7 @@
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -99,6 +100,7 @@
     <Compile Include="DVH.cs" />
     <Compile Include="DVV.cs" />
     <Compile Include="EtiquetaBLL.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="IdiomaBLL.cs" />
     <Compile Include="Ingrediente.cs" />
     <Compile Include="Cliente.cs" />
@@ -110,15 +112,18 @@
     <Compile Include="ItemProducto.cs" />
     <Compile Include="MetodoDePago.cs" />
     <Compile Include="ModoDelGestor.cs" />
+    <Compile Include="NotaDeEntrega.cs" />
+    <Compile Include="OrdenDeCompra.cs" />
     <Compile Include="Pago.cs" />
     <Compile Include="PagoEfectivo.cs" />
+    <Compile Include="PagoInsumo.cs" />
     <Compile Include="PagoTarjeta.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Permission.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="ProductoBitacora.cs" />
     <Compile Include="Proveedor.cs" />
-    <Compile Include="SolicitudDeCompra.cs" />
+    <Compile Include="SolicitudDeCotizacion.cs" />
     <Compile Include="TraduccionBLL.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -49,6 +49,16 @@ namespace BLL
             mpIngrediente.Update(i);
         }
 
+        public void ActualizarStock(List<BE.ItemIngrediente> items)
+        {
+            foreach (var itemIngrediente in items)
+            {
+                ActualizarStock(itemIngrediente.Ingrediente, itemIngrediente.CantidadRequerida);
+            }
+        }
+
+
+
 
         //A probar
         public List<BE.Ingrediente> FiltrarFaltantes(List<BE.Ingrediente> ingredientes)

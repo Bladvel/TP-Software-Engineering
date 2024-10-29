@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,20 @@ namespace DAL
 
         public override Proveedor GetById(object id)
         {
-            throw new NotImplementedException();
+            int cuit = int.Parse(id.ToString());
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@cuit", cuit),
+            };
+
+            access.Open();
+            DataTable dt = access.Read("OBTENER_PROVEEDOR_POR_CUIT", parameters);
+            access.Close();
+            Proveedor proveedor = Transform(dt.Rows[0]);
+            return proveedor;
+
+
+
         }
 
         public override Proveedor Transform(DataRow dr)

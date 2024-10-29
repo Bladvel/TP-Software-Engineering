@@ -14,7 +14,7 @@ namespace BLL
 
         public string Concatenar(BE.ItemIngrediente item)
         {
-            return item.ID + item.Ingrediente.CodIngrediente + item.SolicitudDeCompra.NroSolicitud + item.CantidadRequerida + item.PrecioCotizacion.ToString();
+            return item.ID + item.Ingrediente.CodIngrediente + item.SolicitudDeCotizacion.NroSolicitud + item.CantidadRequerida + item.PrecioCotizacion.ToString();
         }
 
         public List<BE.ItemIngrediente> Listar()

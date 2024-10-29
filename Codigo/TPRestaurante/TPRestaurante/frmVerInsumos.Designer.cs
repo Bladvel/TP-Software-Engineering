@@ -62,9 +62,9 @@
             // lstSolicitud
             // 
             this.lstSolicitud.FormattingEnabled = true;
-            this.lstSolicitud.Location = new System.Drawing.Point(508, 44);
+            this.lstSolicitud.Location = new System.Drawing.Point(494, 44);
             this.lstSolicitud.Name = "lstSolicitud";
-            this.lstSolicitud.Size = new System.Drawing.Size(284, 212);
+            this.lstSolicitud.Size = new System.Drawing.Size(298, 212);
             this.lstSolicitud.TabIndex = 3;
             // 
             // txtCantidad
@@ -101,11 +101,11 @@
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnGenerar.ForeColor = System.Drawing.Color.White;
-            this.btnGenerar.Location = new System.Drawing.Point(580, 262);
+            this.btnGenerar.Location = new System.Drawing.Point(557, 262);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(212, 39);
+            this.btnGenerar.Size = new System.Drawing.Size(235, 39);
             this.btnGenerar.TabIndex = 7;
-            this.btnGenerar.Text = "Generar solicitud de compra";
+            this.btnGenerar.Text = "Generar solicitud de cotizacion";
             this.btnGenerar.UseVisualStyleBackColor = false;
             this.btnGenerar.Click += new System.EventHandler(this.ucButtonPrimary2_Click);
             // 
@@ -126,7 +126,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(508, 271);
+            this.btnLimpiar.Location = new System.Drawing.Point(494, 271);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(57, 23);
             this.btnLimpiar.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 326);
+            this.ClientSize = new System.Drawing.Size(874, 379);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);

@@ -70,7 +70,7 @@ namespace TPRestaurante
             frmMDI parentForm = this.MdiParent as frmMDI;
             if (parentForm != null)
             {
-                frmGenerarSolicitudDeCompra generarSolicitudDeCompra = new frmGenerarSolicitudDeCompra(Items);
+                frmGenerarSolicitudDeCotizacion generarSolicitudDeCompra = new frmGenerarSolicitudDeCotizacion(Items);
                 parentForm.AbrirChildForm(generarSolicitudDeCompra);
             }
         }

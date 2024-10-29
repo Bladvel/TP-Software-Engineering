@@ -47,16 +47,16 @@ namespace TPRestaurante
                         RegistroBitacoraLoginCorrecto(user);
 
                         //******************* DESCOMENTAR SI SE DESEA HABILITAR EL DV ************************
-                        backgroundWorker1.RunWorkerAsync();
+                        //backgroundWorker1.RunWorkerAsync();
                         //************************************************************************************
 
                     }
 
                     //COMENTAR SI SE DESEA HABILITAR EL DV
 
-                    //frmMDI parent = (frmMDI)this.MdiParent;
-                    //parent.ValidarForm();
-                    //this.Close();
+                    frmMDI parent = (frmMDI)this.MdiParent;
+                    parent.ValidarForm();
+                    this.Close();
                 }
                 else
                 {

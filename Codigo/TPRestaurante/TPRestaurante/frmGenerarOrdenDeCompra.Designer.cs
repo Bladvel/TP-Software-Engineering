@@ -33,17 +33,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbProveedores = new System.Windows.Forms.ComboBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCondicion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnGenerar = new TPRestaurante.UcButtonPrimary(this.components);
-            this.btnSalir = new TPRestaurante.UcButtonSecondary(this.components);
-            this.grdInsumos = new System.Windows.Forms.DataGridView();
-            this.cmbProveedores = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.grdInsumos = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new TPRestaurante.UcButtonSecondary(this.components);
+            this.btnGenerar = new TPRestaurante.UcButtonPrimary(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grdSolicitudes)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdInsumos)).BeginInit();
@@ -52,47 +50,57 @@
             // grdSolicitudes
             // 
             this.grdSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdSolicitudes.Location = new System.Drawing.Point(52, 79);
+            this.grdSolicitudes.Location = new System.Drawing.Point(59, 112);
             this.grdSolicitudes.Name = "grdSolicitudes";
-            this.grdSolicitudes.Size = new System.Drawing.Size(314, 158);
+            this.grdSolicitudes.Size = new System.Drawing.Size(407, 158);
             this.grdSolicitudes.TabIndex = 0;
+            this.grdSolicitudes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSolicitudes_CellClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 63);
+            this.label1.Location = new System.Drawing.Point(56, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 13);
+            this.label1.Size = new System.Drawing.Size(221, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "SOLICITUDES DE COMPRA PENDIENTES POR GENERAR OC";
+            this.label1.Text = "SOLICITUDES DE COTIZACION ENVIADAS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(537, 63);
+            this.label2.Location = new System.Drawing.Point(499, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 13);
+            this.label2.Size = new System.Drawing.Size(204, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "INSUMOS A INCLUIR EN LA ORDEN";
+            this.label2.Text = "INSUMOS A INCLUIDOS EN LA ORDEN";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbProveedores);
             this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtCondicion);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(52, 263);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Location = new System.Drawing.Point(59, 296);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(700, 149);
+            this.groupBox1.Size = new System.Drawing.Size(756, 149);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar informacion";
             // 
+            // cmbProveedores
+            // 
+            this.cmbProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProveedores.FormattingEnabled = true;
+            this.cmbProveedores.Location = new System.Drawing.Point(18, 55);
+            this.cmbProveedores.Name = "cmbProveedores";
+            this.cmbProveedores.Size = new System.Drawing.Size(158, 21);
+            this.cmbProveedores.TabIndex = 8;
+            // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(481, 49);
+            this.txtObservaciones.Location = new System.Drawing.Point(545, 47);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(177, 94);
@@ -101,7 +109,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(478, 31);
+            this.label5.Location = new System.Drawing.Point(543, 31);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 13);
             this.label5.TabIndex = 1;
@@ -109,7 +117,7 @@
             // 
             // txtCondicion
             // 
-            this.txtCondicion.Location = new System.Drawing.Point(251, 49);
+            this.txtCondicion.Location = new System.Drawing.Point(272, 45);
             this.txtCondicion.Multiline = true;
             this.txtCondicion.Name = "txtCondicion";
             this.txtCondicion.Size = new System.Drawing.Size(177, 94);
@@ -118,41 +126,28 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(248, 31);
+            this.label4.Location = new System.Drawing.Point(269, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Condicion de pago:";
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Fecha de emision";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Proveedor:";
             // 
-            // dateTimePicker1
+            // grdInsumos
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(27, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
-            // btnGenerar
-            // 
-            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.btnGenerar.FlatAppearance.BorderSize = 0;
-            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnGenerar.ForeColor = System.Drawing.Color.White;
-            this.btnGenerar.Location = new System.Drawing.Point(479, 418);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(132, 39);
-            this.btnGenerar.TabIndex = 5;
-            this.btnGenerar.Text = "Generar";
-            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.grdInsumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdInsumos.Location = new System.Drawing.Point(502, 112);
+            this.grdInsumos.Name = "grdInsumos";
+            this.grdInsumos.Size = new System.Drawing.Size(313, 158);
+            this.grdInsumos.TabIndex = 7;
             // 
             // btnSalir
             // 
@@ -161,50 +156,37 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(620, 418);
+            this.btnSalir.Location = new System.Drawing.Point(683, 451);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(132, 39);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             // 
-            // grdInsumos
+            // btnGenerar
             // 
-            this.grdInsumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdInsumos.Location = new System.Drawing.Point(540, 87);
-            this.grdInsumos.Name = "grdInsumos";
-            this.grdInsumos.Size = new System.Drawing.Size(212, 150);
-            this.grdInsumos.TabIndex = 7;
-            // 
-            // cmbProveedores
-            // 
-            this.cmbProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbProveedores.FormattingEnabled = true;
-            this.cmbProveedores.Location = new System.Drawing.Point(398, 87);
-            this.cmbProveedores.Name = "cmbProveedores";
-            this.cmbProveedores.Size = new System.Drawing.Size(121, 21);
-            this.cmbProveedores.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(395, 63);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "PROVEEDOR";
+            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.ForeColor = System.Drawing.Color.White;
+            this.btnGenerar.Location = new System.Drawing.Point(545, 451);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(132, 39);
+            this.btnGenerar.TabIndex = 5;
+            this.btnGenerar.Text = "Generar";
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // frmGenerarOrdenDeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 532);
-            this.Controls.Add(this.cmbProveedores);
+            this.ClientSize = new System.Drawing.Size(871, 587);
             this.Controls.Add(this.grdInsumos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grdSolicitudes);
@@ -230,8 +212,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private UcButtonPrimary btnGenerar;
         private UcButtonSecondary btnSalir;
         private System.Windows.Forms.DataGridView grdInsumos;

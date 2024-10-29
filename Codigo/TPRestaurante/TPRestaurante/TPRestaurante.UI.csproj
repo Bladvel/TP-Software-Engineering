@@ -7,7 +7,7 @@
     <ProjectGuid>{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TPRestaurante</RootNamespace>
-    <AssemblyName>TPRestaurante</AssemblyName>
+    <AssemblyName>SISFOOD</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
@@ -130,6 +134,12 @@
     <Compile Include="frmCambiarPassword.Designer.cs">
       <DependentUpon>frmCambiarPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCargarFacturaDirectamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarFacturaDirectamente.Designer.cs">
+      <DependentUpon>frmCargarFacturaDirectamente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCobrarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,11 +158,11 @@
     <Compile Include="frmGenerarComanda.Designer.cs">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEvaluarSolicitudDeCompra.cs">
+    <Compile Include="frmEvaluarSolicitudDeCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEvaluarSolicitudDeCompra.Designer.cs">
-      <DependentUpon>frmEvaluarSolicitudDeCompra.cs</DependentUpon>
+    <Compile Include="frmEvaluarSolicitudDeCotizacion.Designer.cs">
+      <DependentUpon>frmEvaluarSolicitudDeCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGenerarOrdenDeCompra.cs">
       <SubType>Form</SubType>
@@ -166,11 +176,11 @@
     <Compile Include="frmCargarFactura.Designer.cs">
       <DependentUpon>frmCargarFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGenerarSolicitudDeCompra.cs">
+    <Compile Include="frmGenerarSolicitudDeCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGenerarSolicitudDeCompra.Designer.cs">
-      <DependentUpon>frmGenerarSolicitudDeCompra.cs</DependentUpon>
+    <Compile Include="frmGenerarSolicitudDeCotizacion.Designer.cs">
+      <DependentUpon>frmGenerarSolicitudDeCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGestionarPermisos.cs">
       <SubType>Form</SubType>
@@ -226,11 +236,11 @@
     <Compile Include="frmPerfiles.Designer.cs">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRealizarPago.cs">
+    <Compile Include="frmRegistrarPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRealizarPago.Designer.cs">
-      <DependentUpon>frmRealizarPago.cs</DependentUpon>
+    <Compile Include="frmRegistrarPago.Designer.cs">
+      <DependentUpon>frmRegistrarPago.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRecepcionDeInsumos.cs">
       <SubType>Form</SubType>
@@ -324,6 +334,9 @@
     <EmbeddedResource Include="frmCambiarPassword.resx">
       <DependentUpon>frmCambiarPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarFacturaDirectamente.resx">
+      <DependentUpon>frmCargarFacturaDirectamente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCobrarPedido.resx">
       <DependentUpon>frmCobrarPedido.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,8 +349,8 @@
     <EmbeddedResource Include="frmGenerarComanda.resx">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEvaluarSolicitudDeCompra.resx">
-      <DependentUpon>frmEvaluarSolicitudDeCompra.cs</DependentUpon>
+    <EmbeddedResource Include="frmEvaluarSolicitudDeCotizacion.resx">
+      <DependentUpon>frmEvaluarSolicitudDeCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerarOrdenDeCompra.resx">
       <DependentUpon>frmGenerarOrdenDeCompra.cs</DependentUpon>
@@ -345,8 +358,8 @@
     <EmbeddedResource Include="frmCargarFactura.resx">
       <DependentUpon>frmCargarFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGenerarSolicitudDeCompra.resx">
-      <DependentUpon>frmGenerarSolicitudDeCompra.cs</DependentUpon>
+    <EmbeddedResource Include="frmGenerarSolicitudDeCotizacion.resx">
+      <DependentUpon>frmGenerarSolicitudDeCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGestionarPermisos.resx">
       <DependentUpon>frmGestionarPermisos.cs</DependentUpon>
@@ -375,8 +388,8 @@
     <EmbeddedResource Include="frmPerfiles.resx">
       <DependentUpon>frmPerfiles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRealizarPago.resx">
-      <DependentUpon>frmRealizarPago.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegistrarPago.resx">
+      <DependentUpon>frmRegistrarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecepcionDeInsumos.resx">
       <DependentUpon>frmRecepcionDeInsumos.cs</DependentUpon>

@@ -31,10 +31,12 @@ namespace DAL
                 component = new Group();
 
             component.Name = dr["NOMBRE"].ToString();
+
             if (!string.IsNullOrEmpty(component.Name) && component is Permission)
             {
                 component.PermissionType = (PermissionType)Enum.Parse(typeof(PermissionType), component.Name);
             }
+
             component.Type = type;
             component.ID = int.Parse(dr["ID"].ToString());
 
@@ -182,7 +184,7 @@ namespace DAL
             
         }
 
-
+        [Obsolete]
         public void UniversalInsert(Component entity)
         {
             int lastID = Insert(entity);

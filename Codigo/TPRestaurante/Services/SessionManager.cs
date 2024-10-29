@@ -53,7 +53,7 @@ namespace Services
         }
 
 
-        public bool IsInRole(IComponent c, PermissionType permissionType)
+        private bool IsInRole(IComponent c, PermissionType permissionType)
         {
             if (c.PermissionType.Equals(permissionType))
                 return true;
@@ -67,6 +67,7 @@ namespace Services
 
             return false;
         }
+
 
         public bool IsInRole(PermissionType permissionType)
         {
