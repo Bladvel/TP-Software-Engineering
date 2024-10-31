@@ -132,6 +132,23 @@ namespace TPRestaurante
                 menuInventario.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCatalogos);
                 
                 itemIngredientes.Visible = SessionManager.Instance.IsInRole(PermissionType.VerIngredientes);
+
+                maestrisToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarMaestros);
+                clientesToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarClientes);
+                productosToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarProductos);
+
+                comprasToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCompras);
+                cotizacionesToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarCotizaciones);
+                gestionarToolStripMenuItem1.Visible = SessionManager.Instance.IsInRole(PermissionType.VerGestionarCotizaciones);
+                solicitarToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.VerEnviarCotizaciones);
+                ordenesDeCompraToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarOrdenesDeCompra);
+                generarToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.VerGenerarOrdenesDeCompra);
+                gestionarToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.VerGestionarOrdenesDeCompra);
+                gestionDePagoToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.GestionarGestionDePagos);
+                facturasToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.VerCargarFacturas);
+                registrarPagoToolStripMenuItem1.Visible = SessionManager.Instance.IsInRole(PermissionType.VerRegistrarPagos);
+
+
                 Traducir(SessionManager.Instance.User.Idioma);
             }
             else
@@ -145,6 +162,8 @@ namespace TPRestaurante
                 menuAdmin.Visible = false;
                 menuPedidos.Visible = false;
                 menuInventario.Visible = false;
+                comprasToolStripMenuItem.Visible = false;
+                maestrisToolStripMenuItem.Visible = false;
                 Traducir();
             }
 
@@ -466,6 +485,11 @@ namespace TPRestaurante
         {
             frmEvaluarSolicitudDeCotizacion evaluarSolicitudDeCotizacion = new frmEvaluarSolicitudDeCotizacion();
             AbrirChildForm(evaluarSolicitudDeCotizacion);
+        }
+
+        private void menuProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,19 @@ namespace Interfaces
         VerPedidosCerrados,
         VerPedidosVerificados,
         VerPedidosListos,
-
+        GestionarMaestros, //de aqui en adelante agregar a la base de datos
+        GestionarClientes,
+        GestionarProductos,
+        GestionarCompras,
+        GestionarCotizaciones,
+        VerGestionarCotizaciones,
+        VerEnviarCotizaciones,
+        GestionarOrdenesDeCompra,
+        VerGenerarOrdenesDeCompra,
+        VerGestionarOrdenesDeCompra,
+        GestionarGestionDePagos,
+        VerCargarFacturas,
+        VerRegistrarPagos,
+        
     }
 }

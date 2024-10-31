@@ -48,8 +48,6 @@
             this.maestrisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.itemCrearPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.itemVerPedidos = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +87,6 @@
             this.menuSesion,
             this.menuAdmin,
             this.maestrisToolStripMenuItem,
-            this.catalogoToolStripMenuItem,
             this.menuPedidos,
             this.menuInventario,
             this.comprasToolStripMenuItem,
@@ -240,30 +237,16 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
-            // 
-            // catalogoToolStripMenuItem
-            // 
-            this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuProductosToolStripMenuItem});
-            this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
-            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.catalogoToolStripMenuItem.Text = "Catalogo";
-            // 
-            // menuProductosToolStripMenuItem
-            // 
-            this.menuProductosToolStripMenuItem.Name = "menuProductosToolStripMenuItem";
-            this.menuProductosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.menuProductosToolStripMenuItem.Text = "Menu productos";
             // 
             // menuPedidos
             // 
@@ -394,7 +377,7 @@
             // verToolStripMenuItem
             // 
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
-            this.verToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
             this.verToolStripMenuItem.Text = "Ver";
             this.verToolStripMenuItem.Click += new System.EventHandler(this.verToolStripMenuItem_Click);
             // 
@@ -567,8 +550,6 @@
         private System.Windows.Forms.ToolStripMenuItem solicitarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenesDeCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menuProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDePagoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionarToolStripMenuItem;
