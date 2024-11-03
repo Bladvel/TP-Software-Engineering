@@ -44,7 +44,7 @@ namespace TPRestaurante
                     var result = bllUser.Login(user);
                     if (result == LoginResult.ValidUser)
                     {
-                        RegistroBitacoraLoginCorrecto(user);
+                        
 
                         //******************* DESCOMENTAR SI SE DESEA HABILITAR EL DV ************************
                         //backgroundWorker1.RunWorkerAsync();
@@ -74,15 +74,15 @@ namespace TPRestaurante
                         break;
                     case LoginResult.InvalidPassword:
                         User userAttempts = bllUser.GetUser(user.Username);
-                        RegistroBitacoraLoginInorrecto(user);
+                        
                         MessageBox.Show($"Password Incorrecto\nTe quedan {3 - userAttempts.Attempts} intento/s");
                         break;
                     case LoginResult.BlockedUser:
-                        RegistroBitacoraBloqueoDeUsuario(user);
+                        
                         MessageBox.Show("Limite de intentos superados. Ha sido Bloqueado\nContacte a un administrador");
                         break;
                     case LoginResult.AlreadyBlockedUser:
-                        RegistroBitacoraLoginUsuarioBloqueado(user);
+                        
                         MessageBox.Show("User bloqueado");
                         break;
                     default:
@@ -102,15 +102,6 @@ namespace TPRestaurante
             txtPassword.Text = string.Empty;
         }
 
-        private void RegistroBitacoraLogout(IUser user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.Sesion;
-            bitacora.Operacion = TipoOperacion.Logout;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -166,46 +157,14 @@ namespace TPRestaurante
             SessionManager.DesuscribirObservador(this);
         }
 
-        private void RegistroBitacoraLoginCorrecto(User user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.InicioSesion;
-            bitacora.Operacion = TipoOperacion.Login;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
-        private void RegistroBitacoraLoginInorrecto(User user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.InicioSesion;
-            bitacora.Operacion = TipoOperacion.LoginIncorrecto;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
 
-        private void RegistroBitacoraLoginUsuarioBloqueado(User user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.InicioSesion;
-            bitacora.Operacion = TipoOperacion.LoginUsuarioBloqueado;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
-        private void RegistroBitacoraBloqueoDeUsuario(User user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.InicioSesion;
-            bitacora.Operacion = TipoOperacion.BloqueoDeUsuario;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -228,7 +187,7 @@ namespace TPRestaurante
                 {
                     MessageBox.Show("El sistema se encuentra en mantenimiento. Por favor contacte a un administrador");
 
-                    RegistroBitacoraLogout(SessionManager.Instance.User);
+                    
                     bllUser.Logout();
 
 

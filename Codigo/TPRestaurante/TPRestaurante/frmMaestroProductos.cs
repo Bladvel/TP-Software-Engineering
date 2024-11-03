@@ -186,35 +186,7 @@ namespace TPRestaurante
             }
         }
 
-        private void RegistrarBitacoraEliminarProducto()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as BE.User;
-            bitacora.Modulo = TipoModulo.MaestroProductos;
-            bitacora.Operacion = TipoOperacion.Baja;
-            bitacora.Criticidad = 2;
-            bllBitacora.Insertar(bitacora);
-        }
-
-        private void RegistroBitacoraModificarProducto()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as BE.User;
-            bitacora.Modulo = TipoModulo.MaestroProductos;
-            bitacora.Operacion = TipoOperacion.Modificacion;
-            bitacora.Criticidad = 3;
-            bllBitacora.Insertar(bitacora);
-        }
-
-        private void RegistroBitacoraAgregarProducto()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as BE.User;
-            bitacora.Modulo = TipoModulo.MaestroProductos;
-            bitacora.Operacion = TipoOperacion.Alta;
-            bitacora.Criticidad = 2;
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -268,7 +240,7 @@ namespace TPRestaurante
 
                         ActualizarGrilla();
                         ResetTextFields();
-                        RegistroBitacoraAgregarProducto();
+                        
 
                     }
                     else
@@ -291,7 +263,6 @@ namespace TPRestaurante
 
                         ActualizarGrilla();
                         ResetTextFields();
-                        RegistroBitacoraModificarProducto();
                     }
                     else
                     {
@@ -317,7 +288,6 @@ namespace TPRestaurante
                             MessageBox.Show(bllProducto.Eliminar(selectedProduct));
                             bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
 
-                            RegistrarBitacoraEliminarProducto();
                             ActualizarGrilla();
                         }
                     }

@@ -14,6 +14,7 @@ namespace BLL
     public class User
     {
         MP_User mp;
+        Bitacora bllBitacora = new Bitacora();
         public User()
         {
             mp = MpUserCreator.GetInstance.CreateMapper() as MP_User;
@@ -62,13 +63,37 @@ namespace BLL
             var user = GetUser(pUser.Username);
             if ((user == null))
             {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.InicioSesion,
+                    Operacion = TipoOperacion.LoginIncorrecto,
+                    Criticidad = 2
+                };
 
+                bllBitacora.Insertar(logEntry);
                 throw new LoginException(LoginResult.InvalidUsername);
             }
             else
             {
                 if (user.Bloqueo)
                 {
+
+                    var logUser = SessionManager.Instance.User;
+                    var logEntry = new Services.Bitacora
+                    {
+                        Usuario = logUser,
+                        Fecha = DateTime.Now,
+                        Modulo = TipoModulo.InicioSesion,
+                        Operacion = TipoOperacion.LoginUsuarioBloqueado,
+                        Criticidad = 2
+                    };
+
+                    bllBitacora.Insertar(logEntry);
+
+
                     throw new LoginException(LoginResult.AlreadyBlockedUser);
                 }
             }
@@ -79,6 +104,20 @@ namespace BLL
                 user.Attempts = 0;
                 user.DNI = CryptoManager.Encrypt(user.DNI); //Debo encriptar de nuevo el dni para no sobreescribirlo
                 mp.Update(user);
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.InicioSesion,
+                    Operacion = TipoOperacion.Login,
+                    Criticidad = 2
+                };
+
+                bllBitacora.Insertar(logEntry);
+
+
                 return LoginResult.ValidUser;
             }
             else
@@ -86,7 +125,20 @@ namespace BLL
                 user.Attempts++;
                 user.DNI = CryptoManager.Encrypt(user.DNI); //Debo encriptar de nuevo el dni para no sobreescribirlo
                 mp.Update(user);
-                if(user.Attempts >= 3)
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.InicioSesion,
+                    Operacion = TipoOperacion.LoginIncorrecto,
+                    Criticidad = 2
+                };
+
+                bllBitacora.Insertar(logEntry);
+
+                if (user.Attempts >= 3)
                 {
                     user.Bloqueo = true;
                     mp.ChangeBlockage(user);
@@ -103,7 +155,24 @@ namespace BLL
                 throw new Exception("No hay sesion iniciada");
             }
             else
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.InicioSesion,
+                    Operacion = TipoOperacion.Logout,
+                    Criticidad = 2
+                };
+
+                bllBitacora.Insertar(logEntry);
+
                 SessionManager.Instance.Logout();
+            }
+
+
+                
 
             return "Sesion terminada";
         }
@@ -132,9 +201,31 @@ namespace BLL
 
             var nuevaPassword = CryptoManager.Hash(password);
             user.Password = nuevaPassword;
+            int resultado = mp.ChangePassword(user);
 
-            return mp.ChangePassword(user);
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Sesion,
+                    Operacion = TipoOperacion.CambiarContraseña,
+                    Criticidad = 3
+                };
+
+                BLL.Bitacora bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+            return resultado;
         }
+
+
+
+
 
         public void UpdatePermissions(BE.User user)
         {

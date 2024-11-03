@@ -1,6 +1,0 @@
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\bin\Debug\CAPA_ENTIDADES.dll
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\bin\Debug\CAPA_ENTIDADES.pdb
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\obj\Debug\CAPA_ENTIDADES.csproj.AssemblyReference.cache
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\obj\Debug\CAPA_ENTIDADES.csproj.CoreCompileInputs.cache
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\obj\Debug\CAPA_ENTIDADES.dll
-C:\Users\luisf\OneDrive\Documentos\aTrabajoCampo\CAPA_ENTIDADES\obj\Debug\CAPA_ENTIDADES.pdb

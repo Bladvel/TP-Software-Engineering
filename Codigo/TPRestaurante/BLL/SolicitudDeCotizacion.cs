@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
     public class SolicitudDeCotizacion
     {
         MP_SolicitudDeCotizacion mp = MpSolicitudDeCotizacionCreator.GetInstance.CreateMapper() as MP_SolicitudDeCotizacion;
-
+        Bitacora bllBitacora = new Bitacora();
         public List<BE.SolicitudDeCotizacion> Listar()
         {
             return mp.GetAll();
@@ -28,18 +29,73 @@ namespace BLL
 
         public int RegistrarSolicitud(BE.SolicitudDeCotizacion solicitud)
         {
-            return mp.Insert(solicitud);
+            int resultado = mp.Insert(solicitud);
+
+            if(resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.SolicitudDeCotizacion,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+            return resultado;
         }
 
         public int CambiarEstado(BE.SolicitudDeCotizacion solicitud, EstadoSolicitudCotizacion estado)
         {
             solicitud.Estado = estado;
-            return mp.Update(solicitud);
+            int resultado = mp.Update(solicitud);
+
+            
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.SolicitudDeCotizacion,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+
+            return resultado;
         }
 
         public int ActualizarItems(BE.SolicitudDeCotizacion solicitud)
         {
-            return mp.UpdateItems(solicitud);
+            int resultado = mp.UpdateItems(solicitud);
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.SolicitudDeCotizacion,
+                    Operacion = TipoOperacion.ActualizarItemsSolicitud,
+                    Criticidad = 3
+                };
+
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+            return resultado;
         }
 
         public int ActualizarEstadoSolicitud(BE.SolicitudDeCotizacion solicitudSeleccionada, EstadoSolicitudCotizacion estado)
@@ -77,6 +133,20 @@ namespace BLL
                 smtpServer.Send(mail);
 
                 mensaje = "Correo enviado correctamente a " + proveedor.Email;
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.SolicitudDeCotizacion,
+                    Operacion = TipoOperacion.EnviarEmail,
+                    Criticidad = 4
+                };
+
+                bllBitacora.Insertar(logEntry);
+
+
             }
             catch (Exception ex)
             {

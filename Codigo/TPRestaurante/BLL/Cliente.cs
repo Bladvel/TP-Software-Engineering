@@ -5,15 +5,38 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using DAL.FactoryMapper;
+using Interfaces;
+using Services;
 
 namespace BLL
 {
     public class Cliente
     {
         MP_Cliente mp = MpClienteCreator.GetInstance.CreateMapper() as MP_Cliente;
+        BLL.Bitacora bllBitacora = new BLL.Bitacora();
         public int Insertar(BE.Cliente cliente)
         {
-            return mp.Insert(cliente);
+            int resultado = mp.Insert(cliente);
+
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Cliente,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+                
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+
+            return resultado;
         }
 
         public List<BE.Cliente> Listar()
@@ -27,6 +50,18 @@ namespace BLL
             if (mp.Update(cliente) != -1)
             {
                 result = "Cliente modificado con éxito";
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Cliente,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+
+                bllBitacora.Insertar(logEntry);
             }
             else
             {
@@ -42,6 +77,18 @@ namespace BLL
             if (mp.Delete(cliente) != -1)
             {
                 result = "Cliente eliminado con éxito";
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Cliente,
+                    Operacion = TipoOperacion.Baja,
+                    Criticidad = 2
+                };
+
+
+                bllBitacora.Insertar(logEntry);
             }
             else
             {

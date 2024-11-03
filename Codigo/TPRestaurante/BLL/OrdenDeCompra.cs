@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
@@ -15,7 +16,7 @@ namespace BLL
     {
         MP_OrdenDeCompra mp = MpOrdenDeCompraCreator.GetInstance.CreateMapper() as MP_OrdenDeCompra;
         SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
-
+        BLL.Bitacora bllBitacora = new Bitacora();
         public List<BE.OrdenDeCompra> Listar()
         {
             return mp.GetAll();
@@ -33,6 +34,21 @@ namespace BLL
             int id = mp.Insert(ordenDeCompra);
             if (id!=-1)
             {
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.OrdenDeCompra,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+                bllBitacora.Insertar(logEntry);
+
+
+
                 if (bllSolicitudDeCotizacion.ActualizarEstadoSolicitud(ordenDeCompra.Solicitud,
                         EstadoSolicitudCotizacion.CotizacionAprobada) == -1)
                 {
@@ -45,8 +61,25 @@ namespace BLL
 
         public int ActualizarEstado(BE.OrdenDeCompra ordenDeCompra, EstadoOrdenDeCompra estado)
         {
-            ordenDeCompra.EstadoOrden = estado;
-            return mp.Update(ordenDeCompra);
+             ordenDeCompra.EstadoOrden = estado;
+             int resultado = mp.Update(ordenDeCompra);
+
+             if (resultado != -1)
+             {
+                 var logUser = SessionManager.Instance.User;
+                 var logEntry = new Services.Bitacora
+                 {
+                     Usuario = logUser,
+                     Fecha = DateTime.Now,
+                     Modulo = TipoModulo.OrdenDeCompra,
+                     Operacion = TipoOperacion.Modificacion,
+                     Criticidad = 3
+                 };
+
+                 bllBitacora.Insertar(logEntry);
+            }
+
+             return resultado;
         }
 
         //public int ActualizarEstadoDeCarga(BE.OrdenDeCompra ordenDeCompra, EstadoCargaDeInsumos estado)
@@ -75,6 +108,20 @@ namespace BLL
                 smtpServer.Send(mail);
 
                 mensaje = "Correo enviado correctamente a " + orden.Proveedor.Email;
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.OrdenDeCompra,
+                    Operacion = TipoOperacion.EnviarEmail,
+                    Criticidad = 4
+                };
+
+                bllBitacora.Insertar(logEntry);
+
+
             }
             catch (Exception ex)
             {

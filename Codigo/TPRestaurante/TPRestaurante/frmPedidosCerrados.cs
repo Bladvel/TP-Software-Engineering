@@ -35,25 +35,12 @@ namespace TPRestaurante
 
             grdPedidos.DataSource = null;
             grdPedidos.DataSource = bllPedido.ListarPorEstado(OrderType.Entregado);
-            RegistroBitacoraVerPedidos();
+            
             SessionManager.SuscribirObservador(this);
             Traducir(SessionManager.Instance.User.Idioma);
         }
 
-        private void RegistroBitacoraVerPedidos()
-        {
-            var bitacora = new Services.Bitacora
-            {
-                Fecha = DateTime.Now,
-                Usuario = SessionManager.Instance.User,
-                Modulo = TipoModulo.VistaPedidos,
-                Operacion = TipoOperacion.VerPedidos,
-                Criticidad = 5
-            };
-
-            var bllBitacora = new BLL.Bitacora();
-            bllBitacora.Insertar(bitacora);
-        }
+        
         public void UpdateLanguage(IIdioma idioma)
         {
             Traducir(idioma);

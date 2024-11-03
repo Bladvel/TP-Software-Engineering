@@ -153,7 +153,7 @@ namespace TPRestaurante
                         {
                             ActualizarGrilla();
                             ResetTextFields();
-                            RegistroBitacoraAgregarCliente();
+                            
 
                             bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
 
@@ -188,7 +188,7 @@ namespace TPRestaurante
                         bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
                         ActualizarGrilla();
                         ResetTextFields();
-                        RegistroBitacoraModificarCliente();
+                        
                     }
                     else
                     {
@@ -212,7 +212,7 @@ namespace TPRestaurante
                         if (result == DialogResult.Yes)
                         {
                             MessageBox.Show(bllCliente.Eliminar(selectedClient));
-                            RegistrarBitacoraEliminarCliente();
+                            
                             ActualizarGrilla();
                             bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
                         }
@@ -226,35 +226,7 @@ namespace TPRestaurante
             }
         }
 
-        private void RegistrarBitacoraEliminarCliente()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as User;
-            bitacora.Modulo = TipoModulo.MaestroClientes;
-            bitacora.Operacion = TipoOperacion.Baja;
-            bitacora.Criticidad = 2;
-            bllBitacora.Insertar(bitacora);
-        }
-
-        private void RegistroBitacoraModificarCliente()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as User;
-            bitacora.Modulo = TipoModulo.MaestroClientes;
-            bitacora.Operacion = TipoOperacion.Modificacion;
-            bitacora.Criticidad = 3;
-            bllBitacora.Insertar(bitacora);
-        }
-
-        private void RegistroBitacoraAgregarCliente()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User as User;
-            bitacora.Modulo = TipoModulo.MaestroClientes;
-            bitacora.Operacion = TipoOperacion.Alta;
-            bitacora.Criticidad = 2;
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         private void ResetTextFields()
         {

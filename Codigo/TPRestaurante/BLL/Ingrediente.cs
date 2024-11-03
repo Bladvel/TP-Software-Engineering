@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 using DAL;
 using DAL.FactoryMapper;
+using Interfaces;
+using Services;
 
 namespace BLL
 {
     public class Ingrediente
     {
         MP_Ingrediente mpIngrediente = MpIngredienteCreator.GetInstance.CreateMapper() as MP_Ingrediente;
-
+        BLL.Bitacora bllBitacora = new BLL.Bitacora();
         public List<BE.Ingrediente> Listar()
         {
             return mpIngrediente.GetAll();
@@ -46,7 +48,24 @@ namespace BLL
             BE.Ingrediente i = ObtenerIngredientePorCodigo(ingrediente.CodIngrediente);
             i.Cantidad += cantidad;
 
-            mpIngrediente.Update(i);
+            int resultado = mpIngrediente.Update(i);
+
+
+            if(resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Ingrediente,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+                bllBitacora.Insertar(logEntry);
+            }
+
         }
 
         public void ActualizarStock(List<BE.ItemIngrediente> items)
@@ -55,6 +74,21 @@ namespace BLL
             {
                 ActualizarStock(itemIngrediente.Ingrediente, itemIngrediente.CantidadRequerida);
             }
+
+            var logUser = SessionManager.Instance.User;
+            var logEntry = new Services.Bitacora
+            {
+                Usuario = logUser,
+                Fecha = DateTime.Now,
+                Modulo = TipoModulo.Ingrediente,
+                Operacion = TipoOperacion.ActualizarStock,
+                Criticidad = 4
+            };
+
+            bllBitacora.Insertar(logEntry);
+
+
+
         }
 
 

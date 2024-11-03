@@ -1,9 +1,0 @@
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\bin\Debug\DAL.dll
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\bin\Debug\DAL.pdb
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\bin\Debug\BE.dll
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\bin\Debug\BE.pdb
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\obj\Debug\DAL.csproj.CopyComplete
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\obj\Debug\DAL.dll
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\DAL\obj\Debug\DAL.pdb

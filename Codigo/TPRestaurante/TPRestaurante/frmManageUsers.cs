@@ -133,15 +133,7 @@ namespace TPRestaurante
         }
 
         
-        private void RegistroBitacoraAltaUsuario(User user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = user;
-            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
-            bitacora.Operacion = TipoOperacion.Alta;
-            bitacora.Criticidad = 2;
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         private void btnAplicar_Click(object sender, EventArgs e)
         {
@@ -166,7 +158,7 @@ namespace TPRestaurante
                        
 
 
-                        RegistroBitacoraAltaUsuario(user);
+                    
                     }
                     
                     
@@ -187,7 +179,6 @@ namespace TPRestaurante
                         bllUser.UpdateUser(selectedUser);
                         ActualizarGrilla();
                         ResetTextFields();
-                        RegistroBitacoraModificarUsuario();
                     }
                     else
                     {
@@ -201,7 +192,6 @@ namespace TPRestaurante
                         pUser.Bloqueo = false;
                         pUser.Attempts = 0;
                         bllUser.UnblockUser(pUser);
-                        RegistroBitacoraDesbloquearUsuairo();
                         ActualizarGrilla();
                     }
                     else
@@ -213,25 +203,6 @@ namespace TPRestaurante
             }
         }
 
-        private void RegistroBitacoraDesbloquearUsuairo()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User;
-            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
-            bitacora.Operacion = TipoOperacion.DesbloquearUsuario;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
-
-        private void RegistroBitacoraModificarUsuario()
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = SessionManager.Instance.User;
-            bitacora.Modulo = TipoModulo.GestorDeUsuarios;
-            bitacora.Operacion = TipoOperacion.Modificacion;
-            bitacora.Criticidad = 3;
-            bllBitacora.Insertar(bitacora);
-        }
 
 
 

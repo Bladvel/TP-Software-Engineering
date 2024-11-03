@@ -28,5 +28,18 @@ namespace Interfaces
         GestorDeBitacora,
         MaestroClientes,
         MaestroProductos,
+        CargaDeFactura,
+        Pago,
+        Pedido,
+        Cliente,
+        Comanda,
+        Factura,
+        Ingrediente,
+        RecepcionDeInsumos,
+        OrdenDeCompra,
+        PagoInsumo,
+        Producto,
+        SolicitudDeCotizacion,
+        Backup
     }
 }

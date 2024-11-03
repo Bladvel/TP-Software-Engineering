@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BE;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
@@ -14,6 +15,7 @@ namespace BLL
         ItemProducto bllItemProducto = new ItemProducto();
         Pago bllPago = new Pago();
         DVH bllDvh = new DVH();
+        Bitacora bllBitacora = new Bitacora();
         public bool RegistrarPedido(List<BE.ItemProducto> productos, BE.Cliente cliente)
         {
             BE.Pedido pedido  = new BE.Pedido();
@@ -70,6 +72,22 @@ namespace BLL
             if (resultado)
             {
                 bllPedido.CambiarEstado(pedido, OrderType.Entregado);
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Pedido,
+                    Operacion = TipoOperacion.CerrarPedidos,
+                    Criticidad = 4
+                };
+
+
+                bllBitacora.Insertar(logEntry);
+
+
+
                 bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
             }
 

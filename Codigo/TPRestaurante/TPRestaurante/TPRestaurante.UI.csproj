@@ -109,12 +109,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmActualizarInsumos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmActualizarInsumos.Designer.cs">
-      <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmBitacoraDeCambios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,12 +138,6 @@
     </Compile>
     <Compile Include="frmCobrarPedido.Designer.cs">
       <DependentUpon>frmCobrarPedido.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEvaluarCotizacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEvaluarCotizacion.Designer.cs">
-      <DependentUpon>frmEvaluarCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGenerarComanda.cs">
       <SubType>Form</SubType>
@@ -321,9 +309,6 @@
     <Compile Include="User controls\UcButtonPrimary.Designer.cs">
       <DependentUpon>UcButtonPrimary.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmActualizarInsumos.resx">
-      <DependentUpon>frmActualizarInsumos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmBitacoraDeCambios.resx">
       <DependentUpon>frmBitacoraDeCambios.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,9 +326,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCreateOrder.resx">
       <DependentUpon>frmCreateOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEvaluarCotizacion.resx">
-      <DependentUpon>frmEvaluarCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerarComanda.resx">
       <DependentUpon>frmGenerarComanda.cs</DependentUpon>

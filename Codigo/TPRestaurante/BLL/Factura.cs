@@ -7,6 +7,7 @@ using System.Transactions;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
@@ -15,6 +16,8 @@ namespace BLL
         MP_Factura mp = MpFacturaCreator.GetInstance().CreateMapper() as MP_Factura;
         OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
         PagoInsumo bllPagoInsumo = new PagoInsumo();
+        BLL.Bitacora bllBitacora = new BLL.Bitacora();
+
         public int Insertar(BE.Factura factura)
         {
             int resultado = -1;
@@ -22,11 +25,34 @@ namespace BLL
             {
                 if (bllOrdenDeCompra.ActualizarEstado(factura.OrdenDeCompra, EstadoOrdenDeCompra.PendienteDePago) == -1)
                 {
+
+
                     return -1;
                 }
                 else
                 {
+
                     resultado = mp.Insert(factura);
+
+                    if (resultado!=-1)
+                    {
+                        var logUser = SessionManager.Instance.User;
+                        var logEntry = new Services.Bitacora
+                        {
+                            Usuario = logUser,
+                            Fecha = DateTime.Now,
+                            Modulo = TipoModulo.Factura,
+                            Operacion = TipoOperacion.Alta,
+                            Criticidad = 2
+                        };
+
+                        bllBitacora.Insertar(logEntry);
+
+
+
+                    }
+
+
                 }
 
             }
@@ -35,7 +61,28 @@ namespace BLL
 
         public int Actualizar(BE.Factura factura)
         {
-            return mp.Update(factura);
+
+            int resultado = mp.Update(factura);
+
+
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Factura,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+
+            return resultado;
         }
 
 
@@ -155,7 +202,24 @@ namespace BLL
                             }
 
                             factura.Estado = EstadoFactura.PagadaParcialmente;
-                            Actualizar(factura);
+                            int filasAfectadas = Actualizar(factura);
+
+                            if (filasAfectadas != -1)
+                            {
+                                var logUser = SessionManager.Instance.User;
+                                var logEntry = new Services.Bitacora
+                                {
+                                    Usuario = logUser,
+                                    Fecha = DateTime.Now,
+                                    Modulo = TipoModulo.Factura,
+                                    Operacion = TipoOperacion.ProcesarPago,
+                                    Criticidad = 4
+                                };
+
+                                bllBitacora.Insertar(logEntry);
+                            }
+
+
                             resultado = "Pago procesado";
                         }
                     }

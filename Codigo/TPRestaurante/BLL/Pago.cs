@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using DAL.FactoryMapper;
+using Interfaces;
+using Services;
 
 namespace BLL
 {
@@ -14,7 +16,25 @@ namespace BLL
 
         public int Insertar(BE.Pago pago)
         {
-            return mp.Insert(pago);
+
+            int resultado = mp.Insert(pago);
+            if (resultado != -1)
+            {
+                var bitacora = new Services.Bitacora
+                {
+                    Fecha = DateTime.Now,
+                    Usuario = SessionManager.Instance.User,
+                    Modulo = TipoModulo.Pago,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+                var bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(bitacora);
+            }
+
+
+            return resultado;
         }
 
 
@@ -34,6 +54,20 @@ namespace BLL
                     return false;
                 }
 
+                var bitacora = new Services.Bitacora
+                {
+                    Fecha = DateTime.Now,
+                    Usuario = SessionManager.Instance.User,
+                    Modulo = TipoModulo.Cobro,
+                    Operacion = TipoOperacion.CobrarPedido,
+                    Criticidad = 4
+                };
+
+                var bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(bitacora);
+
+
+
 
                 return true;
             }
@@ -44,6 +78,20 @@ namespace BLL
                 {
                     return false;
                 }
+
+
+                var bitacora = new Services.Bitacora
+                {
+                    Fecha = DateTime.Now,
+                    Usuario = SessionManager.Instance.User,
+                    Modulo = TipoModulo.Cobro,
+                    Operacion = TipoOperacion.CobrarPedido,
+                    Criticidad = 4
+                };
+
+                var bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(bitacora);
+
 
                 return true;
             }

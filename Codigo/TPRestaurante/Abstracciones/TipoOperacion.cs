@@ -30,5 +30,11 @@ namespace Interfaces
         CerrarPedidos,
         NotificarPedidoListo,
         GenerarBitacora,
+        RealizarComanda,
+        ProcesarPago,
+        ActualizarStock,
+        EnviarEmail,
+        ActualizarItemsSolicitud,
+        Backup,
     }
 }

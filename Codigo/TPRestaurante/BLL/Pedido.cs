@@ -7,6 +7,7 @@ using BE;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
@@ -17,13 +18,43 @@ namespace BLL
         public void CambiarEstado(BE.Pedido pedido, OrderType estado)
         {
             pedido.Estado = estado;
-            mp.Update(pedido);
+            int resultado = mp.Update(pedido);
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Pedido,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+                BLL.Bitacora bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(logEntry);
+            }
         }
 
         public void CambiarEstado(BE.Pedido pedido, PaymentState pagado)
         {
             pedido.EstadoPago = pagado;
-            mp.Update(pedido);
+            int resultado = mp.Update(pedido);
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Pedido,
+                    Operacion = TipoOperacion.Modificacion,
+                    Criticidad = 3
+                };
+
+                BLL.Bitacora bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(logEntry);
+            }
         }
 
         public float CalcularSubtotal(BE.Pedido pedido)
@@ -42,7 +73,26 @@ namespace BLL
 
         public int RegistrarPedido(BE.Pedido pedido)
         {
-            return mp.Insert(pedido);
+            int resultado = mp.Insert(pedido);
+
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Pedido,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+                BLL.Bitacora bllBitacora = new BLL.Bitacora();
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+            return resultado;
         }
 
 

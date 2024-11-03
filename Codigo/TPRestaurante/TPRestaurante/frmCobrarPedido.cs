@@ -161,7 +161,6 @@ namespace TPRestaurante
             if (bllCajero.RealizarCobro(metodoDePago, pedidoSeleccionado) > 0)
             {
                 MessageBox.Show("Pago registrado exitosamente.");
-                RegistroBitacoraCobro();
                 grdPedidosPorCobrar.DataSource = null;
                 grdPedidosPorCobrar.DataSource = bllPedido.ListarPorPago(PaymentState.NoPagado);
             }
@@ -173,20 +172,7 @@ namespace TPRestaurante
         }
 
         
-        private void RegistroBitacoraCobro()
-        {
-            var bitacora = new Services.Bitacora
-            {
-                Fecha = DateTime.Now,
-                Usuario = SessionManager.Instance.User,
-                Modulo = TipoModulo.Cobro,
-                Operacion = TipoOperacion.CobrarPedido,
-                Criticidad = 3
-            };
-
-            var bllBitacora = new BLL.Bitacora();
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
 
 

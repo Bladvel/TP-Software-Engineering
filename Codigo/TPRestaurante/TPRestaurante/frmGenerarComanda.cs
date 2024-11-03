@@ -185,7 +185,7 @@ namespace TPRestaurante
                         string path = saveFileDialog.FileName;
                         // Generar el PDF de la comanda
                         GenerarPDFComanda(nuevaComanda, path);
-                        RegistroBitacoraGenerarComanda();
+                        
                         MessageBox.Show("Comanda generada y exportada como PDF.");
                     }
                 }
@@ -201,20 +201,7 @@ namespace TPRestaurante
 
 
         
-        private void RegistroBitacoraGenerarComanda()
-        {
-            var bitacora = new Services.Bitacora
-            {
-                Fecha = DateTime.Now,
-                Usuario = SessionManager.Instance.User,
-                Modulo = TipoModulo.GeneracionDeComandas,
-                Operacion = TipoOperacion.GenerarComanda,
-                Criticidad = 5
-            };
-
-            var bllBitacora = new BLL.Bitacora();
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         public void GenerarPDFComanda(Comanda comanda, string path)
         {

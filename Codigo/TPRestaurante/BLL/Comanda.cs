@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using DAL.FactoryMapper;
+using Interfaces;
+using Services;
 
 namespace BLL
 {
     public class Comanda
     {
         MP_Comanda mp = MpComandaCreator.GetInstance.CreateMapper() as MP_Comanda;
-        
+        BLL.Bitacora bllBitacora = new BLL.Bitacora();
 
         public List<BE.Comanda> ListarEnCursoPorCocinero(BE.User cocinero)
         {
@@ -24,7 +26,26 @@ namespace BLL
 
         public int Insertar(BE.Comanda comanda)
         {
-            return mp.Insert(comanda);
+            int resultado = mp.Insert(comanda);
+
+            if (resultado != -1)
+            {
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Comanda,
+                    Operacion = TipoOperacion.Alta,
+                    Criticidad = 2
+                };
+
+
+                bllBitacora.Insertar(logEntry);
+            }
+
+
+            return resultado;
         }
 
         public string Concatenar(BE.Comanda comanda)

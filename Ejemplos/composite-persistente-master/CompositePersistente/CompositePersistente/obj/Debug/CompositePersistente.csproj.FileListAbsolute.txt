@@ -1,6 +1,0 @@
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\bin\Debug\CompositePersistente.dll
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\bin\Debug\CompositePersistente.pdb
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\obj\Debug\CompositePersistente.csproj.AssemblyReference.cache
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\obj\Debug\CompositePersistente.csproj.CoreCompileInputs.cache
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\obj\Debug\CompositePersistente.dll
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Ejemplos\composite-persistente-master\CompositePersistente\CompositePersistente\obj\Debug\CompositePersistente.pdb

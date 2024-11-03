@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 using BE;
 using DAL;
 using Interfaces;
+using Services;
 
 namespace BLL
 {
     public class ControllerJefeDeCocina
     {
         private Ingrediente bllIngrediente = new Ingrediente();
+        Bitacora bllBitacora = new Bitacora();
 
 
-        
         public (List<BE.Ingrediente> ingredientesDisponibles, List<BE.Ingrediente> ingredientesFaltantes) VerificarDisponibilidad(BE.Pedido pedido)
         {
 
@@ -90,12 +91,38 @@ namespace BLL
             bllPedido.CambiarEstado(pedido, OrderType.Aceptado);
             bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
 
+            var logUser = SessionManager.Instance.User;
+            var logEntry = new Services.Bitacora
+            {
+                Usuario = logUser,
+                Fecha = DateTime.Now,
+                Modulo = TipoModulo.Pedido,
+                Operacion = TipoOperacion.AceptarPedido,
+                Criticidad = 4
+            };
+
+
+            bllBitacora.Insertar(logEntry);
+
+
         }
 
         public void RechazarPedido(BE.Pedido pedido)
         {
             bllPedido.CambiarEstado(pedido, OrderType.Rechazado);
             bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
+            var logUser = SessionManager.Instance.User;
+            var logEntry = new Services.Bitacora
+            {
+                Usuario = logUser,
+                Fecha = DateTime.Now,
+                Modulo = TipoModulo.Pedido,
+                Operacion = TipoOperacion.RechazarPedido,
+                Criticidad = 4
+            };
+
+
+            bllBitacora.Insertar(logEntry);
         }
 
         private BLL.User bllUser = new BLL.User();
@@ -113,6 +140,20 @@ namespace BLL
                 bllPedido.CambiarEstado(pedidoSeleccionado,OrderType.EnPreparacion);
 
                 bllDvh.Recalcular(bllDvh.Listar(), bllComanda.Listar(), bllComanda.Concatenar, c => c.ID, "COMANDA");
+
+
+                var logUser = SessionManager.Instance.User;
+                var logEntry = new Services.Bitacora
+                {
+                    Usuario = logUser,
+                    Fecha = DateTime.Now,
+                    Modulo = TipoModulo.Comanda,
+                    Operacion = TipoOperacion.GenerarComanda,
+                    Criticidad = 4
+                };
+
+
+                bllBitacora.Insertar(logEntry);
 
 
                 return nuevaComanda;

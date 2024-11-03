@@ -174,22 +174,14 @@ namespace TPRestaurante
         {
             if (MessageBox.Show("¿Está seguro?", "Confirme", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                RegistroBitacoraLogout(SessionManager.Instance.User);
+                
                 bllUser.Logout();
                 ValidarForm();
                 CerrarChildForms();
             }
         }
         
-        private void RegistroBitacoraLogout(IUser user)
-        {
-            bitacora.Fecha = DateTime.Now;
-            bitacora.Usuario = bllUser.GetUser(user.Username);
-            bitacora.Modulo = TipoModulo.Sesion;
-            bitacora.Operacion = TipoOperacion.Logout;
-            bitacora.Criticidad = 1; //TEST
-            bllBitacora.Insertar(bitacora);
-        }
+        
 
         private void itemIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -451,11 +443,6 @@ namespace TPRestaurante
             AbrirChildForm(recepcionDeInsumos);
         }
 
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmActualizarInsumos actualizarInsumos = new frmActualizarInsumos();
-            AbrirChildForm(actualizarInsumos);
-        }
 
         private void generarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -487,9 +474,6 @@ namespace TPRestaurante
             AbrirChildForm(evaluarSolicitudDeCotizacion);
         }
 
-        private void menuProductosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

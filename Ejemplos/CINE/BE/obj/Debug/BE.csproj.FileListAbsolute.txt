@@ -1,6 +1,0 @@
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\bin\Debug\BE.dll
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\bin\Debug\BE.pdb
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\obj\Debug\BE.csproj.AssemblyReference.cache
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\obj\Debug\BE.dll
-C:\Users\Dan\Documents\UAI\3- 2do Cuatrimestre 2023\Desarrollo y arquitectura de software\Ejercicio para practicar parcial 2\CINE\BE\obj\Debug\BE.pdb
