@@ -112,7 +112,7 @@ namespace BLL
         }
 
 
-        public string EnviarCorreoSolicitud(BE.SolicitudDeCotizacion solicitud, BE.Proveedor proveedor)
+        public string EnviarEmail(BE.SolicitudDeCotizacion solicitud, BE.Proveedor proveedor)
         {
             string mensaje = "";
             try

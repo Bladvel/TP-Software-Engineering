@@ -14,10 +14,10 @@ namespace BLL
     {
         MP_PagoInsumo mp = MpPagoInsumoCreator.GetInstance().CreateMapper() as MP_PagoInsumo;
         Bitacora bllBitacora = new Bitacora();
-        public List<BE.PagoInsumo> ListarPorFactura(BE.Factura factura)
-        {
-            return mp.GetByFactura(factura.NroFactura);
-        }
+        //public List<BE.PagoInsumo> ListarPorFactura(BE.Factura factura)
+        //{
+        //    return mp.GetByFactura(factura.NroFactura);
+        //}
 
         public int Insertar(BE.PagoInsumo pagoInsumo)
         {

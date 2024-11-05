@@ -103,7 +103,7 @@ namespace BLL
                 mail.From = new MailAddress("stevebladvel@gmail.com");
                 mail.To.Add(orden.Proveedor.Email);
                 mail.Subject = $"Orden de Compra N° {orden.NroOrden}";
-                mail.Body = CrearCuerpoCorreoOrdenCompra(orden);
+                mail.Body = CrearCuerpoCorreo(orden);
 
                 smtpServer.Send(mail);
 
@@ -132,7 +132,7 @@ namespace BLL
         }
 
         
-        private string CrearCuerpoCorreoOrdenCompra(BE.OrdenDeCompra orden)
+        private string CrearCuerpoCorreo(BE.OrdenDeCompra orden)
         {
             StringBuilder cuerpo = new StringBuilder();
             cuerpo.AppendLine($"Estimado {orden.Proveedor.Nombre},");

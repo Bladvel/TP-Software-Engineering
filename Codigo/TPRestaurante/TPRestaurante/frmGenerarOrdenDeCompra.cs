@@ -126,6 +126,7 @@ namespace TPRestaurante
                 string result = bllOrdenDeCompra.EnviarEmail(orden);
                 MessageBox.Show(result);
                 ActualizarGrillaSolicitudes();
+                grdInsumos.Columns.Clear();
             }
             else
             {

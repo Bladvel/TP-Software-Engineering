@@ -142,10 +142,6 @@ namespace BLL
             return mpDvh.Update(dvh);
         }
 
-        public void BorrarRegistros()
-        {
-            mpDvh.DeleteAll();
-        }
 
         public string ObtenerDV(string cadena)
         {

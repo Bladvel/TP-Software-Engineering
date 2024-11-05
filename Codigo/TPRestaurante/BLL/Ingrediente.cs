@@ -20,10 +20,10 @@ namespace BLL
             return mpIngrediente.GetAll();
         }
 
-        public List<BE.Ingrediente> ListarIngredientesPorProducto(int codProducto)
-        {
-            return mpIngrediente.GetIngredientsByProduct(codProducto);
-        }
+        //public List<BE.Ingrediente> ListarIngredientesPorProducto(int codProducto)
+        //{
+        //    return mpIngrediente.GetIngredientsByProduct(codProducto);
+        //}
 
         //public bool VerificarStock(BE.Ingrediente ingrediente, int cantidadRequerida)
         //{
@@ -93,8 +93,6 @@ namespace BLL
 
 
 
-
-        //A probar
         public List<BE.Ingrediente> FiltrarFaltantes(List<BE.Ingrediente> ingredientes)
         {
             List<BE.Ingrediente> faltantes = new List<BE.Ingrediente>();

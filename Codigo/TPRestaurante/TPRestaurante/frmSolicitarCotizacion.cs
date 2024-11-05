@@ -39,7 +39,7 @@ namespace TPRestaurante
 
                     if (proveedor != null && solicitudSeleccionada != null)
                     {
-                        resultado += bllSolicitudDeCotizacion.EnviarCorreoSolicitud(solicitudSeleccionada, proveedor) + "\n";
+                        resultado += bllSolicitudDeCotizacion.EnviarEmail(solicitudSeleccionada, proveedor) + "\n";
                         bllSolicitudDeCotizacion.CambiarEstado(solicitudSeleccionada, EstadoSolicitudCotizacion.Enviada);
 
                        
