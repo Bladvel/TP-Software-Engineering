@@ -40,7 +40,7 @@ namespace DAL
         {
             List<NotaDeEntrega> notas = new List<NotaDeEntrega>();
 
-            access.Close();
+            access.Open();
             DataTable tabla = access.Read("LISTAR_NOTA_DE_ENTREGA");
             access.Close();
             foreach (DataRow dr in tabla.Rows)

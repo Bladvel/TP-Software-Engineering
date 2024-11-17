@@ -34,7 +34,7 @@ namespace TPRestaurante
             CargarIdiomas();
             SessionManager.SuscribirObservador(this);
 
-
+            /************************ CALCULO INICIAL DE DVH ************************/
 
             //BLL.DVH bllDvh = new BLL.DVH();
             //Cliente bllCliente = new Cliente();
@@ -48,6 +48,13 @@ namespace TPRestaurante
             //Pedido bllPedido = new Pedido();
             //Producto bllProducto = new Producto();
 
+            //Factura bllFactura = new Factura();
+            //ItemIngrediente bllItemIngrediente = new ItemIngrediente();
+            //NotaDeEntrega bllNotaDeEntrega = new NotaDeEntrega();
+            //OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
+            //PagoInsumo bllPagoInsumo = new PagoInsumo();
+            //Proveedor bllProveedor = new Proveedor();
+            //SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
 
             //List<Services.DVH> dvhs = bllDvh.Listar();
             //List<BE.Cliente> clientes = bllCliente.Listar();
@@ -61,6 +68,14 @@ namespace TPRestaurante
             //List<BE.Pedido> pedidos = bllPedido.Listar();
             //List<BE.Producto> productos = bllProducto.Listar();
 
+            //List<BE.Factura> facturas = bllFactura.Listar();
+            //List<BE.ItemIngrediente> itemIngredientes = bllItemIngrediente.Listar();
+            //List<BE.NotaDeEntrega> notasDeEntrega = bllNotaDeEntrega.Listar();
+            //List<BE.OrdenDeCompra> ordenesDeCompra = bllOrdenDeCompra.Listar();
+            //List<BE.PagoInsumo> pagosInsumo = bllPagoInsumo.Listar();
+            //List<BE.Proveedor> proveedores = bllProveedor.Listar();
+            //List<BE.SolicitudDeCotizacion> solicitudesDeCotizacion = bllSolicitudDeCotizacion.Listar();
+
             //bllDvh.Recalcular(dvhs, clientes, bllCliente.Concatenar, c => c.ID, "CLIENTE");
             //bllDvh.Recalcular(dvhs, comandas, bllComanda.Concatenar, c => c.ID, "COMANDA");
             //bllDvh.Recalcular(dvhs, ingredientes, bllIngrediente.Concatenar, c => c.CodIngrediente, "INGREDIENTE");
@@ -72,6 +87,13 @@ namespace TPRestaurante
             //bllDvh.Recalcular(dvhs, pedidos, bllPedido.Concatenar, c => c.NroPedido, "PEDIDO");
             //bllDvh.Recalcular(dvhs, productos, bllProducto.Concatenar, c => c.CodProducto, "PRODUCTO");
 
+            //bllDvh.Recalcular(dvhs, facturas, bllFactura.Concatenar, c => c.NroFactura, "FACTURA");
+            //bllDvh.Recalcular(dvhs, itemIngredientes, bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+            //bllDvh.Recalcular(dvhs, notasDeEntrega, bllNotaDeEntrega.Concatenar, c => c.NroNota, "NOTA_DE_ENTREGA");
+            //bllDvh.Recalcular(dvhs, ordenesDeCompra, bllOrdenDeCompra.Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+            //bllDvh.Recalcular(dvhs, pagosInsumo, bllPagoInsumo.Concatenar, c => c.NroPago, "PAGO_INSUMO");
+            //bllDvh.Recalcular(dvhs, proveedores, bllProveedor.Concatenar, c => c.Cuit, "PROVEEDOR");
+            //bllDvh.Recalcular(dvhs, solicitudesDeCotizacion, bllSolicitudDeCotizacion.Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
 
 
 

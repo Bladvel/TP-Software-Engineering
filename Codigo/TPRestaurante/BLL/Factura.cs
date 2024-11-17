@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using BE;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
@@ -17,6 +18,7 @@ namespace BLL
         OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
         PagoInsumo bllPagoInsumo = new PagoInsumo();
         BLL.Bitacora bllBitacora = new BLL.Bitacora();
+        DVH bllDvh = new DVH();
 
         public int Insertar(BE.Factura factura)
         {
@@ -34,7 +36,7 @@ namespace BLL
 
                     resultado = mp.Insert(factura);
 
-                    if (resultado!=-1)
+                    if (resultado != -1)
                     {
                         var logUser = SessionManager.Instance.User;
                         var logEntry = new Services.Bitacora
@@ -47,7 +49,7 @@ namespace BLL
                         };
 
                         bllBitacora.Insertar(logEntry);
-
+                        bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
 
 
                     }
@@ -56,6 +58,7 @@ namespace BLL
                 }
 
             }
+
             return resultado;
         }
 
@@ -78,6 +81,7 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
             }
 
 
@@ -95,7 +99,8 @@ namespace BLL
         {
             List<BE.Factura> facturas = mp.GetAll();
 
-            List<BE.Factura> facturasPendientes = facturas.FindAll(f => f.Estado == EstadoFactura.Pendiente || f.Estado == EstadoFactura.PagadaParcialmente);
+            List<BE.Factura> facturasPendientes = facturas.FindAll(f =>
+                f.Estado == EstadoFactura.Pendiente || f.Estado == EstadoFactura.PagadaParcialmente);
             return facturasPendientes;
 
 
@@ -120,9 +125,9 @@ namespace BLL
 
         public double ObtenerTotalAdeudado(BE.Factura factura)
         {
-            
 
-            double totalAdeudado =  ObtenerMontoTotal(factura) - ObtenerTotalPagado(factura);
+
+            double totalAdeudado = ObtenerMontoTotal(factura) - ObtenerTotalPagado(factura);
 
 
             return totalAdeudado;
@@ -140,19 +145,20 @@ namespace BLL
             {
                 return "Por la factura no puede ser nula";
             }
+
             if (pago == null)
             {
                 return "El pago no puede ser nulo";
             }
 
-            
-            
+
+
             string resultado = "";
 
             int TotalCuotas = factura.TotalCuotas;
             int cuotasPagas = factura.Pagos.Count;
             int cuotaDelPago = pago.NroCuota;
-            int cuotaActual = cuotasPagas +1;
+            int cuotaActual = cuotasPagas + 1;
             double montoPago = pago.Monto;
 
 
@@ -217,6 +223,7 @@ namespace BLL
                                 };
 
                                 bllBitacora.Insertar(logEntry);
+
                             }
 
 
@@ -227,6 +234,7 @@ namespace BLL
                     {
                         resultado = "Cuota incorrecta";
                     }
+
                     transaction.Complete();
                 }
             }
@@ -234,7 +242,7 @@ namespace BLL
             {
                 resultado = "Ocurrió un error al procesar el pago. Por favor, inténtelo de nuevo.";
             }
-            
+
 
             return resultado;
 
@@ -242,6 +250,11 @@ namespace BLL
 
         }
 
+        public string Concatenar(BE.Factura factura)
+        {
+            return factura.NroFactura.ToString() + factura.Fecha + factura.OrdenDeCompra.NroOrden +
+                   factura.TotalCuotas + factura.MontoTotal + factura.Estado;
 
+        }
     }
 }

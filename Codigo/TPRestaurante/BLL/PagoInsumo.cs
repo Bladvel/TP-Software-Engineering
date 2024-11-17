@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BE;
 using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
@@ -14,6 +15,7 @@ namespace BLL
     {
         MP_PagoInsumo mp = MpPagoInsumoCreator.GetInstance().CreateMapper() as MP_PagoInsumo;
         Bitacora bllBitacora = new Bitacora();
+        DVH bllDvh = new DVH();
         //public List<BE.PagoInsumo> ListarPorFactura(BE.Factura factura)
         //{
         //    return mp.GetByFactura(factura.NroFactura);
@@ -36,6 +38,7 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroPago, "PAGO_INSUMO");
             }
 
 
@@ -44,6 +47,15 @@ namespace BLL
             return resultado;
         }
 
+        public List<BE.PagoInsumo> Listar()
+        {
+            return mp.GetAll();
+        }
+
+        public string Concatenar(BE.PagoInsumo pagoInsumo)
+        {
+            return pagoInsumo.NroPago.ToString() + pagoInsumo.Factura.NroFactura + pagoInsumo.Fecha  + pagoInsumo.Monto + pagoInsumo.TipoPago + pagoInsumo.NroCuota;
+        }
 
     }
 }

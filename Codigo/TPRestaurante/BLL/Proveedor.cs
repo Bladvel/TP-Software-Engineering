@@ -20,5 +20,9 @@ namespace BLL
         }
 
 
+        public string Concatenar(BE.Proveedor proveedor)
+        {
+            return proveedor.Cuit + proveedor.Nombre + proveedor.Email + proveedor.Telefono + proveedor.Direccion;
+        }
     }
 }

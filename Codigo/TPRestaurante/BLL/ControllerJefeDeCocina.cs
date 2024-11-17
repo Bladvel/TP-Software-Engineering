@@ -83,7 +83,7 @@ namespace BLL
                 {
 
                     this.bllIngrediente.ActualizarStock(ingrediente, -itemProducto.Cantidad);
-                    bllDvh.Recalcular(bllDvh.Listar(), bllIngrediente.Listar(), bllIngrediente.Concatenar,i=> i.CodIngrediente, "INGREDIENTE");
+                    //bllDvh.Recalcular(bllDvh.Listar(), bllIngrediente.Listar(), bllIngrediente.Concatenar,i=> i.CodIngrediente, "INGREDIENTE");
 
                 }
             }

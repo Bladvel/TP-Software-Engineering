@@ -9,6 +9,7 @@ using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
 using Services;
+using BE;
 
 namespace BLL
 {
@@ -16,6 +17,8 @@ namespace BLL
     {
         MP_SolicitudDeCotizacion mp = MpSolicitudDeCotizacionCreator.GetInstance.CreateMapper() as MP_SolicitudDeCotizacion;
         Bitacora bllBitacora = new Bitacora();
+        DVH bllDvh = new DVH();
+        ItemIngrediente bllItemIngrediente = new ItemIngrediente();
         public List<BE.SolicitudDeCotizacion> Listar()
         {
             return mp.GetAll();
@@ -44,6 +47,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
+                bllDvh.Recalcular(bllDvh.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
             }
 
 
@@ -69,6 +74,7 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
             }
 
 
@@ -92,6 +98,7 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                bllDvh.Recalcular(bllDvh.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
             }
 
 
@@ -175,6 +182,9 @@ namespace BLL
         }
 
 
-
+        public string Concatenar(BE.SolicitudDeCotizacion solicitud)
+        {
+            return solicitud.NroSolicitud.ToString() + solicitud.Fecha + solicitud.Estado + solicitud.Comentarios;
+        }
     }
 }

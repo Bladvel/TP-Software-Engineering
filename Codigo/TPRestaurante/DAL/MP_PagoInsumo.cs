@@ -38,7 +38,15 @@ namespace DAL
 
         public override List<PagoInsumo> GetAll()
         {
-            throw new NotImplementedException();
+            List<PagoInsumo> pagos = new List<PagoInsumo>();
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PAGO_INSUMO");
+            access.Close();
+            foreach (DataRow dr in dt.Rows)
+            {
+                pagos.Add(Transform(dr));
+            }
+            return pagos;
         }
 
         public override int Insert(PagoInsumo entity)

@@ -76,7 +76,18 @@ namespace DAL
 
         public override int Delete(DVH entity)
         {
-            throw new NotImplementedException();
+            List<SqlParameter> parameters = new List<SqlParameter>()
+            {
+                access.CreateParameter("@tabla", entity.Tabla),
+                access.CreateParameter("@reg", entity.Registro),
+                access.CreateParameter("@dv", entity.DV)
+            };
+
+            access.Open();
+            int filasAfectadas = access.Write("ELIMINAR_DVH", parameters);
+            access.Close();
+
+            return filasAfectadas;
         }
 
         public int DeleteAll()

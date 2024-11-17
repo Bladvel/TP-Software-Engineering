@@ -27,7 +27,13 @@ namespace BLL
         Pedido bllPedido = new Pedido();
         Producto bllProducto = new Producto();
         
-
+        Factura bllFactura = new Factura();
+        ItemIngrediente bllItemIngrediente = new ItemIngrediente();
+        NotaDeEntrega bllNotaDeEntrega = new NotaDeEntrega();
+        OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
+        PagoInsumo bllPagoInsumo = new PagoInsumo();
+        Proveedor bllProveedor = new Proveedor();
+        SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
 
         public List<RegistroInvalido> ValidarDigitoVerificador()
         {
@@ -44,7 +50,15 @@ namespace BLL
             List<BE.PagoTarjeta> pagosTarjeta = bllPagoTarjeta.Listar();
             List<BE.Pedido> pedidos = bllPedido.Listar();
             List<BE.Producto> productos = bllProducto.Listar();
-           
+
+
+            List<BE.Factura> facturas = bllFactura.Listar();
+            List<BE.ItemIngrediente> itemIngredientes = bllItemIngrediente.Listar();
+            List<BE.NotaDeEntrega> notasDeEntrega = bllNotaDeEntrega.Listar();
+            List<BE.OrdenDeCompra> ordenesDeCompra = bllOrdenDeCompra.Listar();
+            List<BE.PagoInsumo> pagosInsumo = bllPagoInsumo.Listar();
+            List<BE.Proveedor> proveedores = bllProveedor.Listar();
+            List<BE.SolicitudDeCotizacion> solicitudesDeCotizacion = bllSolicitudDeCotizacion.Listar();
 
             // Listado de DVH (Digito Verificador Horizontal)
             List<Services.DVH> dVHs = Listar();
@@ -63,20 +77,39 @@ namespace BLL
                     case "COMANDA":
                         ValidarRegistro(comandas, bllComanda.Concatenar, comanda => comanda.ID, dvh, ref registroValido, ref estado);
                         break;
+                    case "FACTURA":
+                        ValidarRegistro(facturas, bllFactura.Concatenar, factura => factura.NroFactura, dvh, ref registroValido, ref estado);
+                        break;
                     case "INGREDIENTE":
                         ValidarRegistro(ingredientes, bllIngrediente.Concatenar, ingrediente => ingrediente.CodIngrediente, dvh, ref registroValido, ref estado);
                         break;
+                    case "ITEM_INGREDIENTE":
+                        ValidarRegistro(itemIngredientes, bllItemIngrediente.Concatenar, item => item.ID, dvh,
+                            ref registroValido, ref estado);
+                        break;
+
                     case "ITEM_PRODUCTO":
                         ValidarRegistro(itemProductos, bllItemProducto.Concatenar, itemProducto => itemProducto.Id, dvh, ref registroValido, ref estado);
                         break;
                     case "METODO_DE_PAGO":
                         ValidarRegistro(metodosDePago, bllMetodoDePago.Concatenar, metodo => metodo.id, dvh, ref registroValido, ref estado);
                         break;
+                    case "NOTA_DE_ENTREGA":
+                        ValidarRegistro(notasDeEntrega, bllNotaDeEntrega.Concatenar, nota => nota.NroNota, dvh,
+                            ref registroValido, ref estado);
+                        break;
+                    case "ORDEN_DE_COMPRA":
+                        ValidarRegistro(ordenesDeCompra, bllOrdenDeCompra.Concatenar, ordenDeCompra => ordenDeCompra.NroOrden, dvh, ref registroValido, ref estado);
+                        break;
                     case "PAGO":
                         ValidarRegistro(pagos, bllPago.Concatenar, pago => pago.Id, dvh, ref registroValido, ref estado);
                         break;
                     case "PAGO_TARJETA":
                         ValidarRegistro(pagosTarjeta, bllPagoTarjeta.Concatenar, pagoTarjeta => pagoTarjeta.id, dvh, ref registroValido, ref estado);
+                        break;
+                    case "PAGO_INSUMO":
+                        ValidarRegistro(pagosInsumo, bllPagoInsumo.Concatenar, pago => pago.NroPago, dvh,
+                            ref registroValido, ref estado);
                         break;
                     case "PAGO_EFECTIVO":
                         ValidarRegistro(pagosEfectivo, bllPagoEfectivo.Concatenar, pagoEfectivo => pagoEfectivo.id, dvh, ref registroValido, ref estado);
@@ -87,6 +120,14 @@ namespace BLL
                     case "PRODUCTO":
                         ValidarRegistro(productos, bllProducto.Concatenar, producto => producto.CodProducto, dvh, ref registroValido, ref estado);
                         break;
+                    case "PROVEEDOR":
+                        ValidarRegistro(proveedores, bllProveedor.Concatenar, proveedor => proveedor.Cuit, dvh, ref registroValido, ref estado);
+                        break;
+                    case "SOLICITUD_DE_COMPRA": //Solicitud de cotizacion en el sistema
+                        ValidarRegistro(solicitudesDeCotizacion, bllSolicitudDeCotizacion.Concatenar,
+                            solicitud => solicitud.NroSolicitud, dvh, ref registroValido, ref estado);
+                        break;
+
                     default:
                         registroValido = false;
                         estado = "Tabla desconocida";
@@ -142,6 +183,12 @@ namespace BLL
             return mpDvh.Update(dvh);
         }
 
+        public int Eliminar(Services.DVH dvh)
+        {
+            return mpDvh.Delete(dvh);
+        }
+
+
 
         public string ObtenerDV(string cadena)
         {
@@ -150,6 +197,10 @@ namespace BLL
 
         public void Recalcular<T>(List<Services.DVH> dvhs, List<T> items, Func<T, string> concatenar, Func<T, int> obtenerId, string tabla)
         {
+
+            //modificacion para considerar el caso en que elimine un elemento de una tabla
+            HashSet<int> idsActuales = items.Select(obtenerId).ToHashSet();
+
             for (int i = 0; i < items.Count; i++)
             {
                 string cadena = concatenar(items[i]);
@@ -168,6 +219,18 @@ namespace BLL
                     Insertar(dvh);
                 }
             }
+
+            // Eliminar DVH que ya no corresponden a ningún registro actual
+            foreach (var dvh in dvhs)
+            {
+                if (dvh.Tabla == tabla && !idsActuales.Contains(dvh.Registro))
+                {
+                    Eliminar(dvh); 
+                }
+            }
+
+
+
         }
 
         

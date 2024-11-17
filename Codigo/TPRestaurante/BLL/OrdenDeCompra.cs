@@ -9,6 +9,7 @@ using DAL;
 using DAL.FactoryMapper;
 using Interfaces;
 using Services;
+using BE;
 
 namespace BLL
 {
@@ -17,6 +18,7 @@ namespace BLL
         MP_OrdenDeCompra mp = MpOrdenDeCompraCreator.GetInstance.CreateMapper() as MP_OrdenDeCompra;
         SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
         BLL.Bitacora bllBitacora = new Bitacora();
+        DVH bllDvh = new DVH();
         public List<BE.OrdenDeCompra> Listar()
         {
             return mp.GetAll();
@@ -46,7 +48,7 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-
+                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
 
 
                 if (bllSolicitudDeCotizacion.ActualizarEstadoSolicitud(ordenDeCompra.Solicitud,
@@ -77,7 +79,8 @@ namespace BLL
                  };
 
                  bllBitacora.Insertar(logEntry);
-            }
+                 bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+             }
 
              return resultado;
         }
@@ -163,6 +166,11 @@ namespace BLL
         public double ObtenerTotal(BE.OrdenDeCompra ordenSeleccionada)
         {
             return ordenSeleccionada.Solicitud.Ingredientes.Sum(i => i.CantidadRequerida * i.PrecioCotizacion);
+        }
+
+        public string Concatenar(BE.OrdenDeCompra orden)
+        {
+            return orden.NroOrden.ToString()+ orden.Fecha + orden.Proveedor.Cuit + orden.Solicitud.NroSolicitud + orden.EstadoOrden +orden.Observaciones + orden.CondicionDePago;
         }
     }
 }
