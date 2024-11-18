@@ -166,3 +166,4 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestau.BD32C38D.Up2Date
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\SISFOOD.exe
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\SISFOOD.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmReporteProductos.resources

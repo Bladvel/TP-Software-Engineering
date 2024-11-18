@@ -43,6 +43,7 @@ namespace Interfaces
         GestionarGestionDePagos,
         VerCargarFacturas,
         VerRegistrarPagos,
+        VerReportes,
         
     }
 }

@@ -241,6 +241,12 @@
     <Compile Include="frmReparacion.Designer.cs">
       <DependentUpon>frmReparacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportePedidos.Designer.cs">
+      <DependentUpon>frmReportePedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRespaldo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReparacion.resx">
       <DependentUpon>frmReparacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportePedidos.resx">
+      <DependentUpon>frmReportePedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRespaldo.resx">
       <DependentUpon>frmRespaldo.cs</DependentUpon>

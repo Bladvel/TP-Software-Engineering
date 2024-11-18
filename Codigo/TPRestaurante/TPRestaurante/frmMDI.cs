@@ -173,6 +173,8 @@ namespace TPRestaurante
                 registrarPagoToolStripMenuItem1.Visible = SessionManager.Instance.IsInRole(PermissionType.VerRegistrarPagos);
 
 
+                reportesToolStripMenuItem.Visible = SessionManager.Instance.IsInRole(PermissionType.VerReportes);
+
                 Traducir(SessionManager.Instance.User.Idioma);
             }
             else
@@ -188,6 +190,7 @@ namespace TPRestaurante
                 menuInventario.Visible = false;
                 comprasToolStripMenuItem.Visible = false;
                 maestrisToolStripMenuItem.Visible = false;
+                reportesToolStripMenuItem.Visible = false;
                 Traducir();
             }
 
@@ -498,6 +501,10 @@ namespace TPRestaurante
             AbrirChildForm(evaluarSolicitudDeCotizacion);
         }
 
-        
+        private void pedidosFrecuentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteProductos reportePedidos = new frmReporteProductos();
+            AbrirChildForm(reportePedidos);
+        }
     }
 }

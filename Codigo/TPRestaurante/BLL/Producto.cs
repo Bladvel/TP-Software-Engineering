@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,7 +118,38 @@ namespace BLL
             return producto.CodProducto + producto.Nombre + producto.Descripcion + producto.PrecioActual + producto.Borrado;
         }
 
+        public DataTable ListarProductosVendidos()
+        {
+            return mp.GetProductsSold();
+        }
 
+        public List<string> ObtenerPromociones(DataTable productos)
+        {
+            List<string> promociones = new List<string>();
 
+            foreach (DataRow row in productos.Rows)
+            {
+                string producto = row["Producto"]?.ToString();
+                int cantidadVendida = Convert.ToInt32(row["Cantidad_Vendida"]);
+                double ingresos = Convert.ToDouble(row["Ingresos"]);
+
+                
+                if (cantidadVendida > 4 && ingresos > 10000)
+                {
+                    promociones.Add($"Promoción: 20% de descuento en {producto} por alta demanda.");
+                }
+                else if (cantidadVendida < 3)
+                {
+                    promociones.Add($"Promoción: 2x1 en {producto} para incrementar las ventas.");
+                }
+                else
+                {
+                    promociones.Add($"Promoción: Envío gratuito en pedidos de {producto}.");
+                }
+                
+            }
+
+            return promociones;
+        }
     }
 }

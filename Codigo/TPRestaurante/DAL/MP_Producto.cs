@@ -105,6 +105,15 @@ namespace DAL
             return filasAfectadas;
         }
 
+        public DataTable GetProductsSold()
+        {
+            access.Open();
+            DataTable dt = access.Read("LISTAR_PRODUCTOS_VENDIDOS");
+            access.Close();
+            return dt;
+        }
+
+
         public MP_Producto(Access access, MP_Ingrediente mpIngrediente) : base(access)
         {
             this.mpIngrediente = mpIngrediente;
