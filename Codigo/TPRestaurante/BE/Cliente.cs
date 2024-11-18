@@ -4,12 +4,16 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
+    [TableMapping("CLIENTE")]
     public class Cliente
     {
         private int id;
+
+        [ColumnMapping("ID")]
         public int ID
         {
             get=> id; 
@@ -19,6 +23,8 @@ namespace BE
 
 
         private string nombre;
+
+        [ColumnMapping("NOMBRE")]
         public string Nombre 
         {
             get
@@ -33,6 +39,7 @@ namespace BE
 
         private string apellido;
 
+        [ColumnMapping("APELLIDO")]
         public string Apellido
         {
             get
@@ -47,6 +54,7 @@ namespace BE
 
         private int dni;
 
+        [ColumnMapping("DNI")]
         public int DNI
         {
             get
@@ -61,6 +69,7 @@ namespace BE
 
         private string telefono;
 
+        [ColumnMapping("TELEFONO")]
         public string Telefono
         {
             get
@@ -76,6 +85,7 @@ namespace BE
 
         private bool activo;
 
+        [ColumnMapping("ACTIVO")]
         public bool Activo //borrado logico
         {
             get { return activo; }

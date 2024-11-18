@@ -17,7 +17,7 @@ namespace BLL
     {
         MP_SolicitudDeCotizacion mp = MpSolicitudDeCotizacionCreator.GetInstance.CreateMapper() as MP_SolicitudDeCotizacion;
         Bitacora bllBitacora = new Bitacora();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
         ItemIngrediente bllItemIngrediente = new ItemIngrediente();
         public List<BE.SolicitudDeCotizacion> Listar()
         {
@@ -47,8 +47,11 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
-                bllDvh.Recalcular(bllDvh.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
+                DVH.Recalcular(DVH.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.SolicitudDeCotizacion));
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.ItemIngrediente));
             }
 
 
@@ -74,7 +77,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.SolicitudDeCotizacion));
             }
 
 
@@ -98,7 +102,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+                DVH.Recalcular(DVH.Listar(), bllItemIngrediente.Listar(), bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.ItemIngrediente));
             }
 
 

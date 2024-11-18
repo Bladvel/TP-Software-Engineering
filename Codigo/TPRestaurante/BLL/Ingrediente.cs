@@ -15,7 +15,7 @@ namespace BLL
     {
         MP_Ingrediente mpIngrediente = MpIngredienteCreator.GetInstance.CreateMapper() as MP_Ingrediente;
         BLL.Bitacora bllBitacora = new BLL.Bitacora();
-        BLL.DVH bllDvh = new DVH();
+        //BLL.DVH bllDvh = new DVH();
         public List<BE.Ingrediente> Listar()
         {
             return mpIngrediente.GetAll();
@@ -65,7 +65,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, ing=> ing.CodIngrediente, "INGREDIENTE");
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, ing => ing.CodIngrediente, "INGREDIENTE");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Ingrediente));
             }
 
         }

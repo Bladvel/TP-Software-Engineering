@@ -89,7 +89,7 @@ namespace BLL
             }
 
             bllPedido.CambiarEstado(pedido, OrderType.Aceptado);
-            bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
+            
 
             var logUser = SessionManager.Instance.User;
             var logEntry = new Services.Bitacora
@@ -110,7 +110,6 @@ namespace BLL
         public void RechazarPedido(BE.Pedido pedido)
         {
             bllPedido.CambiarEstado(pedido, OrderType.Rechazado);
-            bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
             var logUser = SessionManager.Instance.User;
             var logEntry = new Services.Bitacora
             {
@@ -128,7 +127,7 @@ namespace BLL
         private BLL.User bllUser = new BLL.User();
 
         private Comanda bllComanda = new Comanda();
-        private DVH bllDvh = new DVH();
+        //private DVH bllDvh = new DVH();
         public BE.Comanda GenerarComanda(BE.Pedido pedidoSeleccionado, BE.User cocineroSeleccionado, string instrucciones)
         {
             BE.Comanda nuevaComanda = new BE.Comanda(pedidoSeleccionado, cocineroSeleccionado, instrucciones);
@@ -139,7 +138,7 @@ namespace BLL
                 bllUser.UpdateAvailability(cocineroSeleccionado, AvailabilityType.NoDisponible);
                 bllPedido.CambiarEstado(pedidoSeleccionado,OrderType.EnPreparacion);
 
-                bllDvh.Recalcular(bllDvh.Listar(), bllComanda.Listar(), bllComanda.Concatenar, c => c.ID, "COMANDA");
+                
 
 
                 var logUser = SessionManager.Instance.User;

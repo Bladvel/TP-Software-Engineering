@@ -95,6 +95,8 @@ namespace TPRestaurante
             //bllDvh.Recalcular(dvhs, proveedores, bllProveedor.Concatenar, c => c.Cuit, "PROVEEDOR");
             //bllDvh.Recalcular(dvhs, solicitudesDeCotizacion, bllSolicitudDeCotizacion.Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
 
+            //BLL.DVV bllDvv = new BLL.DVV();
+            //bllDvv.Recalcular();
 
 
 

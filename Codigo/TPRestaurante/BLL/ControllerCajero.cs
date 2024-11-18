@@ -14,7 +14,7 @@ namespace BLL
         Pedido bllPedido = new Pedido();
         ItemProducto bllItemProducto = new ItemProducto();
         Pago bllPago = new Pago();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
         Bitacora bllBitacora = new Bitacora();
         public bool RegistrarPedido(List<BE.ItemProducto> productos, BE.Cliente cliente)
         {
@@ -27,8 +27,8 @@ namespace BLL
 
             if (bllPedido.RegistrarPedido(pedido) > 0)
             {
-                bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar,p=>p.NroPedido, "PEDIDO");
-                bllDvh.Recalcular(bllDvh.Listar(), bllItemProducto.Listar(), bllItemProducto.Concatenar,p=>p.Id, "ITEM_PRODUCTO");
+                DVH.Recalcular(DVH.Listar(), bllItemProducto.Listar(), bllItemProducto.Concatenar, p => p.Id, "ITEM_PRODUCTO");
+                DVV.Recalcular(bllItemProducto.Listar().Cast<object>().ToList(), typeof(BE.ItemProducto));
                 return true;
             }
             return false;
@@ -54,13 +54,19 @@ namespace BLL
             if (bllPago.ProcesarPago(nuevoPago))
             {
                idPago= bllPago.Insertar(nuevoPago);
-               bllDvh.Recalcular(bllDvh.Listar(), bllPago.Listar(), bllPago.Concatenar, c => c.Id, "PAGO");
-               bllDvh.Recalcular(bllDvh.Listar(), bllMetodoDePago.Listar(), bllMetodoDePago.Concatenar, c => c.id, "METODO_DE_PAGO");
-               bllDvh.Recalcular(bllDvh.Listar(), bllPagoEfectivo.Listar(), bllPagoEfectivo.Concatenar, c => c.id, "PAGO_EFECTIVO");
-               bllDvh.Recalcular(bllDvh.Listar(), bllPagoTarjeta.Listar(), bllPagoTarjeta.Concatenar, c => c.id, "PAGO_TARJETA");
                
-               bllPedido.CambiarEstado(pedidoSeleccionado,PaymentState.Pagado);
-               bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
+               DVH.Recalcular(DVH.Listar(), bllMetodoDePago.Listar(), bllMetodoDePago.Concatenar, c => c.id, "METODO_DE_PAGO");
+               DVH.Recalcular(DVH.Listar(), bllPagoEfectivo.Listar(), bllPagoEfectivo.Concatenar, c => c.id, "PAGO_EFECTIVO");
+               DVH.Recalcular(DVH.Listar(), bllPagoTarjeta.Listar(), bllPagoTarjeta.Concatenar, c => c.id, "PAGO_TARJETA");
+
+               DVV.Recalcular(bllMetodoDePago.Listar().Cast<object>().ToList(), typeof(BE.MetodoDePago));
+               DVV.Recalcular(bllPagoEfectivo.Listar().Cast<object>().ToList(), typeof(BE.PagoEfectivo));
+               DVV.Recalcular(bllPagoTarjeta.Listar().Cast<object>().ToList(), typeof(BE.PagoTarjeta));
+
+
+
+bllPedido.CambiarEstado(pedidoSeleccionado,PaymentState.Pagado);
+               
             }
 
             return idPago;
@@ -87,8 +93,6 @@ namespace BLL
                 bllBitacora.Insertar(logEntry);
 
 
-
-                bllDvh.Recalcular(bllDvh.Listar(), bllPedido.Listar(), bllPedido.Concatenar, p => p.NroPedido, "PEDIDO");
             }
 
             return resultado;

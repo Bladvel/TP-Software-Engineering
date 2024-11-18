@@ -7,9 +7,13 @@ using Interfaces;
 
 namespace BE
 {
+    [TableMapping("METODO_DE_PAGO")]
     public class MetodoDePago: IMetodoDePago
     {
-        public int id { get; set; }
-        public PaymentMethodType tipo { get; set; }
+        [ColumnMapping("ID")]
+        public virtual int id { get; set; }
+
+        [ColumnMapping("TIPO")]
+        public virtual PaymentMethodType tipo { get; set; }
     }
 }

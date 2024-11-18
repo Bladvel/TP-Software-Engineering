@@ -11,7 +11,7 @@ namespace BLL
     {
         DAL.MP_Producto_Bitacora mpProductoBitacora = MpProductoBitacoraCreator.GetInstance.CreateMapper() as DAL.MP_Producto_Bitacora;
         Producto bllProducto = new Producto();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
         public List<BE.ProductoBitacora> Listar()
         {
             return mpProductoBitacora.GetAll();
@@ -32,7 +32,7 @@ namespace BLL
             producto.PrecioActual = bitacora.PrecioActual;
             producto.Borrado = false;
             string result = bllProducto.Modificar(producto);
-            bllDvh.Recalcular(bllDvh.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
+            DVH.Recalcular(DVH.Listar(), bllProducto.Listar(), bllProducto.Concatenar, p => p.CodProducto, "PRODUCTO");
 
             return result;
 

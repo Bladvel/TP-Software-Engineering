@@ -18,15 +18,16 @@ namespace TPRestaurante
         BLL.User bllUser;
         private Bitacora bitacora;
         private BLL.Bitacora bllBitacora;
-        BLL.DVH bllDVH;
+        //BLL.DVH bllDVH;
         private List<RegistroInvalido> registrosInvalidos = new List<RegistroInvalido>();
+        private List<ColumnaInvalida> columnasInvalidas = new List<ColumnaInvalida>();
         public frmLogin()
         {
             InitializeComponent();
             bllUser = new BLL.User();
             bitacora = new Bitacora();
             bllBitacora = new BLL.Bitacora();
-            bllDVH = new BLL.DVH();
+            //bllDVH = new BLL.DVH();
 
 
         }
@@ -47,16 +48,16 @@ namespace TPRestaurante
                         
 
                         //******************* DESCOMENTAR SI SE DESEA HABILITAR EL DV ************************
-                        //backgroundWorker1.RunWorkerAsync();
+                        backgroundWorker1.RunWorkerAsync();
                         //************************************************************************************
 
                     }
 
                     //COMENTAR SI SE DESEA HABILITAR EL DV
 
-                    frmMDI parent = (frmMDI)this.MdiParent;
-                    parent.ValidarForm();
-                    this.Close();
+                    //frmMDI parent = (frmMDI)this.MdiParent;
+                    //parent.ValidarForm();
+                    //this.Close();
                 }
                 else
                 {
@@ -168,7 +169,8 @@ namespace TPRestaurante
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            registrosInvalidos = bllDVH.ValidarDigitoVerificador();
+            registrosInvalidos = BLL.DVH.ValidarDigitoVerificador();
+            columnasInvalidas = BLL.DVV.ValidarDigitoVerificador();
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -180,7 +182,7 @@ namespace TPRestaurante
 
                 if (SessionManager.Instance.IsInRole(PermissionType.GestionarAdmin))
                 {
-                    frmReparacion frmReparacion = new frmReparacion(registrosInvalidos);
+                    frmReparacion frmReparacion = new frmReparacion(registrosInvalidos, columnasInvalidas);
                     frmReparacion.ShowDialog();
                 }
                 else

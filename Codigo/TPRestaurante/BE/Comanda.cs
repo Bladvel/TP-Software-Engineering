@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
+    [TableMapping("COMANDA")]
     public class Comanda
     {
         private int id;
+
+        [ColumnMapping("ID")]
         public int ID
         {
             get => id; 
@@ -16,6 +20,8 @@ namespace BE
         }
 
         private string descripcion;
+
+        [ColumnMapping("DESCRIPCION")]
         public string Descripcion
         {
             get { return descripcion; }
@@ -23,6 +29,8 @@ namespace BE
         }
 
         private Pedido pedido;
+
+        [ColumnMapping("ID_PEDIDO")]
         public Pedido PedidoAsignado
         {
             get => pedido; 
@@ -30,6 +38,8 @@ namespace BE
         }
 
         private User cocinero;
+
+        [ColumnMapping("ID_COCINERO")]
         public User Cocinero
         {
             get => cocinero;

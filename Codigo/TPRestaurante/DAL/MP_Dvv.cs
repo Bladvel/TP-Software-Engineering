@@ -20,7 +20,7 @@ namespace DAL
         {
             DVV dvv = new DVV();
             dvv.Tabla = dr["TABLA"].ToString();
-            dvv.Columna = int.Parse(dr["COLUMNA"].ToString());
+            dvv.Columna =dr["COLUMNA"].ToString();
             dvv.DV = dr["DV"].ToString();
 
             return dvv;

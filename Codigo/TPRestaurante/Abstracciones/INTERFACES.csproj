@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityType.cs" />
+    <Compile Include="ColumnMappingAttribute.cs" />
     <Compile Include="EstadoFactura.cs" />
     <Compile Include="EstadoNotaEntrega.cs" />
     <Compile Include="EstadoOrdenDeCompra.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="IMapperCreator.cs" />
     <Compile Include="ITraduccion.cs" />
     <Compile Include="IMetodoDePago.cs" />
+    <Compile Include="TableMappingAttribute.cs" />
     <Compile Include="TipoModulo.cs" />
     <Compile Include="OrderType.cs" />
     <Compile Include="ComponentType.cs" />

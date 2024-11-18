@@ -7,10 +7,12 @@ using Interfaces;
 
 namespace BE
 {
+    [TableMapping("SOLICITUD_DE_COMPRA")]
     public class SolicitudDeCotizacion
     {
         private int nro;
 
+        [ColumnMapping("NRO_SOLICITUD")]
         public int NroSolicitud
         {
             get => nro;
@@ -19,6 +21,7 @@ namespace BE
 
         private DateTime fecha;
 
+        [ColumnMapping("FECHA")]
         public DateTime Fecha
         {
             get => fecha;
@@ -35,6 +38,7 @@ namespace BE
 
         private string comentarios;
 
+        [ColumnMapping("COMENTARIOS")]
         public string Comentarios
         {
             get => comentarios;
@@ -43,6 +47,7 @@ namespace BE
 
         private EstadoSolicitudCotizacion estado;
 
+        [ColumnMapping("ESTADO")]
         public EstadoSolicitudCotizacion Estado
         {
             get => estado;

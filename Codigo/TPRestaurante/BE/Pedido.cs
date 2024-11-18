@@ -7,10 +7,12 @@ using Interfaces;
 
 namespace BE
 {
+    [TableMapping("PEDIDO")]
     public class Pedido
     {
         private int nroPedido;
 
+        [ColumnMapping("NRO_PEDIDO")]
         public int NroPedido
         {
             get
@@ -25,6 +27,7 @@ namespace BE
 
         private OrderType estado;
 
+        [ColumnMapping("ESTADO")]
         public OrderType Estado
         {
             get
@@ -41,6 +44,7 @@ namespace BE
 
         private DateTime fecha;
 
+        [ColumnMapping("FECHA")]
         public DateTime Fecha
         {
             get => fecha;
@@ -56,6 +60,7 @@ namespace BE
         }
         private Cliente cliente;
 
+        [ColumnMapping("ID_CLIENTE")]
         public Cliente Cliente
         {
             get=>cliente; 
@@ -66,6 +71,7 @@ namespace BE
 
         private PaymentState estadoPago;
 
+        [ColumnMapping("ESTADO_PAGO")]
         public PaymentState EstadoPago
         {
             get => estadoPago;

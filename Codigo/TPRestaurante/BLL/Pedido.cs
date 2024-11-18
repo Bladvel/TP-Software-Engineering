@@ -33,6 +33,8 @@ namespace BLL
 
                 BLL.Bitacora bllBitacora = new BLL.Bitacora();
                 bllBitacora.Insertar(logEntry);
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, p => p.NroPedido, "PEDIDO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Pedido));
             }
         }
 
@@ -54,6 +56,8 @@ namespace BLL
 
                 BLL.Bitacora bllBitacora = new BLL.Bitacora();
                 bllBitacora.Insertar(logEntry);
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, p => p.NroPedido, "PEDIDO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Pedido));
             }
         }
 
@@ -89,6 +93,11 @@ namespace BLL
 
                 BLL.Bitacora bllBitacora = new BLL.Bitacora();
                 bllBitacora.Insertar(logEntry);
+
+                DVH.Recalcular(DVH.Listar(), Listar(),Concatenar, p => p.NroPedido, "PEDIDO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Pedido));
+
+
             }
 
 

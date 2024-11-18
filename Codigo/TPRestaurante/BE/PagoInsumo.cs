@@ -7,6 +7,7 @@ using Interfaces;
 
 namespace BE
 {
+    [TableMapping("PAGO_INSUMO")]
     public class PagoInsumo
     {
         private int nroPago;
@@ -16,11 +17,22 @@ namespace BE
         private TipoPago tipoPago;
         private int nroCuota;
 
+        [ColumnMapping("NRO_PAGO")]
         public int NroPago { get => nroPago; set => nroPago = value; }
+
+        [ColumnMapping("NRO_FACTURA")]
         public Factura Factura { get => factura; set => factura = value; }
+
+        [ColumnMapping("FECHA")]
         public DateTime Fecha { get => fecha; set => fecha = value; }
+
+        [ColumnMapping("MONTO")]
         public double Monto { get => monto; set => monto = value; }
+
+        [ColumnMapping("TIPO_PAGO")]
         public TipoPago TipoPago { get => tipoPago; set => tipoPago = value; }
+
+        [ColumnMapping("NRO_CUOTA")]
         public int NroCuota { get => nroCuota; set => nroCuota = value; }
         public PagoInsumo()
         {

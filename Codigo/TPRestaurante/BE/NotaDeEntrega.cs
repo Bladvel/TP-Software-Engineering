@@ -7,6 +7,7 @@ using Interfaces;
 
 namespace BE
 {
+    [TableMapping("NOTA_DE_ENTREGA")]
     public class NotaDeEntrega
     {
         private int nroNota;
@@ -15,10 +16,19 @@ namespace BE
         private string observaciones;
         private EstadoNotaDeEntrega estadoNota;
 
+        [ColumnMapping("NRO_NOTA")]
         public int NroNota { get => nroNota; set => nroNota = value; }
+
+        [ColumnMapping("FECHA")]
         public DateTime Fecha { get => fecha; set => fecha = value; }
+
+        [ColumnMapping("NRO_ORDEN")]
         public OrdenDeCompra OrdenDeCompra { get => ordenDeCompra; set => ordenDeCompra = value; }
+
+        [ColumnMapping("OBSERVACIONES")]
         public string Observaciones { get => observaciones; set => observaciones = value; }
+
+        [ColumnMapping("ESTADO")]
         public EstadoNotaDeEntrega EstadoNota { get => estadoNota; set => estadoNota = value; }
 
 

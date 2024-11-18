@@ -36,6 +36,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+                BLL.DVH.Recalcular(BLL.DVH.Listar(),Listar(), Concatenar, p => p.CodProducto, "PRODUCTO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Producto));
             }
 
 
@@ -62,6 +64,9 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+
+                BLL.DVH.Recalcular(BLL.DVH.Listar(), Listar(), Concatenar, p => p.CodProducto, "PRODUCTO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Producto));
 
             }
             else
@@ -92,6 +97,9 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
+
+                BLL.DVH.Recalcular(BLL.DVH.Listar(), Listar(), Concatenar, p => p.CodProducto, "PRODUCTO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Producto));
 
             }
             else

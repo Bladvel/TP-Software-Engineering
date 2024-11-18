@@ -9,33 +9,33 @@ using Services;
 
 namespace BLL
 {
-    public class DVH
+    public static class DVH
     {
-        MP_Dvh mpDvh = MpDvhCreator.GetInstance.CreateMapper() as MP_Dvh;
+        static MP_Dvh mpDvh = MpDvhCreator.GetInstance.CreateMapper() as MP_Dvh;
 
 
         //Aqui van todas las clases de negocio que se les pondra el DVH
 
-        Cliente bllCliente = new Cliente();
-        Comanda bllComanda = new Comanda();
-        Ingrediente bllIngrediente = new Ingrediente();
-        ItemProducto bllItemProducto = new ItemProducto();
-        MetodoDePago bllMetodoDePago = new MetodoDePago();
-        Pago bllPago = new Pago();
-        PagoEfectivo bllPagoEfectivo = new PagoEfectivo();
-        PagoTarjeta bllPagoTarjeta = new PagoTarjeta();
-        Pedido bllPedido = new Pedido();
-        Producto bllProducto = new Producto();
+        static Cliente bllCliente = new Cliente();
+        static Comanda bllComanda = new Comanda();
+        static Ingrediente bllIngrediente = new Ingrediente();
+        static ItemProducto bllItemProducto = new ItemProducto();
+        static MetodoDePago bllMetodoDePago = new MetodoDePago();
+        static Pago bllPago = new Pago();
+        static PagoEfectivo bllPagoEfectivo = new PagoEfectivo();
+        static PagoTarjeta bllPagoTarjeta = new PagoTarjeta();
+        static Pedido bllPedido = new Pedido();
+        static Producto bllProducto = new Producto();
         
-        Factura bllFactura = new Factura();
-        ItemIngrediente bllItemIngrediente = new ItemIngrediente();
-        NotaDeEntrega bllNotaDeEntrega = new NotaDeEntrega();
-        OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
-        PagoInsumo bllPagoInsumo = new PagoInsumo();
-        Proveedor bllProveedor = new Proveedor();
-        SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
+        static Factura bllFactura = new Factura();
+        static ItemIngrediente bllItemIngrediente = new ItemIngrediente();
+        static NotaDeEntrega bllNotaDeEntrega = new NotaDeEntrega();
+        static OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
+        static PagoInsumo bllPagoInsumo = new PagoInsumo();
+        static Proveedor bllProveedor = new Proveedor();
+        static SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
 
-        public List<RegistroInvalido> ValidarDigitoVerificador()
+        public static List<RegistroInvalido> ValidarDigitoVerificador()
         {
             List<RegistroInvalido> registrosInvalidos = new List<RegistroInvalido>();
 
@@ -144,7 +144,7 @@ namespace BLL
         }
 
 
-        public bool ValidarRegistro<T>(List<T> lista, Func<T, string> concatenar, Func<T, object> obtenerId, Services.DVH dvh, ref bool registroValido, ref string estado)
+        public static bool ValidarRegistro<T>(List<T> lista, Func<T, string> concatenar, Func<T, object> obtenerId, Services.DVH dvh, ref bool registroValido, ref string estado)
         {
             var registro = lista.FirstOrDefault(r => obtenerId(r).Equals(dvh.Registro));
             if (registro != null)
@@ -168,34 +168,34 @@ namespace BLL
 
 
 
-        public List<Services.DVH> Listar()
+        public static List<Services.DVH> Listar()
         {
             return mpDvh.GetAll();
         }
 
-        public int Insertar(Services.DVH dvh)
+        public static int Insertar(Services.DVH dvh)
         {
             return mpDvh.Insert(dvh);
         }
 
-        public int Actualizar(Services.DVH dvh)
+        public static int Actualizar(Services.DVH dvh)
         {
             return mpDvh.Update(dvh);
         }
 
-        public int Eliminar(Services.DVH dvh)
+        public static int Eliminar(Services.DVH dvh)
         {
             return mpDvh.Delete(dvh);
         }
 
 
 
-        public string ObtenerDV(string cadena)
+        public static string ObtenerDV(string cadena)
         {
             return CryptoManager.Hash(cadena);
         }
 
-        public void Recalcular<T>(List<Services.DVH> dvhs, List<T> items, Func<T, string> concatenar, Func<T, int> obtenerId, string tabla)
+        public static void Recalcular<T>(List<Services.DVH> dvhs, List<T> items, Func<T, string> concatenar, Func<T, int> obtenerId, string tabla)
         {
 
             //modificacion para considerar el caso en que elimine un elemento de una tabla
@@ -233,11 +233,11 @@ namespace BLL
 
         }
 
-        
 
 
 
-        public bool ValidarCantidadRegistros<T>(List<T> entidades, List<Services.DVH> dVHs, string tabla)
+        [Obsolete("Este metodo no se usa mas, se reemplazo por Recalcular")]
+        public static bool ValidarCantidadRegistros<T>(List<T> entidades, List<Services.DVH> dVHs, string tabla)
         {
             bool ok = true;
 

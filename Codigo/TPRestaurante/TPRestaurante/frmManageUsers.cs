@@ -26,7 +26,7 @@ namespace TPRestaurante
             bllPermisos = new BLL.Permission();
             bllBitacora = new BLL.Bitacora();
             bitacora = new Services.Bitacora();
-            bllDvh = new BLL.DVH();
+            //bllDvh = new BLL.DVH();
         }
 
         //ModoAgregar = 1,
@@ -38,7 +38,7 @@ namespace TPRestaurante
         BLL.Permission bllPermisos;
         private Services.Bitacora bitacora;
         private BLL.Bitacora bllBitacora;
-        private BLL.DVH bllDvh;
+        //private BLL.DVH bllDvh;
 
         void CambiarModo(BLL.ModoDelGestor pModo)
         {

@@ -18,7 +18,7 @@ namespace BLL
         OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
         PagoInsumo bllPagoInsumo = new PagoInsumo();
         BLL.Bitacora bllBitacora = new BLL.Bitacora();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
 
         public int Insertar(BE.Factura factura)
         {
@@ -49,7 +49,8 @@ namespace BLL
                         };
 
                         bllBitacora.Insertar(logEntry);
-                        bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
+                        DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
+                        DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Factura));
 
 
                     }
@@ -81,7 +82,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroFactura, "FACTURA");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Factura));
             }
 
 

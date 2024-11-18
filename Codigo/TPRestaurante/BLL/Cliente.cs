@@ -32,6 +32,8 @@ namespace BLL
 
                 
                 bllBitacora.Insertar(logEntry);
+                BLL.DVH.Recalcular(BLL.DVH.Listar(), Listar(), Concatenar, c => c.ID, "CLIENTE");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Cliente));
             }
 
 
@@ -62,6 +64,8 @@ namespace BLL
 
 
                 bllBitacora.Insertar(logEntry);
+                BLL.DVH.Recalcular(BLL.DVH.Listar(), Listar(), Concatenar, c => c.ID, "CLIENTE");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Cliente));
             }
             else
             {
@@ -89,6 +93,8 @@ namespace BLL
 
 
                 bllBitacora.Insertar(logEntry);
+                BLL.DVH.Recalcular(BLL.DVH.Listar(), Listar(), Concatenar, c => c.ID, "CLIENTE");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Cliente));
             }
             else
             {

@@ -18,7 +18,7 @@ namespace BLL
         MP_OrdenDeCompra mp = MpOrdenDeCompraCreator.GetInstance.CreateMapper() as MP_OrdenDeCompra;
         SolicitudDeCotizacion bllSolicitudDeCotizacion = new SolicitudDeCotizacion();
         BLL.Bitacora bllBitacora = new Bitacora();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
         public List<BE.OrdenDeCompra> Listar()
         {
             return mp.GetAll();
@@ -48,7 +48,8 @@ namespace BLL
                 };
 
                 bllBitacora.Insertar(logEntry);
-                bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.OrdenDeCompra));
 
 
                 if (bllSolicitudDeCotizacion.ActualizarEstadoSolicitud(ordenDeCompra.Solicitud,
@@ -79,8 +80,9 @@ namespace BLL
                  };
 
                  bllBitacora.Insertar(logEntry);
-                 bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
-             }
+                 DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+                 DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.OrdenDeCompra));
+            }
 
              return resultado;
         }

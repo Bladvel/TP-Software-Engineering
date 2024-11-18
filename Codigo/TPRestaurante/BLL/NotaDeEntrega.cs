@@ -17,7 +17,7 @@ namespace BLL
         OrdenDeCompra bllOrdenDeCompra = new OrdenDeCompra();
         Ingrediente bllIngrediente = new Ingrediente();
         Bitacora bllBitacora = new Bitacora();
-        DVH bllDvh = new DVH();
+        //DVH bllDvh = new DVH();
 
         public int Insertar(BE.NotaDeEntrega nota)
         {
@@ -46,7 +46,8 @@ namespace BLL
                         };
 
                         bllBitacora.Insertar(logEntry);
-                        bllDvh.Recalcular(bllDvh.Listar(), Listar(), Concatenar, c => c.NroNota, "NOTA_DE_ENTREGA");
+                        DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.NroNota, "NOTA_DE_ENTREGA");
+                        DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.NotaDeEntrega));
                     }
 
 

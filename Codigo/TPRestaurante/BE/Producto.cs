@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
+    [TableMapping("PRODUCTO")]
     public class Producto
     {
         private int cod;
 
+        [ColumnMapping("COD_PRODUCTO")]
         public int CodProducto
         {
             get => cod; 
@@ -18,6 +21,7 @@ namespace BE
 
         private string descripcion;
 
+        [ColumnMapping("DESCRIPCION")]
         public string Descripcion
         {
             get=> descripcion; 
@@ -26,6 +30,7 @@ namespace BE
 
         private string nombre;
 
+        [ColumnMapping("NOMBRE")]
         public string Nombre
         {
             get=> nombre; 
@@ -35,6 +40,7 @@ namespace BE
 
         private float precio;
 
+        [ColumnMapping("PRECIO_ACTUAL")]
         public float PrecioActual
         {
             get=>precio; 
@@ -51,6 +57,7 @@ namespace BE
 
         private bool borrado = false;
 
+        [ColumnMapping("BORRADO")]
         public bool Borrado
         {
             get => borrado;

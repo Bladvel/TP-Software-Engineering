@@ -4,14 +4,17 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace BE
 {
+    [TableMapping("INGREDIENTE")]
     public class Ingrediente
     {
 
         private int cod;
 
+        [ColumnMapping("COD_INGREDIENTE")]
         public int CodIngrediente
         {
             get => cod; 
@@ -20,6 +23,7 @@ namespace BE
 
         private string nombre;
 
+        [ColumnMapping("NOMBRE")]
         public string Nombre
         {
             get=>nombre; 
@@ -28,6 +32,7 @@ namespace BE
 
         private int cantidad;
 
+        [ColumnMapping("CANTIDAD_ACTUAL")]
         public int Cantidad
         {
             get => cantidad;
@@ -48,6 +53,7 @@ namespace BE
 
         private float costoReferencial;
 
+        [ColumnMapping("COSTO_REFERENCIAL")]
         public float CostoReferencial
         {
             get => costoReferencial;
@@ -56,6 +62,7 @@ namespace BE
 
         private int stockMin;
 
+        [ColumnMapping("STOCK_MINIMO")]
         public int StockMin
         {
             get => stockMin;
@@ -64,6 +71,7 @@ namespace BE
 
         private int stockMax;
 
+        [ColumnMapping("STOCK_MAXIMO")]
         public int StockMax
         {
             get => stockMax; 

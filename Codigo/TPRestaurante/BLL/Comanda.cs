@@ -42,6 +42,8 @@ namespace BLL
 
 
                 bllBitacora.Insertar(logEntry);
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.ID, "COMANDA");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Comanda));
             }
 
 

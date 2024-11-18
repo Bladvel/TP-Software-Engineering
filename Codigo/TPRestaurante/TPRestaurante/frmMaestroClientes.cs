@@ -25,7 +25,7 @@ namespace TPRestaurante
             bllCliente = new BLL.Cliente();
             bitacora = new Services.Bitacora();
             bllBitacora = new BLL.Bitacora();
-            bllDvh = new BLL.DVH();
+            //bllDvh = new BLL.DVH();
         }
 
         private BLL.Cliente bllCliente;
@@ -33,7 +33,7 @@ namespace TPRestaurante
         private Services.Bitacora bitacora;
         private BLL.Bitacora bllBitacora;
         DataTable dtClientes;
-        private BLL.DVH bllDvh;
+        //private BLL.DVH bllDvh;
 
         private void frmMaestroClientes_Load(object sender, EventArgs e)
         {
@@ -155,7 +155,7 @@ namespace TPRestaurante
                             ResetTextFields();
                             
 
-                            bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
+                            
 
 
                             MessageBox.Show("Cliente ingresado exitosamente","Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -185,7 +185,6 @@ namespace TPRestaurante
                         selectedClient.Telefono = txtTelefono.Text;
                         selectedClient.DNI = int.Parse(txtDNI.Text);
                         MessageBox.Show(bllCliente.Modificar(selectedClient));
-                        bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
                         ActualizarGrilla();
                         ResetTextFields();
                         
@@ -214,7 +213,6 @@ namespace TPRestaurante
                             MessageBox.Show(bllCliente.Eliminar(selectedClient));
                             
                             ActualizarGrilla();
-                            bllDvh.Recalcular(bllDvh.Listar(), bllCliente.Listar(), bllCliente.Concatenar, c => c.ID, "CLIENTE");
                         }
                     }
                     else

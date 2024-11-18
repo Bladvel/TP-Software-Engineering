@@ -31,6 +31,8 @@ namespace BLL
 
                 var bllBitacora = new BLL.Bitacora();
                 bllBitacora.Insertar(bitacora);
+                DVH.Recalcular(DVH.Listar(), Listar(), Concatenar, c => c.Id, "PAGO");
+                DVV.Recalcular(Listar().Cast<object>().ToList(), typeof(BE.Pago));
             }
 
 

@@ -17,9 +17,9 @@ namespace Services
         }
 
 
-        private int columna;
+        private string columna;
 
-        public int Columna
+        public string Columna
         {
             get { return columna; }
             set { columna = value; }
