@@ -506,5 +506,17 @@ namespace TPRestaurante
             frmReporteProductos reportePedidos = new frmReporteProductos();
             AbrirChildForm(reportePedidos);
         }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManualAdministrador manual = new frmManualAdministrador();
+            AbrirChildForm(manual);
+        }
+
+        private void manualUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManualUsuarios manual = new frmManualUsuarios();
+            AbrirChildForm(manual);
+        }
     }
 }

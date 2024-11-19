@@ -75,6 +75,10 @@ C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineerin
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.UI.csproj.CopyComplete
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.exe
 C:\Users\Navegador\Downloads\TP-Software-Engineering-main\TP-Software-Engineering-main\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.pdb
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Resources\Manual de Administrador.pdf
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Resources\Manual de Usuario.pdf
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\x86\pdfium.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\x64\pdfium.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\SISFOOD.exe.config
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\SISFOOD.exe
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\SISFOOD.pdb
@@ -91,6 +95,7 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Microsoft.Extensions.Primitives.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\PdfiumViewer.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Services.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.Buffers.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -118,6 +123,7 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Microsoft.Extensions.Options.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\PdfiumViewer.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.Buffers.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.Memory.xml
@@ -127,6 +133,7 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\System.ValueTuple.xml
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\DAL.pdb
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\DAL.dll.config
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\bin\Debug\nl\PdfiumViewer.resources.dll
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.UI.csproj.AssemblyReference.cache
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmBitacoraDeCambios.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmBitacoraEventos.resources
@@ -143,6 +150,8 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmMaestroClientes.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmMaestroProductos.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmManageLanguages.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmManualAdministrador.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmManualUsuarios.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmPedidosCerrados.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmPedidosEnCurso.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmPedidosListos.resources
@@ -151,6 +160,7 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRegistrarPago.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRecepcionDeInsumos.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmReparacion.resources
+C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmReporteProductos.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmRespaldo.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmSolicitarCotizacion.resources
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmVerComandas.resources
@@ -166,4 +176,3 @@ C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Co
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestau.BD32C38D.Up2Date
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\SISFOOD.exe
 C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\SISFOOD.pdb
-C:\Users\Dan\Documents\UAI\5- 1er Cuatrimestre 2024\Ingenieria de software\TP\Codigo\TPRestaurante\TPRestaurante\obj\Debug\TPRestaurante.frmReporteProductos.resources
