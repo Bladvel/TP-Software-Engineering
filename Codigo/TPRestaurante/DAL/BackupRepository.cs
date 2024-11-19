@@ -41,13 +41,13 @@ namespace DAL
             {
                 conexion.Open();
 
-                SqlCommand cmd1 = new SqlCommand("ALTER DATABASE [TpRESTAURANTE] SET SINGLE_USER WITH ROLLBACK IMMEDIATE", conexion);
+                SqlCommand cmd1 = new SqlCommand("ALTER DATABASE [SISFOOD] SET SINGLE_USER WITH ROLLBACK IMMEDIATE", conexion);
                 cmd1.ExecuteNonQuery();
 
-                SqlCommand cmd2 = new SqlCommand("USE MASTER RESTORE DATABASE [TpRESTAURANTE] FROM DISK = N'" + ruta + @"' WITH FILE = 1, NOUNLOAD, REPLACE, STATS = 10;", conexion);
+                SqlCommand cmd2 = new SqlCommand("USE MASTER RESTORE DATABASE [SISFOOD] FROM DISK = N'" + ruta + @"' WITH FILE = 1, NOUNLOAD, REPLACE, STATS = 10;", conexion);
                 cmd2.ExecuteNonQuery();
 
-                SqlCommand cmd3 = new SqlCommand("ALTER DATABASE [TpRESTAURANTE] SET MULTI_USER", conexion);
+                SqlCommand cmd3 = new SqlCommand("ALTER DATABASE [SISFOOD] SET MULTI_USER", conexion);
                 cmd3.ExecuteNonQuery();
 
                 conexion.Close();
