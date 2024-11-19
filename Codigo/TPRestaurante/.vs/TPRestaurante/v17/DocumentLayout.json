@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\bll\\dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,23 +23,19 @@
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanualusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmanualadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmanualadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmanualadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -39,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmaestroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|c:\\users\\dan\\documents\\uai\\5- 1er cuatrimestre 2024\\ingenieria de software\\tp\\codigo\\tprestaurante\\tprestaurante\\frmmaestroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmaestroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmmaestroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2EEADFA-C098-4C61-8312-281A47DB0674}|DAL\\DAL.csproj|solutionrelative:dal\\mp_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|solutionrelative:tprestaurante\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F808CB20-0446-4F3A-990A-1A263412C02C}|Services\\SERVICIOS.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\services\\dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\bll\\dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182DEB6-FDCD-4A59-8EE5-EE44DFF64E41}|BLL\\BLL.csproj|solutionrelative:bll\\dvh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBFD6FD-1498-43CD-8007-BFB73C97E28D}|TPRestaurante\\TPRestaurante.UI.csproj|C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\tprestaurante\\frmmaestroproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -314,11 +310,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 225,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmMDI.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
@@ -327,12 +323,11 @@
               "ViewState": "AgIAANIBAAAAAAAAAIA0wAYCAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T00:37:19.049Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DVV.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\DVV.cs",
               "RelativeDocumentMoniker": "BLL\\DVV.cs",
@@ -341,8 +336,7 @@
               "ViewState": "AgIAAKkAAAAAAAAAAAAqwLgAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T16:38:40.807Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -355,8 +349,7 @@
               "ViewState": "AgIAACoAAAAAAAAAAAA6wD8AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T23:31:55.627Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -369,8 +362,7 @@
               "ViewState": "AgIAAFcAAAAAAAAAAAAWwGEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T23:48:08.814Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -382,44 +374,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmManualUsuarios.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualUsuarios.cs",
-              "RelativeDocumentMoniker": "TPRestaurante\\frmManualUsuarios.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualUsuarios.cs [Design]",
-              "RelativeToolTip": "TPRestaurante\\frmManualUsuarios.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T01:44:28.464Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMDI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
-              "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs [Design]",
-              "RelativeToolTip": "TPRestaurante\\frmMDI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:01:53.293Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\App.config",
               "RelativeDocumentMoniker": "TPRestaurante\\App.config",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\App.config",
               "RelativeToolTip": "TPRestaurante\\App.config",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAC4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-18T05:41:19.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmLogin.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmLogin.cs",
@@ -431,32 +399,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmLogin.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmLogin.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmLogin.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmLogin.cs",
               "RelativeToolTip": "TPRestaurante\\frmLogin.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAApwGwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAlwKsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T05:32:35.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmMDI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmMDI.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMDI.cs [Design]",
+              "RelativeToolTip": "TPRestaurante\\frmMDI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:01:53.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DVH.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\DVH.cs",
+              "RelativeDocumentMoniker": "BLL\\DVH.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\DVH.cs",
+              "RelativeToolTip": "BLL\\DVH.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAjwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T20:32:10.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "frmManualUsuarios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualUsuarios.cs",
+              "RelativeDocumentMoniker": "TPRestaurante\\frmManualUsuarios.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualUsuarios.cs [Design]",
+              "RelativeToolTip": "TPRestaurante\\frmManualUsuarios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T01:44:28.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "frmManualAdministrador.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualAdministrador.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmManualAdministrador.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualAdministrador.cs [Design]",
               "RelativeToolTip": "TPRestaurante\\frmManualAdministrador.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T22:49:47.468Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T22:49:47.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmManualUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManualUsuarios.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmManualUsuarios.cs",
@@ -464,24 +466,22 @@
               "RelativeToolTip": "TPRestaurante\\frmManualUsuarios.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA5wCMAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T01:45:27.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T01:45:27.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "frmMaestroClientes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMaestroClientes.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMaestroClientes.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMaestroClientes.cs [Design]",
               "RelativeToolTip": "TPRestaurante\\frmMaestroClientes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T21:28:06.579Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T21:28:06.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "frmMaestroClientes.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMaestroClientes.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMaestroClientes.cs",
@@ -489,24 +489,22 @@
               "RelativeToolTip": "TPRestaurante\\frmMaestroClientes.cs",
               "ViewState": "AgIAAN0AAAAAAAAAAAAEwO8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:35:58.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:35:58.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "frmManageUsers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageUsers.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmManageUsers.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageUsers.cs [Design]",
               "RelativeToolTip": "TPRestaurante\\frmManageUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:03:52.013Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T00:03:52.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "frmManageUsers.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmManageUsers.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmManageUsers.cs",
@@ -514,12 +512,11 @@
               "RelativeToolTip": "TPRestaurante\\frmManageUsers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAApwBQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:37:53.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:37:53.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "frmReportePedidos.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmReportePedidos.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmReportePedidos.cs",
@@ -527,24 +524,22 @@
               "RelativeToolTip": "TPRestaurante\\frmReportePedidos.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowDYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:53:26.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T04:53:26.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "frmCargarFactura.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmCargarFactura.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmCargarFactura.cs",
               "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmCargarFactura.cs [Design]",
               "RelativeToolTip": "TPRestaurante\\frmCargarFactura.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T05:27:51.958Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T05:27:51.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "frmCargarFactura.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmCargarFactura.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmCargarFactura.cs",
@@ -552,12 +547,11 @@
               "RelativeToolTip": "TPRestaurante\\frmCargarFactura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T05:27:54.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T05:27:54.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\Producto.cs",
               "RelativeDocumentMoniker": "BLL\\Producto.cs",
@@ -565,12 +559,11 @@
               "RelativeToolTip": "BLL\\Producto.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAAUwJQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:02:46.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:02:46.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MP_NotaDeEntrega.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_NotaDeEntrega.cs",
               "RelativeDocumentMoniker": "DAL\\MP_NotaDeEntrega.cs",
@@ -578,12 +571,11 @@
               "RelativeToolTip": "DAL\\MP_NotaDeEntrega.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwCoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:25:11.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:25:11.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MP_Producto.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Producto.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Producto.cs",
@@ -591,8 +583,7 @@
               "RelativeToolTip": "DAL\\MP_Producto.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAqwHEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:49:51.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T04:49:51.951Z"
             },
             {
               "$type": "Document",
@@ -604,8 +595,7 @@
               "RelativeToolTip": "Services\\ColumnaInvalida.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:28:23.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:28:23.354Z"
             },
             {
               "$type": "Document",
@@ -617,21 +607,7 @@
               "RelativeToolTip": "Services\\DVH.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:34:03.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "frmReparacion.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmReparacion.cs",
-              "RelativeDocumentMoniker": "TPRestaurante\\frmReparacion.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmReparacion.cs",
-              "RelativeToolTip": "TPRestaurante\\frmReparacion.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwDcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:39:02.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:34:03.217Z"
             },
             {
               "$type": "Document",
@@ -643,8 +619,7 @@
               "RelativeToolTip": "Services\\DVV.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:32:35.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T22:32:35.641Z"
             },
             {
               "$type": "Document",
@@ -656,8 +631,7 @@
               "RelativeToolTip": "BLL\\Proveedor.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAApwA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:38:19.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:38:19.727Z"
             },
             {
               "$type": "Document",
@@ -669,8 +643,7 @@
               "RelativeToolTip": "BLL\\Backup.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:19:39.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:19:39.499Z"
             },
             {
               "$type": "Document",
@@ -682,8 +655,7 @@
               "RelativeToolTip": "BLL\\PagoTarjeta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:16:32.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:16:32.66Z"
             },
             {
               "$type": "Document",
@@ -695,8 +667,7 @@
               "RelativeToolTip": "BLL\\PagoEfectivo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:16:08.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:16:08.99Z"
             },
             {
               "$type": "Document",
@@ -708,8 +679,7 @@
               "RelativeToolTip": "BLL\\SolicitudDeCotizacion.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAjwDwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:41:59.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:41:59.794Z"
             },
             {
               "$type": "Document",
@@ -721,8 +691,7 @@
               "RelativeToolTip": "BLL\\OrdenDeCompra.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAgwFMAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:27:18.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:27:18.604Z"
             },
             {
               "$type": "Document",
@@ -734,8 +703,7 @@
               "RelativeToolTip": "BLL\\NotaDeEntrega.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwDEAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:22:18.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:22:18.874Z"
             },
             {
               "$type": "Document",
@@ -747,8 +715,7 @@
               "RelativeToolTip": "BLL\\ModoDelGestor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:14:26.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:14:26.393Z"
             },
             {
               "$type": "Document",
@@ -760,8 +727,7 @@
               "RelativeToolTip": "BLL\\PagoInsumo.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA8wCkAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:31:01.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:31:01.17Z"
             },
             {
               "$type": "Document",
@@ -773,8 +739,7 @@
               "RelativeToolTip": "BLL\\MetodoDePago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:14:24.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:14:24.67Z"
             },
             {
               "$type": "Document",
@@ -786,8 +751,7 @@
               "RelativeToolTip": "BLL\\Pago.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwCIAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:50:03.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:50:03.745Z"
             },
             {
               "$type": "Document",
@@ -799,8 +763,7 @@
               "RelativeToolTip": "BLL\\Ingrediente.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAiwEQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:07:54.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:07:54.945Z"
             },
             {
               "$type": "Document",
@@ -812,8 +775,7 @@
               "RelativeToolTip": "BLL\\Factura.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAFUAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:07:22.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:07:22.266Z"
             },
             {
               "$type": "Document",
@@ -825,8 +787,7 @@
               "RelativeToolTip": "BLL\\ControllerJefeDeCocina.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAcwIUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:33:00.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:33:00.424Z"
             },
             {
               "$type": "Document",
@@ -838,8 +799,7 @@
               "RelativeToolTip": "BLL\\ItemIngrediente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:19:58.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:19:58.105Z"
             },
             {
               "$type": "Document",
@@ -851,8 +811,7 @@
               "RelativeToolTip": "BLL\\ItemProducto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:49:34.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:49:34.688Z"
             },
             {
               "$type": "Document",
@@ -864,8 +823,7 @@
               "RelativeToolTip": "BLL\\ControllerCocinero.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:32:47.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:32:47.346Z"
             },
             {
               "$type": "Document",
@@ -877,8 +835,7 @@
               "RelativeToolTip": "BLL\\Comanda.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADgvykAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:58:53.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:58:53.19Z"
             },
             {
               "$type": "Document",
@@ -890,25 +847,11 @@
               "RelativeToolTip": "BLL\\Cliente.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAgwCEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:36:23.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:36:23.616Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 44,
-              "Title": "DVH.cs",
-              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\DVH.cs",
-              "RelativeDocumentMoniker": "BLL\\DVH.cs",
-              "ToolTip": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\DVH.cs",
-              "RelativeToolTip": "BLL\\DVH.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:32:10.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
               "Title": "frmMaestroProductos.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\TPRestaurante\\frmMaestroProductos.cs",
               "RelativeDocumentMoniker": "TPRestaurante\\frmMaestroProductos.cs",
@@ -916,12 +859,11 @@
               "RelativeToolTip": "TPRestaurante\\frmMaestroProductos.cs",
               "ViewState": "AgIAAE4BAAAAAAAAAAAUwB0BAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:36:32.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:36:32.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "ProductoBitacora.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BLL\\ProductoBitacora.cs",
               "RelativeDocumentMoniker": "BLL\\ProductoBitacora.cs",
@@ -929,12 +871,11 @@
               "RelativeToolTip": "BLL\\ProductoBitacora.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:34:26.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:34:26.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "PagoEfectivo.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\PagoEfectivo.cs",
               "RelativeDocumentMoniker": "BE\\PagoEfectivo.cs",
@@ -942,12 +883,11 @@
               "RelativeToolTip": "BE\\PagoEfectivo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:00:18.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:00:18.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "MP_Idioma.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Idioma.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Idioma.cs",
@@ -955,12 +895,11 @@
               "RelativeToolTip": "DAL\\MP_Idioma.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAUwEgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:24:48.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:24:48.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "PagoInsumo.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\PagoInsumo.cs",
               "RelativeDocumentMoniker": "BE\\PagoInsumo.cs",
@@ -968,12 +907,11 @@
               "RelativeToolTip": "BE\\PagoInsumo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:02:13.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:02:13.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "PagoTarjeta.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\PagoTarjeta.cs",
               "RelativeDocumentMoniker": "BE\\PagoTarjeta.cs",
@@ -981,12 +919,11 @@
               "RelativeToolTip": "BE\\PagoTarjeta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:03:30.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:03:30.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Pedido.cs",
               "RelativeDocumentMoniker": "BE\\Pedido.cs",
@@ -994,12 +931,11 @@
               "RelativeToolTip": "BE\\Pedido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:04:53.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:04:53.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "MP_Dvv.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Dvv.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Dvv.cs",
@@ -1007,12 +943,11 @@
               "RelativeToolTip": "DAL\\MP_Dvv.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAmwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:32:58.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T22:32:58.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "MpIdiomaCreator.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\FactoryMapper\\MpIdiomaCreator.cs",
               "RelativeDocumentMoniker": "DAL\\FactoryMapper\\MpIdiomaCreator.cs",
@@ -1020,12 +955,11 @@
               "RelativeToolTip": "DAL\\FactoryMapper\\MpIdiomaCreator.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAWwCAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:25:04.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:25:04.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Pago.cs",
               "RelativeDocumentMoniker": "BE\\Pago.cs",
@@ -1033,12 +967,11 @@
               "RelativeToolTip": "BE\\Pago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:59:36.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:59:36.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Producto.cs",
               "RelativeDocumentMoniker": "BE\\Producto.cs",
@@ -1046,12 +979,11 @@
               "RelativeToolTip": "BE\\Producto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:06:01.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:06:01.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "MP_Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Cliente.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Cliente.cs",
@@ -1059,12 +991,11 @@
               "RelativeToolTip": "DAL\\MP_Cliente.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAiwGgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:22:35.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:22:35.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "MpClienteCreator.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\FactoryMapper\\MpClienteCreator.cs",
               "RelativeDocumentMoniker": "DAL\\FactoryMapper\\MpClienteCreator.cs",
@@ -1072,12 +1003,11 @@
               "RelativeToolTip": "DAL\\FactoryMapper\\MpClienteCreator.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA7wCEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:22:39.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T23:22:39.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Proveedor.cs",
               "RelativeDocumentMoniker": "BE\\Proveedor.cs",
@@ -1085,12 +1015,11 @@
               "RelativeToolTip": "BE\\Proveedor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:07:13.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:07:13.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "MP_Dvh.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Dvh.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Dvh.cs",
@@ -1098,12 +1027,11 @@
               "RelativeToolTip": "DAL\\MP_Dvh.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAzwFkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:36:41.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:36:41.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "SolicitudDeCotizacion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\SolicitudDeCotizacion.cs",
               "RelativeDocumentMoniker": "BE\\SolicitudDeCotizacion.cs",
@@ -1111,12 +1039,11 @@
               "RelativeToolTip": "BE\\SolicitudDeCotizacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:07:44.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T20:07:44.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "OrdenDeCompra.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\OrdenDeCompra.cs",
               "RelativeDocumentMoniker": "BE\\OrdenDeCompra.cs",
@@ -1124,12 +1051,11 @@
               "RelativeToolTip": "BE\\OrdenDeCompra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:58:20.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:58:20.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "NotaDeEntrega.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\NotaDeEntrega.cs",
               "RelativeDocumentMoniker": "BE\\NotaDeEntrega.cs",
@@ -1137,12 +1063,11 @@
               "RelativeToolTip": "BE\\NotaDeEntrega.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:51:56.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:51:56.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "MetodoDePago.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\MetodoDePago.cs",
               "RelativeDocumentMoniker": "BE\\MetodoDePago.cs",
@@ -1150,12 +1075,11 @@
               "RelativeToolTip": "BE\\MetodoDePago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:51:39.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:51:39.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "ItemProducto.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\ItemProducto.cs",
               "RelativeDocumentMoniker": "BE\\ItemProducto.cs",
@@ -1163,12 +1087,11 @@
               "RelativeToolTip": "BE\\ItemProducto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:50:25.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:50:25.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "ItemIngrediente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\ItemIngrediente.cs",
               "RelativeDocumentMoniker": "BE\\ItemIngrediente.cs",
@@ -1176,12 +1099,11 @@
               "RelativeToolTip": "BE\\ItemIngrediente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:49:15.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:49:15.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "Ingrediente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Ingrediente.cs",
               "RelativeDocumentMoniker": "BE\\Ingrediente.cs",
@@ -1189,12 +1111,11 @@
               "RelativeToolTip": "BE\\Ingrediente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:47:18.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:47:18.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Factura.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Factura.cs",
               "RelativeDocumentMoniker": "BE\\Factura.cs",
@@ -1202,12 +1123,11 @@
               "RelativeToolTip": "BE\\Factura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:38:34.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:38:34.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "Comanda.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Comanda.cs",
               "RelativeDocumentMoniker": "BE\\Comanda.cs",
@@ -1215,12 +1135,11 @@
               "RelativeToolTip": "BE\\Comanda.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:50:46.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T17:50:46.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\BE\\Cliente.cs",
               "RelativeDocumentMoniker": "BE\\Cliente.cs",
@@ -1228,12 +1147,11 @@
               "RelativeToolTip": "BE\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:50:32.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T17:50:32.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "TableMappingAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\Abstracciones\\TableMappingAttribute.cs",
               "RelativeDocumentMoniker": "Abstracciones\\TableMappingAttribute.cs",
@@ -1241,12 +1159,11 @@
               "RelativeToolTip": "Abstracciones\\TableMappingAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:06:26.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T22:06:26.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "ColumnMappingAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\Abstracciones\\ColumnMappingAttribute.cs",
               "RelativeDocumentMoniker": "Abstracciones\\ColumnMappingAttribute.cs",
@@ -1254,12 +1171,11 @@
               "RelativeToolTip": "Abstracciones\\ColumnMappingAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:40:01.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:40:01.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "MP_Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_Proveedor.cs",
               "RelativeDocumentMoniker": "DAL\\MP_Proveedor.cs",
@@ -1267,12 +1183,11 @@
               "RelativeToolTip": "DAL\\MP_Proveedor.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:50:54.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T05:50:54.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "MP_ItemIngrediente.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_ItemIngrediente.cs",
               "RelativeDocumentMoniker": "DAL\\MP_ItemIngrediente.cs",
@@ -1280,12 +1195,11 @@
               "RelativeToolTip": "DAL\\MP_ItemIngrediente.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAADwv3EAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:20:50.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:20:50.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "MP_SolicitudDeCotizacion.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_SolicitudDeCotizacion.cs",
               "RelativeDocumentMoniker": "DAL\\MP_SolicitudDeCotizacion.cs",
@@ -1293,12 +1207,11 @@
               "RelativeToolTip": "DAL\\MP_SolicitudDeCotizacion.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAiwGIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:42:45.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T02:42:45.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "MP_PagoInsumo.cs",
               "DocumentMoniker": "C:\\Users\\Dan\\Documents\\UAI\\5- 1er Cuatrimestre 2024\\Ingenieria de software\\TP\\Codigo\\TPRestaurante\\DAL\\MP_PagoInsumo.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PagoInsumo.cs",
@@ -1306,8 +1219,7 @@
               "RelativeToolTip": "DAL\\MP_PagoInsumo.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA3wDAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:31:08.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T01:31:08.241Z"
             }
           ]
         }

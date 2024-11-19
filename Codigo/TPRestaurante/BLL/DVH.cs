@@ -63,6 +63,34 @@ namespace BLL
             // Listado de DVH (Digito Verificador Horizontal)
             List<Services.DVH> dVHs = Listar();
 
+            if(dVHs.Count == 0)
+            {
+                BLL.DVH.Recalcular(dVHs, clientes, bllCliente.Concatenar, c => c.ID, "CLIENTE");
+                BLL.DVH.Recalcular(dVHs, comandas, bllComanda.Concatenar, c => c.ID, "COMANDA");
+                BLL.DVH.Recalcular(dVHs, ingredientes, bllIngrediente.Concatenar, c => c.CodIngrediente, "INGREDIENTE");
+                BLL.DVH.Recalcular(dVHs, itemProductos, bllItemProducto.Concatenar, c => c.Id, "ITEM_PRODUCTO");
+                BLL.DVH.Recalcular(dVHs, metodosDePago, bllMetodoDePago.Concatenar, c => c.id, "METODO_DE_PAGO");
+                BLL.DVH.Recalcular(dVHs, pagos, bllPago.Concatenar, c => c.Id, "PAGO");
+                BLL.DVH.Recalcular(dVHs, pagosEfectivo, bllPagoEfectivo.Concatenar, c => c.id, "PAGO_EFECTIVO");
+                BLL.DVH.Recalcular(dVHs, pagosTarjeta, bllPagoTarjeta.Concatenar, c => c.id, "PAGO_TARJETA");
+                BLL.DVH.Recalcular(dVHs, pedidos, bllPedido.Concatenar, c => c.NroPedido, "PEDIDO");
+                BLL.DVH.Recalcular(dVHs, productos, bllProducto.Concatenar, c => c.CodProducto, "PRODUCTO");
+
+                BLL.DVH.Recalcular(dVHs, facturas, bllFactura.Concatenar, c => c.NroFactura, "FACTURA");
+                BLL.DVH.Recalcular(dVHs, itemIngredientes, bllItemIngrediente.Concatenar, c => c.ID, "ITEM_INGREDIENTE");
+                BLL.DVH.Recalcular(dVHs, notasDeEntrega, bllNotaDeEntrega.Concatenar, c => c.NroNota, "NOTA_DE_ENTREGA");
+                BLL.DVH.Recalcular(dVHs, ordenesDeCompra, bllOrdenDeCompra.Concatenar, c => c.NroOrden, "ORDEN_DE_COMPRA");
+                BLL.DVH.Recalcular(dVHs, pagosInsumo, bllPagoInsumo.Concatenar, c => c.NroPago, "PAGO_INSUMO");
+                BLL.DVH.Recalcular(dVHs, proveedores, bllProveedor.Concatenar, c => c.Cuit, "PROVEEDOR");
+                BLL.DVH.Recalcular(dVHs, solicitudesDeCotizacion, bllSolicitudDeCotizacion.Concatenar, c => c.NroSolicitud, "SOLICITUD_DE_COMPRA");
+
+
+                BLL.DVV.Recalcular();
+
+
+                return registrosInvalidos;
+            }
+
             foreach (var dvh in dVHs)
             {
                 bool registroValido = true;
